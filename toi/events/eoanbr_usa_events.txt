@@ -20,6 +20,7 @@ add_namespace = usa_flavor #has absorbed usa_flags, usa_independence, usa_guano_
 
 add_namespace = usa_western_expansion
 add_namespace = usa_worker_events
+add_namespace = usa_gilded_age
 
 #recently (31/8/022) removed namespaces
 
@@ -11256,7 +11257,7 @@ country_event = {
 	immediate = {
 		log = "[THIS.GetTag]: firing = usa.157"
 		set_global_flag = USS_maine_exploded
-		hidden_effect={
+		hidden_effect = {
 			SPR={
 				add_to_variable = {
 					SPR_USA_american_tension=50
@@ -17250,7 +17251,7 @@ country_event = {#this will fire after the start of the pig war if the clayton c
 				has_country_flag = clayton_stage_4
 			}
 			declare_war_on = {
-				target = ENG
+				target = HBC
 				type = take_state
 			}
 		}
@@ -17286,6 +17287,72 @@ country_event = {#this will fire after the start of the pig war if the clayton c
 			country_event = {
 				id = USA_clayton_conspiracy.51
 				days = 3
+			}
+		}
+		hidden_effect = {#removing missions/decisions
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_clayton_conspiracy_delay_1
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_invite_NIC
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_invite_HON
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_clayton_conspiracy_delay_2
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_invite_GUA
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_clayton_conspiracy_delay_3
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_invite_VEN
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_clayton_send_equipment
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_clayton_request_military_access
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_clayton_send_boat
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_decision_clayton_send_cash
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_mission_clayton_conspiracy_extradite_walker
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_clayton_conspiracy_military_support_mission_NIC
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_clayton_conspiracy_military_support_mission_HON
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_clayton_conspiracy_military_support_mission_GUA
+			}
+			remove_targeted_decision = {
+				target = USA
+				decision = USA_clayton_conspiracy_military_support_mission_VEN
 			}
 		}
 	}
@@ -18176,18 +18243,18 @@ country_event = { #Country hears the US send them eq
 
 	option = {
 		name = USA_clayton_conspiracy.26.a
-		hidden_effect = {
-			USA = {
-				country_event = {
-					id = USA_clayton_conspiracy.27
-					days = 1
-				} 
-			}
-		}
+		# hidden_effect = {
+		# 	USA = {
+		# 		country_event = {
+		# 			id = USA_clayton_conspiracy.27
+		# 			days = 1
+		# 		} 
+		# 	}
+		# }
 	}
 }
 
-country_event = { #Country hears the US send them eq
+country_event = { #unneccessary event to reactivate decision?
 	id = USA_clayton_conspiracy.27
 
 	hidden = yes
@@ -18202,6 +18269,146 @@ country_event = { #Country hears the US send them eq
 			}
 		}
 		
+	}
+}
+
+country_event = { #Distribute money
+	id = USA_clayton_conspiracy.28
+	title = USA_clayton_conspiracy.28.t
+	desc = {
+		text = USA_clayton_conspiracy.28.d1
+		trigger = {
+			FROM = {
+				NOT = {
+					has_country_flag = country_flag_requesting_clayton_equipment@FROM
+				}
+			}
+		}
+	}
+	desc = {
+		text = USA_clayton_conspiracy.28.d2
+		trigger = {
+			always = yes
+		}
+	}
+	# picture =
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	immediate = {
+		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.28"
+		
+	}
+
+	option = { #small
+		name = USA_clayton_conspiracy.28.a
+		set_temp_variable = { w_temp = FROM.gdp_amount }
+		multiply_temp_variable = { w_temp = -0.5 }
+		set_temp_variable = { x_temp = w_temp }
+		add_treasury = yes
+		FROM = {
+			multiply_temp_variable = { w_temp = -1 }
+			set_temp_variable = { x_temp = w_temp }
+			add_treasury = yes
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_opinion_clayton_conspiracy_sent_weapon_aid_1
+			}
+			
+		}
+		set_variable = {
+			var = USA_clayton_willingness_var
+			value = 1
+		}
+		USA_scripted_effect_clayton_change_willingness = yes
+		# FROM = {
+		# 	country_event = {
+		# 		id = USA_clayton_conspiracy.29
+		# 		days = 1
+		# 	}
+		# }
+	}
+
+	option = { #medium
+		name = USA_clayton_conspiracy.28.b
+		set_temp_variable = { w_temp = FROM.gdp_amount }
+		multiply_temp_variable = { w_temp = -1 }
+		set_temp_variable = { x_temp = w_temp }
+		add_treasury = yes
+		FROM = {
+			multiply_temp_variable = { w_temp = -1 }
+			set_temp_variable = { x_temp = w_temp }
+			add_treasury = yes
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_opinion_clayton_conspiracy_sent_weapon_aid_2
+			}
+		}
+		# set_variable = {
+		# 	var = USA_clayton_willingness_var
+		# 	value = 2
+		# }
+		USA_scripted_effect_clayton_change_willingness = yes
+		# hidden_effect = {
+		# 	activate_targeted_decision = {
+		# 		target = FROM
+		# 		decision = USA_decision_clayton_send_equipment
+		# 	}
+		# }
+		# FROM = {
+		# 	country_event = {
+		# 		id = USA_clayton_conspiracy.26
+		# 		days = 1
+		# 	}
+		# }
+	}
+
+	option = { #large
+		name = USA_clayton_conspiracy.28.c
+		set_temp_variable = { w_temp = FROM.gdp_amount }
+		multiply_temp_variable = { w_temp = -2 }
+		set_temp_variable = { x_temp = w_temp }
+		add_treasury = yes
+		FROM = {
+			multiply_temp_variable = { w_temp = -1 }
+			set_temp_variable = { x_temp = w_temp }
+			add_treasury = yes
+			add_opinion_modifier = {
+				target = USA
+				modifier = usa_opinion_clayton_conspiracy_sent_weapon_aid_3
+			}
+		}
+		set_variable = {
+			var = USA_clayton_willingness_var
+			value = 4
+		}
+		USA_scripted_effect_clayton_change_willingness = yes
+		# hidden_effect = {
+		# 	activate_targeted_decision = {
+		# 		target = FROM
+		# 		decision = USA_decision_clayton_send_equipment
+		# 	}
+		# }
+		# FROM = {
+		# 	country_event = {
+		# 		id = USA_clayton_conspiracy.26
+		# 		days = 1
+		# 	}
+		# }
+	}
+}
+
+country_event = { #hidden event to trigger .28 so scope is not lost
+	id = USA_clayton_conspiracy.29
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		USA = {
+			country_event = { id = USA_clayton_conspiracy.28 }
+		}
 	}
 }
 
@@ -18332,6 +18539,12 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 	id = USA_clayton_conspiracy.52
 	title = USA_clayton_conspiracy.52.t
 	desc = {
+		text = USA_clayton_conspiracy.52.d2
+		trigger = {
+			always = yes
+		}
+	}
+	desc = {
 		text = USA_clayton_conspiracy.52.d1
 		trigger = {
 			OR = {
@@ -18383,12 +18596,6 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 					}
 				}
 			}
-		}
-	}
-	desc = {
-		text = USA_clayton_conspiracy.52.d2
-		trigger = {
-			always = yes
 		}
 	}
 	#picture = 
@@ -18510,7 +18717,6 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 			generic_effect_give_me_peace = yes
 			dismantle_faction = yes
 		}
-
 	}
 }
 
@@ -18525,6 +18731,64 @@ country_event = {#revenge of the british
 
 	immediate = {
 
+	}
+}
+
+### GILDED AGE ###
+
+country_event = { # Event about the Robber Barons
+	id = usa_gilded_age.1
+	title = usa_gilded_age.1.t
+	desc = usa_gilded_age.1.desc
+	picture = placeholder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Captains of Industry
+		name = usa_gilded_age.1.a
+		add_to_variable = {
+			var = USA_standard_oil_opinion
+			value = 4
+		}
+		clamp_variable = {
+			var = USA_standard_oil_opinion
+			min = 0
+			max = 100
+		}
+		add_to_variable = {
+			var = USA_steel_opinion
+			value = 4
+		}
+		clamp_variable = {
+			var = USA_steel_opinion
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = USA_increase_opinion_oil_4
+		custom_effect_tooltip = USA_increase_opinion_steel_4
+	}
+	option = { # ...or Robber Barons?
+		name = usa_gilded_age.1.b
+		subtract_from_variable = {
+			var = USA_steel_influence
+			value = 2
+		}
+		clamp_variable = {
+			var = USA_steel_influence
+			min = 0
+			max = 100
+		}
+		subtract_from_variable = {
+			var = USA_standard_oil_influence
+			value = 2
+		}
+		clamp_variable = {
+			var = USA_standard_oil_influence
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = USA_decrease_influence_steel_2
+		custom_effect_tooltip = USA_decrease_influence_oil_2
 	}
 }
 
@@ -18674,6 +18938,9 @@ country_event = { # Load new Reconstruction Tree
 
 	immediate = {
 		log = "[THIS.GetTag]: firing = usa_debug.4"
+		hidden_effect = {
+			USA_tycoon_system_startup = yes
+		}
 	}
 
 	is_triggered_only = yes
