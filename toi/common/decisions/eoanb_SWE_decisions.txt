@@ -321,7 +321,7 @@ swedish_politics_category = {
 		days_remove = 30
 
 		modifier = {
-			consumer_goods_factor = 0.5
+			treasury_cost_monthly_per_gdp = 0.05
 		}
 
 		complete_effect = {
@@ -569,7 +569,7 @@ swedish_military_category = {
 					light_infantry = { x = 3 y = 0}
 				}
 				support = {
-					cannon_artillery_support = { x = 0 y = 0 }
+					field_artillery_support = { x = 0 y = 0 }
 					engineer = { x = 0 y = 1 }
 					recon = { x = 0 y = 2 }
 				}
@@ -1032,7 +1032,7 @@ eoanb_category_economic = {
 
 		modifier = {
 			political_power_gain = -0.05
-			consumer_goods_factor = 0.05
+			treasury_cost_monthly_per_gdp = 0.005
 			production_speed_buildings_factor = -0.05
 		}
 
@@ -1089,7 +1089,7 @@ eoanb_category_economic = {
 
 		modifier = {
 			political_power_gain = -0.05
-			consumer_goods_factor = 0.05
+			treasury_cost_monthly_per_gdp = 0.005
 			production_speed_buildings_factor = -0.05
 		}
 
@@ -1147,7 +1147,7 @@ eoanb_category_economic = {
 
 		modifier = {
 			political_power_gain = -0.05
-			consumer_goods_factor = 0.05
+			treasury_cost_monthly_per_gdp = 0.005
 			production_speed_buildings_factor = -0.05
 		}
 
@@ -1204,7 +1204,7 @@ eoanb_category_economic = {
 		days_remove = 180
 
 		modifier = {
-			consumer_goods_factor = 0.05
+			treasury_cost_monthly_per_gdp = 0.005
 		}
 		
 		cancel_trigger = {
@@ -1253,7 +1253,7 @@ eoanb_category_economic = {
 		days_remove = 180
 		
 		modifier = {
-			consumer_goods_factor = 0.02
+			treasury_cost_monthly_per_gdp = 0.002
 		}
 		
 		complete_effect = {
@@ -1311,7 +1311,7 @@ eoanb_category_economic = {
 		days_remove = 365
 		
 		modifier = {
-			consumer_goods_factor = 0.15
+			treasury_cost_monthly_per_gdp = 0.015
 		}
 		
 		complete_effect = {
@@ -1438,7 +1438,7 @@ eoanb_category_economic = {
 		 
 		modifier = {
 			political_power_gain = -0.05
-			consumer_goods_factor = 0.05
+			treasury_cost_monthly_per_gdp = 0.005
 			production_speed_buildings_factor = -0.05
 		}
 	   

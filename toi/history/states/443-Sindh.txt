@@ -15,13 +15,11 @@ state = {
 		owner = RAJ
 		1857.1.1 = {
 			add_core_of = RAJ
-			#add_claim_by = SND
+			add_claim_by = SND
 			buildings = {
 				infrastructure = 3
 			}
-
 			victory_points = { 14125 1 } # Nawabshah
-
 			set_variable = { building_infrastructure_size = 5 }
 			set_variable = { building_railway_size = 0 }
 			set_variable = { building_port_size = 1 }

@@ -4,9 +4,9 @@ state = {
 	name = "STATE_572" # Chelyabinsk
 
 	local_supplies = 0.0
-	manpower = 1074932
+	manpower = 134932
 
-	state_category = rural
+	state_category = sparse_rural
 
 	history = {
 		# End of a New Beginning

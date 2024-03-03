@@ -4,17 +4,15 @@ state = {
 
 
 	local_supplies = 0.0
-	state_category = wasteland
+	state_category = pastoral
 
 	resources = {
-
 	}
 
 	history = {
 		owner = HBC
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = HBC
 		1885.1.1 = {

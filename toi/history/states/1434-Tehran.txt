@@ -16,8 +16,8 @@ state={
 			infrastructure = 2
 		}
 	}
-	manpower=0
-	state_category=town
+	manpower=889457
+	state_category = dense_rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

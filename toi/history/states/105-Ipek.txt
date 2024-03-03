@@ -3,14 +3,12 @@ state = {
 	id = 105
 	name = "STATE_105"
 	resources = {
-
 	}
 
 	history = {
 		owner = OTO
 		buildings = {
 			infrastructure = 3
-
 		}
 		add_core_of = SER
 		add_core_of = ALB
@@ -23,6 +21,6 @@ state = {
 	}
 	manpower = 45020
 
-	state_category =rural
+	state_category =sparse_rural
 	local_supplies = 0.0
 }

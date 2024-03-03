@@ -11,9 +11,7 @@ state = {
 			infrastructure = 1
 			12725 = {
 				naval_base = 3
-
 			}
-
 		}
 		victory_points = {
 			12725 1
@@ -29,5 +27,5 @@ state = {
 	}
 	manpower = 893507
 
-	state_category =rural
+	state_category =sparse_rural
 }

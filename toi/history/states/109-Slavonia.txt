@@ -8,7 +8,7 @@ state = {
 		iron = 2
 	}
 
-	state_category = large_town
+	state_category = dense_rural
 
 	history = {
 		owner = AUS
@@ -23,6 +23,7 @@ state = {
 
 		victory_points = { 9611 1 } # Koprivnica/Kopreinitz
 		victory_points = { 11581 10 } # Zagreb/Agram
+		victory_points = { 11577 1 } #Vukovar
 
 		add_core_of = AUS
 		add_core_of = CRO

@@ -6,7 +6,7 @@ state = {
 		iron = 1
 	}
 
-	state_category = pastoral
+	state_category = sparse_rural
 
 	history = {
 		owner = BOL
@@ -21,7 +21,6 @@ state = {
 		victory_points = {
 			14007 1
 		}
-
 	}
 
 	provinces = {

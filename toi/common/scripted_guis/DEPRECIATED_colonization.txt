@@ -30,7 +30,7 @@ scripted_gui = {
 
 		context_type = selected_state_context
 		parent_window_token = selected_state_view
-		ai_enabled = {
+		ai_enabled = { 
 			always= no
 			# OR = {
 				# tag = PRS
@@ -2145,6 +2145,18 @@ scripted_gui = {
 			# suez_operation_header_visible={
 				# has_global_flag = SUEZ_CANAL_BUILT
 			# }
+		}
+	}
+
+	eoanbr_doom = {
+		context_type = player_context
+		window_name = "eoanbr_doom_container"
+		visible = {
+			has_global_flag = eoanbr_doom_active
+		}
+		
+		properties = {
+			the_clock = { frame = global.doomsday_clock_num}
 		}
 	}
 }

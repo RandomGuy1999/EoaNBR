@@ -9,8 +9,8 @@ state = {
 
 	history = {
 		# End of a New Beginning
-		owner = RUS
-		add_claim_by = RUS
+		owner = OTO
+		add_core_of = OTO
 		add_core_of = GEO
 		victory_points = {
 			3653 3
@@ -18,8 +18,11 @@ state = {
 		1857.1.1 = {
 			buildings = {
 				infrastructure = 2
+				3653 = {
+					naval_base = 2
+					coastal_bunker = 1
+				}
 			}
-			
 		}
 	}
 
@@ -28,5 +31,5 @@ state = {
 	}
 	manpower = 131783
 
-	state_category =town
+	state_category =sparse_rural
 }

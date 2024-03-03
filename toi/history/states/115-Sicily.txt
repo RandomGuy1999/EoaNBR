@@ -9,7 +9,7 @@ state = {
 		wood = 4
 	}
 
-	state_category = city
+	state_category = dense_rural
 	history = {
 		owner = NSC
 		victory_points = {
@@ -25,7 +25,7 @@ state = {
 			infrastructure = 5
 			industrial_complex = 1
 			dockyard = 1
-			farm = 2
+			# farm = 2
 			10074 = {
 				naval_base = 2
 			}

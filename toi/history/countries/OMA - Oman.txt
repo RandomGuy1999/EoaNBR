@@ -33,7 +33,6 @@
 
 		privileged_education
 		state_religion
-		religion_ibadi
 
 		hc_no_healthcare
 		law_police_force
@@ -60,13 +59,6 @@
 		country = ENG
 		relation = military_access
 		active = yes
-	}
-	ENG= {
-		diplomatic_relation = {
-			country = OMA
-			relation = non_aggression_pact
-			active = yes
-		}
 	}
 	PER= {
 		diplomatic_relation = {
@@ -134,14 +126,14 @@ set_popularities = {
 	}
 
 	set_technology = {
-		tech_pre_rifle_equipment0 = 1
-		tech_pre_rifle_equipment1 = 1
-		tech_pre_rifle_equipment2 = 1
-		tech_pre_rifle_equipment3 = 1
+		tech_infantry_pre_rifle_equipment_0 = 1
+		tech_infantry_pre_rifle_equipment_1 = 1
+		tech_infantry_pre_rifle_equipment_2 = 1
+		tech_infantry_pre_rifle_equipment_3 = 1
 		
 		
 		tribal_tatics = 1
-		gunpowder = 1
+		tech_infantry_gunpowder = 1
 		tribal_riding = 1
 		tribal_steam_experiments = 1
 		tribal_forging = 1
@@ -163,7 +155,7 @@ set_popularities = {
 		tech_naval_mtg_early_frigate = 1
 	}
 
-	add_equipment_to_stockpile = { type = infantry_equipment_rifle_05 amount = 500 producer = OMA }
+	add_equipment_to_stockpile = { type = infantry_equipment_rifle_0 amount = 500 producer = OMA }
 	add_equipment_to_stockpile = { type = uniform_equipment_0 amount = 500 producer = OMA }
 
 	# POLITICAL LEADERS

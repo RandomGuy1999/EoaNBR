@@ -1,10 +1,10 @@
 state = {
 	id = 501
 	name = "STATE_501"
-	manpower = 504702 #718457
+	manpower = 683280
 
 	local_supplies = 0.0
-	state_category = town
+	state_category = dense_rural
 
 	history = {
 		owner = BRA
@@ -52,7 +52,6 @@ state = {
 
 	resources = {
 		wood = 2
-		cotton = 11
 	}
 
 	provinces = {

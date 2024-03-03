@@ -13,7 +13,7 @@ state = {
 		 13916 13917 13918
 	}
 
-	state_category = small_island
+	state_category = rural
 	history = {
 		owner = KOR
 		add_core_of = KOR
@@ -51,6 +51,15 @@ state = {
 		set_variable = { building_coal_mine_size = 0 }
 		set_variable = { building_oil_well_size = 0 }
 		set_variable = { building_valuables_extractor_size = 0 }
+
+		1910.1.1 = {
+			owner = JAP
+			add_claim_by = JAP
+		}
+		1945.1.1 = {
+			owner = KOR
+			remove_claim_by = JAP
+		}
 	}
 }
 

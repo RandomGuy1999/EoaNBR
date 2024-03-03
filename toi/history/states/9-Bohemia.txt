@@ -2,12 +2,12 @@ state = {
 	id = 9
 	name = "STATE_9" # Bohemia
 	manpower = 2851000
-	state_category = large_city
+	state_category = dense_urban
 
 	resources = {
 		coal = 3
 		wood = 2
-		fabric = 2
+		textiles = 2
 	}
 
 	provinces = {
@@ -20,11 +20,10 @@ state = {
 		1857.1.1 = {
 			add_core_of = AUS
 			add_core_of = CZE
-
 			buildings = {
 				infrastructure = 6
 				arms_factory = 1 # Horzowitz
-				fabric_weavery = 1
+				# fabric_weavery = 1
 				industrial_complex = 2
 				494 = {
 					bunker = 1 # Festung Josephstadt

@@ -1,3 +1,7 @@
+#!gfx:interface\eoanbr_technologies.gfx
+#!localisation:localisation\_eoanbr_technologies_l_english.yml
+#do not delete above line!!!!!!
+
 technologies = {
 	# NOTE FOR ECO:
 	# Goal for each building type each era (total across all tech):
@@ -11,56 +15,59 @@ technologies = {
 	# 1855-1869 Modifiers:
 	#	-1% Building Input
 	#	+4% Factory Throughput
-	#
+	# 
 	# 1870-1899 Modifiers:
 	#	-1% Building Input
 	#
 	#### Years ####
 		@1500 = 2
 		@1700 = 6
-		@1840 = 9
-		@1850 = 13
-		@1860 =	16
-		@1865 = 19
-		@1870 = 22
-		@1875 = 25
-		@1880 = 28
-		@1885 = 32
-		@1890 = 35
-		@1895 = 38
-		@1900 = 41
-		@1905 = 45
-		@1910 = 48
-		@1915 = 51
-		@1920 = 55
-		@1925 = 58
-		@1930 = 61
-		@1935 = 65
-		@1940 = 68
-		@1945 = 71
-		@1950 = 74
-		@1955 = 78
-		@1960 = 81
-		@1965 = 84
-		@1970 = 87
-		@1975 = 90
-		@1980 = 94
-		@1985 = 97
-		@1990 = 100
-		@1995 = 103
-		@2000 = 106
-		@2005 = 110
-		@2010 = 113
-		@2015 = 116
-		@2020 = 119
-		@2025 = 122
-		@2030 = 126
-		@2035 = 129
-		@2040 = 132
-		@2045 = 135
-		@2050 = 138
-		@2055 = 141
-		@2060 = 144
+		@1750 = 9
+		@1800 = 12
+		@1820 = 15
+		@1840 = 18
+		@1850 = 22
+		@1860 =	25
+		@1865 = 28
+		@1870 = 31
+		@1875 = 34
+		@1880 = 37
+		@1885 = 41
+		@1890 = 44
+		@1895 = 47
+		@1900 = 50
+		@1905 = 54
+		@1910 = 57
+		@1915 = 60
+		@1920 = 64
+		@1925 = 67
+		@1930 = 70
+		@1935 = 74
+		@1940 = 77
+		@1945 = 80
+		@1950 = 83
+		@1955 = 87
+		@1960 = 90
+		@1965 = 93
+		@1970 = 94
+		@1975 = 99
+		@1980 = 103
+		@1985 = 106
+		@1990 = 109
+		@1995 = 112
+		@2000 = 115
+		@2005 = 119
+		@2010 = 122
+		@2015 = 125
+		@2020 = 128
+		@2025 = 131
+		@2030 = 135
+		@2035 = 138
+		@2040 = 141
+		@2045 = 144
+		@2050 = 147
+		@2055 = 150
+		@2060 = 153
 	#
 	tech_trade_guilds = {
 		capitalists_investment_contribution_factor = 0.05
@@ -77,9 +84,12 @@ technologies = {
 			factor = 1000
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_centralization_techs
+			cat_centralization_humanities_techs
 			economics_tech
+		}
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_rationalism_change = yes
 		}
 	}
 	tech_double_entry_bookkeeping = {
@@ -99,9 +109,13 @@ technologies = {
 			factor = 1000
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_centralization_techs
+			cat_centralization_humanities_techs
 			economics_tech
+		}
+
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 10 }
+			eoanbr_institutions_centralization_change = yes
 		}
 	}
 	tech_humanities_mercantilism = {
@@ -146,10 +160,16 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_centralization_techs
+			cat_centralization_humanities_techs
 			humanities_tech
 			economics_tech
+		}
+
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 1 }
+			eoanbr_institutions_industrialization_change = yes
+			set_temp_variable = { institution_progress_temp = 3 }
+			eoanbr_institutions_centralization_change = yes
 		}
 	}
 	tech_humanities_capitalism = {
@@ -187,8 +207,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_centralization_techs
+			cat_centralization_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -217,8 +236,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -247,8 +265,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_imperialism_techs
+			cat_imperialism_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -278,8 +295,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_centralization_techs
+			cat_centralization_humanities_techs
 			humanities_tech
 			art_tech
 		}
@@ -313,8 +329,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 			art_tech
 		}
@@ -340,8 +355,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 			art_tech
 		}
@@ -369,8 +383,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_imperialism_techs
+			cat_imperialism_humanities_techs
 			humanities_tech
 			art_tech
 		}
@@ -405,8 +418,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_centralization_techs
+			cat_centralization_humanities_techs
 			humanities_tech
 		}
 	}
@@ -439,8 +451,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 		}
 	}
@@ -470,8 +481,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 		}
 	}
@@ -479,7 +489,7 @@ technologies = {
 		production_factory_efficiency_gain_factor  = -0.05
 		drift_defence_factor = -0.05
 		# trade_laws_cost_factor = -0.2
-		consumer_goods_factor = -0.03
+		consumer_goods_expected_value = -0.03
 		production_speed_buildings_factor = 0.05
 		research_cost = 0.1
 		start_year = 1870
@@ -511,8 +521,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 		}
 	}
@@ -520,7 +529,7 @@ technologies = {
 		production_factory_efficiency_gain_factor  = -0.075
 		drift_defence_factor = -0.075
 		# land_property_cost_factor = -0.2
-		consumer_goods_factor = -0.03
+		consumer_goods_expected_value = -0.03
 		production_speed_buildings_factor = 0.05
 		on_research_complete = {
 			if={
@@ -555,8 +564,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 		}
 	}
@@ -583,8 +591,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 		}
 	}
@@ -610,8 +617,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_marketization_techs
+			cat_marketization_humanities_techs
 			humanities_tech
 		}
 	}
@@ -655,9 +661,13 @@ technologies = {
 			base = 4000
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_centralization_techs
+			cat_centralization_humanities_techs
 			humanities_tech
+		}
+
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 3 }
+			eoanbr_institutions_centralization_change = yes
 		}
 	}
 	tech_humanities_public_works = {
@@ -695,14 +705,13 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_centralization_techs
+			cat_centralization_humanities_techs
 			humanities_tech
 		}
 	}
 	tech_humanities_sewage_system = {
 		monthly_population = 0.04
-		consumer_goods_factor = -0.02
+		consumer_goods_expected_value = -0.02
 		research_cost = 0.1
 		start_year = 1860
 		folder = {
@@ -721,8 +730,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 		}
 	}
@@ -749,8 +757,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_marketization_techs
+			cat_marketization_humanities_techs
 			humanities_tech
 		}
 	}
@@ -768,7 +775,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		dependencies = {
-			early_medicine = 1
+			# tech_hygiene = 1
 		}
 		ai_will_do = {
 			factor = 1
@@ -790,8 +797,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 			health_tech
 		}
@@ -805,7 +811,7 @@ technologies = {
 			position = { x = 16 y = @1880 }
 		}
 		dependencies = {
-			microbiology = 1
+			# tech_microbiology = 1
 		}
 		path = {
 			leads_to_tech = tech_humanities_mass_healthcare
@@ -831,8 +837,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 			health_tech
 		}
@@ -846,7 +851,7 @@ technologies = {
 			position = { x = 16 y = @1910 }
 		}
 		dependencies = {
-			antibiotics = 1
+			# tech_antibiotics = 1
 		}
 
 		ai_will_do = {
@@ -869,8 +874,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_marketization_techs
+			cat_marketization_humanities_techs
 			humanities_tech
 			health_tech
 		}
@@ -907,8 +911,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 			policies_tech
 		}
@@ -922,8 +925,7 @@ technologies = {
 			position = { x = 4 y = @1870 }
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_nationalism_techs
+			cat_nationalism_humanities_techs
 			humanities_tech
 			policies_tech
 		}
@@ -997,8 +999,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_marketization_techs
+			cat_marketization_humanities_techs
 			humanities_tech
 		}
 	}
@@ -1026,8 +1027,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_feminism_techs
+			cat_feminism_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -1064,8 +1064,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_dogmatism_techs
+			cat_dogmatism_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -1094,8 +1093,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_globalization_techs
+			cat_globalization_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -1124,8 +1122,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_globalization_techs
+			cat_globalization_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -1151,8 +1148,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_environmentalism_techs
+			cat_environmentalism_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -1181,8 +1177,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_globalization_techs
+			cat_globalization_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -1208,8 +1203,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_environmentalism_techs
+			cat_environmentalism_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -1238,8 +1232,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_environmentalism_techs
+			cat_environmentalism_humanities_techs
 			humanities_tech
 			economics_tech
 		}
@@ -1305,8 +1298,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_humanitive_techs
-			cat_environmentalism_techs
+			cat_environmentalism_humanities_techs
 			humanities_tech
 		}
 	}

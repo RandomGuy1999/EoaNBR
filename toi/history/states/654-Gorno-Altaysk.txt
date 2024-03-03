@@ -4,9 +4,9 @@ state = {
 	name = "STATE_654" # Gorno-Altaysk
 
 	local_supplies = 0.0
-	manpower = 350000
+	manpower = 250000
 
-	state_category = wasteland
+	state_category = pastoral
 
 	history = {
 		owner = RUS		buildings = {

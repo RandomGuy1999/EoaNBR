@@ -13,13 +13,9 @@ state = {
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			cotton_farm = 1
-
 			1468 = {
 				naval_base = 1
-
 			}
-
 		}
 		victory_points = {
 			1468 3
@@ -39,5 +35,5 @@ state = {
 	}
 	manpower = 195215
 
-	state_category =city
+	state_category =sparse_rural
 }

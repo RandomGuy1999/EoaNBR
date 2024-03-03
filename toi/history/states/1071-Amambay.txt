@@ -4,7 +4,7 @@ state = {
 
 
 	local_supplies = 0.0
-	state_category = pastoral
+	state_category = sparse_rural
 
 	resources = {
 		iron = 1
@@ -21,7 +21,6 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-
 	}
 
 	provinces = {

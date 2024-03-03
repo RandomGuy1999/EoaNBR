@@ -16,10 +16,11 @@ state = {
 		victory_points = {
 			11572 3
 		}
+		victory_points = {
+			6799 1
+		}
 		buildings = {
 			infrastructure = 3
-			cotton_farm = 1
-
 		}
 		add_core_of = BOS
 		set_variable = { building_infrastructure_size = 3 }
@@ -36,5 +37,5 @@ state = {
 	}
 	manpower = 286008
 
-	state_category =town
+	state_category =rural
 }

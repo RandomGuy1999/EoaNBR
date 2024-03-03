@@ -5,16 +5,20 @@ state = {
 
 	local_supplies = 0.0
 
-	state_category = rural
+	state_category = sparse_rural
 
 	history = {
 		owner = OTO
 
 		add_core_of = PAL
-		#add_claim_by = SYR
+		add_claim_by = SYR
 
 		buildings = {
 			infrastructure = 3
+		}
+		1948.1.1 = {
+			owner = ERZ
+			add_core_of = ERZ
 		}
 		set_variable = { building_infrastructure_size = 3 }
 	}

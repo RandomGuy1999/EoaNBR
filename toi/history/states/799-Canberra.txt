@@ -5,11 +5,11 @@ state = {
 
 	local_supplies = 0.0
 
-	state_category = pastoral
+	state_category = sparse_rural
 	resources = {
-			cotton = 40
-			wood = 7
-			iron = 6
+		fiber = 1
+		wood = 7
+		iron = 6
 	}
 
 
@@ -18,8 +18,7 @@ state = {
 		add_core_of = NSW
 		buildings = {
 			infrastructure = 1
-			farm = 1
-
+			# farm = 1
 			12377 = {
 				supply_node = 1
 			}
@@ -40,7 +39,6 @@ state = {
 		victory_points = {
 			4478 3
 		}
-
 	}
 	provinces = {
 		1537 1667 1861 2114 2146 2163 4453 4478 4500 4836 4658

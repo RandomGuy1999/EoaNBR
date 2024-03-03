@@ -7,13 +7,13 @@ state = {
 	resources = {
 		iron = 2
 		wood = 1
+		fiber = 1
 	}
 
 	history = {
 		owner = PAR
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = PAR
 		add_core_of = ARG
@@ -27,5 +27,5 @@ state = {
 	}
 	manpower = 83278
 
-	state_category =pastoral
+	state_category =sparse_rural
 }

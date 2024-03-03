@@ -8,7 +8,7 @@ state = {
 		wood = 1
 	}
 
-	state_category = rural
+	state_category = sparse_rural
 
 	history = {
 		owner = UCT
@@ -25,6 +25,10 @@ state = {
 			12446 1
 		}
 
+		1885.1.1 = {
+			owner = JAP
+			add_core_of = JAP
+		}
 	}
 	provinces = { 1322 1820 12446 }
 }

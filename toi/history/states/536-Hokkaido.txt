@@ -6,7 +6,7 @@ state = {
 	local_supplies = 0.0
 	manpower = 70887
 
-	state_category = rural
+	state_category = sparse_rural
 
 	history = {
 		owner = TSH
@@ -47,7 +47,6 @@ state = {
 			owner = JAP
 			add_core_of = JAP
 		}
-
 	}
 
 	provinces = {

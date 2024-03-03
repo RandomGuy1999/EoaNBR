@@ -40,7 +40,7 @@
 ###
 
 ### STATE SCOPE ###
-	## Buildings ##
+	## Industries ##
 
 		# LIST OF BUILDING TOKENS:
 			# Urban:
@@ -124,6 +124,66 @@
 			set_temp_variable = { financer_temp = 0 }
 			set_temp_variable = { building_token = 0 }
 			set_temp_variable = { production_method_temp = 0 }
+		}
+		
+		# Starts construction of the given industry type in the state. If provided a production/automation method that is too advanced (that you don't have tech for) 
+		# or the building doesn't support, then it will auto adjust.
+		# Negative values do NOT work. Will not do anything if given an invalid industry token for the state.
+		construct_x_industries = {
+			# x_temp 
+			# financer_temp
+			# industry_token
+			# production_method_temp
+			# automation_method_temp
+			# no_cost_temp
+
+			round_temp_variable = x_temp
+			if = {
+				limit = {
+					check_variable = { x_temp = 0 }
+				}
+				set_temp_variable = { x_temp = 1 }
+			}
+
+			if = {
+				limit = {
+					NOT = { is_in_array = { controller:building_unlocked_pms@var:industry_token = production_method_temp } }
+				}
+				set_temp_variable = { production_method_temp = controller:latest_production_method@var:industry_token }
+			}
+			if = {
+				limit = {
+					NOT = { is_in_array = { controller:building_unlocked_ams@var:industry_token = automation_method_temp } }
+				}
+				set_temp_variable = { automation_method_temp = controller:latest_automation_method@var:industry_token }
+			}
+			
+			if = {
+				limit = {
+					is_in_array = { global.industry_token_array = industry_token }
+					NOT = { check_variable = { global.building_unexpandable@var:industry_token = 1 } }
+					check_variable = { x_temp > 0 }
+				}
+				construct_x_industries_no_update = yes
+				reload_industries_array = yes
+				var:controller = {
+					var:market_leader = {
+						market_update = yes
+					}
+					every_controlled_state = {
+						industries_update = yes
+						pops_update = yes
+					}
+				}
+				
+				#refresh_construction_list = yes
+			}
+			set_temp_variable = { x_temp = 0 }
+			set_temp_variable = { financer_temp = 0 }
+			set_temp_variable = { industry_token = 0 }
+			set_temp_variable = { production_method_temp = 0 }
+			set_temp_variable = { automation_method_temp = 0 }
+			set_temp_variable = { no_cost_temp = 0 }
 		}
 
 		# Removes X buildings from the state. Does NOT allow removal of Rice Paddies/Subsistence Farms. Negative values do NOT work. Any building which reaches size 0 will be removed from the state.
@@ -305,14 +365,15 @@
 			}
 
 			hidden_effect = {
-				set_temp_variable = { debt_amount_temp = 0.5 }
-				multiply_temp_variable = { debt_amount_temp = gdp_amount }
 				if = {
 					limit = {
 						check_variable = { treasury < 0 }
 					}
-					add_to_variable = { treasury = debt_amount_temp }
-					debt_level_increase_by_1 = yes
+                    set_temp_variable = { x_temp = treasury }
+                    multiply_temp_variable = { x_temp = -0.001 }
+                    add_to_temp_variable = { x_temp = 0.001 }
+                    set_temp_variable = { country_temp = 0 }
+                    borrow_money = yes
 				}
 			}
 			set_temp_variable = { x_temp = 0 }
@@ -344,14 +405,56 @@
 			}
 
 			hidden_effect = {
-				set_temp_variable = { debt_amount_temp = 0.5 }
-				multiply_temp_variable = { debt_amount_temp = gdp_amount }
 				if = {
 					limit = {
 						check_variable = { treasury < 0 }
 					}
-					add_to_variable = { treasury = debt_amount_temp }
-					debt_level_increase_by_1 = yes
+                    set_temp_variable = { x_temp = treasury }
+                    multiply_temp_variable = { x_temp = -0.001 }
+                    add_to_temp_variable = { x_temp = 0.001 }
+                    set_temp_variable = { country_temp = 0 }
+                    borrow_money = yes
+				}
+			}
+			set_temp_variable = { x_temp = 0 }
+		}
+
+		#   Adds a % of your yearly gdp to your treasury. 1.0 = 1.0%
+		add_treasury_gdp = {
+			multiply_temp_variable = { x_temp = 0.12 }
+			multiply_temp_variable = { x_temp = gdp_amount }
+			if = {
+				limit = {
+					check_variable = { x_temp > 0 }
+				}
+				add_to_variable = {
+					var = treasury
+					value = x_temp
+					tooltip = treasury_change_positive_tooltip
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { x_temp < 0 }
+				}
+				multiply_temp_variable = { x_temp = -1 }
+				subtract_from_variable = {
+					var = treasury
+					value = x_temp
+					tooltip = treasury_change_negative_tooltip
+				}
+			}
+
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = { treasury < 0 }
+					}
+                    set_temp_variable = { x_temp = treasury }
+                    multiply_temp_variable = { x_temp = -0.001 }
+                    add_to_temp_variable = { x_temp = 0.001 }
+                    set_temp_variable = { country_temp = 0 }
+                    borrow_money = yes
 				}
 			}
 			set_temp_variable = { x_temp = 0 }
@@ -370,8 +473,183 @@
 		# set_default
 	## Trade ## cc_20
 	## Economy ## cc_30
-		# improve_economic_situation
-		# worsen_economic_situation
+		improve_economic_situation = {
+			if = {
+				limit = {
+					has_idea = free_fall
+				}
+				swap_ideas = {
+					remove_idea = free_fall
+					add_idea = depression
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = recession
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = stagnation
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = steady_growth
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = steady_growth
+				}
+				swap_ideas = {
+					remove_idea = steady_growth
+					add_idea = fast_growth
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = fast_growth
+				}
+				swap_ideas = {
+					remove_idea = fast_growth
+					add_idea = economic_boom
+				}
+			}
+		}
+		worsen_economic_situation = {
+			if = {
+				limit = {
+					has_idea = economic_boom
+				}
+				swap_ideas = {
+					remove_idea = economic_boom
+					add_idea = fast_growth
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = fast_growth
+				}
+				swap_ideas = {
+					remove_idea = fast_growth
+					add_idea = steady_growth
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = steady_growth
+				}
+				swap_ideas = {
+					remove_idea = steady_growth
+					add_idea = stagnation
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = recession
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = depression
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = free_fall
+				}
+			}
+		}
+		set_economic_situation = {
+			if = {
+				limit = {
+					has_idea = economic_boom
+				}
+				swap_ideas = {
+					remove_idea = economic_boom
+					add_idea = var:situation_temp
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = fast_growth
+				}
+				swap_ideas = {
+					remove_idea = fast_growth
+					add_idea = var:situation_temp
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = steady_growth
+				}
+				swap_ideas = {
+					remove_idea = steady_growth
+					add_idea = var:situation_temp
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = stagnation
+				}
+				swap_ideas = {
+					remove_idea = stagnation
+					add_idea = var:situation_temp
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = recession
+				}
+				swap_ideas = {
+					remove_idea = recession
+					add_idea = var:situation_temp
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = depression
+				}
+				swap_ideas = {
+					remove_idea = depression
+					add_idea = var:situation_temp
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = free_fall
+				}
+				swap_ideas = {
+					remove_idea = free_fall
+					add_idea = var:situation_temp
+				}
+			}
+		}
 
 		# proj_create
 		# proj_cancel

@@ -10,7 +10,7 @@ state = {
 		iron = 10
 	}
 
-	state_category = town
+	state_category = rural
 
 	history = {
 		owner = QNG
@@ -20,7 +20,6 @@ state = {
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
-
 			957 = {
 				naval_base = 8
 				coastal_bunker = 3

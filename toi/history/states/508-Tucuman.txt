@@ -11,13 +11,11 @@ state = {
 		owner = ARG
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = ARG
 		victory_points = {
 			8216 1
 		}
-
 	}
 
 	provinces = {
@@ -25,6 +23,6 @@ state = {
 	}
 	manpower = 421311
 
-	state_category = pastoral
+	state_category = sparse_rural
 	local_supplies = 0.0
 }

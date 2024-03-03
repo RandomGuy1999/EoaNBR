@@ -5,7 +5,7 @@ state = {
 	local_supplies = 0.0
 	manpower = 9102378
 
-	state_category = town
+	state_category = dense_rural
 
 	resources = {
 		iron = 3
@@ -20,11 +20,10 @@ state = {
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			fabric_weavery = 1
+			# fabric_weavery = 1
 			11968 = {
 				naval_base = 3
 			}
-
 		}
 		add_core_of = RAJ
 

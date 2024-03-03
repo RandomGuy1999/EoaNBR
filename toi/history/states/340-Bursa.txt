@@ -7,36 +7,27 @@ state={
 		owner = OTO
 		buildings = {
 			infrastructure = 4
-			cotton_farm = 1
-
 		}
 		victory_points = {
 			947 1 
 		}
-		victory_points = {
-			785 3 
-		}
 		add_core_of = OTO
 		set_variable = {
 			building_infrastructure_size = 4
-
 		}
 		set_variable = {
 			building_commercial_farm_size = 2
-
 		}
 		set_variable = {
 			building_metals_mine_size = 7
-
 		}
-
 	}
 
 	provinces={
 		947 3851 6864 6912 9799 9887 11778 11867 
 	}
-	manpower=677507
+	manpower=517507
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category = dense_rural
 	local_supplies=0.000
 }

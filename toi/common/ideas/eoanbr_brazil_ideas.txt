@@ -99,7 +99,8 @@ ideas = {
 			}
 			picture = machine_era
 			modifier = {
-				consumer_goods_factor = -0.01
+				# treasury_gain_monthly_per_gdp = 0.001
+				treasury_gain_monthly_per_gdp = 0.001
 				production_factory_max_efficiency_factor = 0.01
 				local_resources_factor = 0.05
 			}
@@ -131,7 +132,8 @@ ideas = {
 			}
 			picture = FRA_profits_gold_rush
 			modifier = {
-				consumer_goods_factor = -0.02
+				# treasury_gain_monthly_per_gdp = 0.002
+				treasury_cost_monthly_per_gdp = 0.002
 			}
 		}
 
@@ -539,7 +541,8 @@ ideas = {
 			}
 			picture = industrializing
 			modifier = {
-				consumer_goods_factor = -0.09
+				# treasury_gain_monthly_per_gdp = 0.009
+				treasury_gain_monthly_per_gdp = 0.006
 				trade_opinion_factor = 0.1
 			}
 		}
@@ -648,7 +651,8 @@ ideas = {
 			picture = money_bad
 			modifier = {
 				stability_factor = -0.055
-				consumer_goods_factor = 0.05
+				# treasury_cost_monthly_per_gdp = 0.005
+				treasury_cost_monthly_per_gdp = 0.004
 			}
 		}
 
@@ -658,7 +662,8 @@ ideas = {
 			}
 			picture = money_bad
 			modifier = {
-				consumer_goods_factor = 0.025
+				# treasury_cost_monthly_per_gdp = 0.003
+				treasury_cost_monthly_per_gdp = 0.002
 			}
 		}
 
@@ -679,7 +684,8 @@ ideas = {
 			removal_cost = -1
 			picture = export_focus
 			modifier = {
-				consumer_goods_factor = -0.01
+				# treasury_gain_monthly_per_gdp = 0.001
+				treasury_gain_monthly_per_gdp = 0.001
 			}
 		}
 
@@ -690,7 +696,8 @@ ideas = {
 			removal_cost = -1
 			picture = ast_volunteer_defence_corps
 			modifier = {
-				consumer_goods_factor = -0.01
+				# treasury_gain_monthly_per_gdp = 0.001
+				treasury_gain_monthly_per_gdp = 0.001
 			}
 		}
 
@@ -700,7 +707,8 @@ ideas = {
 			}
 			picture = coffee
 			modifier = {
-				consumer_goods_factor = -0.005
+				# treasury_gain_monthly_per_gdp = 0.005
+				treasury_gain_monthly_per_gdp = 0.001
 			}
 		}
 
@@ -710,7 +718,8 @@ ideas = {
 			}
 			picture = coffee
 			modifier = {
-				consumer_goods_factor = -0.01
+				# treasury_gain_monthly_per_gdp = 0.001
+				treasury_gain_monthly_per_gdp = 0.001
 				local_resources_factor = 0.02
 				trade_opinion_factor = 0.12
 			}
@@ -722,7 +731,8 @@ ideas = {
 			}
 			picture = coffee
 			modifier = {
-				consumer_goods_factor = -0.015
+				# treasury_cost_monthly_per_gdp = 0.002
+				treasury_gain_monthly_per_gdp = 0.001
 				local_resources_factor = 0.03
 				trade_opinion_factor = 0.13
 			}
@@ -734,7 +744,8 @@ ideas = {
 			}
 			picture = coffee
 			modifier = {
-				consumer_goods_factor = -0.02
+				# treasury_gain_monthly_per_gdp = 0.002
+				treasury_cost_monthly_per_gdp = 0.002
 				local_resources_factor = 0.04
 				trade_opinion_factor = 0.14
 			}
@@ -746,7 +757,8 @@ ideas = {
 			}
 			picture = coffee
 			modifier = {
-				consumer_goods_factor = -0.025
+				# treasury_cost_monthly_per_gdp = 0.003
+				treasury_gain_monthly_per_gdp = 0.002
 				local_resources_factor = 0.05
 				trade_opinion_factor = 0.15
 			}
@@ -762,7 +774,8 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_profits_gold_rush
 			modifier = {
-				consumer_goods_factor = -0.03
+				# treasury_gain_monthly_per_gdp = 0.003
+				treasury_gain_monthly_per_gdp = 0.002
 				local_resources_factor = 0.06
 				trade_opinion_factor = 0.16
 			}
@@ -778,7 +791,8 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_profits_gold_rush
 			modifier = {
-				consumer_goods_factor = -0.035
+				# treasury_cost_monthly_per_gdp = 0.004
+				treasury_gain_monthly_per_gdp = 0.002
 				local_resources_factor = 0.07
 				trade_opinion_factor = 0.17
 			}
@@ -794,7 +808,8 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_profits_gold_rush
 			modifier = {
-				consumer_goods_factor = -0.04
+				# treasury_gain_monthly_per_gdp = 0.004
+				treasury_gain_monthly_per_gdp = 0.003
 				local_resources_factor = 0.08
 				trade_opinion_factor = 0.18
 			}
@@ -810,7 +825,8 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_profits_gold_rush
 			modifier = {
-				consumer_goods_factor = -0.045
+				# treasury_cost_monthly_per_gdp = 0.005
+				treasury_gain_monthly_per_gdp = 0.004
 				local_resources_factor = 0.09
 				trade_opinion_factor = 0.19
 			}
@@ -826,7 +842,8 @@ ideas = {
 			removal_cost = -1
 			picture = FRA_profits_gold_rush
 			modifier = {
-				consumer_goods_factor = -0.05
+				# treasury_gain_monthly_per_gdp = 0.005
+				treasury_gain_monthly_per_gdp = 0.03
 				local_resources_factor = 0.10
 				trade_opinion_factor = 0.20
 			}
@@ -842,7 +859,8 @@ ideas = {
 			removal_cost = -1
 			picture = normal_taxes
 			modifier = {
-				consumer_goods_factor = -0.01
+				# treasury_gain_monthly_per_gdp = 0.001
+				treasury_gain_monthly_per_gdp = 0.001
 			}
 		}
 
@@ -856,7 +874,8 @@ ideas = {
 			removal_cost = -1
 			picture = high_taxes
 			modifier = {
-				consumer_goods_factor = -0.015
+				# treasury_cost_monthly_per_gdp = 0.002
+				treasury_gain_monthly_per_gdp = 0.001
 			}
 		}
 
@@ -870,7 +889,8 @@ ideas = {
 			removal_cost = -1
 			picture = very_high_taxes
 			modifier = {
-				consumer_goods_factor = -0.02
+				# treasury_gain_monthly_per_gdp = 0.002
+				treasury_cost_monthly_per_gdp = 0.002
 			}
 		}
 
@@ -896,8 +916,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.01
 				stability_factor = -0.01
-				production_speed_cotton_farm_factor = 0.02
-				production_speed_farm_factor = 0.02
+				# production_speed_cotton_farm_factor = 0.02
+				# production_speed_farm_factor = 0.02
 				production_speed_industrial_complex_factor = -0.02
 				production_speed_arms_factory_factor = -0.02
 			}
@@ -913,8 +933,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.02
 				stability_factor = -0.015
-				production_speed_cotton_farm_factor = 0.04
-				production_speed_farm_factor = 0.04
+				# production_speed_cotton_farm_factor = 0.04
+				# production_speed_farm_factor = 0.04
 				production_speed_industrial_complex_factor = -0.04
 				production_speed_arms_factory_factor = -0.04
 			}
@@ -930,8 +950,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.03
 				stability_factor = -0.02
-				production_speed_cotton_farm_factor = 0.08
-				production_speed_farm_factor = 0.08
+				# production_speed_cotton_farm_factor = 0.08
+				# production_speed_farm_factor = 0.08
 				production_speed_industrial_complex_factor = -0.08
 				production_speed_arms_factory_factor = -0.08
 			}
@@ -947,8 +967,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.04
 				stability_factor = -0.025
-				production_speed_cotton_farm_factor = 0.08
-				production_speed_farm_factor = 0.08
+				# production_speed_cotton_farm_factor = 0.08
+				# production_speed_farm_factor = 0.08
 				production_speed_industrial_complex_factor = -0.08
 				production_speed_arms_factory_factor = -0.08
 			}
@@ -964,8 +984,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.06
 				stability_factor = -0.03
-				production_speed_cotton_farm_factor = 0.10
-				production_speed_farm_factor = 0.10
+				# production_speed_cotton_farm_factor = 0.10
+				# production_speed_farm_factor = 0.10
 				production_speed_industrial_complex_factor = -0.10
 				production_speed_arms_factory_factor = -0.10
 			}
@@ -981,8 +1001,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.07
 				stability_factor = -0.035
-				production_speed_cotton_farm_factor = 0.12
-				production_speed_farm_factor = 0.12
+				# production_speed_cotton_farm_factor = 0.12
+				# production_speed_farm_factor = 0.12
 				production_speed_industrial_complex_factor = -0.12
 				production_speed_arms_factory_factor = -0.12
 			}
@@ -998,8 +1018,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.08
 				stability_factor = -0.04
-				production_speed_cotton_farm_factor = 0.14
-				production_speed_farm_factor = 0.14
+				# production_speed_cotton_farm_factor = 0.14
+				# production_speed_farm_factor = 0.14
 				production_speed_industrial_complex_factor = -0.14
 				production_speed_arms_factory_factor = -0.14
 			}
@@ -1015,8 +1035,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.09
 				stability_factor = -0.045
-				production_speed_cotton_farm_factor = 0.16
-				production_speed_farm_factor = 0.16
+				# production_speed_cotton_farm_factor = 0.16
+				# production_speed_farm_factor = 0.16
 				production_speed_industrial_complex_factor = -0.16
 				production_speed_arms_factory_factor = -0.16
 			}
@@ -1084,7 +1104,8 @@ ideas = {
 			picture = enforced_growth
 			modifier = {
 				monthly_population = 0.2
-				consumer_goods_factor = 0.03
+				# treasury_cost_monthly_per_gdp = 0.003
+				treasury_gain_monthly_per_gdp = 0.002
 			}
 			on_remove = {
 				unlock_decision_tooltip = BRA_decision_immigration_act_1857
@@ -1101,12 +1122,13 @@ ideas = {
 			picture = generic_agrarian_reform
 			modifier = {
 				stability_factor = 0.03
-				consumer_goods_factor = 0.015
+				# treasury_cost_monthly_per_gdp = 0.002
+				treasury_cost_monthly_per_gdp = 0.001
 				production_speed_infrastructure_factor = 0.05
 				production_speed_industrial_complex_factor = 0.025
-				production_speed_farm_factor = 0.3
-				production_speed_logging_camp_factor = 0.3
-				production_speed_cotton_farm_factor = 0.3
+				# production_speed_farm_factor = 0.3
+				# production_speed_logging_camp_factor = 0.3
+				# production_speed_cotton_farm_factor = 0.3
 				monthly_population = 0.05
 			}
 			on_remove =  {
@@ -1220,7 +1242,8 @@ ideas = {
 			modifier = {
 				trade_opinion_factor = 0.05
 				political_power_cost = 0.03
-				consumer_goods_factor = 0.01
+				# treasury_cost_monthly_per_gdp = 0.001
+				treasury_cost_monthly_per_gdp = 0.001
 				local_resources_factor = 0.01
 				monthly_population = 0.025
 			}
@@ -1238,7 +1261,8 @@ ideas = {
 				original_tag = BRA
 			}
 			modifier = {
-				consumer_goods_factor = -0.05
+				# treasury_gain_monthly_per_gdp = 0.005
+				treasury_gain_monthly_per_gdp = 0.003
 			}
 		}
 
@@ -1251,7 +1275,8 @@ ideas = {
 				original_tag = BRA
 			}
 			modifier = {
-				consumer_goods_factor = -0.07
+				# treasury_gain_monthly_per_gdp = 0.007
+				treasury_gain_monthly_per_gdp = 0.005
 				stability_factor = 0.02
 				trade_opinion_factor = 0.15
 			}
@@ -1267,7 +1292,8 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.01
-				consumer_goods_factor = -0.03
+				# treasury_gain_monthly_per_gdp = 0.003
+				treasury_gain_monthly_per_gdp = 0.002
 				political_power_factor = 0.05
 			}
 		}
@@ -1282,7 +1308,8 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.03
-				consumer_goods_factor = -0.02
+				# treasury_gain_monthly_per_gdp = 0.002
+				treasury_cost_monthly_per_gdp = 0.002
 			}
 		}
 
@@ -1297,7 +1324,8 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				political_power_gain = 0.03
-				consumer_goods_factor = 0.02
+				# treasury_cost_monthly_per_gdp = 0.002
+				treasury_cost_monthly_per_gdp = 0.002
 				monthly_population = 0.0267
 				conscription_factor = 0.05
 			}
@@ -1328,7 +1356,8 @@ ideas = {
 				original_tag = BRA
 			}
 			modifier = {
-				consumer_goods_factor = 0.01
+				# treasury_cost_monthly_per_gdp = 0.001
+				treasury_cost_monthly_per_gdp = 0.001
 				industrial_capacity_factory = 0.025
 				industrial_capacity_dockyard = 0.025
 				production_speed_buildings_factor = 0.025
@@ -1410,7 +1439,8 @@ ideas = {
 			}
 			# picture = FRA_profits_gold_rush
 			modifier = {
-				consumer_goods_factor = 0.04
+				# treasury_cost_monthly_per_gdp = 0.004
+				treasury_cost_monthly_per_gdp = 0.004
 			}
 		}
 

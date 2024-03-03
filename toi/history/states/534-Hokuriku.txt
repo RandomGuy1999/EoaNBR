@@ -6,7 +6,7 @@ state = {
 	local_supplies = 0.0
 	manpower = 1122973
 
-	state_category = city
+	state_category = rural
 
 	history = {
 		owner = TSH
@@ -51,7 +51,6 @@ state = {
 			add_core_of = JAP
 			remove_core_of = TSH
 		}
-
 	}
 
 	provinces = {

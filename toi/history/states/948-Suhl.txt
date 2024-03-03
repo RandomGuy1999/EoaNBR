@@ -2,7 +2,7 @@ state = {
 	id = 948
 	name = "STATE_948" # Suhl
 	manpower = 55395
-	state_category = town
+	state_category = sparse_rural
 
 	provinces = {
 		13408
@@ -13,7 +13,6 @@ state = {
 		owner = PRS
 		1857.1.1 = {
 			add_core_of = PRS
-
 			buildings = {
 				infrastructure = 5
 			}

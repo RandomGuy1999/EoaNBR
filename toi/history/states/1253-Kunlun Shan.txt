@@ -12,16 +12,12 @@ state = {
 		owner = QNG
 		buildings = {
 			infrastructure = 1
-			10315 = {
-				bunker = 1
+			10315 = { bunker = 1
 			}
-			2074 = {
-				bunker = 1
-
+			2074 = { bunker = 1
 			}
 		}
 		add_core_of = QNG
-
 	}
 
 	provinces = {

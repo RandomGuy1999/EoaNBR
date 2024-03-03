@@ -9,7 +9,6 @@ state = {
 		owner = APA
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = APA
 		#add_claim_by = USA
@@ -37,5 +36,5 @@ state = {
 	}
 	manpower = 15000
 
-	state_category = pastoral
+	state_category = sparse_rural
 }

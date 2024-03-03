@@ -3,7 +3,7 @@
 #ARMY OF ITALY - 1859
 
 division_template = {
-	name = "Brigade de Zouaves"
+	name = "Division de Zouaves"
 
 	regiments = {
 		zouaves = { x = 0 y = 0 }
@@ -15,12 +15,12 @@ division_template = {
 		line_infantry = { x = 1 y = 1 }
 	}
 	support = {
-		cannon_artillery_support = { x = 0 y = 0 }
+		field_artillery_support = { x = 0 y = 0 }
 	}
 }
 
 division_template = {
-	name = "Brigade d'Infanterie"
+	name = "Division d'Infanterie"
 
 	regiments = {
 		line_infantry = { x = 0 y = 2 }
@@ -32,27 +32,27 @@ division_template = {
 		irregular_infantry = { x = 0 y = 1 }
 	}
 	support = {
-		cannon_artillery_support = { x = 0 y = 0 }
+		field_artillery_support = { x = 0 y = 0 }
 	}
 }
 
 
 division_template = {
-	name = "Brigade de Cavalerie"
+	name = "Division de Cavalerie"
 
 	regiments = {
 		light_cavalry = { x = 0 y = 0 }
 		light_cavalry = { x = 0 y = 1 }
-		light_cavalry = { x = 0 y = 2 }
-		light_cavalry = { x = 1 y = 3 }
-		
 		light_cavalry = { x = 1 y = 0 }
 		light_cavalry = { x = 1 y = 1 }
-		light_cavalry = { x = 1 y = 2 }
-		light_cavalry = { x = 1 y = 3 }
+		
+		light_cavalry = { x = 2 y = 0 }
+		light_cavalry = { x = 2 y = 1 }
+		light_cavalry = { x = 3 y = 0 }
+		light_cavalry = { x = 3 y = 1 }
 	}
 	support = {
-		cannon_artillery_support = { x = 0 y = 0 }
+		field_artillery_support = { x = 0 y = 0 }
 	}
 }
 

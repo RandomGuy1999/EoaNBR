@@ -133,18 +133,7 @@ spriteTypes = {
 		name = "GFX_sort_button_202x29_button"
 		texturefile = "gfx//interface//sort_button_202x29.tga"
 		noOfFrames = 2
-	}
-
-	corneredTileSpriteType = {
-		name = "GFX_tiled_window_transparent_transparent"
-		size= { x=96 y=96 }
-		textureFile = "gfx//interface//tiles//tiled_window_transparent.dds"
-		borderSize = { x=32 y=32 }
-		tilingCenter = no
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = yes
-	}
-
+	}##
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_transparent"
 		size= { x=3 y=3 }
@@ -225,11 +214,6 @@ spriteTypes = {
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
-	spriteType = { 
-		name = "GFX_small_flag_frame_thin3_gold"
-		texturefile = "gfx/interface/small_flag_frame_thin3_gold.dds"
 	}
 
 	corneredTileSpriteType = {
@@ -321,7 +305,18 @@ spriteTypes = {
 	spriteType = {
 		name = "twitter"
 		texturefile = "gfx//interface//icon_twitter.dds"
-		noOfFrames = 1
+	}
+	spriteType = {
+		name = "youtube"
+		texturefile = "gfx//interface//icon_youtube.dds"
+	}
+	spriteType = {
+		name = "discord"
+		texturefile = "gfx//interface//icon_discord.dds"
+	}
+	spriteType = {
+		name = "instagram"
+		texturefile = "gfx//interface//icon_instagram.dds"
 	}
 	spriteType = {
 		name = "homepage"
@@ -445,6 +440,10 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
+
+
+
+
 	maskedShieldType = {
 		name = "GFX_minishield"
 		textureFile1 = "gfx//interface//minishield.tga"
@@ -546,7 +545,7 @@ spriteTypes = {
 
 	textSpriteType = {
 		name = "GFX_button_261x34"
-		texturefile = "gfx/interface/buttons/button_261x34.dds"
+		texturefile = "gfx//interface//button_261x34.dds"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
@@ -586,6 +585,18 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
+	frameAnimatedSpriteType = {
+		name = "GFX_leader_selection_button_glow"
+		texturefile = "gfx//interface//leader_selection_button_glow.dds"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
 	textSpriteType = {
 		name = "GFX_button_reset_123x34"
 		texturefile = "gfx//interface//button_reset_123x34.tga"
@@ -615,8 +626,20 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_icon_button_45x32"
+		texturefile = "gfx/interface/buttons/icon_button_45x32.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
 		name = "GFX_icon_button_46x46"
 		texturefile = "gfx/interface/buttons/icon_button_46x46.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_add_all_button_32x32"
+		texturefile = "gfx/interface/buttons/add_all_button_32x32.dds"
 		noOfFrames = 2
 	}
 
@@ -635,6 +658,14 @@ spriteTypes = {
 		name = "GFX_quick_add_button"
 		texturefile = "gfx/interface/buttons/quick_add_button.dds"
 	}
+
+	#spriteType = {
+	#	name = "GFX_stars_small"
+	#	texturefile = "gfx//interface//stars_small.tga"
+	#	noOfFrames = 7
+	#}
+
+
 }
 
 objectTypes = {
@@ -650,7 +681,7 @@ objectTypes = {
 			size = { x=256 y = 64  }
 			format = centre
 			cull_distance = 300.0f
-		}
+			}
 	}
 
 	animatedmaptext = {
@@ -742,13 +773,13 @@ bitmapfonts = {
 		b = { 66 179 248 } # Light Blue
 		B = { 30 30 255 }
 		# White-Black
+		F = { 195 176 145 } # Lilac
 		W = { 255 255 255 } # White
 		g = { 179 179 179 } # Gray
 		# Interface
 		L = { 195 176 145 } # Tan
 		H = { 255 189 0 }
 		T = { 255 255 255  }
-
 		0 = { 203 0 203 }   # Gradient Step 0 - purple 		{ 102 0 102 }
 		1 = { 128 120 211 }   # Gradient Step 1 - lilac 		{ 51 43 133 }
 		2 = { 81 112 243 }	# Gradient Step 2 - blue 		{ 10 43 153 }
@@ -762,9 +793,24 @@ bitmapfonts = {
 		t = { 255 76 77 }	# Gradient Step 10 - red 		{ 229 0 0 }
 	}
 
+
+	bitmapfont = {
+		name = "ToolTip_Font"
+		path = "gfx/fonts/garamond_16"
+		color = 0xffffffff
+	}
+
+	bitmapfont_override = {
+		name = "ToolTip_Font"
+		fontfiles = {
+			"gfx/fonts/japanese/garamond_16"
+		}
+		languages = { "l_japanese" }
+	}
+
 	bitmapfont = {
 		name = "AnimatedMapText"
-
+#		path = "gfx/fonts/hoi_16mbs"
 		fontfiles = {
 			"gfx/fonts/hoi_18"
 			"gfx/fonts/hoi_18_cryllic"
@@ -1019,7 +1065,7 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "hoi_16mbs"
-
+#		path = "gfx/fonts/hoi_16mbs"
 		fontfiles = {
 			"gfx/fonts/hoi_16mbs"
 			"gfx/fonts/hoi_16mbs_cryllic"
@@ -1047,7 +1093,7 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "hoi_18"
-
+#		path = "gfx/fonts/hoi_18"
 		fontfiles = {
 			"gfx/fonts/hoi_18"
 			"gfx/fonts/hoi_18_cryllic"
@@ -1073,6 +1119,7 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "hoi_18b"
+#		path = "gfx/fonts/hoi_18b"
 		fontfiles = {
 			"gfx/fonts/hoi_18"
 			"gfx/fonts/hoi_18_cryllic"

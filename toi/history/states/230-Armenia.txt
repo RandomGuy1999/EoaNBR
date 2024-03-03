@@ -11,7 +11,6 @@ state = {
 
 	history = {
 		owner = RUS
-		add_claim_by = RUS
 		victory_points = {
 			12320 1
 		}
@@ -26,5 +25,5 @@ state = {
 	}
 	manpower = 280038
 
-	state_category =town
+	state_category =rural
 }

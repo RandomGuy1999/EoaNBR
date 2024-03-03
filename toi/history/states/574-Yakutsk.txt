@@ -4,9 +4,9 @@ state = {
 	name = "STATE_574" # Yakutsk
 
 	local_supplies = 0.0
-	manpower = 120000
+	manpower = 80000
 
-	state_category = wasteland
+	state_category = pastoral
 
 	history = {
 		owner = RUS

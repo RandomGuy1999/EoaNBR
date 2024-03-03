@@ -23,7 +23,6 @@ state = {
 			owner = ARG
 			add_core_of = ARG
 		}
-
 	}
 
 	provinces = {
@@ -31,5 +30,5 @@ state = {
 	}
 	manpower = 169498
 
-	state_category =large_town
+	state_category =rural
 }

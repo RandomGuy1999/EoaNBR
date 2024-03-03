@@ -6,7 +6,7 @@ state = {
 	state_category = rural
 
 	resources = {
-		cotton = 6
+		fiber = 6
 		iron = 5
 	}
 
@@ -17,7 +17,6 @@ state = {
 
 	history = {
 		buildings = {
-
 		}
 		victory_points = {
 			14262 3

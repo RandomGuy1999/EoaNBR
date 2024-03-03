@@ -4,8 +4,8 @@ state = {
 	name = "STATE_653" # Sverdlovsk
 
 	local_supplies = 0.0
-	manpower = 390000
-	state_category = rural
+	manpower = 120600
+	state_category = sparse_rural
 
 	history = {
 		# End of a New Beginning
@@ -17,7 +17,6 @@ state = {
 			buildings = {
 				infrastructure = 3
 				industrial_complex = 1
-
 			}
 			add_core_of = RUS
 		}

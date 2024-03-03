@@ -6,7 +6,7 @@ state = {
 	local_supplies = 0.0 
 	manpower = 811785
 
-	state_category = metropolis
+	state_category = urban
 	resources = {
 		iron = 4
 		wood = 9
@@ -29,7 +29,7 @@ state = {
 			industrial_complex = 1
 			arms_factory = 2
 			dockyard = 2
-			fabric_weavery = 1
+			# fabric_weavery = 1
 			6788 = {
 				naval_base = 3
 			}

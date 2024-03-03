@@ -6,11 +6,11 @@ state = {
 	local_supplies = 0.0
 	manpower = 177000
 
-	state_category = town
+	state_category = rural
 
 	resources = {
 		iron = 1
-		cotton = 6
+		fiber = 2
 		wood = 5
 	}
 

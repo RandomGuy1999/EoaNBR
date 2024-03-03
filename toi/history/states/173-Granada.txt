@@ -6,12 +6,12 @@ state = {
 	local_supplies = 0.0
 	manpower = 1601891
 
-	state_category = large_city
+	state_category = sparse_urban
 
 	resources = {
 		iron = 4
 		coal = 4
-		cotton = 8
+		fiber = 4
 	}
 
 	history = {

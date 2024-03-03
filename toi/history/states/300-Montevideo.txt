@@ -6,12 +6,12 @@ state = {
 	local_supplies = 0.0
 	manpower = 56500
 
-	state_category = town
+	state_category = rural
 
 	resources = {
 		iron = 1
 		wood = 1
-		cotton = 1
+		fiber = 1
 	}
 	history = {
 		owner = URG
@@ -29,7 +29,6 @@ state = {
 		}
 
 		set_state_flag = DCI_all_natives_purged
-
 	}
 
 	provinces = {

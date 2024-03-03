@@ -4,12 +4,11 @@ state = {
 	name = "STATE_581"
 
 	local_supplies = 0.0
-	manpower = 48831
+	manpower = 4883
 
-	state_category = wasteland
+	state_category = pastoral
 
 	resources = {
-
 	}
 
 	history = {

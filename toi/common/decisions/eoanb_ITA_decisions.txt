@@ -143,44 +143,59 @@ ITA_decisions_category_influence_monaco = {
 	ITA_decisions_category_PIE_second_war_for_independence = {
 
 		ITA_time_based_war_escalation_mission = {
-		icon = GFX_decision_generic_ignite_civil_war
-		allowed = {
-			original_tag = PIE
-		}
-		available = {
-			hidden_trigger = { always = no }
-		}
+			icon = GFX_decision_generic_ignite_civil_war
+			allowed = {
+				original_tag = PIE
+			}
+			available = {
+				hidden_trigger = { always = no }
+			}
 
-		activation = {
-			always = no
-			#has_war = no
-			has_global_flag = second_italo_austrian_war_flag
-			check_variable = { PIE.PIE_war_escalation_level < 10 }
-		}
-		visible = { hidden_trigger = { has_global_flag = second_italo_austrian_war_flag } }
-		cancel_if_not_visible = yes
-		is_good = yes
-		fire_only_once = yes
-		selectable_mission = no
-		days_mission_timeout = 12
-		timeout_effect = {
-			PIE_swfi_escalate = yes
-			add_to_variable = { PIE.PIE_escalation_time_increase_total = 1 }
-			# Increase timer after first six months of war
-			if = {
-				limit = { check_variable = { PIE_war_escalation_length < 170 } }
-				set_variable = { PIE_war_escalation_length = 170 }
+			activation = {
+				always = no
+				#has_war = no
+				has_global_flag = second_italo_austrian_war_flag
+				check_variable = { PIE.PIE_war_escalation_level < 10 }
+			}
+			visible = { hidden_trigger = { has_global_flag = second_italo_austrian_war_flag } }
+			cancel_if_not_visible = yes
+			is_good = yes
+			fire_only_once = yes
+			selectable_mission = no
+			days_mission_timeout = 12
+			timeout_effect = {
+				PIE_swfi_escalate = yes
+				add_to_variable = { PIE.PIE_escalation_time_increase_total = 1 }
+				# Increase timer after first six months of war
+				if = {
+					limit = { check_variable = { PIE_war_escalation_length < 170 } }
+					set_variable = { PIE_war_escalation_length = 170 }
+				}
 			}
 		}
-	}
 
-	PIE_test = {
-		allowed = {
-			tag  = PIE
-		}
-		fire_only_once = yes
-		days_remove = 100
-		cost = 5
+	#check
+
+	UCT_track_2iw_progress = {
+		# icon = revolt
+ 
+		 allowed = { always = no }
+		 activation = { always = no }
+		 available = {
+			 PIE = {
+				 controls_province = 3780
+			 }
+		 }
+ 
+		 is_good = no
+ 
+		 days_mission_timeout = 1000
+ 
+		 complete_effect = {
+			 PIE = {
+				 country_event = sardinia2iw.3
+			 }
+		 }
 	}
 }
 
@@ -207,7 +222,7 @@ ITA_decisions_category_wars_and_conflicts = {
 			has_active_mission = ITA_War_Mission_TUS_2IP
 		}
 		modifier = {
-			consumer_goods_factor = 0.1
+			treasury_cost_monthly_per_gdp = 0.01
 			production_factory_efficiency_gain_factor = 0.05
 			army_org_regain = 0.1
 		}
@@ -486,7 +501,7 @@ ITA_decisions_category_wars_and_conflicts = {
 			# has_active_mission = ITA_Mission_AUS_PIE_Peace_Treaty_1860
 		}
 		modifier = {
-			consumer_goods_factor = 0.1
+			treasury_cost_monthly_per_gdp = 0.01
 			production_factory_efficiency_gain_factor = 0.05
 			army_org_regain = 0.1
 		}
@@ -719,7 +734,7 @@ ITA_decisions_category_wars_and_conflicts = {
 		complete_effect = {
 			CBI = {
 				add_equipment_to_stockpile = {
-					type = cannon_equipment_0
+					type = field_artillery_equipment_0
 					amount = 500
 					producer = NSC
 				}
@@ -779,7 +794,7 @@ ITA_decisions_category_wars_and_conflicts = {
 		complete_effect = {
 			CBI = {
 				add_equipment_to_stockpile = {
-					type = cannon_equipment_0
+					type = field_artillery_equipment_0
 					amount = 500
 					producer = PIE
 				}
@@ -849,7 +864,7 @@ ITA_decisions_category_wars_and_conflicts = {
 		complete_effect = {
 			CBI = {
 				add_equipment_to_stockpile = {
-					type = cannon_equipment_0
+					type = field_artillery_equipment_0
 					amount = 200
 					producer = PIE
 				}
@@ -955,17 +970,6 @@ ITA_decisions_category_wars_and_conflicts = {
 				}
 				if = {
 					limit = {
-						has_completed_focus = PIE_Work_With_Mazzinni
-					}
-					custom_trigger_tooltip = {
-						tooltip = ITA_Mission_AUS_PIE_Peace_Treaty_1860_ITA_VICTORY_France_Carbonari_tt
-						LVN = {
-							has_capitulated = yes
-						}
-					}
-				}
-				if = {
-					limit = {
 						has_completed_focus = PIE_Military_Plan_FT
 					}
 					custom_trigger_tooltip = {
@@ -978,9 +982,9 @@ ITA_decisions_category_wars_and_conflicts = {
 						}
 					}
 				}
-				if = {
+				else_if = {
 					limit = {
-						has_completed_Focus = PIE_The_Russian_Alliance
+						has_completed_focus = PIE_The_Russian_Alliance
 					}
 					custom_trigger_tooltip = {
 						tooltip = ITA_Mission_AUS_PIE_Peace_Treaty_1860_ITA_VICTORY_Russia_tt
@@ -1004,6 +1008,17 @@ ITA_decisions_category_wars_and_conflicts = {
 							LVN = {
 								has_capitulated = yes
 							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = PIE_Work_With_Mazzinni
+					}
+					custom_trigger_tooltip = {
+						tooltip = ITA_Mission_AUS_PIE_Peace_Treaty_1860_ITA_VICTORY_France_Carbonari_tt
+						LVN = {
+							has_capitulated = yes
 						}
 					}
 				}
@@ -3286,7 +3301,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 80
 		modifier = {
-			consumer_goods_factor = 0.03
+			treasury_cost_monthly_per_gdp = 0.003
 		}
 		days_remove = 100
 		remove_effect = {
@@ -3311,7 +3326,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 100
 		modifier = {
-			consumer_goods_factor = 0.03
+			treasury_cost_monthly_per_gdp = 0.003
 		}
 		days_remove = 100
 		remove_effect = {
@@ -3340,7 +3355,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 100
 		modifier = {
-			consumer_goods_factor = 0.07
+			treasury_cost_monthly_per_gdp = 0.007
 		}
 		days_remove = 200
 		remove_effect = {
@@ -3538,7 +3553,7 @@ ITA_decisions_category_artisan_industry = {
 		modifier = {
 			production_factory_efficiency_gain_factor = 0.05
 			production_factory_max_efficiency_factor = 0.05
-			consumer_goods_factor = 0.05
+			treasury_cost_monthly_per_gdp = 0.005
 		}
 		days_remove = 200
 	}
@@ -3583,7 +3598,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			consumer_goods_factor = 0.15
+			treasury_cost_monthly_per_gdp = 0.015
 		}
 		ai_will_do = {
 			base = 25
@@ -3638,7 +3653,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 80
 		modifier = {
-			consumer_goods_factor = 0.04
+			treasury_cost_monthly_per_gdp = 0.004
 		}
 		ai_will_do = {
 			base = 25
@@ -3667,7 +3682,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 80
 		modifier = {
-			consumer_goods_factor = 0.04
+			treasury_cost_monthly_per_gdp = 0.004
 		}
 		ai_will_do = {
 			base = 25
@@ -3709,7 +3724,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 80
 		modifier = {
-			consumer_goods_factor = 0.04
+			treasury_cost_monthly_per_gdp = 0.004
 		}
 		ai_will_do = {
 			base = 25
@@ -3751,7 +3766,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 80
 		modifier = {
-			consumer_goods_factor = 0.04
+			treasury_cost_monthly_per_gdp = 0.004
 		}
 		ai_will_do = {
 			base = 25
@@ -3783,7 +3798,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 80
 		modifier = {
-			consumer_goods_factor = 0.04
+			treasury_cost_monthly_per_gdp = 0.004
 		}
 		ai_will_do = {
 			base = 25
@@ -3814,7 +3829,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 40
 		modifier = {
-			consumer_goods_factor = 0.04
+			treasury_cost_monthly_per_gdp = 0.004
 		}
 		ai_will_do = {
 			base = 25
@@ -3842,7 +3857,7 @@ ITA_decisions_category_artisan_industry = {
 		fire_only_once = yes
 		cost = 65
 		modifier = {
-			consumer_goods_factor = 0.04
+			treasury_cost_monthly_per_gdp = 0.004
 		}
 		ai_will_do = {
 			base = 25
@@ -3901,7 +3916,7 @@ ITA_decisions_category_TUS_liberalizing_tuscany = {
 		}
 		available = {
 			has_equipment = {
-				infantry_equipment_rifle_0 > 250
+				infantry_equipment_pre_rifle_3 > 250
 			}
 			has_decision = ITA_TUS_subverting_austrian_influence
 		}
@@ -3914,7 +3929,7 @@ ITA_decisions_category_TUS_liberalizing_tuscany = {
 		days_remove = 100
 		complete_effect = {
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_rifle_0
+				type = infantry_equipment_pre_rifle_3
 				amount = -500
 			}
 		}
@@ -4011,7 +4026,7 @@ ITA_decisions_category_TUS_liberalizing_tuscany = {
 		complete_effect = {
 			add_manpower = 1000
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_rifle_0
+				type = infantry_equipment_pre_rifle_3
 				amount = 500
 			}
 			add_equipment_to_stockpile = {
@@ -4019,12 +4034,12 @@ ITA_decisions_category_TUS_liberalizing_tuscany = {
 				amount = 500
 			}
 			add_equipment_to_stockpile = {
-				type = cannon_equipment_0
+				type = field_artillery_equipment_0
 				amount = 50
 			}
 		}
 		modifier = {
-			consumer_goods_factor = -0.1
+			treasury_gain_monthly_per_gdp = 0.01
 		}
 	}
 
@@ -4086,7 +4101,7 @@ ITA_decisions_category_TUS_liberalizing_tuscany = {
 		}
 		complete_effect = {
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_rifle_0
+				type = infantry_equipment_pre_rifle_3
 				amount = 500
 			}
 		}

@@ -13,7 +13,6 @@ state = {
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-
 		}
 		victory_points = {
 			9821 5
@@ -48,5 +47,5 @@ state = {
 	}
 	manpower = 170308
 
-	state_category =pastoral
+	state_category =rural
 }

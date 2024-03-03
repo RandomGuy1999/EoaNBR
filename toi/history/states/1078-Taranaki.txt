@@ -8,7 +8,7 @@ state = {
 		wood = 4
 	}
 
-	state_category = pastoral
+	state_category = sparse_rural
 
 	history = {
 		owner = NZL
@@ -21,7 +21,6 @@ state = {
 		1865.6.17 = {
 			set_demilitarized_zone = no
 		}
-
 
 	}
 

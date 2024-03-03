@@ -7,6 +7,8 @@ state={
 	}
 	history = {
 		owner = OMA
+		add_core_of = OMA
+		add_claim_by = PER
 		buildings = {
 			infrastructure = 3
 			7982 = {
@@ -16,9 +18,14 @@ state={
 		victory_points = {
 			7982 3 
 		}
+		1870.1.1 = {
+			owner = PER
+			add_core_of = PER
+			remove_core_of = OMA
+		}
 	}
-	manpower=0
-	state_category=town
+	manpower=293554
+	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -4,9 +4,9 @@ state = {
 	name = "STATE_235"
 
 	local_supplies = 0.0
-	manpower = 868900
+	manpower = 768900
 
-	state_category = rural
+	state_category = sparse_rural
 	resources = {
 		#chromium = 4
 		coal = 5
@@ -14,10 +14,8 @@ state = {
 
 	history = {
 		owner = RUS
-		add_claim_by = RUS
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = CIR
 	}

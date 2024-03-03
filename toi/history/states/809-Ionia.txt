@@ -5,17 +5,16 @@ state = {
 
 	local_supplies = 0.0
 
-	state_category = small_island
+	state_category = sparse_rural
 	resources = {
 	}
 
 
 	history = {
 		# End of a New Beginning
+		owner = ENG
+		add_core_of = GRE
 		1857.1.1 = {
-			owner = ENG
-			add_core_of = ENG
-			add_core_of = GRE
 			buildings = {
 				infrastructure = 1
 			}

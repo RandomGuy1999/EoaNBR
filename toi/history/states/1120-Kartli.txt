@@ -10,7 +10,6 @@ state = {
 	history = {
 		# End of a New Beginning
 		owner = RUS
-		add_claim_by = RUS
 		add_core_of = GEO
 		1857.1.1 = {
 			victory_points = {
@@ -27,5 +26,5 @@ state = {
 	}
 	manpower = 330000
 
-	state_category =town
+	state_category =rural
 }

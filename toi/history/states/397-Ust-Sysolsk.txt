@@ -4,8 +4,8 @@ state = {
 	name = "STATE_397"
 
 	local_supplies = 0.0
-	manpower = 90553
-	state_category = pastoral
+	manpower = 270553
+	state_category = sparse_rural
 
 	resources = {
 		wood = 6
@@ -15,7 +15,6 @@ state = {
 		owner = RUS
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = RUS
 		victory_points = {

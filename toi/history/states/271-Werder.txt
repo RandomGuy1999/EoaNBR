@@ -4,10 +4,9 @@ state = {
 	manpower = 361736
 
 	local_supplies = 0.0
-	state_category = pastoral
+	state_category = sparse_rural
 
 	resources = {
-
 	}
 
 	provinces = {
@@ -22,7 +21,6 @@ state = {
 		}
 
 		buildings = {
-
 		}
 		afr_state_setup_scripted_effect = yes
 	}

@@ -9,7 +9,6 @@ state = {
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
-			cotton_farm = 1
 		}
 		add_core_of = BUE
 		add_core_of = ARG
@@ -20,7 +19,6 @@ state = {
 		1870.1.1 = {
 			owner = ARG
 		}
-
 	}
 	resources = {
 		iron = 1
@@ -31,9 +29,8 @@ state = {
 	}
 	manpower = 79010
 
-	state_category =rural
+	state_category =sparse_rural
 
 	resources = {
-		cotton = 2
 	}
 }

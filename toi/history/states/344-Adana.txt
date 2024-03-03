@@ -9,7 +9,7 @@ state={
 	history={
 		owner = OTO
 		victory_points = {
-			9893 3 
+			10056 5 
 		}
 		victory_points = {
 			11746 1 
@@ -18,35 +18,28 @@ state={
 			infrastructure = 3
 			11746 = {
 				naval_base = 3
-
 			}
-
 		}
 		add_core_of = OTO
 		set_variable = {
 			building_infrastructure_size = 3
-
 		}
 		set_variable = {
 			building_port_size = 3
-
 		}
 		set_variable = {
 			building_commercial_farm_size = 2
-
 		}
 		set_variable = {
 			building_metals_mine_size = 10
-
 		}
-
 	}
 
 	provinces={
 		886 6956 10056 11746 11810 14559 
 	}
-	manpower=479950
+	manpower=289950
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category = dense_rural
 	local_supplies=0.000
 }

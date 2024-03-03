@@ -2,7 +2,7 @@ state = {
 	id = 949
 	name = "STATE_949" # Holstein
 	manpower = 601650 # incl. Lauenburg
-	state_category = city
+	state_category = dense_rural
 
 	provinces = {
 		3231 3368 6257 6389 9320 13664
@@ -13,7 +13,6 @@ state = {
 		owner = SCH
 		1857.1.1 = {
 			add_core_of = SCH
-
 			buildings = {
 				infrastructure = 6
 				industrial_complex = 1
@@ -32,7 +31,6 @@ state = {
 		1870.1.1 = {
 			owner = PRS
 			add_core_of = PRS
-
 			buildings = {
 				dockyard = 2
 				6389 = {

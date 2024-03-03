@@ -1,13 +1,12 @@
 state = {
 	id = 286
 	name = "STATE_286"
-	state_category =town
+	state_category =rural
 
 	local_supplies = 0.0
 	resources = {
 		#rubber = 4
 		iron = 1
-		cotton = 8
 	}
 
 
@@ -28,7 +27,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			farm = 1
+			# farm = 1
 		}
 		afr_state_setup_scripted_effect = yes
 

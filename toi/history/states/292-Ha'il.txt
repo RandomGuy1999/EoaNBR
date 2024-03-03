@@ -7,7 +7,6 @@ state = {
 		owner = JSH
 		buildings = {
 			infrastructure = 1
-
 		}
 		victory_points = {
 			14382 5 
@@ -16,8 +15,12 @@ state = {
 			4968 2 
 		}
 		add_core_of = JSH
-		add_core_of = NJD
-
+		add_claim_by = NJD
+		1921.1.1 = {
+			owner = NJD
+			add_core_of = NJD
+			remove_core_of = JSH
+		}
 	}
 
 	provinces = {
@@ -25,6 +28,6 @@ state = {
 	}
 	manpower = 145033
 	buildings_max_level_factor = 1.000
-	state_category =rural
+	state_category =sparse_rural
 	local_supplies = 0.000
 }

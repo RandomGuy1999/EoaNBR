@@ -6,7 +6,7 @@ state = {
 	local_supplies = 0.0
 	manpower = 5894723
 
-	state_category = megalopolis
+	state_category = sparse_urban
 
 	resources = {
 		wood = 4
@@ -23,8 +23,7 @@ state = {
 			9998 = {
 				naval_base = 2
 			}
-			1182 = {
-				bunker = 3
+			1182 = { bunker = 3
 			}
 		}
 

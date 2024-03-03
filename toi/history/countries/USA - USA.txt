@@ -66,6 +66,8 @@
 
 			# Spirits
 			add_ideas = {
+				USA_idea_legacy_tariff_law
+				USA_idea_legacy_tax_law
 				USA_Spirit_Seminole_War
 				USA_Spirit_Anti_Irish
 				USA_Spirit_Memories_of_Confederation
@@ -104,7 +106,7 @@
 		unlimited_work_day
 
 		#Population
-		stagnation_growth
+		fast_growth
 		border_control
 		volunteer_only
 		usa_slavery_law
@@ -116,7 +118,6 @@
 		#Culture
 		open_schools
 		secular_state
-		religion_protestant
 
 		### National Spirits
 		institution_rationalism
@@ -377,34 +378,6 @@
 				target = UTA
 				autonomous_state = autonomy_organized_unincorporated_territory
 			}
-			# set_autonomy = {
-			# 	target = NMX
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = ORE
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = DAK
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = CPA
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = GRL
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = KNS
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = OKL
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
 		}
 		if = {
 			limit = {
@@ -415,13 +388,6 @@
 				} }
 			}
 			puppet = UTA
-			#puppet = NMX
-			#puppet = ORE
-			#puppet = DAK
-			#puppet = CPA
-			#puppet = GRL
-			#puppet = KNS
-			#puppet = OKL
 		}
 	}
 
@@ -432,7 +398,7 @@
 		
 		
 		tribal_tatics = 1
-		gunpowder = 1
+		tech_infantry_gunpowder = 1
 		tribal_riding = 1
 		tribal_steam_experiments = 1
 		tribal_forging = 1
@@ -444,24 +410,24 @@
 		tribal_salted_smoked_goods = 1
 
 		#Assorted Military Techs
-		tech_pre_rifle_equipment0 = 1
-		tech_pre_rifle_equipment1 = 1
-		tech_pre_rifle_equipment2 = 1
-		tech_pre_rifle_equipment3 = 1
+		tech_infantry_pre_rifle_equipment_0 = 1
+		tech_infantry_pre_rifle_equipment_1 = 1
+		tech_infantry_pre_rifle_equipment_2 = 1
+		tech_infantry_pre_rifle_equipment_3 = 1
 		tech_infantry_flintlock_pistol = 1
 		tech_infantry_caplock_pistol = 1
 		tech_uniform_equipment_0 = 1
 		tech_uniform_equipment_1 = 1
 		tech_infantry_practical_rifling = 1
 		tech_infantry_percussion_cap = 1
-		tech_rifle_equipment1 = 1
+		tech_infantry_rifle_equipment_1 = 1
 		tech_uniform_equipment_2 = 1
 		tech_helmet_equipment_0 = 1
 		tech_cavalry_equipment_0 = 1
 		tech_horse_transport = 1
 		tech_horse_artillery = 1
 		tech_support = 1
-		gw_artillery = 1
+		tech_field_artillery_equipment_0 = 1
 
 		#Mechanical (Engineer)ing (Gaming)
 		mass_transit_early = 1
@@ -548,8 +514,8 @@
 		tech_humanities_public_works = 1
 
 		#Assorted Military Techs
-		tech_hand_revolvers = 1
-		tech_infantry_infantry_swords = 1
+		tech_infantry_hand_revolvers = 1
+		tech_infantry_swords = 1
 		tech_socket_bayonet = 1
 		# #
 		tech_uniform_equipment_3 = 1
@@ -590,6 +556,10 @@
 			tech_naval_mtg_explosive_shells = 1
 			tech_naval_mtg_heavy_smoothbores = 1
 			tech_naval_mtg_paddle_wheels = 1
+			tech_naval_mtg_direct_acting_engines = 1
+			tech_naval_mtg_tubular_boilers = 1
+			tech_naval_mtg_oscillating_engine = 1
+			tech_naval_mtg_steam_driven_single_screw_propeller = 1 #Steam Driven Single-Screw Propeller
 			tech_naval_mtg_repair_crews = 1
 			tech_naval_mtg_capital_ship_naval_transportation = 1
 		}
@@ -966,7 +936,6 @@
 		#Culture
 		open_schools
 		secular_state
-		religion_protestant
 
 		### National Spirits
 
@@ -1108,34 +1077,6 @@
 				target = UTA
 				autonomous_state = autonomy_organized_unincorporated_territory
 			}
-			# set_autonomy = {
-			# 	target = NMX
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = ORE
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = DAK
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = CPA
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = GRL
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = KNS
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
-			# set_autonomy = {
-			# 	target = OKL
-			# 	autonomous_state = autonomy_organized_unincorporated_territory
-			# }
 		}
 		else = {
 			puppet = UTA
@@ -1156,7 +1097,7 @@
 		
 		
 		tribal_tatics = 1
-		gunpowder = 1
+		tech_infantry_gunpowder = 1
 		tribal_riding = 1
 		tribal_steam_experiments = 1
 		tribal_forging = 1
@@ -1170,22 +1111,22 @@
 
 		###Army
 		#Weapons & Equipment
-		tech_pre_rifle_equipment0 = 1
-		tech_pre_rifle_equipment1 = 1
-		tech_pre_rifle_equipment2 = 1 #Pike and Shot
-		tech_pre_rifle_equipment3 = 1 #Smoothbore
+		tech_infantry_pre_rifle_equipment_0 = 1
+		tech_infantry_pre_rifle_equipment_1 = 1
+		tech_infantry_pre_rifle_equipment_2 = 1 #Pike and Shot
+		tech_infantry_pre_rifle_equipment_3 = 1 #Smoothbore
 		tech_infantry_percussion_cap = 1
-		tech_rifle_equipment1 = 1 #Minie
-		tech_rifle_equipment2 = 1 #Enfield
+		tech_infantry_rifle_equipment_1 = 1 #Minie
+		tech_infantry_rifle_equipment_2 = 1 #Enfield
 		tech_infantry_breech_loading = 1
-		tech_rifle_equipment3 = 1 #Snider-Enfield
+		tech_infantry_rifle_equipment_3 = 1 #Snider-Enfield
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
 		tech_infantry_caplock_pistol = 1 #Caplock Pistols
-		tech_hand_revolvers = 1 #Hand Revolvers
-		tech_improved_handguns = 1 #Better Desings
+		tech_infantry_hand_revolvers = 1 #Hand Revolvers
+		tech_infantry_metallic_rimfire_cartridges = 1 #Better Desings
 		tech_infantry_practical_rifling = 1 #Practical Rifling
-		tech_improved_matchlock = 1 #Improved Percussion Cap
-		tech_infantry_infantry_swords = 1 #Infantry Swords
+		tech_infantry_early_rimfire_cartridges = 1 #Improved Percussion Cap
+		tech_infantry_swords = 1 #Infantry Swords
 		tech_socket_bayonet = 1
 		# # #Socket Bayonet
 		tech_yataghan_bayonet = 1
@@ -1232,18 +1173,20 @@
 		armor_tech_steam_car_experiment = 1
 
 		###Artillery
-		gw_artillery = 1 #Bore Gun
-		early_howitzer = 1 #Howitzer
-		rifled_howitzer = 1
-		heavier_design = 1
-		rml_field_gun = 1 #RML Field Gun
-		rbl_field_gun = 1
-		studded_shells = 1
-		early_rockets = 1
-		spin_stabilised_rockets = 1
-		staged_rockets = 1
-		improved_smoothbore = 1 # Smoothbore
-		siege_gun = 1
+		tech_rocket_artillery_equipment_0 = 1
+		tech_rocket_artillery_equipment_1 = 1
+		tech_field_artillery_equipment_0 = 1
+		tech_field_artillery_equipment_1 = 1
+		tech_field_barrel_standardization = 1
+		tech_field_artillery_equipment_2 = 1
+		tech_field_artillery_equipment_3 = 1
+		tech_field_armstrong_screw = 1
+		tech_siege_artillery_equipment_0 = 1
+		tech_siege_artillery_equipment_1 = 1
+		tech_siege_artillery_equipment_2 = 1
+		tech_howitzer_studded_shells = 1
+		tech_howitzer_artillery_equipment_0 = 1
+		tech_howitzer_artillery_equipment_1 = 1
 
 		###Naval
 		#Gunboats and Monitors

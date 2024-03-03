@@ -5,7 +5,7 @@ state = {
 
 	local_supplies = 0.0
 	buildings_max_level_factor = 1
-	state_category = town
+	state_category = rural
 	resources = {
 		wood = 12
 	}
@@ -14,12 +14,12 @@ state = {
 		owner = USA
 
 		add_core_of = USA
-		#add_claim_by = NEG
+		add_claim_by = NEG
 		add_core_of = NBW
 
 		buildings = {
 			infrastructure = 4
-			fabric_weavery = 1
+			# fabric_weavery = 1
 		}
 
 		victory_points = { 12459 1 }

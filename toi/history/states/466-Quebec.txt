@@ -5,7 +5,7 @@ state = {
 		coal = 10
 	}
 
-	state_category = pastoral
+	state_category = sparse_rural
 
 	history = {
 		owner = HBC
@@ -14,7 +14,6 @@ state = {
 			3691 = {
 				naval_base = 1
 			}
-
 		}
 		add_core_of = HBC
 

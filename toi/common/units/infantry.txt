@@ -17,7 +17,6 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_rationalism_infantry
 			category_feudal_infantry
 			category_Tribal_infantry
 			category_army
@@ -99,7 +98,7 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_rationalism_infantry
+			category_Tribal_infantry
 			
 		}
 
@@ -119,7 +118,7 @@ sub_units = {#generally organized by era?
 		supply_consumption = 0.2
 
 		need = {
-			infantry_equipment_pre_rifle = 50
+			infantry_equipment = 50
 		}
 		
 		forest = {
@@ -168,8 +167,8 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_rationalism_infantry
-			category_industrial_infantry
+			# category_victorian_infantry
+			category_feudal_infantry
 			category_army
 		}
 
@@ -244,8 +243,8 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_rationalism_infantry
-			category_industrial_infantry
+			# category_victorian_infantry
+			category_Tribal_infantry
 			category_army
 		}
 
@@ -295,7 +294,6 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_rationalism_infantry
 			category_feudal_infantry
 		}
 
@@ -334,7 +332,7 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_industrial_infantry
+			category_victorian_infantry
 			category_army
 		}
 
@@ -373,7 +371,7 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_industrial_infantry
+			category_victorian_infantry
 			category_army
 		}
 
@@ -415,7 +413,8 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_industrial_infantry
+			category_victorian_infantry
+			category_light_infantry
 			category_army
 		}
 
@@ -470,7 +469,7 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_industrial_infantry
+			category_victorian_infantry
 			category_army
 		}
 
@@ -515,7 +514,7 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_industrial_infantry
+			category_victorian_infantry
 			category_army
 		}
 
@@ -559,7 +558,7 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_industrial_infantry
+			category_victorian_infantry
 			category_army
 		}
 
@@ -613,7 +612,7 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_all_infantry
+			category_victorian_infantry
 			category_army
 		}
 
@@ -621,20 +620,21 @@ sub_units = {#generally organized by era?
 		combat_width = 2
 
 		#Size Definitions
-		max_organisation = 30
-		max_strength = 25
-		default_morale = 0.3
+		max_strength = 15
+		max_organisation = 17.5
+		default_morale = 0.4
 		manpower = 1000
 
 		#Misc Abilities
-		maximum_speed = 0.2
-		training_time = 150
+		training_time = 180
+		suppression = 2
 		weight = 0.5
-
+		# maximum_speed = 0.2
 		supply_consumption = 0.06
 
-		#Offensive Abilities
-		suppression = 2
+		#modifiers
+		soft_attack = -0.3
+		
 
 		essential = {
 			infantry_equipment
@@ -697,7 +697,7 @@ sub_units = {#generally organized by era?
 
 		categories = {
 			category_front_line
-			category_light_infantry
+			category_victorian_infantry
 			category_army
 		}
 
@@ -747,7 +747,7 @@ sub_units = {#generally organized by era?
 
 		categories = {
 			category_front_line
-			category_light_infantry
+			category_victorian_infantry
 			category_all_infantry
 			category_army
 		}
@@ -795,7 +795,8 @@ sub_units = {#generally organized by era?
 
 		categories = {
 			category_all_infantry
-			category_mechanization_infantry
+			category_great_war_infantry
+			category_industrial_infantry
 			category_army
 		}
 
@@ -836,7 +837,7 @@ sub_units = {#generally organized by era?
 
 		categories = {
 			category_all_infantry
-			category_mass_transit_infantry
+			category_modern_infantry
 			category_army
 		}
 
@@ -930,7 +931,7 @@ sub_units = {#generally organized by era?
 		group = infantry
 
 		categories = {
-			category_industrial_infantry
+			category_victorian_infantry
 			category_army
 		}
 
@@ -1144,6 +1145,51 @@ sub_units = {#generally organized by era?
 		}
 	}
 
+	machine_gun_company = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 0
+		active = yes
+
+		type = {
+			infantry
+			support
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+			category_front_line
+			category_all_infantry
+		}
+
+
+		combat_width = 1
+
+		need = {
+			machine_gun_equipment = 24
+		}
+		manpower = 300
+		training_time = 120
+		max_organisation = 2
+		default_morale = 0.1
+		max_strength = 0.2
+		weight = 0.1
+
+		supply_consumption = 0.16
+
+		# Support nerfs to combat abilities
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.4
+		hard_attack = -0.5
+
+
+		can_be_parachuted = yes
+	}
+
 	mechanized = {
 		sprite = mechanized
 		map_icon_category = infantry
@@ -1339,7 +1385,7 @@ sub_units = {#generally organized by era?
 
 		categories = {
 			category_all_infantry
-			category_mass_production_infantry
+			category_Atomic_era_infantry
 			category_army
 		}
 
@@ -1379,7 +1425,7 @@ sub_units = {#generally organized by era?
 
 		categories = {
 			category_all_infantry
-			category_computing_infantry
+			category_information_era_infantry
 			category_army
 		}
 
@@ -1419,7 +1465,7 @@ sub_units = {#generally organized by era?
 
 		categories = {
 			category_all_infantry
-			category_internet_infantry
+			category_futuristic_infantry
 			category_army
 		}
 

@@ -4,15 +4,13 @@ state = {
 
 
 	local_supplies = 0.0
-	state_category = rural
+	state_category = pastoral
 	history = {
 		buildings = {
 				infrastructure = 1
-			farm = 1
-
+			# farm = 1
 			12905 = {
 				naval_base = 1
-
 			}
 		}
 		owner = SRW

@@ -7,10 +7,9 @@ state = {
 	manpower = 10136
 
 	resources = {
-
 	}
 
-	state_category = wasteland
+	state_category = sparse_rural
 
 	history = {
 		owner = OTO
@@ -22,7 +21,7 @@ state = {
 		}
 
 		add_core_of = EGY
-		#add_claim_by = PAL
+		add_claim_by = PAL
 		set_variable = { building_infrastructure_size = 2 }
 	}
 

@@ -24,7 +24,6 @@
 		agrarian
 		victorian_era
 		law_victorian_army
-		religion_catholic
 
 		#GOVERNMENTAL POLICIES
 		absolute_monarchy
@@ -184,7 +183,7 @@
 		
 		
 		tribal_tatics = 1
-		gunpowder = 1
+		tech_infantry_gunpowder = 1
 		tribal_riding = 1
 		tribal_steam_experiments = 1
 		tribal_forging = 1
@@ -199,17 +198,17 @@
 		
 		###Army
 		#Weapons & Equipment
-		tech_pre_rifle_equipment0 = 1
-		tech_pre_rifle_equipment1 = 1
-		tech_pre_rifle_equipment2 = 1 #Pike and Shot
-		tech_pre_rifle_equipment3 = 1 #Smoothbore
+		tech_infantry_pre_rifle_equipment_0 = 1
+		tech_infantry_pre_rifle_equipment_1 = 1
+		tech_infantry_pre_rifle_equipment_2 = 1 #Pike and Shot
+		tech_infantry_pre_rifle_equipment_3 = 1 #Smoothbore
 		tech_infantry_percussion_cap = 1
-		tech_rifle_equipment1 = 1 #Minie Rifle
+		tech_infantry_rifle_equipment_1 = 1 #Minie Rifle
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
 		tech_infantry_caplock_pistol = 1 #Caplock Pistols
-		tech_hand_revolvers = 1 #Hand Revolvers
+		tech_infantry_hand_revolvers = 1 #Hand Revolvers
 		tech_infantry_practical_rifling = 1 #Practical Rifling
-		tech_infantry_infantry_swords = 1 #Infantry Swords
+		tech_infantry_swords = 1 #Infantry Swords
 		tech_socket_bayonet = 1
 		# # #Socket Bayonet
 		#Uniforms
@@ -239,11 +238,20 @@
 		armor_tech_velocipede = 1 #Velocipede
 		
 		###Artillery
-		gw_artillery = 1 #Bore Gun
-		early_howitzer = 1 #Howitzer
-		rml_field_gun = 1 #RML Field Gun
-		early_rockets = 1
-		spin_stabilised_rockets = 1
+		tech_rocket_artillery_equipment_0 = 1
+		tech_rocket_artillery_equipment_1 = 1
+		tech_field_artillery_equipment_0 = 1
+		tech_field_artillery_equipment_1 = 1
+		tech_field_barrel_standardization = 1
+		tech_field_artillery_equipment_2 = 1
+		tech_field_artillery_equipment_3 = 1
+		tech_field_armstrong_screw = 1
+		tech_siege_artillery_equipment_0 = 1
+		tech_siege_artillery_equipment_1 = 1
+		tech_siege_artillery_equipment_2 = 1
+		tech_howitzer_studded_shells = 1
+		tech_howitzer_artillery_equipment_0 = 1
+		tech_howitzer_artillery_equipment_1 = 1
 		
 		###Naval
 		#Gunboats
@@ -380,7 +388,7 @@
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_1 amount = 2000 producer = AUS }
 	add_equipment_to_stockpile = { type = uniform_equipment_3 amount = 2000 producer = AUS }
 	add_equipment_to_stockpile = { type = cavalry_equipment_0 amount = 500 producer = AUS }
-	add_equipment_to_stockpile = { type = cannon_equipment_0 amount = 24 producer = AUS }
+	add_equipment_to_stockpile = { type = field_artillery_equipment_0 amount = 24 producer = AUS }
 	add_equipment_to_stockpile = { type = train_equipment_1 amount = 8 producer = AUS }
 
 	if = {
@@ -391,24 +399,21 @@
 				has_dlc = "Death or Dishonor"
 			}
 		}
-		LVN = { set_country_flag = is_junior_personal_union_member }
+		LVN = {
+			set_country_flag = is_junior_personal_union_member
+		}
 		set_autonomy = {
 			target = LVN
 			autonomy_state = autonomy_personal_union_2
 			freedom_level = 0.1
 		}
-	}
-	if = {
-		limit = {
-			NOT = {
-				OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				}
+		else = {
+			LVN = {
+				set_country_flag = is_junior_personal_union_member
+				set_cosmetic_tag = LVN_AUS_Personal_Union_Cosmetic
 			}
+			puppet = LVN
 		}
-		puppet = LVN
 	}
 
 	#How to set up initial debt_level
@@ -453,7 +458,7 @@
 	recruit_character = AUS_ludwig_von_gablenz
 	recruit_character = AUS_wilhelm_von_ramming
 	recruit_character = AUS_hermann_von_nostitz_rieneck
-	recruit_character = AUS_ernst_hartung
+	recruit_character = AUS_Ernst_Ritter_Von_Hartung
 	recruit_character = AUS_franz_folliot_de_crenneville
 	recruit_character = AUS_franz_von_john
 	recruit_character = AUS_prinz_rudolf
@@ -704,7 +709,6 @@
 		agrarian
 		victorian_era
 		law_victorian_army
-		religion_catholic
 
 		#GOVERNMENTAL POLICIES
 		absolute_monarchy
@@ -860,7 +864,7 @@
 		
 		
 		tribal_tatics = 1
-		gunpowder = 1
+		tech_infantry_gunpowder = 1
 		tribal_riding = 1
 		tribal_steam_experiments = 1
 		tribal_forging = 1
@@ -875,22 +879,22 @@
 		
 		###Army
 		#Weapons & Equipment
-		tech_pre_rifle_equipment0 = 1
-		tech_pre_rifle_equipment1 = 1
-		tech_pre_rifle_equipment2 = 1 #Pike and Shot
-		tech_pre_rifle_equipment3 = 1 #Smoothbore Musket
+		tech_infantry_pre_rifle_equipment_0 = 1
+		tech_infantry_pre_rifle_equipment_1 = 1
+		tech_infantry_pre_rifle_equipment_2 = 1 #Pike and Shot
+		tech_infantry_pre_rifle_equipment_3 = 1 #Smoothbore Musket
 		tech_infantry_percussion_cap = 1 #Augustin M1842
-		tech_rifle_equipment1 = 1 #Minie
-		tech_rifle_equipment2 = 1 #Enfield
+		tech_infantry_rifle_equipment_1 = 1 #Minie
+		tech_infantry_rifle_equipment_2 = 1 #Enfield
 		tech_infantry_breech_loading = 1
-		tech_rifle_equipment3 = 1 #Snider-Enfield
+		tech_infantry_rifle_equipment_3 = 1 #Snider-Enfield
 		tech_infantry_flintlock_pistol = 1 #Flintlock Pistols
 		tech_infantry_caplock_pistol = 1 #Caplock Pistols
-		tech_hand_revolvers = 1 #Hand Revolvers
-		tech_improved_handguns = 1 #Better Desings
+		tech_infantry_hand_revolvers = 1 #Hand Revolvers
+		tech_infantry_metallic_rimfire_cartridges = 1 #Better Desings
 		tech_infantry_practical_rifling = 1 #Practical Rifling
-		tech_improved_matchlock = 1 #Improved Percussion Cap
-		tech_infantry_infantry_swords = 1 #Infantry Swords
+		tech_infantry_early_rimfire_cartridges = 1 #Improved Percussion Cap
+		tech_infantry_swords = 1 #Infantry Swords
 		tech_socket_bayonet = 1
 		# # #Socket Bayonet
 		tech_yataghan_bayonet = 1
@@ -937,18 +941,25 @@
 		armor_tech_steam_car_experiment = 1
 		
 		###Artillery
-		gw_artillery = 1 #Bore Gun
-		early_howitzer = 1 #Howitzer
-		rifled_howitzer = 1
-		heavier_design = 1
-		rml_field_gun = 1 #RML Field Gun
-		rbl_field_gun = 1
-		studded_shells = 1
-		early_rockets = 1
-		spin_stabilised_rockets = 1
-		staged_rockets = 1
-		improved_smoothbore = 1 # Smoothbore
-		siege_gun = 1
+		tech_rocket_artillery_equipment_0 = 1
+		tech_rocket_artillery_equipment_1 = 1
+		tech_rocket_artillery_equipment_2 = 1
+		tech_field_artillery_equipment_0 = 1
+		tech_field_artillery_equipment_1 = 1
+		tech_field_barrel_standardization = 1
+		tech_field_artillery_equipment_2 = 1
+		tech_field_artillery_equipment_3 = 1
+		tech_field_armstrong_screw = 1
+		tech_siege_artillery_equipment_0 = 1
+		tech_siege_artillery_equipment_1 = 1
+		tech_siege_artillery_equipment_2 = 1
+		tech_siege_artillery_equipment_3 = 1
+		tech_siege_grounded_shells = 1
+		tech_howitzer_studded_shells = 1
+		tech_howitzer_artillery_equipment_0 = 1
+		tech_howitzer_artillery_equipment_1 = 1
+		tech_howitzer_heavier_designs = 1
+		tech_howitzer_demolition_shells = 1
 		
 		###Naval
 		#Gunboats and Monitors
@@ -1160,7 +1171,7 @@
 	add_equipment_to_stockpile = { type = infantry_equipment_rifle_1 amount = 2000 producer = AUS }
 	add_equipment_to_stockpile = { type = uniform_equipment_3 amount = 2000 producer = AUS }
 	add_equipment_to_stockpile = { type = cavalry_equipment_0 amount = 500 producer = AUS }
-	add_equipment_to_stockpile = { type = cannon_equipment_0 amount = 24 producer = AUS }
+	add_equipment_to_stockpile = { type = field_artillery_equipment_0 amount = 24 producer = AUS }
 	add_equipment_to_stockpile = { type = train_equipment_1 amount = 8 producer = AUS }
 
 	if = {
@@ -1171,24 +1182,21 @@
 				has_dlc = "Death or Dishonor"
 			}
 		}
-		LVN = { set_country_flag = is_junior_personal_union_member }
+		LVN = {
+			set_country_flag = is_junior_personal_union_member
+		}
 		set_autonomy = {
 			target = LVN
 			autonomy_state = autonomy_personal_union_2
 			freedom_level = 0.1
 		}
-	}
-	if = {
-		limit = {
-			NOT = {
-				OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-					has_dlc = "Death or Dishonor"
-				}
+		else = {
+			LVN = {
+				set_country_flag = is_junior_personal_union_member
+				set_cosmetic_tag = LVN_AUS_Personal_Union_Cosmetic
 			}
+			puppet = LVN
 		}
-		puppet = LVN
 	}
 
 	#How to set up initial debt_level

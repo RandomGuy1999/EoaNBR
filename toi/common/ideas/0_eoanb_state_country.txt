@@ -216,6 +216,7 @@ ideas = {
 				fuel_gain_factor_from_states = -0.1
 				max_fuel_factor = -0.1
 				resistance_target = -0.1
+				supply_node_range = 0.5
 			}
 		}
 
@@ -238,6 +239,7 @@ ideas = {
 				production_speed_buildings_factor = -0.15
 				fuel_gain_factor = -0.95
 				fuel_gain_factor_from_states = -0.1
+				supply_node_range = 0.3
 			}
 		}
 
@@ -269,6 +271,7 @@ ideas = {
 				fuel_gain_factor = -0.85
 				monthly_population = -0.2
 				resistance_target = -0.15
+				supply_node_range = 0.1
 			}
 		}
 
@@ -302,6 +305,7 @@ ideas = {
 				max_fuel_factor = 0.05
 				monthly_population = -0.3
 				resistance_target = -0.075
+				supply_node_range = -0.1
 			}
 		}
 
@@ -329,12 +333,13 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 				research_speed_factor = -0.6
 				production_speed_buildings_factor = 0.05
-				global_building_slots_factor = 0.05
+				# global_building_slots_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				fuel_gain_factor = -0.3
 				fuel_gain_factor_from_states = 0.1
 				max_fuel_factor = 0.1
 				monthly_population = -0.4
+				supply_node_range = -0.15
 			}
 		}
 
@@ -362,13 +367,14 @@ ideas = {
 				industrial_capacity_dockyard = 0.125
 				research_speed_factor = -0.7
 				production_speed_buildings_factor = 0.1
-				global_building_slots_factor = 0.1
+				# global_building_slots_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				fuel_gain_factor = 0.05
 				fuel_gain_factor_from_states = 0.15
 				max_fuel_factor = 0.15
 				monthly_population = -0.5
 				resistance_target = 0.075
+				supply_node_range = -0.2
 			}
 		}
 
@@ -396,13 +402,14 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				research_speed_factor = -0.8
 				production_speed_buildings_factor = 0.15
-				global_building_slots_factor = 0.15
+				# global_building_slots_factor = 0.15
 				production_factory_max_efficiency_factor = 0.15
 				fuel_gain_factor = 0.2
 				fuel_gain_factor_from_states = 0.2
 				max_fuel_factor = 0.2
 				monthly_population = -0.6
 				resistance_target = 0.15
+				supply_node_range = -0.25
 			}
 		}
 
@@ -430,13 +437,14 @@ ideas = {
 				industrial_capacity_dockyard = 0.2
 				research_speed_factor = -0.9
 				production_speed_buildings_factor = 0.2
-				global_building_slots_factor = 0.2
+				# global_building_slots_factor = 0.2
 				production_factory_max_efficiency_factor = 0.2
 				fuel_gain_factor = 0.25
 				fuel_gain_factor_from_states = 0.25
 				max_fuel_factor = 0.25
 				monthly_population = -0.7
 				resistance_target = 0.225
+				supply_node_range = -0.3
 			}
 		}
 
@@ -464,13 +472,14 @@ ideas = {
 				industrial_capacity_dockyard = 0.25
 				research_speed_factor = -1
 				production_speed_buildings_factor = 0.25
-				global_building_slots_factor = 0.25
+				# global_building_slots_factor = 0.25
 				production_factory_max_efficiency_factor = 0.25
 				fuel_gain_factor = 0.25
 				fuel_gain_factor_from_states = 0.5
 				max_fuel_factor = 0.5
 				monthly_population = -0.8
 				resistance_target = 0.30
+				supply_node_range = -0.35
 			}
 		}
 	}
@@ -497,19 +506,19 @@ ideas = {
 				}
 				hidden_trigger = {
 					always = no 
-					NOT = {
-						OR = {
-							has_idea = AF_T_unorganized_tribal_nation
-							has_idea = AF_T_unorganized_tribal_nation_2
-							has_idea = AF_T_unorganized_tribal_nation_3
-							has_idea = AF_T_unorganized_tribal_nation_4
-							has_idea = AF_T_unorganized_tribal_nation_5
-							has_idea = AF_T_organized_tribal_nation
-							has_idea = AF_T_organized_tribal_nation_2
-							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
-						}
-					}
+					# NOT = {
+					# 	OR = {
+					# 		has_idea = AF_T_unorganized_tribal_nation
+					# 		has_idea = AF_T_unorganized_tribal_nation_2
+					# 		has_idea = AF_T_unorganized_tribal_nation_3
+					# 		has_idea = AF_T_unorganized_tribal_nation_4
+					# 		has_idea = AF_T_unorganized_tribal_nation_5
+					# 		has_idea = AF_T_organized_tribal_nation
+					# 		has_idea = AF_T_organized_tribal_nation_2
+					# 		has_idea = AF_T_organized_tribal_nation_3
+					# 		has_idea = AF_T_small_kingdom
+					# 	}
+					# }
 				}
 			}
 
@@ -526,19 +535,20 @@ ideas = {
 			}
 
 			visible = {
-				NOT = {
-					OR = {
-						has_idea = AF_T_unorganized_tribal_nation
-						has_idea = AF_T_unorganized_tribal_nation_2
-						has_idea = AF_T_unorganized_tribal_nation_3
-						has_idea = AF_T_unorganized_tribal_nation_4
-						has_idea = AF_T_unorganized_tribal_nation_5
-						has_idea = AF_T_organized_tribal_nation
-						has_idea = AF_T_organized_tribal_nation_2
-						has_idea = AF_T_organized_tribal_nation_3
-						has_idea = AF_T_small_kingdom
-					}
-				}
+				always = no 
+				# NOT = {
+				# 	OR = {
+				# 		has_idea = AF_T_unorganized_tribal_nation
+				# 		has_idea = AF_T_unorganized_tribal_nation_2
+				# 		has_idea = AF_T_unorganized_tribal_nation_3
+				# 		has_idea = AF_T_unorganized_tribal_nation_4
+				# 		has_idea = AF_T_unorganized_tribal_nation_5
+				# 		has_idea = AF_T_organized_tribal_nation
+				# 		has_idea = AF_T_organized_tribal_nation_2
+				# 		has_idea = AF_T_organized_tribal_nation_3
+				# 		has_idea = AF_T_small_kingdom
+				# 	}
+				# }
 			}
 
 			modifier = {
@@ -760,19 +770,19 @@ ideas = {
 				}
 				hidden_trigger = {
 					always = no
-					NOT = {
-						OR = {
-							has_idea = AF_T_unorganized_tribal_nation
-							has_idea = AF_T_unorganized_tribal_nation_2
-							has_idea = AF_T_unorganized_tribal_nation_3
-							has_idea = AF_T_unorganized_tribal_nation_4
-							has_idea = AF_T_unorganized_tribal_nation_5
-							has_idea = AF_T_organized_tribal_nation
-							has_idea = AF_T_organized_tribal_nation_2
-							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
-						}
-					}
+					# NOT = {
+					# 	OR = {
+					# 		has_idea = AF_T_unorganized_tribal_nation
+					# 		has_idea = AF_T_unorganized_tribal_nation_2
+					# 		has_idea = AF_T_unorganized_tribal_nation_3
+					# 		has_idea = AF_T_unorganized_tribal_nation_4
+					# 		has_idea = AF_T_unorganized_tribal_nation_5
+					# 		has_idea = AF_T_organized_tribal_nation
+					# 		has_idea = AF_T_organized_tribal_nation_2
+					# 		has_idea = AF_T_organized_tribal_nation_3
+					# 		has_idea = AF_T_small_kingdom
+					# 	}
+					# }
 				}
 			}
 
@@ -906,19 +916,19 @@ ideas = {
 				}
 				hidden_trigger = {
 					always = no
-					NOT = {
-						OR = {
-							has_idea = AF_T_unorganized_tribal_nation
-							has_idea = AF_T_unorganized_tribal_nation_2
-							has_idea = AF_T_unorganized_tribal_nation_3
-							has_idea = AF_T_unorganized_tribal_nation_4
-							has_idea = AF_T_unorganized_tribal_nation_5
-							has_idea = AF_T_organized_tribal_nation
-							has_idea = AF_T_organized_tribal_nation_2
-							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
-						}
-					}
+					# NOT = {
+					# 	OR = {
+					# 		has_idea = AF_T_unorganized_tribal_nation
+					# 		has_idea = AF_T_unorganized_tribal_nation_2
+					# 		has_idea = AF_T_unorganized_tribal_nation_3
+					# 		has_idea = AF_T_unorganized_tribal_nation_4
+					# 		has_idea = AF_T_unorganized_tribal_nation_5
+					# 		has_idea = AF_T_organized_tribal_nation
+					# 		has_idea = AF_T_organized_tribal_nation_2
+					# 		has_idea = AF_T_organized_tribal_nation_3
+					# 		has_idea = AF_T_small_kingdom
+					# 	}
+					# }
 				}
 			}
 
@@ -993,19 +1003,19 @@ ideas = {
 				}
 				hidden_trigger = {
 					always = no
-					NOT = {
-						OR = {
-							has_idea = AF_T_unorganized_tribal_nation
-							has_idea = AF_T_unorganized_tribal_nation_2
-							has_idea = AF_T_unorganized_tribal_nation_3
-							has_idea = AF_T_unorganized_tribal_nation_4
-							has_idea = AF_T_unorganized_tribal_nation_5
-							has_idea = AF_T_organized_tribal_nation
-							has_idea = AF_T_organized_tribal_nation_2
-							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
-						}
-					}
+					# NOT = {
+					# 	OR = {
+					# 		has_idea = AF_T_unorganized_tribal_nation
+					# 		has_idea = AF_T_unorganized_tribal_nation_2
+					# 		has_idea = AF_T_unorganized_tribal_nation_3
+					# 		has_idea = AF_T_unorganized_tribal_nation_4
+					# 		has_idea = AF_T_unorganized_tribal_nation_5
+					# 		has_idea = AF_T_organized_tribal_nation
+					# 		has_idea = AF_T_organized_tribal_nation_2
+					# 		has_idea = AF_T_organized_tribal_nation_3
+					# 		has_idea = AF_T_small_kingdom
+					# 	}
+					# }
 				}
 			}
 
@@ -1081,19 +1091,19 @@ ideas = {
 				}
 				hidden_trigger = {
 					always = no
-					NOT = {
-						OR = {
-							has_idea = AF_T_unorganized_tribal_nation
-							has_idea = AF_T_unorganized_tribal_nation_2
-							has_idea = AF_T_unorganized_tribal_nation_3
-							has_idea = AF_T_unorganized_tribal_nation_4
-							has_idea = AF_T_unorganized_tribal_nation_5
-							has_idea = AF_T_organized_tribal_nation
-							has_idea = AF_T_organized_tribal_nation_2
-							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
-						}
-					}
+					# NOT = {
+					# 	OR = {
+					# 		has_idea = AF_T_unorganized_tribal_nation
+					# 		has_idea = AF_T_unorganized_tribal_nation_2
+					# 		has_idea = AF_T_unorganized_tribal_nation_3
+					# 		has_idea = AF_T_unorganized_tribal_nation_4
+					# 		has_idea = AF_T_unorganized_tribal_nation_5
+					# 		has_idea = AF_T_organized_tribal_nation
+					# 		has_idea = AF_T_organized_tribal_nation_2
+					# 		has_idea = AF_T_organized_tribal_nation_3
+					# 		has_idea = AF_T_small_kingdom
+					# 	}
+					# }
 				}
 			}
 
@@ -1169,19 +1179,19 @@ ideas = {
 				}
 				hidden_trigger = {
 					always = no
-					NOT = {
-						OR = {
-							has_idea = AF_T_unorganized_tribal_nation
-							has_idea = AF_T_unorganized_tribal_nation_2
-							has_idea = AF_T_unorganized_tribal_nation_3
-							has_idea = AF_T_unorganized_tribal_nation_4
-							has_idea = AF_T_unorganized_tribal_nation_5
-							has_idea = AF_T_organized_tribal_nation
-							has_idea = AF_T_organized_tribal_nation_2
-							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
-						}
-					}
+					# NOT = {
+					# 	OR = {
+					# 		has_idea = AF_T_unorganized_tribal_nation
+					# 		has_idea = AF_T_unorganized_tribal_nation_2
+					# 		has_idea = AF_T_unorganized_tribal_nation_3
+					# 		has_idea = AF_T_unorganized_tribal_nation_4
+					# 		has_idea = AF_T_unorganized_tribal_nation_5
+					# 		has_idea = AF_T_organized_tribal_nation
+					# 		has_idea = AF_T_organized_tribal_nation_2
+					# 		has_idea = AF_T_organized_tribal_nation_3
+					# 		has_idea = AF_T_small_kingdom
+					# 	}
+					# }
 				}
 			}
 
@@ -1257,19 +1267,19 @@ ideas = {
 				}
 				hidden_trigger = {
 					always = no
-					NOT = {
-						OR = {
-							has_idea = AF_T_unorganized_tribal_nation
-							has_idea = AF_T_unorganized_tribal_nation_2
-							has_idea = AF_T_unorganized_tribal_nation_3
-							has_idea = AF_T_unorganized_tribal_nation_4
-							has_idea = AF_T_unorganized_tribal_nation_5
-							has_idea = AF_T_organized_tribal_nation
-							has_idea = AF_T_organized_tribal_nation_2
-							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
-						}
-					}
+					# NOT = {
+					# 	OR = {
+					# 		has_idea = AF_T_unorganized_tribal_nation
+					# 		has_idea = AF_T_unorganized_tribal_nation_2
+					# 		has_idea = AF_T_unorganized_tribal_nation_3
+					# 		has_idea = AF_T_unorganized_tribal_nation_4
+					# 		has_idea = AF_T_unorganized_tribal_nation_5
+					# 		has_idea = AF_T_organized_tribal_nation
+					# 		has_idea = AF_T_organized_tribal_nation_2
+					# 		has_idea = AF_T_organized_tribal_nation_3
+					# 		has_idea = AF_T_small_kingdom
+					# 	}
+					# }
 				}
 			}
 
@@ -1424,10 +1434,10 @@ ideas = {
 							has_idea = AF_T_unorganized_tribal_nation_3
 							has_idea = AF_T_unorganized_tribal_nation_4
 							has_idea = AF_T_unorganized_tribal_nation_5
-							has_idea = AF_T_organized_tribal_nation
-							has_idea = AF_T_organized_tribal_nation_2
-							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
+							# has_idea = AF_T_organized_tribal_nation
+							# has_idea = AF_T_organized_tribal_nation_2
+							# has_idea = AF_T_organized_tribal_nation_3
+							# has_idea = AF_T_small_kingdom
 						}
 					}
 				}
@@ -1492,17 +1502,20 @@ ideas = {
 						OR = {
 							has_idea = AF_T_small_kingdom
 							AND = {
-								has_idea = AF_T_organized_tribal_nation
+								OR = {
+									has_idea = AF_T_organized_tribal_nation
+									has_idea = AF_T_organized_tribal_nation_2
+									has_idea = AF_T_organized_tribal_nation_3
+								}
 								has_completed_focus = AF_O_K_create_political_caste
 							}
-							AND = {
-								has_idea = AF_T_organized_tribal_nation_2
-								has_completed_focus = AF_O_K_create_political_caste
-							}
-							AND = {
-								has_idea = AF_T_organized_tribal_nation_3
-								has_completed_focus = AF_O_K_create_political_caste
-							}
+							# AND = {
+								
+							# 	has_completed_focus = AF_O_K_create_political_caste
+							# }
+							# AND = {
+							# 	has_completed_focus = AF_O_K_create_political_caste
+							# }
 						}
 						OR = {
 							has_idea = AF_T_unorganized_tribal_nation
@@ -1513,7 +1526,7 @@ ideas = {
 							has_idea = AF_T_organized_tribal_nation
 							has_idea = AF_T_organized_tribal_nation_2
 							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
+							# has_idea = AF_T_small_kingdom
 						}
 					}
 				}
@@ -1585,7 +1598,7 @@ ideas = {
 							has_idea = AF_T_organized_tribal_nation
 							has_idea = AF_T_organized_tribal_nation_2
 							has_idea = AF_T_organized_tribal_nation_3
-							has_idea = AF_T_small_kingdom
+							# has_idea = AF_T_small_kingdom
 						}
 					}
 				}
@@ -1657,7 +1670,7 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_buildings_factor = -0.1
-				global_building_slots_factor = -0.5
+				# global_building_slots_factor = -0.5
 				production_speed_industrial_complex_factor = -0.65
 				production_speed_arms_factory_factor = -0.65
 				production_speed_dockyard_factor = -0.65
@@ -1667,7 +1680,7 @@ ideas = {
 				max_fuel_factor = -0.75
 				political_power_gain = -0.1
 				army_morale_factor = -0.05
-				consumer_goods_factor = -0.1
+				treasury_gain_monthly_per_gdp = 0.01
 				research_speed_factor = 0.01
 				resistance_target = -0.075
 			}
@@ -1703,7 +1716,7 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_buildings_factor = -0.05
-				global_building_slots_factor = -0.25
+				# global_building_slots_factor = -0.25
 				production_speed_industrial_complex_factor = -0.5
 				production_speed_arms_factory_factor = -0.5
 				production_speed_dockyard_factor = -0.5
@@ -1712,7 +1725,7 @@ ideas = {
 				fuel_gain_factor_from_states = -0.5
 				max_fuel_factor = -0.5
 				political_power_gain = -0.05
-				consumer_goods_factor = -0.05
+				treasury_gain_monthly_per_gdp = 0.005
 				research_speed_factor = 0.02
 
 				banking_confidence_modifier = 10
@@ -1739,7 +1752,7 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.02
 				research_speed_factor = 0.03
-				global_building_slots_factor = -0.1
+				# global_building_slots_factor = -0.1
 				production_speed_industrial_complex_factor = -0.25
 				production_speed_arms_factory_factor = -0.25
 				production_speed_dockyard_factor = -0.25
@@ -1828,7 +1841,7 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
 				production_speed_buildings_factor = 0.1
-				global_building_slots_factor = 0.1
+				# global_building_slots_factor = 0.1
 				fuel_gain_factor_from_states = 0.1
 				political_power_gain = 0.1
 				army_morale_factor = 0.075

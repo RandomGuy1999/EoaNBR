@@ -2,13 +2,13 @@ state = {
 	id = 159
 	name = "STATE_159"
 	manpower = 3392204
-	state_category = large_city
+	state_category = dense_urban
 
 	resources = {
 		coal = 3
 		iron = 2
 		wood = 3
-		fabric = 12
+		textiles = 12
 	}
 
 	provinces = {
@@ -24,9 +24,9 @@ state = {
 			infrastructure = 6
 			industrial_complex = 2
 			arms_factory = 1
-			fabric_weavery = 2
-			steel_mill = 1
-			machine_parts_factory = 1
+			# fabric_weavery = 2
+			# steel_mill = 1
+			# machine_parts_factory = 1
 		}
 		set_variable = { building_infrastructure_size = 5 }
 		set_variable = { building_railway_size = 6 }

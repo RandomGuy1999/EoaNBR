@@ -12,7 +12,7 @@ state = {
 	}
 
 
-	state_category = pastoral
+	state_category = sparse_rural
 
 	history = {
 		owner = INS
@@ -50,7 +50,6 @@ state = {
 
 		# Blood and Iron
 		1870.1.1 = {
-
 		}
 	}
 

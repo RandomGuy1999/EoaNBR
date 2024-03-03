@@ -9,7 +9,6 @@ state = {
 		add_claim_by = TSH
 		buildings = {
 			infrastructure = 2
-
 		}
 		# Blood and Iron
 		1870.1.1 = {
@@ -23,5 +22,5 @@ state = {
 	}
 	manpower = 245
 
-	state_category =tiny_island
+	state_category =pastoral
 }

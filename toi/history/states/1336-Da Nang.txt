@@ -6,10 +6,9 @@ state = {
 	local_supplies = 0.0
 	resources = {
 		wood = 2
-		cotton = 5
 	}
 
-	state_category = town
+	state_category = rural
 
 	provinces = {
 		4255 10180 7229 10309 10137

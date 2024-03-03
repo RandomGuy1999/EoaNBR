@@ -4,7 +4,7 @@ state = {
 	name = "STATE_142"
 	manpower = 392660
 
-	state_category = town
+	state_category = rural
 
 	resources = {
 		iron = 2
@@ -35,7 +35,6 @@ state = {
 		set_variable = { building_port_size = 1 }
 		set_variable = { building_lumber_mill_size = 2 }
 		set_variable = { building_metals_mine_size = 2 }
-
 	}
 
 	provinces = {

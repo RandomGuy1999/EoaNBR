@@ -5,7 +5,7 @@ state = {
 
 	local_supplies = 0.0
 
-	state_category = metropolis
+	state_category = dense_urban
 	resources = {
 	}
 
@@ -20,7 +20,6 @@ state = {
 			infrastructure = 8
 			arms_factory = 3
 			industrial_complex = 3
-
 		}
 
 		set_variable = { building_infrastructure_size = 8 }

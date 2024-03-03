@@ -6,13 +6,12 @@ state = {
 		coal = 7
 	}
 
-	state_category = pastoral
+	state_category = sparse_rural
 
 	history = {
 		owner = PRU
 		buildings = {
 			infrastructure = 1
-
 
 		}
 		add_core_of = PRU

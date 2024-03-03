@@ -11,11 +11,11 @@ state = {
 
 	history = {
 		owner = RUS
-		add_claim_by = RUS
+		add_core_of = ARM
+		add_core_of = PER
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ARM
 	}
 
 	provinces = {
@@ -23,5 +23,5 @@ state = {
 	}
 	manpower = 50000
 
-	state_category =town
+	state_category =sparse_rural
 }

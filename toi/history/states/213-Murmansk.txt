@@ -7,7 +7,6 @@ state = {
 	state_category = pastoral
 
 	resources = {
-		iron = 14
 		#chromium = 4
 		wood = 12
 	}
@@ -21,16 +20,9 @@ state = {
 		1857.1.1 = {
 			add_core_of = RUS
 			add_claim_by = FIN
-
 			buildings = {
-				infrastructure = 3
-				3134 = {
-					naval_base = 2
-					coastal_bunker = 1
-				}
+				infrastructure = 1
 			}
-			set_variable = { building_port_size = 1 }
-
 			victory_points = { 3134 5 }
 		}
 	}

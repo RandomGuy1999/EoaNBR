@@ -20,13 +20,10 @@ state = {
 		1857.1.1 = {
 			add_core_of = KAS
 			add_claim_by = RAJ
-
 			buildings = {
 				infrastructure = 2
 			}
-
 			victory_points = { 7273 1 } # Leli
-
 			set_variable = { building_infrastructure_size = 8 }
 			set_variable = { building_railway_size = 0 }
 			set_variable = { building_port_size = 0 }
@@ -49,7 +46,7 @@ state = {
 			set_variable = { building_valuables_extractor_size = 0 }
 		}
 		# Blood and Iron
-		1870.1.1 = {
+		1949.1.1 = {
 			owner = RAJ
 			add_core_of = RAJ
 			remove_core_of = KAS

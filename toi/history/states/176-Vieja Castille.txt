@@ -2,10 +2,10 @@ state = {
 	id = 176
 	name = "STATE_176" #Vieja Castille
 	manpower = 1221695
-	state_category = city
+	state_category = dense_rural
 
 	resources = {
-		fabric = 1 # Merino
+		textiles = 1 # Merino
 	}
 
 	provinces = {

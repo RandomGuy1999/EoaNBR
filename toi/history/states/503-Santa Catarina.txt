@@ -1,14 +1,13 @@
 state = {
 	id = 503
 	name = "STATE_503"
-	manpower = 98350 #137112
+	manpower = 130399
 
 	local_supplies = 0.0
 
-	state_category = pastoral
+	state_category = sparse_rural
 
 	resources = {
-		cotton = 5
 	}
 
 	history = {

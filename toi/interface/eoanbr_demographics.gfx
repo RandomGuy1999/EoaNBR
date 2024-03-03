@@ -95,10 +95,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		transparencecheck = yes
 	}
-	spriteType = {
-		name = "GFX_eoanbr_pie_chart_unknown"
-		texturefile = "gfx/interface/pie_chart/eoanbr_pie_chart_unknown.dds"
-	}
 }
 
 # Cultures
@@ -685,16 +681,8 @@ spriteTypes = {
 				texturefile = "gfx/interface/demographics/culture/romance/culture_gaucho.dds"
 			}
 			spriteType = {
-				name = "GFX_culture_mineiro"
-				texturefile = "gfx/interface/demographics/culture/romance/culture_mineiro.dds"
-			}
-			spriteType = {
 				name = "GFX_culture_nordestino"
 				texturefile = "gfx/interface/demographics/culture/romance/culture_nordestino.dds"
-			}
-			spriteType = {
-				name = "GFX_culture_sulista"
-				texturefile = "gfx/interface/demographics/culture/romance/culture_sulista.dds"
 			}
 			spriteType = {
 				name = "GFX_culture_group_romance_spanish_colonial"
@@ -1389,10 +1377,10 @@ spriteTypes = {
 				texturefile = "gfx/interface/demographics/culture/turkic/culture_siberian_tatar.dds"
 			}
 			spriteType = {
-				name = "GFX_culture_volga_tartar"
-				texturefile = "gfx/interface/demographics/culture/turkic/culture_volga_tartar.dds"
+				name = "GFX_culture_volga_tatar"
+				texturefile = "gfx/interface/demographics/culture/turkic/culture_volga_tatar.dds"
 			}
-			spriteType = {
+			spriteType = { 
 				name = "GFX_culture_group_turkic_karlak"
 				texturefile = "gfx/interface/demographics/culture/turkic/culture_group_turkic_karlak.dds"
 			}
@@ -3409,12 +3397,16 @@ spriteTypes = {
 				texturefile = "gfx/interface/demographics/culture/bantu/culture_group_bantu_colonial.dds"
 			}
 			spriteType = {
+				name = "GFX_culture_afro_brazilian"
+				texturefile = "gfx/interface/demographics/culture/bantu/culture_afro_brazilian.dds"
+			}
+			spriteType = {
 				name = "GFX_culture_afro_caribeno"
 				texturefile = "gfx/interface/demographics/culture/bantu/culture_afro_caribeno.dds"
 			}
 			spriteType = {
-				name = "GFX_culture_afro_brazilian"
-				texturefile = "gfx/interface/demographics/culture/bantu/culture_afro_brazilian.dds"
+				name = "GFX_culture_pardo"
+				texturefile = "gfx/interface/demographics/culture/bantu/culture_pardo.dds"
 			}
 		#
 		#Khosian

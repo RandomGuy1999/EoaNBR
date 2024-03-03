@@ -4,14 +4,14 @@ state = {
 	name = "STATE_301"
 
 	local_supplies = 0.0
-	manpower = 26046 #260466
+	manpower = 56872
 
 	resources = {
 		wood = 4
 		iron = 3
 	}
 
-	state_category = pastoral
+	state_category = sparse_rural
 
 	history = {
 		owner = BRA
@@ -42,7 +42,6 @@ state = {
 		
 	
 		add_core_of = BRA
-
 	}
 
 	provinces = {

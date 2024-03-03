@@ -2,7 +2,7 @@ state = {
 	id = 3
 	name = "STATE_3" # Romandy/Romandie
 	manpower = 836606
-	state_category = city
+	state_category = dense_rural
 
 	resources = {
 		wood = 3
@@ -20,7 +20,7 @@ state = {
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
-			logging_camp = 1
+			# logging_camp = 1
 		}
 		
 		victory_points = { 6666 5 } # Geneva/Genf

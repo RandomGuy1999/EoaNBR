@@ -8,23 +8,22 @@ state={
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-			cotton_farm = 1
-
 		}
 		add_core_of = TMS
 		add_extra_state_shared_building_slots = 1
 		1885.1.1 = {
 			owner = RUS
-
 		}
-
+		1900.1.1 = {
+			add_core_of = RUS
+		}
 	}
 
 	provinces={
-		1493 1593 4563 4599 7477 7563 7618 7635 8099 10348 10359 10406 10485 10510 12333 12359 12491 14443 
+		7618 8099 12333 12491 14578 14579 
 	}
-	manpower=264523
+	manpower=124523
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category = sparse_rural
 	local_supplies=0.000
 }

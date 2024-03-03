@@ -1,3 +1,7 @@
+#!gfx:interface\eoanbr_technologies.gfx
+#!localisation:localisation\_eoanbr_technologies_l_english.yml
+#do not delete above line!!!!!!
+
 technologies = {
 	# NOTE FOR ECO:
 	# Goal for each building type each era (total across all tech):
@@ -61,56 +65,59 @@ technologies = {
 	#### Years ####
 		@1500 = 2
 		@1700 = 5
-		@1840 = 9
-		@1850 = 12
-		@1860 =	15
-		@1865 = 18
-		@1870 = 22
-		@1875 = 25
-		@1880 = 28
-		@1885 = 31
-		@1890 = 35
-		@1895 = 38
-		@1900 = 41
-		@1905 = 45
-		@1910 = 48
-		@1915 = 51
-		@1920 = 55
-		@1925 = 58
-		@1930 = 61
-		@1935 = 64
-		@1940 = 68
-		@1945 = 71
-		@1950 = 74
-		@1955 = 77
-		@1960 = 81
-		@1965 = 84
-		@1970 = 87
-		@1975 = 90
-		@1980 = 93
-		@1985 = 97
-		@1990 = 100
-		@1995 = 103
-		@2000 = 106
-		@2005 = 109
-		@2010 = 113
-		@2015 = 116
-		@2020 = 119
-		@2025 = 122
-		@2030 = 125
-		@2035 = 128
-		@2040 = 132
-		@2045 = 135
-		@2050 = 138
-		@2055 = 141
-		@2060 = 144
+		@1750 = 8
+		@1800 = 11
+		@1820 = 14
+		@1840 = 18
+		@1850 = 21
+		@1860 =	24
+		@1865 = 27
+		@1870 = 31
+		@1875 = 34
+		@1880 = 37
+		@1885 = 40
+		@1890 = 44
+		@1895 = 47
+		@1900 = 50
+		@1905 = 54
+		@1910 = 57
+		@1915 = 60
+		@1920 = 64
+		@1925 = 67
+		@1930 = 70
+		@1935 = 73
+		@1940 = 77
+		@1945 = 80
+		@1950 = 83
+		@1955 = 86
+		@1960 = 90
+		@1965 = 93
+		@1970 = 96
+		@1975 = 99
+		@1980 = 102
+		@1985 = 106
+		@1990 = 109
+		@1995 = 112
+		@2000 = 115
+		@2005 = 118
+		@2010 = 122
+		@2015 = 125
+		@2020 = 128
+		@2025 = 131
+		@2030 = 134
+		@2035 = 137
+		@2040 = 141
+		@2045 = 144
+		@2050 = 147
+		@2055 = 150
+		@2060 = 153
 	#
 	early_thermodynamics_theories = {
 		research_speed_factor = 0.01
 		research_cost = 0.15
 		start_year = 1855
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 2 y = @1850 }
 		}
 		dependencies = {
@@ -128,8 +135,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -139,7 +145,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1875
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 2 y = @1875 }
 		}
 		ai_will_do = {
@@ -159,8 +165,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -171,7 +176,7 @@ technologies = {
 		research_cost = 0.2
 		start_year = 1700
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1700 }
 		}
 		on_research_complete = {
@@ -196,9 +201,13 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_rationalism_techs
+			cat_rationalism_industry_techs
 			mechanical_engineering_tech
+		}
+
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 2 }
+			eoanbr_institutions_industrialization_change = yes
 		}
 	}
 	corliss_steam_engine = {
@@ -209,7 +218,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1840
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 14 y = @1840 }
 		}
 		path = {
@@ -255,8 +264,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -266,29 +274,12 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1850
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 14 y = @1850 }
 		}
 		path = {
 			leads_to_tech = mechanical_production_2
 			research_cost_coeff = 1
-		}
-		on_research_complete = {
-			if = {
-				limit = {
-					check_variable = {ROOT.innovation_progress < 100 }
-					OR = {
-						has_idea = afr_reforming_kingdom
-						has_country_flag = Oceania_industrializing
-						has_country_flag = afr_colony_industrializing
-						has_country_flag = afr_an_african_industrializing
-					}
-				}
-				custom_effect_tooltip = eoanb_tech_add_industrialisation
-				hidden_effect = {
-					add_to_variable = { ROOT.innovation_progress = 5 }
-				}
-			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -325,8 +316,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -340,7 +330,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1865
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 14 y = @1865 }
 		}
 		path = {
@@ -358,8 +348,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -369,7 +358,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1890
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 14 y = @1890 }
 		}
 		ai_will_do = {
@@ -387,8 +376,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -397,7 +385,7 @@ technologies = {
 		research_cost = 0.09
 		start_year = 1500
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1500 }
 		}
 		path = {
@@ -415,8 +403,12 @@ technologies = {
 		}
 
 		categories = {
-			cat_innovative_techs
-			cat_rationalism_techs
+			cat_rationalism_industry_techs
+		}
+
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 5 }
+			eoanbr_institutions_settlement_change = yes
 		}
 	}
 	manufactories = {
@@ -438,7 +430,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1700
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1700 }
 		}
 		path = {
@@ -461,10 +453,14 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_rationalism_techs
+			cat_rationalism_industry_techs
 			mechanical_engineering_tech
 			industry
+		}
+
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 3 }
+			eoanbr_institutions_industrialization_change = yes
 		}
 	}
 	factory_industry_1 = {
@@ -481,27 +477,10 @@ technologies = {
 		dependencies = {
 			manufactories = 1
 		}
-		on_research_complete = {
-			if = {
-				limit = {
-					check_variable = {ROOT.innovation_progress < 100 }
-					OR = {
-						has_idea = afr_reforming_kingdom
-						has_country_flag = Oceania_industrializing
-						has_country_flag = afr_colony_industrializing
-						has_country_flag = afr_an_african_industrializing
-					}
-				}
-				custom_effect_tooltip = eoanb_tech_add_industrialisation
-				hidden_effect = {
-					add_to_variable = { ROOT.innovation_progress = 5 }
-				}
-			}
-		}
 		research_cost = 0.15
 		start_year = 1855
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1840 }
 		}
 		path = {
@@ -532,8 +511,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -551,7 +529,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1870
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1865 }
 		}
 		path = {
@@ -573,8 +551,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -592,7 +569,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1885
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1880 }
 		}
 		path = {
@@ -614,8 +591,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -633,7 +609,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1900
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1895 }
 		}
 		path = {
@@ -655,8 +631,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -678,7 +653,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1915
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1910 }
 		}
 		ai_will_do = {
@@ -696,8 +671,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_transit_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -718,7 +692,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1925
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1925 }
 		}
 		path = {
@@ -744,8 +718,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -763,7 +736,7 @@ technologies = {
 			dispersed_industry
 		}
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1930 }
 		}
 		ai_will_do = {
@@ -803,8 +776,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			industry
 			concentrated_industry_category
 		}
@@ -820,7 +792,7 @@ technologies = {
 		research_cost = 0.2
 		start_year = 1937
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1935 }
 		}
 		ai_will_do = {
@@ -839,8 +811,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			industry
 			concentrated_industry_category
 		}
@@ -856,7 +827,7 @@ technologies = {
 		research_cost = 0.2
 		start_year = 1939
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1940 }
 		}
 		ai_will_do = {
@@ -880,8 +851,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			industry
 			concentrated_industry_category
 		}
@@ -904,7 +874,7 @@ technologies = {
 			concentrated_industry
 		}
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1925 }
 		}
 		ai_will_do = {
@@ -939,8 +909,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			industry
 			dispersed_industry_category
 		}
@@ -959,7 +928,7 @@ technologies = {
 		research_cost = 0.2
 		start_year = 1937
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1935 }
 		}
 		ai_will_do = {
@@ -978,8 +947,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			industry
 			dispersed_industry_category
 		}
@@ -998,7 +966,7 @@ technologies = {
 		research_cost = 0.2
 		start_year = 1939
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1940 }
 		}
 		ai_will_do = {
@@ -1017,8 +985,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			industry
 			dispersed_industry_category
 		}
@@ -1040,7 +1007,7 @@ technologies = {
 		research_cost = 0.2
 		start_year = 1939
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1945 }
 		}
 		ai_will_do = {
@@ -1059,8 +1026,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			industry
 			dispersed_industry_category
 		}
@@ -1075,7 +1041,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1855
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1850 }
 		}
 		path = {
@@ -1104,8 +1070,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1119,7 +1084,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1870
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1870 }
 		}
 		path = {
@@ -1154,8 +1119,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1169,7 +1133,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1895
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1895 }
 		}
 		path = {
@@ -1196,8 +1160,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1211,7 +1174,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1905
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1905 }
 		}
 		path = {
@@ -1238,8 +1201,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_transit_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1253,7 +1215,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1915
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1915 }
 		}
 		path = {
@@ -1279,8 +1241,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_transit_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1294,7 +1255,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1925
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1925 }
 		}
 		path = {
@@ -1316,8 +1277,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1331,7 +1291,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1936
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1935 }
 		}
 		path = {
@@ -1353,8 +1313,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1368,7 +1327,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1940
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1940 }
 		}
 		path = {
@@ -1390,8 +1349,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1405,7 +1363,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1950
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 16 y = @1950 }
 		}
 
@@ -1429,8 +1387,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1440,7 +1397,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1955
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1960 }
 		}
 		ai_will_do = {
@@ -1455,8 +1412,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1466,7 +1422,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1965
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1970 }
 		}
 		ai_will_do = {
@@ -1481,8 +1437,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1492,7 +1447,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1975
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1980 }
 		}
 		ai_will_do = {
@@ -1508,8 +1463,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_green_revolution_techs
+			cat_green_revolution_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1519,7 +1473,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1985
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1990 }
 		}
 		ai_will_do = {
@@ -1534,8 +1488,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_green_revolution_techs
+			cat_green_revolution_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1545,7 +1498,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1995
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @2000 }
 		}
 		ai_will_do = {
@@ -1559,8 +1512,7 @@ technologies = {
 
 
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1574,7 +1526,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2005
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @2015 }
 		}
 		ai_will_do = {
@@ -1586,8 +1538,7 @@ technologies = {
 		}
 
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1597,7 +1548,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1990
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1995 }
 		}
 		ai_will_do = {
@@ -1616,8 +1567,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1627,7 +1577,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1995
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 14 y = @1995 }
 		}
 		ai_will_do = {
@@ -1642,8 +1592,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1653,7 +1602,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2000
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 14 y = @2000 }
 		}
 		ai_will_do = {
@@ -1676,8 +1625,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1687,7 +1635,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2005
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 14 y = @2005 }
 		}
 		ai_will_do = {
@@ -1702,8 +1650,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1714,7 +1661,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2005
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @2005 }
 		}
 		ai_will_do = {
@@ -1729,8 +1676,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1741,7 +1687,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2010
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @2010 }
 		}
 		ai_will_do = {
@@ -1757,8 +1703,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1768,7 +1713,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2015
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 14 y = @2015 }
 		}
 		dependencies = {
@@ -1783,8 +1728,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1795,11 +1739,11 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2015
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @2015 }
 		}
 		dependencies = {
-			surgical_robotics = 1
+			# surgical_robotics = 1
 		}
 		ai_will_do = {
 			factor = 1
@@ -1813,8 +1757,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1825,7 +1768,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2025
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @2025 }
 		}
 		ai_will_do = {
@@ -1840,8 +1783,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1852,7 +1794,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2040
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @2040 }
 		}
 		dependencies = {
@@ -1866,8 +1808,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_automation_techs
+			cat_automation_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1877,7 +1818,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2010
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 20 y = @2010 }
 		}
 		ai_will_do = {
@@ -1891,8 +1832,7 @@ technologies = {
 			nanoengineering = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1906,7 +1846,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2000
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @2005 }
 		}
 		ai_will_do = {
@@ -1921,8 +1861,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1932,7 +1871,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2025
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @2025 }
 		}
 		ai_will_do = {
@@ -1947,8 +1886,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1962,7 +1900,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2035
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @2035 }
 		}
 		ai_will_do = {
@@ -1977,8 +1915,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -1992,7 +1929,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2045
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @2045 }
 		}
 		ai_will_do = {
@@ -2007,8 +1944,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_automation_techs
+			cat_automation_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2022,7 +1958,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2050
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @2050 }
 		}
 		ai_will_do = {
@@ -2033,8 +1969,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_automation_techs
+			cat_automation_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2044,7 +1979,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1955
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1955 }
 		}
 		path = {
@@ -2059,8 +1994,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2071,7 +2005,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1960
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1965 }
 		}
 		path = {
@@ -2086,8 +2020,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2102,7 +2035,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1960
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1975 }
 		}
 		dependencies = {
@@ -2122,8 +2055,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2134,7 +2066,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1960
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1985 }
 		}
 		path = {
@@ -2149,8 +2081,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2162,7 +2093,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1925
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1920 }
 		}
 		path = {
@@ -2177,11 +2108,10 @@ technologies = {
 			}
 		}
 		dependencies = {
-			staged_rockets = 1
+			tech_rocket_artillery_staged_rockets = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 			rocketry
 		}
@@ -2198,15 +2128,14 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1938
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1925 }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			rocketry
 		}
 	}
@@ -2240,7 +2169,7 @@ technologies = {
 		research_cost = 0.2
 		start_year = 1942
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1930 }
 		}
 
@@ -2248,8 +2177,7 @@ technologies = {
 			factor = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			rocketry
 		}
 	}
@@ -2279,15 +2207,14 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1945
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1935 }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			rocketry
 		}
 	}
@@ -2317,15 +2244,14 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1950
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1950 }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			rocketry
 		}
 	}
@@ -2358,15 +2284,14 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1955
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1955 }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			rocketry
 		}
 	}
@@ -2399,15 +2324,14 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1965
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1965 }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			rocketry
 		}
 	}
@@ -2436,15 +2360,14 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1980
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1980 }
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		categories = {
-			cat_innovative_techs
-			cat_green_revolution_techs
+			cat_green_revolution_industry_techs
 			rocketry
 		}
 	}
@@ -2453,7 +2376,7 @@ technologies = {
 		research_cost = 0.2
 		start_year = 1875
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1875 }
 		}
 		path = {
@@ -2468,8 +2391,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -2480,12 +2402,8 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1880
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1880 }
-		}
-		folder = {
-			name = mtg_naval_folder
-			position = { x = 57 y = 67 }
 		}
 		path = {
 			leads_to_tech = internal_combustion_engine
@@ -2499,8 +2417,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -2515,16 +2432,12 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1890
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 18 y = @1890 }
 		}
 		on_research_complete = {
 			set_temp_variable = { eoanb_tech_score_change = 3 }
 			eoanb_change_tech_score = yes
-		}
-		folder = {
-			name = armour_folder
-			position = { x = 10 y = @1870 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -2534,8 +2447,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -2554,7 +2466,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1855
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1850 }
 		}
 		path = {
@@ -2585,8 +2497,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2597,7 +2508,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1870
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1870 }
 		}
 		path = {
@@ -2626,8 +2537,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2642,7 +2552,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1885
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1885 }
 		}
 		path = {
@@ -2665,8 +2575,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2675,7 +2584,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1900
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1900 }
 		}
 		path = {
@@ -2698,8 +2607,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2712,7 +2620,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1915
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1915 }
 		}
 		path = {
@@ -2735,8 +2643,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_transit_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2745,7 +2652,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1925
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1930 }
 		}
 
@@ -2760,8 +2667,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2770,7 +2676,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1935
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1935 }
 		}
 
@@ -2785,8 +2691,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2795,7 +2700,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1940
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 10 y = @1940 }
 		}
 		path = {
@@ -2811,8 +2716,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2825,7 +2729,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1940
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 8 y = @1950 }
 		}
 		path = {
@@ -2841,8 +2745,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2869,7 +2772,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1855
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1850 }
 		}
 		path = {
@@ -2898,8 +2801,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2920,7 +2822,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1870
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1870 }
 		}
 		path = {
@@ -2944,8 +2846,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -2976,7 +2877,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1885
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1885 }
 		}
 		path = {
@@ -2995,8 +2896,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3014,7 +2914,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1900
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1900 }
 		}
 		path = {
@@ -3033,8 +2933,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3059,7 +2958,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1915
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1915 }
 		}
 		path = {
@@ -3073,8 +2972,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_transit_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3099,7 +2997,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1930
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1930 }
 		}
 		path = {
@@ -3113,8 +3011,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3139,7 +3036,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1935
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1935 }
 		}
 		path = {
@@ -3153,8 +3050,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3179,7 +3075,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1945
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1940 }
 		}
 		path = {
@@ -3193,8 +3089,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3219,7 +3114,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1950
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1945 }
 		}
 		path = {
@@ -3233,8 +3128,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3259,7 +3153,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1960
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1955 }
 		}
 		path = {
@@ -3273,8 +3167,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3299,7 +3192,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1965
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1965 }
 		}
 		path = {
@@ -3313,8 +3206,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3339,7 +3231,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1980
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1975 }
 		}
 		path = {
@@ -3353,8 +3245,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_green_revolution_techs
+			cat_green_revolution_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3379,7 +3270,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1990
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1985 }
 		}
 		path = {
@@ -3393,8 +3284,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3419,7 +3309,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2005
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @1995 }
 		}
 		path = {
@@ -3433,8 +3323,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3459,7 +3348,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2015
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @2005 }
 		}
 		path = {
@@ -3473,8 +3362,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3499,7 +3387,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2030
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @2015 }
 		}
 		path = {
@@ -3513,8 +3401,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3539,7 +3426,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2040
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 6 y = @2025 }
 		}
 		ai_will_do = {
@@ -3549,8 +3436,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_automation_techs
+			cat_automation_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3560,7 +3446,7 @@ technologies = {
 		research_cost = 0.13
 
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1500 }
 		}
 
@@ -3582,11 +3468,15 @@ technologies = {
 			level = 6
 		}
 		categories = {
-			cat_innovative_techs
-			cat_rationalism_techs
+			cat_rationalism_industry_techs
 			transport_tech
 		}
 
+		
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 3 }
+			eoanbr_institutions_rationalism_change = yes
+		}
 	}
 	steam_engine = {#atmospheric steam engine
 		building_coal_mine_throughput_factor = 0.12
@@ -3596,7 +3486,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1700
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1700 }
 		}
 		path = {
@@ -3605,10 +3495,6 @@ technologies = {
 		}
 		dependencies = {
 			tribal_forging = 1
-		}
-		folder = {
-			name = mtg_naval_folder
-			position = { x = 0 y = 67 }
 		}
 		ai_will_do = {
 			factor = 10
@@ -3631,10 +3517,14 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_rationalism_techs
+			cat_rationalism_industry_techs
 			mechanical_engineering_tech
 			engine_tech
+		}
+
+		on_research_complete = {
+			set_temp_variable = { institution_progress_temp = 3 }
+			eoanbr_institutions_industrialization_change = yes
 		}
 	}
 	high_speed_steam_engine = {
@@ -3643,16 +3533,12 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1840
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1840 }
 		}
 		on_research_complete = {
 			set_temp_variable = { eoanb_tech_score_change = 1 }
 			eoanb_change_tech_score = yes
-		}
-		folder = {
-			name = armour_folder
-			position = { x = 6 y = @1850 }
 		}
 		path = {
 			leads_to_tech = porter_allen_engine
@@ -3679,8 +3565,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -3692,7 +3577,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1860
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1860 }
 		}
 		dependencies = {
@@ -3721,8 +3606,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_industrialization_techs
+			cat_industrialization_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -3732,7 +3616,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1885
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1885 }
 		}
 		on_research_complete = {
@@ -3742,10 +3626,6 @@ technologies = {
 		dependencies = {
 			porter_allen_engine = 1
 			gibbs_theory_of_thermodynamics = 1
-		}
-		folder = {
-			name = mtg_naval_folder
-			position = { x = 62 y = 67 }
 		}
 		path = {
 			leads_to_tech = de_laval_turbine
@@ -3769,8 +3649,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mechanization_techs
+			cat_mechanization_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -3780,7 +3659,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1890
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1890 }
 		}
 		path = {
@@ -3805,8 +3684,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -3816,12 +3694,8 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1895
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1895 }
-		}
-		folder = {
-			name = mtg_naval_folder
-			position = { x = 51 y = 67 }
 		}
 		path = {
 			leads_to_tech = diesel_engine
@@ -3834,8 +3708,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 		}
 	}
@@ -3846,7 +3719,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1900
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1900 }
 		}
 		dependencies = {
@@ -3868,8 +3741,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_electrification_techs
+			cat_electrification_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -3882,7 +3754,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1910
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1910 }
 		}
 		path = {
@@ -3900,8 +3772,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_transit_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -3914,7 +3785,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1920
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1920 }
 		}
 		path = {
@@ -3934,8 +3805,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_telecommunications_techs
+			cat_telecommunications_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -3948,7 +3818,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1950
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1950 }
 		}
 		path = {
@@ -3963,8 +3833,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -3977,7 +3846,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1960
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1960 }
 		}
 		path = {
@@ -3997,8 +3866,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -4011,7 +3879,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1965
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1965 }
 		}
 		path = {
@@ -4031,8 +3899,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_mass_production_techs
+			cat_mass_production_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -4045,7 +3912,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 1980
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1980 }
 		}
 		path = {
@@ -4063,8 +3930,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_green_revolution_techs
+			cat_green_revolution_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -4077,7 +3943,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2000
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @1995 }
 		}
 		path = {
@@ -4092,8 +3958,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -4106,7 +3971,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2000
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @2000 }
 		}
 		path = {
@@ -4121,8 +3986,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_computing_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -4135,7 +3999,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2010
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @2010 }
 		}
 		path = {
@@ -4150,8 +4014,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -4164,7 +4027,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2020
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @2020 }
 		}
 		path = {
@@ -4179,8 +4042,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}
@@ -4193,7 +4055,7 @@ technologies = {
 		research_cost = 0.15
 		start_year = 2020
 		folder = {
-			name = mechanical_engineering_folder
+			name = industry_folder
 			position = { x = 4 y = @2025 }
 		}
 
@@ -4206,8 +4068,7 @@ technologies = {
 			}
 		}
 		categories = {
-			cat_innovative_techs
-			cat_internet_techs
+			cat_internet_industry_techs
 			mechanical_engineering_tech
 			engine_tech
 		}

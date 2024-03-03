@@ -3,14 +3,17 @@ state = {
 	name = "STATE_1151" # east hebei
 	manpower = 7986000
 
-	state_category = town
+	state_category = dense_rural
+
+	resources = {
+		fiber = 14
+	}
 
 	history = {
 		owner = QNG
 		add_core_of = QNG
 		buildings = {
 			infrastructure = 5
-			cotton_farm = 1
 		}
 
 		set_variable = { building_infrastructure_size = 40 }

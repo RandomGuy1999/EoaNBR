@@ -56,7 +56,6 @@ NA_B_reliance_on_water_transportation_modifier={
 	army_speed_factor_for_controller = 0.10
 	local_resources = 0.15
 	state_production_speed_infrastructure_factor = -0.50
-	local_building_slots_factor = -0.15
 }
 NA_B_no_scale_railways_modifier={
 	enable = { always = yes }
@@ -114,7 +113,7 @@ sabotaged_resources = {
 	icon = GFX_modifiers_sabotaged_resource
 	
 	temporary_state_resource_oil = sabotaged_oil
-	temporary_state_resource_aluminium = sabotaged_aluminium
+	temporary_state_resource_aluminum = sabotaged_aluminium
 	temporary_state_resource_rubber = sabotaged_rubber
 	temporary_state_resource_tungsten = sabotaged_tungsten
 	temporary_state_resource_steel = sabotaged_steel
@@ -127,7 +126,7 @@ autonomous_state = {
 	icon = GFX_modifiers_sabotaged_resource
 	
 	recruitable_population_factor = -0.5
-	local_building_slots_factor = -0.25
+	local_building_slots_factor = -0.15
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
 }
@@ -137,7 +136,7 @@ semi_autonomous_state = {
 
 	icon = GFX_modifiers_sabotaged_resource
 	
-	local_building_slots_factor = -0.25
+	local_building_slots_factor = -0.075
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25
 }
@@ -188,7 +187,7 @@ QNG_army_funding_balance = {
 	icon = "GFX_idea_chi_hyper_inflation"
 	
 	political_power_factor = QNG_army_funding_level_lp #0.025
-	consumer_goods_factor  = QNG_army_funding_level_cg #0.025
+	consumer_goods_expected_value  = QNG_army_funding_level_cg #0.025
 	army_org_factor 	   = QNG_army_funding_level_ao
 	stability_factor = -0.05
 }
@@ -236,7 +235,7 @@ VIN_Cochinchina_Campaign_Investment = {
 
 	stability_factor = VIN_CC_Investment_sf
 	political_power_factor = VIN_CC_Investment_lp
-	consumer_goods_factor = VIN_CC_Investment_cg
+	consumer_goods_expected_value = VIN_CC_Investment_cg
 	war_support_weekly = VIN_CC_Investment_wws
 	planning_speed = VIN_CC_Investment_cg
 	
@@ -288,7 +287,7 @@ dynmod_RUS_naval_situation = {
 
 	icon = "GFX_idea_generic_the_london_naval_treaty"
 
-	consumer_goods_factor = RUS_naval_reform_cgf
+	consumer_goods_expected_value = RUS_naval_reform_cgf
 	#political_power_factor = RUS_naval_reform_ppf
 	naval_morale_factor = RUS_naval_reform_nmf
 	war_support_factor = RUS_naval_reform_wsf
@@ -339,7 +338,7 @@ dynmod_AUS_naval_reform = {
 
 	icon = "GFX_idea_generic_the_london_naval_treaty"
 
-	consumer_goods_factor = AUS_naval_reform_cgf
+	consumer_goods_expected_value = AUS_naval_reform_cgf
 	political_power_factor = AUS_naval_reform_ppf
 	stability_factor = AUS_naval_reform_sf
 	war_support_factor = AUS_naval_reform_wsf
@@ -371,7 +370,7 @@ dynmod_AUS_moravian_manchester = {
 	state_production_speed_infrastructure_factor = 0.15
 	state_production_speed_rail_way_factor = 0.15
 	state_production_speed_industrial_complex_factor = 0.05
-	state_production_speed_fabric_weavery_factor = 0.25
+	# state_production_speed_fabric_weavery_factor = 0.25
 }
 
 dynmod_AUS_italian_unrest = {
@@ -449,7 +448,7 @@ dynmod_DEN_swedish_trade = {
 
 	icon = "GFX_idea_money_bad"
 
-	consumer_goods_factor = DEN_swedish_trade_cgf
+	consumer_goods_expected_value = DEN_swedish_trade_cgf
 }
 
 ### Sweden Dynamic Modifiers ###
@@ -459,7 +458,7 @@ dynmod_SWE_danish_trade = {
 
 	icon = "GFX_idea_generic_foreign_capital"
 
-	consumer_goods_factor = SWE_danish_trade_cgf
+	consumer_goods_expected_value = SWE_danish_trade_cgf
 }
 
 ### Foreign Influence Modifier ###
@@ -468,7 +467,7 @@ dynmod_foreign_influence = {
 
 	icon = "GFX_idea_generic_fun_administration"
 
-	consumer_goods_factor = total_consumer_goods_gained_from_influence
+	consumer_goods_expected_value = total_consumer_goods_gained_from_influence
 	political_power_gain = total_political_power_spent_on_influence
 }
 
@@ -606,35 +605,32 @@ dynmod_BRA_dockyard_bonus = {
 
 dynmod_BRA_farm_bonus = {
 	enable = { always = yes }
-	state_production_speed_farm_factor = 0.40
+	#state_production_speed_farm_factor = 0.40
 }
 
 dynmod_BRA_cotton_farm_bonus = {
 	enable = { always = yes }
-	state_production_speed_cotton_farm_factor = 0.25
+	#state_production_speed_cotton_farm_factor = 0.25
 }
 
 dynmod_BRA_fabric_weavery_bonus = {
 	enable = { always = yes }
-	state_production_speed_fabric_weavery_factor = 0.2
+	#state_production_speed_fabric_weavery_factor = 0.2
 }
 
 ### USA
 
 
 USA_clayton_dynmod_secret_conscription = {
-	allowed = {
-		always = no
+	remove_trigger = {
+		has_war_with = ENG
 	}
+	enable = { always = yes }
 
-	allowed_civil_war = {
-		always = no
-	}
 
-	modifier = {
-		weekly_manpower = local_pop@ROOT
-		monthly_population = -0.25
-	}
+	weekly_manpower = local_pop@ROOT
+	monthly_population = -0.25
+
 }
 
 kkk_presence_low = {

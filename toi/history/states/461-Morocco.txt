@@ -10,9 +10,10 @@ state = {
 		iron = 5
 		coal = 3
 		wood = 4
+		fiber = 2
 	}
 
-	state_category = town
+	state_category = dense_rural
 
 
 
@@ -42,12 +43,9 @@ state = {
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			cotton_farm = 1
-
 			7069 = {
 				naval_base = 3
 			}
-
 		}
 		add_core_of = MOR
 		afr_state_setup_scripted_effect = yes

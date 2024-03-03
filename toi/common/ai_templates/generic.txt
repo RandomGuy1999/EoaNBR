@@ -8,7 +8,7 @@ infantry_generic_victorian_upgraded = { #artillery division
 	roles = {
 		# line_infantry
 		artillery
-		#cannon_artillery
+		#field_artillery
 		#howitzer_artillery
 	}
 	
@@ -81,7 +81,7 @@ infantry_generic_victorian_upgraded = { #artillery division
 			support = {
 				engineer = 1
 				recon = 1
-				cannon_artillery_support = 1
+				field_artillery_support = 1
 				howitzer_artillery_support = 1
 			}
 			
@@ -89,7 +89,6 @@ infantry_generic_victorian_upgraded = { #artillery division
 				line_infantry = 5
 				light_infantry = 3
 				guard_infantry = 3
-				redcoat_infantry = 3
 				#artillery_brigade = 1
 			}
 		}
@@ -99,14 +98,13 @@ infantry_generic_victorian_upgraded = { #artillery division
 			line_infantry
 			light_infantry
 			guard_infantry
-			redcoat_infantry		
 			engineer
 			recon
 			artillery
 			artillery_brigade
-			cannon_artillery_support
+			field_artillery_support
 			howitzer_artillery_support
-			cannon_artillery_brigade
+			field_artillery_brigade
 			howitzer_artillery_brigade
 			anti_tank
 			anti_tank_brigade		
@@ -131,11 +129,11 @@ infantry_generic_victorian_upgraded = { #artillery division
 				add = 2
 				OR = {
 					stockpile_ratio = {
-						archetype = cannon_equipment
+						archetype = field_artillery_equipment
 						ratio > 2.5
 					}
 					stockpile_ratio = {
-						archetype = howitzer_equipment
+						archetype = howitzer_artillery_equipment
 						ratio > 2.5
 					}
 				}
@@ -191,7 +189,7 @@ infantry_generic_victorian_upgraded = { #artillery division
 			support = {
 				engineer = 1
 				recon = 1
-				#cannon_artillery_support = 1
+				#field_artillery_support = 1
 				#howitzer_artillery_support = 1
 				machine_gun_company = 1
 			}
@@ -200,22 +198,24 @@ infantry_generic_victorian_upgraded = { #artillery division
 				line_infantry = 7
 				light_infantry = 7
 				guard_infantry = 7
-				redcoat_infantry = 7
 				howitzer_artillery_brigade = 2
-				cannon_artillery_brigade = 2
+				field_artillery_brigade = 2
 				artillery_brigade = 2
 			}
 		}
 		
 		allowed_types = {
-			infantry		
+			infantry
+			line_infantry
+			light_infantry
+			guard_infantry
 			engineer
 			recon
 			artillery
 			artillery_brigade
-			cannon_artillery_support
+			field_artillery_support
 			howitzer_artillery_support
-			cannon_artillery_brigade
+			field_artillery_brigade
 			howitzer_artillery_brigade
 			machine_gun_company
 			anti_tank
@@ -305,7 +305,7 @@ infantry_generic_victorian = {
 			support = {
 				engineer = 1
 				recon = 1
-				#cannon_artillery_support = 1
+				#field_artillery_support = 1
 				#howitzer_artillery_support = 1
 			}
 			
@@ -313,7 +313,6 @@ infantry_generic_victorian = {
 				line_infantry = 3
 				light_infantry = 1
 				guard_infantry = 1
-				redcoat_infantry = 1
 				#artillery_brigade = 1
 			}
 		}
@@ -325,12 +324,11 @@ infantry_generic_victorian = {
 			line_infantry
 			light_infantry
 			guard_infantry
-			redcoat_infantry
 			#artillery
 			#artillery_brigade
-			#cannon_artillery_support
+			#field_artillery_support
 			#howitzer_artillery_support
-			#cannon_artillery_brigade
+			#field_artillery_brigade
 			#howitzer_artillery_brigade
 			#anti_tank
 			#anti_tank_brigade		
@@ -403,7 +401,7 @@ infantry_generic_victorian = {
 				engineer = 1
 				recon = 1
 				logistics_company = 1
-				cannon_artillery_support = 1
+				field_artillery_support = 1
 				howitzer_artillery_support = 1
 			}
 			
@@ -411,7 +409,6 @@ infantry_generic_victorian = {
 				line_infantry = 6
 				light_infantry = 2
 				guard_infantry = 2
-				redcoat_infantry = 2
 			}
 		}
 		
@@ -422,8 +419,7 @@ infantry_generic_victorian = {
 			line_infantry
 			light_infantry
 			guard_infantry
-			redcoat_infantry
-			cannon_artillery_support
+			field_artillery_support
 			howitzer_artillery_support		
 			field_hospital
 			logistics_company
@@ -579,7 +575,6 @@ easy_garrison = {
 				line_infantry
 				light_infantry
 				guard_infantry
-				redcoat_infantry
 				irregular_infantry	
 				engineer
 				recon
@@ -684,7 +679,6 @@ easy_garrison = {
 			line_infantry
 			light_infantry
 			guard_infantry
-			redcoat_infantry
 			irregular_infantry	
 			engineer
 			recon
@@ -954,7 +948,7 @@ light_cav_template = {
 			
 			support = {
 				recon_cav = 1
-				#cannon_artillery_towed_support = 1
+				#field_artillery_towed_support = 1
 			}
 			
 			regiments = {
@@ -965,7 +959,7 @@ light_cav_template = {
 		
 		allowed_types = {
 			recon_cav
-			cannon_artillery_towed_support
+			field_artillery_towed_support
 			light_cavalry
 		}
 		#target_min_match = 0.5
@@ -1053,7 +1047,7 @@ dragoon_template = {
 			
 			support = {
 				recon_cav = 1
-				cannon_artillery_towed_support = 1
+				field_artillery_towed_support = 1
 			}
 			
 			regiments = {
@@ -1064,7 +1058,7 @@ dragoon_template = {
 		
 		allowed_types = {
 			recon_cav
-			cannon_artillery_towed_support
+			field_artillery_towed_support
 			dragoon
 		}
 		#target_min_match = 0.5
@@ -1172,7 +1166,7 @@ lancer_template = {
 			
 			support = {
 				recon_cav = 1
-				cannon_artillery_towed_support = 1
+				field_artillery_towed_support = 1
 			}
 			
 			regiments = {
@@ -1183,7 +1177,7 @@ lancer_template = {
 		
 		allowed_types = {
 			recon_cav
-			cannon_artillery_towed_support
+			field_artillery_towed_support
 			uhlans
 		}
 
@@ -1294,6 +1288,7 @@ cuirassier_template = {
 		allowed_types = {
 			recon_cav
 			heavy_cavalry
+			uhlans
 		}
 
 	}
@@ -1304,7 +1299,6 @@ cuirassier_template = {
 	#light_infantry
 	#line_infantry
 	#guard_infantry
-	#redcoat_infantry
 	#mounted_infantry
 #light_armor
 #super_heavy_armor

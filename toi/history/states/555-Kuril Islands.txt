@@ -11,7 +11,13 @@ state = {
 		add_claim_by = RUS
 		buildings = {
 			infrastructure = 2
-
+		}
+		1885.1.1 = {
+			owner = RUS
+		}
+		1910.1.1 = {
+			owner = JAP
+			add_core_of = JAP
 		}
 	}
 
@@ -20,5 +26,5 @@ state = {
 	}
 	manpower = 6782
 
-	state_category =tiny_island
+	state_category =pastoral
 }

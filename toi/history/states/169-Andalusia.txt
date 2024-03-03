@@ -6,12 +6,12 @@ state = {
 	local_supplies = 0.0
 	manpower = 1335292
 
-	state_category = large_city
+	state_category = urban
 
 	resources = {
 		iron = 4
 		coal = 4
-		cotton = 3
+		fiber = 2
 	}
 
 	history = {
@@ -36,7 +36,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 5
-			fabric_weavery = 1
+			# fabric_weavery = 1
 			1048 = {
 				naval_base = 2
 			}

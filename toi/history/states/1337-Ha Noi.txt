@@ -5,12 +5,12 @@ state = {
 
 	local_supplies = 0.0
 
-	state_category = town
+	state_category = dense_rural
 
 	resources = {
-		fabric = 7
+		textiles = 7
 		coal = 6
-		cotton = 1
+		fiber = 1
 		#rubber = 1
 	}
 

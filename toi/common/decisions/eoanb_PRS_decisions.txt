@@ -1263,7 +1263,7 @@ eoanb_category_economic = {
 		cost = 25
 		days_remove = 180
 		modifier = {
-			consumer_goods_factor = 0.01
+			treasury_cost_monthly_per_gdp = 0.001
 		}
 		remove_effect = {
 			add_resource = {
@@ -2560,7 +2560,8 @@ PRS_decision_category_projects = {
 			}
 		}
 		modifier = {
-			civilian_factory_use = 2
+			# civilian_factory_use = 2
+			treasury_cost_monthly = 1000
 		}
 		remove_effect = {
 			add_stability = 0.03
@@ -2692,7 +2693,8 @@ PRS_decision_category_projects = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 2
+			# civilian_factory_use = 2
+			treasury_cost_monthly = 1000
 		}
 		days_remove = 150
 
@@ -2723,7 +2725,8 @@ PRS_decision_category_projects = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 2
+			# civilian_factory_use = 2
+			treasury_cost_monthly = 1000
 		}
 		days_remove = 150
 
@@ -3297,7 +3300,8 @@ PRS_decision_category_projects = {
 		fire_only_once = yes
 		cost = 0
 		modifier = {
-			civilian_factory_use = 5
+			# civilian_factory_use = 5
+			treasury_cost_monthly = 3000
 		}
 		days_remove = 150
 
@@ -3351,7 +3355,8 @@ PRS_decision_category_projects = {
 		fire_only_once = yes
 		cost = 0
 		modifier = {
-			civilian_factory_use = 4
+			# civilian_factory_use = 4
+			treasury_cost_monthly = 2400
 		}
 		days_remove = 120
 
@@ -3449,7 +3454,8 @@ PRS_decision_category_projects = {
 		fire_only_once = yes
 		cost = 25
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 180
 
@@ -3550,7 +3556,8 @@ PRS_decision_category_projects = {
 		fire_only_once = yes
 		cost = 25
 		modifier = {
-			civilian_factory_use = 2
+			# civilian_factory_use = 2
+			treasury_cost_monthly = 1000
 		}
 		days_remove = 180
 
@@ -3650,7 +3657,8 @@ PRS_decision_category_projects = {
 		fire_only_once = yes
 		cost = 25
 		modifier = {
-			civilian_factory_use = 2
+			# civilian_factory_use = 2
+			treasury_cost_monthly = 1000
 		}
 		days_remove = 180
 
@@ -3746,7 +3754,8 @@ PRS_decision_category_projects = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 365
 
@@ -3946,23 +3955,13 @@ PRS_decision_category_urbanization = {
 		}
 		complete_effect = {
 			951 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			951 = {
-				set_state_category = metropolis
-			}
-			951 = {
+				increase_state_category = yes
 				add_dynamic_modifier = {
 					modifier = dynmod_PRS_urbanization
 				}
 			}
 			1003 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			1003 = {
-				set_state_category = large_city
-			}
-			1003 = {
+				increase_state_category = yes
 				add_dynamic_modifier = {
 					modifier = dynmod_PRS_urbanization
 				}
@@ -4104,23 +4103,13 @@ PRS_decision_category_urbanization = {
 		}
 		complete_effect = {
 			57 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			57 = {
-				set_state_category = large_city
-			}
-			57 = {
+				increase_state_category = yes
 				add_dynamic_modifier = {
 					modifier = dynmod_PRS_urbanization
 				}
 			}
 			1009 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			1009 = {
-				set_state_category = large_city
-			}
-			1009 = {
+				increase_state_category = yes
 				add_dynamic_modifier = {
 					modifier = dynmod_PRS_urbanization
 				}
@@ -4253,23 +4242,13 @@ PRS_decision_category_urbanization = {
 		}
 		complete_effect = {
 			66 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			66 = {
-				set_state_category = large_city
-			}
-			66 = {
+				increase_state_category = yes
 				add_dynamic_modifier = {
 					modifier = dynmod_PRS_urbanization
 				}
 			}
 			1107 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			1107 = {
-				set_state_category = city
-			}
-			1107 = {
+				increase_state_category = yes
 				add_dynamic_modifier = {
 					modifier = dynmod_PRS_urbanization
 				}
@@ -4355,7 +4334,8 @@ PRS_decision_category_urbanization = {
 		cost = 25
 		days_remove = 365
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 
 		remove_effect = {
@@ -4577,7 +4557,8 @@ PRS_decision_category_heeresreform = {
 		}
 		custom_cost_text = eoanb_command_power_50
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 150
 		complete_effect = {
@@ -4617,7 +4598,8 @@ PRS_decision_category_heeresreform = {
 		}
 		custom_cost_text = eoanb_command_power_100_army_experience_25
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 180
 		complete_effect = {
@@ -4666,7 +4648,8 @@ PRS_decision_category_heeresreform = {
 		}
 		custom_cost_text = eoanb_command_power_100_army_experience_25
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 180
 		complete_effect = {
@@ -4711,7 +4694,8 @@ PRS_decision_category_heeresreform = {
 		}
 		custom_cost_text = eoanb_command_power_100_army_experience_25
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 180
 		complete_effect = {
@@ -4765,7 +4749,8 @@ PRS_decision_category_heeresreform = {
 		}
 		custom_cost_text = eoanb_command_power_100_army_experience_25
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 180
 		complete_effect = {
@@ -4814,7 +4799,8 @@ PRS_decision_category_heeresreform = {
 		}
 		custom_cost_text = eoanb_command_power_100_army_experience_25
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 180
 		complete_effect = {
@@ -4858,7 +4844,8 @@ PRS_decision_category_heeresreform = {
 		}
 		custom_cost_text = eoanb_command_power_100_army_experience_25
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 180
 		complete_effect = {
@@ -4917,7 +4904,8 @@ PRS_decision_category_heeresreform = {
 		}
 		custom_cost_text = eoanb_command_power_100_army_experience_25
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 180
 		complete_effect = {
@@ -5483,12 +5471,7 @@ PRS_decision_category_navy_expansion = {
 		}
 		complete_effect = {
 			1060 = {
-				set_state_category = town
-			}
-			1060 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			1060 = {
+				increase_state_category = yes
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -5690,7 +5673,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 5
+			# civilian_factory_use = 5
+			treasury_cost_monthly = 3000
 		}
 		days_remove = 180
 		complete_effect = {
@@ -5734,7 +5718,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 3
+			# civilian_factory_use = 3
+			treasury_cost_monthly = 1500
 		}
 		days_remove = 180
 		complete_effect = {
@@ -5821,7 +5806,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		days_remove = 120
 		complete_effect = {
@@ -5921,7 +5907,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 2
+			# civilian_factory_use = 2
+			treasury_cost_monthly = 1000
 		}
 		days_remove = 150
 		complete_effect = {
@@ -6021,7 +6008,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 2
+			# civilian_factory_use = 2
+			treasury_cost_monthly = 1000
 		}
 		days_remove = 150
 		complete_effect = {
@@ -6121,7 +6109,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 3
+			# civilian_factory_use = 3
+			treasury_cost_monthly = 1500
 		}
 		days_remove = 180
 		complete_effect = {
@@ -6437,7 +6426,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 150
 		modifier = {
-			civilian_factory_use = 3
+			# civilian_factory_use = 3
+			treasury_cost_monthly = 1500
 		}
 		days_remove = 365
 		complete_effect = {
@@ -6543,7 +6533,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 4
+			# civilian_factory_use = 4
+			treasury_cost_monthly = 2400
 		}
 		days_remove = 365
 		complete_effect = {
@@ -6588,7 +6579,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 3
+			# civilian_factory_use = 3
+			treasury_cost_monthly = 1500
 		}
 		days_remove = 180
 
@@ -6671,7 +6663,8 @@ PRS_decision_category_navy_expansion = {
 		fire_only_once = yes
 		cost = 50
 		modifier = {
-			civilian_factory_use = 3
+			# civilian_factory_use = 3
+			treasury_cost_monthly = 1500
 		}
 		days_remove = 180
 
@@ -8874,7 +8867,7 @@ PRS_decision_category_NGC_politics = {
 			add_stability = 0.02
 			hidden_effect = {
 				set_country_flag = PRS_constitution_draft_ready_flag
-				clr_country_flag = PRS_constitution_draft_imminent_flag
+				# clr_country_flag = PRS_constitution_draft_imminent_flag
 			}
 		}
 		ai_will_do = {
@@ -8896,11 +8889,11 @@ PRS_decision_category_NGC_politics = {
 		visible = {
 			OR = {
 				has_active_mission = PRS_mission_draft_constitution
-				# has_country_flag = PRS_constitution_draft_ready_flag
+				has_country_flag = PRS_constitution_draft_ready_flag
 			}
-			NOT = {
-				has_completed_focus = PRS_focus_ngc_constitution
-			}
+			# NOT = {
+			# 	has_completed_focus = PRS_focus_ngc_constitution
+			# }
 		}
 		fire_only_once = yes
 		cost = 0
@@ -8910,6 +8903,7 @@ PRS_decision_category_NGC_politics = {
 			complete_national_focus = PRS_focus_ngc_constitution
 			hidden_effect = {
 				clr_country_flag = PRS_constitution_draft_ready_flag
+				clr_country_flag = PRS_constitution_draft_imminent_flag
 			}
 		}
 		ai_will_do = {
@@ -9672,7 +9666,8 @@ PRS_decision_category_NGC_politics = {
 		cost = 50
 		days_remove = 30
 		modifier = {
-			civilian_factory_use = 1
+			# civilian_factory_use = 1
+			treasury_cost_monthly = 750
 		}
 		remove_effect = {
 			create_intelligence_agency = yes

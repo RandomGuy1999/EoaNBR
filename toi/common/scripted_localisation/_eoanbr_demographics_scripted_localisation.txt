@@ -601,12 +601,13 @@
 			name = GetOwnerCultureName
 			text = {
 				trigger = {
-					OWNER = {
+					FROM.OWNER = {
 						set_temp_variable = {
 							gocn = pops_primary_culture_array^0
 						}
 					}
 				}
+				# localization_key = "[FROM.GetName]"
 				localization_key = "[?gocn.GetTokenLocalizedKey]"
 			}
 		}
@@ -2314,21 +2315,12 @@
 						var = gcpp
 						value = population_k@var:v
 					}
-					check_variable = {
-						var = gcpp
-						value = 100000
-					}
+					# check_variable = {
+					# 	var = gcpp
+					# 	value = 100000
+					# }
 				}
-				localization_key = "[?gcpp|3]k"
-			}
-			text = {
-				trigger = {
-					multiply_temp_variable = {
-						var = gcpp
-						value = 1000
-					}
-				}
-				localization_key = "[?gcpp|0]"
+				localization_key = "[?population_k@var:v]k"
 			}
 		}
 		defined_text = {
@@ -2339,7 +2331,7 @@
 						gcpe = percentage@var:v
 					}
 				}
-				localization_key = "[?gcpe|0%]"
+				localization_key = "[?gcpe|1%]"
 			}
 		}
 	#
@@ -5940,7 +5932,7 @@
 			name = GetOwnerReligionName
 			text = {
 				trigger = {
-					OWNER = {
+					FROM.OWNER = {
 						set_temp_variable = {
 							gown = pops_primary_religion_array^0
 						}
@@ -6204,24 +6196,11 @@
 			text = {
 				trigger = {
 					set_temp_variable = {
-						var = grpp
-						value = population@var:v
-					}
-					check_variable = {
-						var = grpp
-						value = 100000
+						var = amount_temp
+						value = population_k@var:v
 					}
 				}
-				localization_key = "[?grpp|3]k"
-			}
-			text = {
-				trigger = {
-					multiply_temp_variable = {
-						var = grpp
-						value = 1000
-					}
-				}
-				localization_key = "[?grpp|0]"
+				localization_key = "[?population_k@var:v]k"
 			}
 		}
 		defined_text = {
@@ -6232,7 +6211,7 @@
 						grpe = percentage@var:v
 					}
 				}
-				localization_key = "[?grpe|0%]"
+				localization_key = "[?grpe|1%]"
 			}
 		}
 	#

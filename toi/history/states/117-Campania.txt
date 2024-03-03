@@ -4,7 +4,7 @@ state = {
 	name = "STATE_117" # Campania
 	manpower = 3402890
 
-	state_category = city
+	state_category = sparse_urban
 	resources = {
 		iron = 8
 		wood = 19
@@ -34,8 +34,7 @@ state = {
 			industrial_complex = 1
 			arms_factory = 1
 			dockyard = 4
-			farm = 2
-
+			# farm = 2
 			819 = {
 				naval_base = 3
 			}

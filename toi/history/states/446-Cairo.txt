@@ -8,15 +8,14 @@ state = {
 	resources = {
 		iron = 5
 		wood = 8
-		cotton = 45
+		fiber = 15
 	}
 
 	history = {
 		buildings = {
 			infrastructure = 2
-			fabric_weavery = 2
+			# fabric_weavery = 2
 			arms_factory = 1
-
 		}
 
 		add_extra_state_shared_building_slots = 1
@@ -44,5 +43,5 @@ state = {
 	}
 	manpower = 4347153
 
-	state_category =city
+	state_category =sparse_urban
 }

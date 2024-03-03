@@ -9,7 +9,6 @@ state = {
 
 	history = {
 		owner = RUS
-		add_claim_by = RUS
 		add_core_of = CAU
 		buildings = {
 			infrastructure = 2
@@ -20,5 +19,5 @@ state = {
 	}
 	manpower = 100060
 
-	state_category =town
+	state_category =sparse_rural
 }

@@ -2,7 +2,7 @@ state = {
 	id = 7
 	name = "STATE_7" #Holland
 	manpower = 1408472
-	state_category = metropolis
+	state_category = dense_urban
 
 	provinces = {
 		68 391 3314 8622 9498 3211
@@ -13,11 +13,10 @@ state = {
 		owner = HOL
 		1857.1.1 = {
 			add_core_of = HOL
-
 			buildings = {
 				infrastructure = 7
 				arms_factory = 2
-				fabric_weavery = 1
+				# fabric_weavery = 1
 				industrial_complex = 2
 				dockyard = 2
 				3314 = {

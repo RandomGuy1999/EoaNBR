@@ -551,7 +551,7 @@ POR_decision_category_industry = {
          
         modifier = {
             political_power_gain = -0.05
-			consumer_goods_factor = 0.05
+			treasury_cost_monthly_per_gdp = 0.005
 			production_speed_buildings_factor = -0.05
         }        
        
@@ -805,7 +805,7 @@ POR_decision_category_colonies = {
 			}
             823 = {
 				add_resource = {
-					type = aluminium
+					type = aluminum
 					amount = 3
 				}
 			}

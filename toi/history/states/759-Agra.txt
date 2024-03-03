@@ -4,10 +4,10 @@ state = {
 	manpower = 3255834
 
 	local_supplies = 0.0
-	state_category = town
+	state_category = dense_rural
 
 	resources = {
-		cotton = 3
+		fiber = 3
 	}
 
 	provinces = {
@@ -20,15 +20,12 @@ state = {
 		1857.1.1 = {
 			add_core_of = JPR
 			add_core_of = RAJ
-
 			buildings = {
 				infrastructure = 3
 				industrial_complex = 1
 			}
-
 			victory_points = { 4915 2 } # Agra
 			victory_points = { 14132 2 } # Jaipur
-
 			set_variable = { building_infrastructure_size = 15 }
 			set_variable = { building_railway_size = 0 }
 			set_variable = { building_port_size = 0 }
@@ -50,8 +47,9 @@ state = {
 			set_variable = { building_oil_well_size = 0 }
 			set_variable = { building_valuables_extractor_size = 0 }
 		}
-		1870.1.1 = {
+		1949.1.1 = {
 			owner = RAJ
+			add_core_of = RAJ
 			remove_core_of = JPR
 		}
 	}

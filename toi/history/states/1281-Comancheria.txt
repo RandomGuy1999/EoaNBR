@@ -15,8 +15,8 @@ state = {
 		1870.1.1 = {
 			owner = USA
 		}
-		add_claim_by = USA
-		#add_claim_by = TEX
+		#add_claim_by = USA
+		add_claim_by = TEX
 		victory_points = {
 			8064 3
 		}
@@ -30,6 +30,6 @@ state = {
 		set_state_flag = NA_B_Disregardable_State
 	}
 	manpower = 12620
-	state_category = pastoral
+	state_category = sparse_rural
 	local_supplies = 0.0
 }

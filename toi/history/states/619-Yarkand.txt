@@ -6,9 +6,10 @@ state = {
 	local_supplies = 0.0
 	manpower = 730700
 
-	state_category = pastoral
+	state_category = rural
 
 	resources = {
+		fiber = 25
 		wood = 2
 	}
 

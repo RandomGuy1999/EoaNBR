@@ -5,11 +5,11 @@ state = {
 	local_supplies = 0.0
 	manpower = 236460
 
-	state_category = small_island
+	state_category = sparse_rural
 
 	resources = {
-		cotton = 4
-		fabric = 1
+		fiber = 4
+		textiles = 1
 	}
 
 	history = {
@@ -17,17 +17,14 @@ state = {
 		add_core_of = RYU
 		buildings = {
 			infrastructure = 3
-			farm = 1
-
+			# farm = 1
 			11932 = {
 				naval_base = 4
 				bunker = 1
 			}
-
 			10124 = {
 				naval_base = 1
 			}
-
 		}
 		victory_points = {
 			11932 10

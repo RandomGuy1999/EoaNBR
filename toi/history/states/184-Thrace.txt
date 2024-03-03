@@ -6,7 +6,7 @@ state = {
 	local_supplies = 0.0 
 	manpower = 84850
 	
-	state_category = rural
+	state_category = sparse_rural
 	
 	resources = {
 		#chromium = 8
@@ -21,8 +21,7 @@ state = {
 		set_variable = { building_infrastructure_size = 3 }
 		set_variable = { building_metals_mine_size = 7 }
 		add_core_of = OTO
-		#add_claim_by = BUL
-		add_claim_by = GRE
+		add_core_of = BUL
 	}
 
 	provinces = {

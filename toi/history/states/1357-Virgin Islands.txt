@@ -2,7 +2,7 @@ state = {
 	id = 1357
 	name = "STATE_1357"
 	manpower = 40800
-	state_category = rural
+	state_category = sparse_rural
 
 	provinces = {
 		4155 13946
@@ -14,10 +14,8 @@ state = {
 			infrastructure = 1
 			4155 = {
 				naval_base = 1
-
 			}
 		
-
 		}
 		set_variable = { building_luxuries_plantation_size = 1 }
 

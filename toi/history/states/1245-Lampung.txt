@@ -7,11 +7,11 @@ state = {
 
 	resources = {
 		#rubber = 15
-		cotton = 10
+		fiber = 10
 		wood = 2
 	}
 
-	state_category = pastoral
+	state_category = rural
 
 	history = {
 		owner = INS

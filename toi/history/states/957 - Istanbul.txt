@@ -14,10 +14,9 @@ state = {
 			infrastructure = 6
 			industrial_complex = 2
 			arms_factory = 1
-			fabric_weavery = 1
+			# fabric_weavery = 1
 			9833 = {
 				naval_base = 5
-
 			}
 		}
 		set_variable = { building_infrastructure_size = 6 }
@@ -28,7 +27,6 @@ state = {
 		set_variable = { building_services_building_size = 3 }
 
 		add_core_of = OTO
-		add_claim_by = GRE
 	}
 
 	provinces = {
@@ -36,5 +34,5 @@ state = {
 	}
 	manpower = 404509
 
-	state_category =megalopolis
+	state_category =sparse_urban
 }

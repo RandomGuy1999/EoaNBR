@@ -2,7 +2,7 @@ state = {
 	id = 4
 	name = "STATE_4" # Lower Austria
 	manpower = 1243005
-	state_category = large_town
+	state_category = sparse_urban
 
 	provinces = {
 		653 704 3700 3718 6690 6739 9527 9646 9648 9661 9679 11630
@@ -13,7 +13,6 @@ state = {
 		owner = AUS
 		1857.1.1 = {
 			add_core_of = AUS
-
 			buildings = {
 				infrastructure = 6
 				arms_factory = 1 # Mariazell
@@ -28,7 +27,6 @@ state = {
 			set_variable = { building_metals_mine_size = 2 }
 			set_variable = { building_coal_mine_size = 2 }
 			set_variable = { building_valuables_extractor_size = 1 }
-
 			victory_points = { 9648 5 } # Graz
 		}
 	}

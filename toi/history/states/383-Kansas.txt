@@ -8,7 +8,7 @@ state = {
 		wood = 10
 	}
 
-	state_category = rural
+	state_category = sparse_rural
 
 	history = {
 		#owner = KNS
@@ -19,11 +19,9 @@ state = {
 
 		buildings = {
 			infrastructure = 5
-			1753 = {
-				bunker = 1
+			1753 = { bunker = 1
 			}
-			4757 = {
-				bunker = 3
+			4757 = { bunker = 3
 			}
 		}
 		set_state_flag = NA_B_Resistant_Population
@@ -31,7 +29,6 @@ state = {
 		victory_points = { 7892 2 }
 		victory_points = { 7834 3 }
 		victory_points = { 1352 4 }
-
 	}
 
 	provinces = {

@@ -3,14 +3,13 @@ state = {
 	name = "STATE_640"
 
 	local_supplies = 0.0
-	state_category = town
+	state_category = dense_rural
 	history = {
 		owner = BRM
 		add_core_of = BRM
 		add_core_of = SHN
 		buildings = {
 			infrastructure = 1
-
 		}
 		victory_points = {
 			1492 1

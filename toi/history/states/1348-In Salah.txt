@@ -6,10 +6,9 @@ state = {
 	local_supplies = 0.0
 	manpower = 53800
 
-	state_category = wasteland
+	state_category = pastoral
 
 	resources = {
-
 	}
 
 	provinces = {

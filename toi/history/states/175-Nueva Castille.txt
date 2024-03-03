@@ -2,10 +2,10 @@ state = {
 	id = 175
 	name = "STATE_175" #Nueva Castille
 	manpower = 1397863
-	state_category = city
+	state_category = sparse_urban
 
 	resources = {
-		fabric = 1 # Merino
+		textiles = 1 # Merino
 	}
 
 	provinces = {

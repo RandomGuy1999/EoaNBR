@@ -6,6 +6,7 @@ state = {
 	local_supplies = 0.0
 	resources = {
 		wood = 2.000
+		fiber = 1
 	}
 
 	history = {
@@ -13,14 +14,11 @@ state = {
 		add_core_of = QNG
 		buildings = {
 			infrastructure = 1
-			1933 = {
-				bunker = 1
+			1933 = { bunker = 1
 			}
-			556 = {
-				bunker = 1
+			556 = { bunker = 1
 			}
-			2022 = {
-				bunker = 1
+			2022 = { bunker = 1
 			}
 		}
 
@@ -51,5 +49,5 @@ state = {
 	}
 	manpower = 7224000
 
-	state_category =town
+	state_category =rural
 }

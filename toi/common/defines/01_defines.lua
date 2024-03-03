@@ -34,6 +34,13 @@ NDefines.NCountry.BASE_FUEL_GAIN = 1.0						-- base amount of fuel gained hourly
 NDefines.NCountry.BASE_FUEL_CAPACITY = 500						-- base amount of fuel capacity --50k
 
 NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 6 	-- Max number of different strategic resources an equipment can be dependent on. --3
+NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 18 -- Max number of factories that can be assigned a single production line.
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 12
+NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 6
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 18
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 6
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 180
+NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 6
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2				-- vanilla 5 Base factory speed multiplier (how much hoi3 style IC each factory gives). --4.5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4       -- vanilla 4.5
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3      -- vanilla 2.5
@@ -48,6 +55,8 @@ NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.2						-- research speed can't go be
 NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 1.0
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 81 -- 25
+NDefines.NBuildings.SUPPLY_ROUTE_RESOURCE_BONUS = 0 -- Needs to be 0 for eco calculations to work
+NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.0 -- 0% per level, Disabled for eco
 
 NDefines.NMilitary.WAR_SCORE_PROVINCE_FACTOR = 0.3 -- 2.0
 NDefines.NMilitary.WAR_SCORE_LEND_LEASE_GIVEN_IC_FACTOR = 0.1 -- 0.001
@@ -77,6 +86,10 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05
 NDefines.NMilitary.LOW_ORG_FOR_ATTACK = 0.5                    -- at what org % we start affecting speed when doign hostile moves. scales down ZERO_ORG_MOVEMENT_MODIFIER
 NDefines.NMilitary.MIN_DIVISION_DEPLOYMENT_TRAINING = 0.05			-- Min level of division training
 NDefines.NMilitary.BORDER_WAR_WIN_DAYS_AGAINST_EMPTY_OPPONENTS = 30		-- border wars will be automatically won if no opponent shows up for this duration
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 6			-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked, changed to 12
+NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 6                   -- how many battalions should a division have to count as a full divisions when calculating XP stuff, changed to 6, or 2 full brigades with victorian starting doctrine
+NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 2				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 2		-- Min height of regiments in division designer, set to 2, 3 with starting victorian doctrine
 
 NDefines.NAir.TOP_SPEED_DAMAGE_BONUS_FACTOR = 0.02 -- 0.025
 NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.45 -- 0.60
@@ -115,6 +128,7 @@ NDefines.NAI.DIVISION_DESIGN_COMBAT_WIDTH_TARGET_WEIGHT = -500.0	-- This score i
 NDefines.NAI.DIVISION_MATCH_ROLE_BOOST_FACTOR = 1.2                -- When finding closest matching existing template to a target template, boost the score by this much if the template also has the correct role
 NDefines.NAI.AREA_DEFENSE_IMPORTANCE_FACTOR = 0.5               -- used to balance defensive area importance vs other fronts
 NDefines.NAI.AREA_DEFENSE_BASE_IMPORTANCE = 10                  -- Area defense order base importance value (used for determining order of troop selections)
+NDefines.NAI.EQUIPMENT_MARKET_UPDATE_FREQUENCY_DAYS = 30    -- 11 AI will not ask to purchase equipment more often than this (TODO Market: may want to change how this works)
 
 NDefines.NFocus.FOCUS_POINT_DAYS = 1 -- 7
 NDefines.NMapMode.UI_CONFIGURABLE_SLOT_TO = 12
@@ -123,3 +137,5 @@ NDefines.NGraphics.GRADIENT_BORDERS_THICKNESS_RESISTANCE = 11.0
 NDefines.NGraphics.COUNTRY_FLAG_SMALL_TEX_MAX_SIZE = 256
 NDefines.NGraphics.MINIMUM_PROVINCE_SIZE_IN_PIXELS = 1
 NDefines.NGraphics.POLITICAL_GRID_SMALL_BOX_LIMIT = 100
+
+NDefines.NResistance.RESISTANCE_TARGET_BASE = 5.0						-- base resistance target percentage

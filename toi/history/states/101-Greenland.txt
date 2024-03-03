@@ -2,7 +2,7 @@ state = {
 	id = 101
 	name = "STATE_101"
 	manpower = 10917
-	state_category = wasteland
+	state_category = pastoral
 
 	provinces = {
 		10245 12512 13066 13058 10636
@@ -14,7 +14,6 @@ state = {
 			infrastructure = 2
 			10245 = {
 				naval_base = 1
-
 			}
 		}
 		set_variable = { building_port_size = 1 }
@@ -22,7 +21,6 @@ state = {
 			10245 1
 		}
 		add_core_of = DEN
-
 	}
 	local_supplies = 0.0
 }

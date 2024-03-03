@@ -4,7 +4,7 @@ state = {
 
 
 	local_supplies = 0.0
-	state_category = pastoral
+	state_category = sparse_rural
 
 	history = {
 		owner = BRA
@@ -35,12 +35,11 @@ state = {
 		set_variable = { building_valuables_extractor_size = 0 }
 		
 	
-
 	}
 
 	provinces = {
 		2181 8189 10959 13955 14057 14058 14059 14060
 	}
-	manpower = 33961 #22874
+	manpower = 22186
 
 }

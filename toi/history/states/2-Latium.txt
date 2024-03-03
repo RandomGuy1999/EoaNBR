@@ -2,12 +2,12 @@ state = {
 	id = 2
 	name = "STATE_2" # Lazio
 	manpower = 842346
-	state_category = city
+	state_category = sparse_urban
 
 	resources = {
 		iron = 4
 		wood = 6
-		cotton = 2
+		fiber = 1
 	}
 
 	provinces = {
@@ -20,9 +20,9 @@ state = {
 
 		buildings = {
 			infrastructure = 6
-			farm = 1
+			# farm = 1
 			industrial_complex = 1
-			fabric_weavery = 2
+			# fabric_weavery = 2
 			11751 = {
 				naval_base = 2
 			}

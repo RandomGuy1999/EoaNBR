@@ -6,9 +6,9 @@ state = {
 	local_supplies = 0.0
 	manpower = 763345
 
-	state_category = town
+	state_category = rural
 	resources = {
-		cotton = 6
+		fiber = 3
 	}
 	history = {
 		victory_points = {

@@ -6,13 +6,13 @@ state = {
 	local_supplies = 0.0
 	manpower = 195031
 
-	state_category = pastoral
+	state_category = sparse_rural
 
 	history = {
 		owner = MEX
 		buildings = {
 			infrastructure = 2
-			farm = 1
+			# farm = 1
 			4908 = {
 				naval_base = 3
 			}

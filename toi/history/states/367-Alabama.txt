@@ -4,10 +4,10 @@ state = {
 	manpower = 964201
 
 	local_supplies = 0.0
-	state_category = town
+	state_category = dense_rural
 	resources = {
 		wood = 2
-		cotton = 16
+		fiber = 16
 	}
 
 	history = {
@@ -18,7 +18,7 @@ state = {
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
-			cotton_farm = 3
+			# cotton_farm = 3
 			7480 = {
 				naval_base = 2
 				supply_node = 1

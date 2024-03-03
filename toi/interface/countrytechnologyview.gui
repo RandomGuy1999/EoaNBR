@@ -1,26 +1,5 @@
 guiTypes = {
 	containerWindowType = {
-		name = "subunit_icon_entry"
-		position = { x=0 y=0 }
-		size = { width = 30 height = 30 }
-		iconType = {
-			name = "subunit_icon"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_tiled_window_transparent_transparent"
-		}
-
-		instantTextBoxType = {
-			name = "subunit_label"
-			position = { x = 0 y = 5 }
-			font = "hoi_33"
-			borderSize = { x = 0 y = 0}
-			maxWidth = 200
-			maxHeight = 62
-			format = left
-			Orientation = "UPPER_LEFT"
-		}
-	}
-	containerWindowType = {
 		name = "technology_idea_entry"
 		size = { width = 34 height = 34 }
 		clipping = no
@@ -37,6 +16,7 @@ guiTypes = {
 			centerposition = yes
 			alwaystransparent = yes
 			frame = 1
+			scale = 0.5
 		}
 	}
 
@@ -72,7 +52,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tab_header"
 
-				size = { width = 554 height = 44 }
+				size = { width = 556 height = 44 }
 				position = { x = 5 y = 3 }
 
 				background = {
@@ -139,27 +119,46 @@ guiTypes = {
 				spriteType = "GFX_tiled_bg"
 			}
 
+			# instantTextboxType = {
+			# 	name = "limited_research_bonus_text"
+			# 	position = { x = -250 y = 110 }
+			# 	textureFile = ""
+			# 	font = "hoi_18mbs"
+			# 	borderSize = {x = 0 y = 0}
+			# 	text = "LIMITED_RESEARCH_BONUS"
+			# 	maxWidth = 130
+			# 	maxHeight = 20
+			# 	format = left 
+			# 	fixedsize = yes
+			# }
+
 			iconType = {
 				name = "institution_decoration"
-				spriteType = "GFX_institution_decoration"
+				spriteType = "GFX_win_header_short"
 				position = { x = 13 y = 13 }
 				alwaystransparent = yes
 			}
-			# iconType = {
-			# 	name = "institutions_header_bg"
-			# 	spritetype = "GFX_win_header_short"
-			# 	position = { x = 13 y = 12 }
-			# 	alwaystransparent = yes
-			# }
 			instantTextBoxType = {
 				name = "institution_header_title"
 				position = { x = 24 y = 11 }
 				maxHeight = 20
 				maxWidth = 200
-				text = "institution_header_title"
+				text = "research_header_title"
 				font = "hoi_24header"
-				pdx_tooltip = "institution_header_title_tt"
-				pdx_tooltip_delayed = "institution_header_title_tt_delayed"
+				pdx_tooltip = "LIMITED_RESEARCH_BONUS"
+				# pdx_tooltip_delayed = "institution_header_title_tt_delayed"
+			}
+
+			instantTextboxType = {
+				name = "limited_research_bonus_value"
+				position = { x = 228 y = 11 }
+				textureFile = ""
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = "999"
+				maxWidth = 50
+				maxHeight = 20
+				format = left
 			}
 
 			iconType = {
@@ -170,19 +169,19 @@ guiTypes = {
 
 			iconType = {
 				name = "focus_bonuses"
-				position = { x = 290 y = 14 }
+				position = { x = 296 y = 14 }
 				spriteType = "GFX_focus_bonuses_icon"
 			}
 
 			iconType = {
 				name = "research_speed_icon"
-				position = { x = 435 y = 13 }
+				position = { x = 465 y = 13 }
 				spriteType = "GFX_research_speed_icon"
 			}
 
 			instantTextboxType = {
 				name = "research_speed_value"
-				position = { x = 454 y = 16 }
+				position = { x = 484 y = 16 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				borderSize = { x = 0 y = 0 }
@@ -234,19 +233,19 @@ guiTypes = {
 			spriteType = "GFX_empty_research_slot_glow"
 		}
 
-		#		iconType = {
-		#			name = "folder"
-		#			position = { x = 12 y = 12 }
-		#			spriteType = "GFX_research_folder_strip"
-		#			alwaystransparent = yes
-		#		}
-
 		iconType = {
 			name = "technology"
 			position = { x = 252 y = 49 }
 			spriteType = "GFX_research_folder_strip"
 			centerposition = yes
 			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "designer"
+			position = { x=450 y=49 }
+			spriteType = "GFX_research_folder_strip"
+			centerposition = yes
 		}
 
 		iconType = {

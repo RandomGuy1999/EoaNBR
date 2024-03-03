@@ -2,10 +2,10 @@ state = {
 	id = 868
 	name = "STATE_868" # Hamburg
 	manpower = 259000
-	state_category = city
+	state_category = dense_rural
 
 	resources = {
-		fabric = 2
+		textiles = 2
 	}
 
 	provinces = {
@@ -30,7 +30,6 @@ state = {
 		1870.1.1 = {
 			owner = PRS
 			add_core_of = PRS
-
 			buildings = {
 				infrastructure = 8
 				industrial_complex = 2

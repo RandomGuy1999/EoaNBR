@@ -4,7 +4,7 @@ state = {
 	manpower = 57800
 
 	local_supplies = 0.0
-	state_category = rural
+	state_category = sparse_rural
 
 	resources = {
 		iron = 6
@@ -20,12 +20,10 @@ state = {
 		owner = SWE
 		1857.1.1 = {
 			add_core_of = SWE
-
 			buildings = {
 				infrastructure = 4
 			}
 			set_variable = { building_lumber_mill_size = 1 }
-
 			victory_points = { 46 1 } # Östersund
 		}
 	}

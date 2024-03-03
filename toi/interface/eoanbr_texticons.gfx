@@ -277,10 +277,10 @@ spriteTypes = {
 		texturefile = "gfx/texticons/war_support_20x20.dds"
 		legacy_lazy_load = no
 	}
-	
+
 	spriteType = {
 		name = "GFX_prosperity_texticon"
-		texturefile = "gfx/texticons/prosperity_20x20_old.dds"
+		texturefile = "gfx/texticons/prosperity_20x20_new.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -298,7 +298,7 @@ spriteTypes = {
 		texturefile = "gfx/texticons/debt_20x20.dds"
 		legacy_lazy_load = no
 	}
-	
+
 }
 
 #country mechanic
@@ -374,6 +374,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_greatgame_texticon"
+		texturefile = "gfx/texticons/gg_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_greatgame_texticon_30x30"
+		texturefile = "gfx/texticons/gg_texticon_30x30.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_element_water_texticon"
 		texturefile = "gfx/texticons/element_water.dds"
 		legacy_lazy_load = no
@@ -426,6 +436,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Japan_telecom_decision_texticon"
 		texturefile = "gfx/texticons/Japan_telecom_decision_texticon.dds"
+		legacy_lazy_load = no
+	}
+	# GENERAL
+	spriteType = {
+		name = "GFX_conscripts_30"
+		texturefile = "gfx/texticons/conscripts_30.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_flotillas_30"
+		texturefile = "gfx/texticons/flotillas_30.dds"
 		legacy_lazy_load = no
 	}
 }

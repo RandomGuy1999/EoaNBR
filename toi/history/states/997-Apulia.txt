@@ -8,10 +8,10 @@ state = {
 	resources = {
 		coal = 2
 		wood = 4
-		cotton = 12
+		fiber = 6
 	}
 
-	state_category = city
+	state_category = dense_rural
 	history = {
 		owner = NSC
 		victory_points = {
