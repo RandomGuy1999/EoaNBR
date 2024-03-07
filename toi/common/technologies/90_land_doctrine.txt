@@ -1,5 +1,5 @@
 #!gfx:interface\eoanbr_technologies.gfx
-#!localisation:localisation\_eoanbr_technologies_l_english.yml
+#!localisation:localisation\english\research_l_english.yml
 #do not delete above line!!!!!!
 
 technologies = {
@@ -397,7 +397,8 @@ technologies = {
 
 	doctrine_victorian_breaking_cohesion = {
 
-		supply_consumption_factor = -0.02
+		# supply_consumption_factor = -0.02
+		
 
 		xp_research_type = army
 		xp_unlock_cost = 100
@@ -1110,7 +1111,10 @@ technologies = {
 	
 	doctrine_victorian_skirmisher_excellence = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		light_infantry = {
+			soft_attack = 0.2
+		}
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1147,7 +1151,12 @@ technologies = {
 
 	doctrine_victorian_from_sea = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		naval_invasion_penalty = -0.1
+		# naval_invasion_prep_speed = 1
+		# naval_invasion_capacity = 2
+		naval_invasion_planning_bonus_speed = 0.1
+		amphibious_invasion = 0.1
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1194,7 +1203,17 @@ technologies = {
 	
 	doctrine_victorian_rule_waves = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		#AI strat stuff
+		# equipment_bonus = {
+		# 	ship_hull_ironclad = {
+		# 		instant = yes
+		# 		build_cost_ic = -0.1
+		# 	}
+		# }
+		on_research_complete = {
+			add_ideas = rule_waves_doctrine_idea
+		}
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1209,7 +1228,7 @@ technologies = {
 		xor = { doctrine_victorian_lighter_navy }
 
 		path = {
-			leads_to_tech = doctrine_victorian_naval_precendence
+			leads_to_tech = doctrine_victorian_naval_precedence
 			research_cost_coeff = 1
 		}
 
@@ -1231,9 +1250,10 @@ technologies = {
 		}
 	}
 	
-	doctrine_victorian_naval_precendence = {#
+	doctrine_victorian_naval_precedence = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		add_ideas = doctrine_victorian_naval_precedence_idea
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1265,7 +1285,9 @@ technologies = {
 	
 	doctrine_victorian_lighter_navy = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		#AI strat stuff
+		add_ideas = lighter_navy_doctrine_idea
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1304,7 +1326,8 @@ technologies = {
 	
 	doctrine_victorian_advanced_designs = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		naval_speed_factor = 0.1
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1336,7 +1359,9 @@ technologies = {
 	
 	doctrine_victorian_marine_prominence = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		marines_special_forces_contribution_factor = -0.5
+		special_forces_cap = 0.2
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1373,7 +1398,9 @@ technologies = {
 	
 	doctrine_victorian_deployment_overseas = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		naval_invasion_prep_speed = 1
+		naval_invasion_capacity = 2
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1420,7 +1447,12 @@ technologies = {
 	
 	doctrine_victorian_rbl_preference = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		# research_bonus = {
+		# 	naval_mtg_module_rbl = 0.25
+		# 	naval_mtg_module_barbettes_tech = 0.25
+		# }
+		add_ideas = doctrine_victorian_rbl_preference_idea
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1454,7 +1486,11 @@ technologies = {
 	
 	doctrine_victorian_rml_preference = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		# research_bonus = {
+		# 	naval_mtg_module_rml = 0.25
+		# }
+		add_ideas = doctrine_victorian_rml_preference_idea
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1488,7 +1524,8 @@ technologies = {
 	
 	doctrine_victorian_expanded_research_bureau = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		research_speed_factor = 0.1
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1521,7 +1558,10 @@ technologies = {
 	doctrine_victorian_institutionalized_training = {#
 		doctrine_name = "VICTORIAN_ADAPTING_TRADITION_DOCTRINE"
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		training_time_army_factor = -0.1
+		minimum_training_level = -0.1
+		max_training = -0.1
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1563,7 +1603,10 @@ technologies = {
 	
 	doctrine_victorian_early_marksmanship = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		category_victorian_infantry = {
+			soft_attack = 0.075
+		}
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1600,7 +1643,10 @@ technologies = {
 	
 	doctrine_victorian_rifle_pits = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		category_victorian_infantry = {
+			entrenchment = 1.0
+		}
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1637,7 +1683,13 @@ technologies = {
 	
 	doctrine_victorian_modern_defenses = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		land_bunker_effectiveness_factor = 0.15
+		production_speed_bunker_factor = 0.1
+		enable_building = {
+			building = trench
+			level = 1
+		}
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1674,7 +1726,16 @@ technologies = {
 	
 	doctrine_victorian_pinpoint_attack = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		enable_tactic = tactic_pinpoint_attack
+		line_infantry = {
+			fort = {
+				attack = 0.15
+			}
+			urban = {
+				attack = 0.15
+			}
+		}
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1721,7 +1782,8 @@ technologies = {
 	
 	doctrine_victorian_end_square = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		army_defence_factor = 0.25
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1753,7 +1815,8 @@ technologies = {
 	
 	doctrine_victorian_skirmisher_circle = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		enable_tactic = tactic_skirmisher_circle
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1785,7 +1848,9 @@ technologies = {
 	
 	doctrine_victorian_single_rank = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		enable_tactic = tactic_single_rank_attack
+		enable_tactic = tactic_single_rank_defence
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1822,7 +1887,10 @@ technologies = {
 	
 	doctrine_victorian_developed_marksmanship = {#
 
-		army_artillery_attack_factor = 0.05
+		# army_artillery_attack_factor = 0.05
+		category_victorian_infantry = {
+			soft_attack = 0.1
+		}
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -1857,6 +1925,8 @@ technologies = {
 
 		# army_artillery_attack_factor = 0.05
 		enable_tactic = tactic_furia_francese
+		tactic_infantry_column_preferred_weight_factor = 0.5
+		tactic_furia_francese_preferred_weight_factor = 0.5
 		xp_research_type = army
 		xp_unlock_cost = 100
 
