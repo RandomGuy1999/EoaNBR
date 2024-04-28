@@ -180,10 +180,9 @@ technologies = {
 		}
 	}
 	early_aileron_control_system = {
-		air_air_superiority_agility_factor = 0.06
-		air_interception_agility_factor = 0.06
-		air_close_air_support_agility_factor = 0.03
-		air_strategic_bomber_agility_factor = 0.03
+		air_superiority_efficiency = 0.06
+		air_intercept_efficiency = 0.06
+		#air_strategic_bomber_agility_factor = 0.03
 		research_cost = 0.15
 		start_year = 1865
 		folder = {
@@ -487,7 +486,7 @@ technologies = {
 			position = { x = 20 y = @1905 }
 		}
 		dependencies = {
-			v8_engines = 1
+			tech_v8_engine = 1
 		}
 		path = {
 			leads_to_tech = biplane_prototypes
@@ -538,10 +537,9 @@ technologies = {
 		}
 	}
 	pratical_aileron_control_surfaces = {
-		air_air_superiority_agility_factor = 0.06
-		air_interception_agility_factor = 0.06
-		air_close_air_support_agility_factor = 0.03
-		air_strategic_bomber_agility_factor = 0.03
+		air_superiority_efficiency = 0.06
+		air_intercept_efficiency = 0.06
+		#air_strategic_bomber_agility_factor = 0.03
 		research_cost = 0.15
 		start_year = 1915
 		folder = {
@@ -569,7 +567,7 @@ technologies = {
 		}
 	}
 	synchronization_gear = {
-		air_air_superiority_attack_factor = 0.06
+		air_superiority_efficiency = 0.06
 		research_cost = 0.15
 		start_year = 1915
 		folder = {
@@ -593,7 +591,7 @@ technologies = {
 		}
 	}
 	metal_body_prototypes = {
-		air_air_superiority_defence_factor = 0.05
+		air_superiority_efficiency = 0.05
 		research_cost = 0.15
 		start_year = 1910
 		folder = {
@@ -621,7 +619,7 @@ technologies = {
 		}
 	}
 	full_metal_construcion = {
-		air_air_superiority_defence_factor = 0.05
+		air_superiority_efficiency = 0.05
 		research_cost = 0.15
 		start_year = 1920
 		folder = {
@@ -718,7 +716,7 @@ technologies = {
 			position = { x = 22 y = @1940 }
 		}
 		dependencies = {
-			rocket_engines = 1
+			# rocket_engines = 1
 		}
 		path = {
 			leads_to_tech = jet_aircraft_prototypes
@@ -804,8 +802,8 @@ technologies = {
 		}
 	}
 	swept_wings = {
-		air_air_superiority_agility_factor = 0.02
-		air_interception_agility_factor = 0.02
+		air_superiority_efficiency = 0.02
+		air_intercept_efficiency = 0.02
 		research_cost = 0.15
 		start_year = 1950
 		folder = {
@@ -913,7 +911,7 @@ technologies = {
 		}
 	}
 	adaptable_hardpoints = {
-		air_air_superiority_defence_factor = 0.05
+		air_superiority_efficiency = 0.05
 		research_cost = 0.15
 		start_year = 1955
 		folder = {
@@ -1658,7 +1656,7 @@ technologies = {
 		}
 	}
 	navigable_balloons = {
-		air_air_superiority_defence_factor = 0.02
+		air_superiority_efficiency = 0.02
 		research_cost = 0.15
 		start_year = 1870
 		folder = {
@@ -1687,7 +1685,7 @@ technologies = {
 		}
 	}
 	early_zeppelin_designs = {
-		air_strategic_bomber_agility_factor = 0.04
+		#air_strategic_bomber_agility_factor = 0.04
 		enable_building = {
 			building = air_base
 			level = 5
@@ -1721,7 +1719,7 @@ technologies = {
 		}
 	}
 	zeppelin_prototypes = {
-		air_air_superiority_defence_factor = 0.02
+		air_superiority_efficiency = 0.02
 		research_cost = 0.2
 		start_year = 1885
 		folder = {
@@ -1748,7 +1746,7 @@ technologies = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
-	# 	artillery_brigade = {
+	# 	artillery = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
@@ -1782,7 +1780,7 @@ technologies = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
-	# 	artillery_brigade = {
+	# 	artillery = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
@@ -1816,7 +1814,7 @@ technologies = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
-	# 	artillery_brigade = {
+	# 	artillery = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
@@ -1855,7 +1853,7 @@ technologies = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
-	# 	artillery_brigade = {
+	# 	artillery = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
@@ -1889,7 +1887,7 @@ technologies = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
-	# 	artillery_brigade = {
+	# 	artillery = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
@@ -1928,7 +1926,7 @@ technologies = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}
-	# 	artillery_brigade = {
+	# 	artillery = {
 	# 		soft_attack = 0.02
 	# 		breakthrough = 0.02 # Open Beta 0.7.3 #
 	# 	}

@@ -21,9 +21,27 @@ ideas = {
 				}
 			}
 		}
+
+		experience_with_steel_guns_idea = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_artillery_manufacturer_1
+
+			cost = -1
+			removal_cost = -1
+
+			equipment_bonus = {
+				field_artillery_equipment = {
+					instant = yes
+					reliability = 0.025
+				}
+			}
+		}
 		
 		
-		havery_low_strength_idea = {
+		harvey_low_strength_idea = {
 			allowed = {
 				always = no
 			}
@@ -37,6 +55,21 @@ ideas = {
 				ship_capital_armor_harvey_armor = {
 					instant = yes
 					armor_value = -0.05
+				}
+			}
+		}
+
+		superior_rifles_doctrine_idea = {
+			allowed = {
+				always = no
+			}
+
+			cost = -1
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment_rifle_4 = {
+					build_cost_ic = -0.5
 				}
 			}
 		}
@@ -111,7 +144,11 @@ ideas = {
 			removal_cost = -1
 			
 			research_bonus = {
-				naval_equipment = 0.1
+				naval_equipment = 0.125
+				cat_small_arms_techs = -0.02
+				cat_uniform_techs = -0.02
+				support_tech = -0.02
+				cat_artillery_techs = -0.02
 			}
 		}
 		doctrine_victorian_rml_preference_idea = {

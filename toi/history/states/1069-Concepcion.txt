@@ -7,9 +7,9 @@ state = {
 	state_category = sparse_rural
 
 	resources = {
+		iron = 3
 		coal = 1
-		iron = 2
-		fiber = 2
+		wood = 3
 	}
 
 	history = {
@@ -28,6 +28,8 @@ state = {
 		victory_points = {
 			13569 2
 		}
+
+		set_variable = { livestock_ranch_size = 3 }
 	}
 
 	provinces = {

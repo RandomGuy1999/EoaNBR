@@ -238,10 +238,10 @@ technologies = {
 					infantry_equipment_pre_rifle_2
 				}
 				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_industrialization_change = yes
 					set_temp_variable = { institution_progress_temp = 1 }
 					eoanbr_institutions_centralization_change = yes
+					set_temp_variable = { institution_progress_temp = 3 }
+					eoanbr_institutions_rationalism_change = yes
 				}
 			#
 			#Modifier
@@ -394,6 +394,9 @@ technologies = {
 					cat_small_arms_techs
 					cat_rifle_arms_techs
 				}
+				dependencies = {
+					tech_infantry_breech_loading = 1
+				}
 				ai_will_do = {
 					factor = 20
 					modifier = {
@@ -443,7 +446,7 @@ technologies = {
 					position = { x = @rifle y = @1872 }
 				}
 				dependencies = {
-					tech_infantry_lever_acutators = 1
+					tech_infantry_cap_primers = 1
 				}
 				path = {
 					leads_to_tech = tech_infantry_rifle_equipment_5
@@ -2258,14 +2261,14 @@ technologies = {
 					cat_equipment_techs
 					cat_uniform_techs
 
-					cat_chemistry_techs
-					cat_explosives_techs
+					cat_science_techs
+					cat_explosives_science_techs
 				}
 			#
 			#Effect
 				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
-					eoanbr_institutions_industrialization_change = yes
+					set_temp_variable = { institution_progress_temp = 5 }
+					eoanbr_institutions_rationalism_change = yes
 				}
 			#
 			#Modifier
@@ -2279,7 +2282,7 @@ technologies = {
 			}
 		}
 		tech_infantry_percussion_cap = {
-			force_use_small_tech_layout = yes
+			#force_use_small_tech_layout = yes
 
 			on_research_complete = {
 				custom_effect_tooltip = rifle_upgrade_tt
@@ -5117,8 +5120,8 @@ technologies = {
 			#
 			#Effect
 				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 1 }
-					eoanbr_institutions_industrialization_change = yes
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
 				}
 
 				enable_equipments = {
@@ -5844,7 +5847,7 @@ technologies = {
 					position = { x = 16 y = @1966 }
 				}
 				dependencies = {
-					modern_ceramics = 1
+					tech_modern_ceramics = 1
 				}
 				path = {
 					leads_to_tech = tech_uniform_equipment_17

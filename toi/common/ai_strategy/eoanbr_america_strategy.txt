@@ -503,3 +503,120 @@ USA_ACW_unit_production = {
 	}
 
 }
+
+USA_ACW_front_management = {
+	allowed = {
+		tag = USA
+	}
+	
+	enable = {
+		#tag = USA
+		has_global_flag = ACW_American_Civil_War
+		CSA = { exists = yes }
+	}
+
+	abort = {
+		#tag = USA
+		has_global_flag = ACW_American_Civil_War_Happened
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			original_tag = SIX
+			original_tag = CHY
+			original_tag = CRW
+			original_tag = BFT
+			original_tag = NEZ
+			original_tag = SHO
+			original_tag = APA
+			original_tag = COM
+			original_tag = NAV
+		}
+		value = -100
+	}
+
+}
+
+USA_ENG_CSA_front_management = {
+	allowed = {
+		tag = USA
+	}
+	
+	enable = {
+		#tag = USA
+		has_war_with = ENG
+		has_war_with = CSA
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			original_tag = SIX
+			original_tag = CHY
+			original_tag = CRW
+			original_tag = BFT
+			original_tag = NEZ
+			original_tag = SHO
+			original_tag = APA
+			original_tag = COM
+			original_tag = NAV
+		}
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			original_tag = CSA
+		}
+		value = 100
+	}
+
+	ai_strategy = {
+		type = naval_mission_threshold
+    	id = MISSION_CONVOY_ESCORT
+    	value = -75 #neg values means more likely for solely this type of ai command, ducking PDX wisdom
+	}
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = MISSION_CONVOY_RAIDING
+		value = -60
+	}
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 52
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 53
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 54
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 170
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 171
+		value = 75
+	}
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 114
+		value = 75
+	}
+	ai_strategy = {
+		type = naval_convoy_raid_region
+		id = 89
+		value = 75
+	}
+
+}

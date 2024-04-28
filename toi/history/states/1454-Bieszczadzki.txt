@@ -4,6 +4,13 @@ state={
 	provinces={
 		3434 9494 
 	}
+
+	resources = {
+		coal = 6
+		iron = 4
+		wood = 3
+	}
+
 	history = {
 		owner = AUS
 		add_core_of = AUS

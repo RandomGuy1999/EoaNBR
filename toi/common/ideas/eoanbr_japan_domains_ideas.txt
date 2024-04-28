@@ -124,7 +124,7 @@ ideas= {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = 0.05
+				mining_output_factor = 0.05
 				political_power_factor = 0.1
 			}
 		}
@@ -139,7 +139,7 @@ ideas= {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = 0.1
+				mining_output_factor = 0.1
 				political_power_factor = 0.15
 			}
 		}
@@ -154,7 +154,7 @@ ideas= {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = 0.1
+				mining_output_factor = 0.1
 				political_power_factor = 0.15
 				# production_speed_logging_camp_factor = 0.05
 			}
@@ -170,7 +170,7 @@ ideas= {
 			removal_cost = -1
 
 			modifier = {
-				local_resources_factor = 0.1
+				mining_output_factor = 0.1
 				political_power_factor = 0.15
 				monthly_population = 0.05
 				# production_speed_logging_camp_factor = 0.05
@@ -291,8 +291,8 @@ ideas= {
 			removal_cost = -1
 
 			research_bonus = {
-				mechanical_engineering_tech = 0.05
-				process_engineering_tech = 0.05
+				cat_industry_techs = 0.05
+				cat_refinement_techs = 0.05
 			}
 
 			modifier = {
@@ -770,14 +770,14 @@ ideas= {
 			removal_cost = 10
 
 			research_bonus = {
-				mechanical_engineering_tech = 0.03
-				excavation_tech = 0.03
+				cat_industry_techs = 0.03
+				cat_extraction_techs = 0.03
 			}
 
 			traits = { industrial_concern_1 }
 
 			modifier = {
-				local_resources_factor = 0.05
+				mining_output_factor = 0.05
 				political_power_factor = -0.05
 			}
 		}
@@ -935,7 +935,7 @@ ideas= {
 				original_tag = SAG
 			}
 
-			picture = religion_catholicism
+			picture = catholicism
 
 			modifier = {
 				stability_factor = -0.05
@@ -953,9 +953,8 @@ ideas= {
 			}
 		}
 	}
-}
-political_advisor = {
-	SAG_advisor_tanaka_hisashige = {
+	political_advisor = {
+		SAG_advisor_tanaka_hisashige = {
 			allowed = {
 				original_tag = SAG
 			}
@@ -970,6 +969,7 @@ political_advisor = {
 			traits = { innovative_engineer  }
 
 			modifier = { # # production_speed_steel_mill_factor = 0.05 }
+			}
 		}
 	}
 }

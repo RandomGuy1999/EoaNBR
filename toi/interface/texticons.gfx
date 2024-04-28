@@ -217,8 +217,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_industry_capcity_texticon"
-		texturefile = "gfx/texticons/industry_capacity_texticon.dds"
+		name = "GFX_industrial_capacity_texticon"
+		texturefile = "gfx/texticons/industrial_capacity_texticon.dds"
 		legacy_lazy_load = no
 	}
 
@@ -288,7 +288,21 @@ spriteTypes = {
 		texturefile = "gfx/texticons/SWI_military_readiness_text_icon.dds"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_citizens_text_icon"
+		texturefile = "gfx/texticons/citizens.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kkk_hood_text_icon"
+		texturefile = "gfx/texticons/kkk_hood.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_spanish_american_tensions_text_icon"
+		texturefile = "gfx/texticons/spanish_american_tensions.dds"
+		legacy_lazy_load = no
+	}
 
 	#### unit texticons
 
@@ -622,6 +636,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_cavalry_icon_small"
 		texturefile = "gfx/texticons/unit_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_light_cavalry_icon_small"
+		texturefile = "gfx/texticons/unit_light_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_cavalry_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_uhlans_icon_small"
+		texturefile = "gfx/texticons/unit_uhlans_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}

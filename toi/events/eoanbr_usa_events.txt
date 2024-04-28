@@ -683,14 +683,8 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
 			}
 		}
 		random_owned_controlled_state = {
@@ -699,28 +693,18 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 	}
@@ -750,14 +734,9 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
@@ -766,56 +745,36 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 	}
@@ -845,14 +804,9 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
@@ -861,14 +815,9 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
@@ -877,41 +826,27 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = arms_factory
-				level = 1
-			}
-			add_building_construction = {
-				type = arms_factory_inactive
-				level = 1
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 	}
@@ -941,14 +876,9 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
@@ -957,56 +887,36 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 	}
@@ -1036,28 +946,18 @@ country_event = {
 				is_core_of = USA
 
 			}
-			remove_building = {
+			damage_building = {
 				type = industrial_complex
-				level = 1
-			}
-			add_building_construction = {
-				type = industrial_complex_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 		random_owned_controlled_state = {
 			limit = {
 				infrastructure > 0
 			}
-			remove_building = {
+			damage_building = {
 				type = infrastructure
-				level = 1
-			}
-			add_building_construction = {
-				type = infrastructure_inactive
-				level = 1
-				instant_build = yes
+				damage = 1
 			}
 		}
 	}
@@ -4433,6 +4333,12 @@ country_event = {
 			max = 100
 		}
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 	}
 	option = {
 		trigger = {
@@ -4451,6 +4357,12 @@ country_event = {
 			max = 100
 		}
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 	}
 	option = {
 		trigger = {
@@ -4469,6 +4381,12 @@ country_event = {
 			max = 100
 		}
 		custom_effect_tooltip = USA_reconstruction_add_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_3 = yes
+		}
 	}
 }
 
@@ -4502,6 +4420,12 @@ country_event = {
 		}
 		hidden_effect = { USA = { country_event = { id = usa.55 days = 30 } } }
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 	}
 }
 
@@ -4570,6 +4494,12 @@ country_event = {
 			value = 1
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_1 = yes
+		}
 	}
 }
 
@@ -4802,6 +4732,12 @@ country_event = {
 			value = 1
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_1 = yes
+		}
 	}
 }
 
@@ -4828,6 +4764,12 @@ country_event = {
 			value = 1
 		}
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 	}
 	option = {
 		name = usa.55.b
@@ -4839,6 +4781,12 @@ country_event = {
 			value = 3
 		}
 		custom_effect_tooltip = USA_reconstruction_add_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_3 = yes
+		}
 	}
 	option = {
 		name = usa.55.c
@@ -4848,6 +4796,12 @@ country_event = {
 			value = 2
 		}
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 	}
 }
 
@@ -4954,6 +4908,12 @@ country_event = {
 			value = 2
 		}
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 	}
 	option = {
 		name = usa.58.b
@@ -4999,6 +4959,12 @@ country_event = {
 			value = 2
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_1 = yes
+		}
 		add_popularity = { ideology = social_egalitarianism popularity = -0.05 }
 		LIB = { country_event = { id = usa.59 days = 4 } }
 		set_global_flag = USA_Liberia_Mandatory
@@ -5065,20 +5031,20 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		# name = usa.60.a
+		name = usa.60.a
 		# log = "option:		# name = usa.60.a"
-		# add_equipment_to_stockpile = {
-		# 	type = infantry_equipment
-		# 	amount = 3000
-		# 	producer = USA
-		# }
-		# add_equipment_to_stockpile = {
-		# 	type = uniform_equipment
-		# 	amount = 3000
-		# 	producer = USA
-		# }
-		# add_manpower = 5000
-		MEX = { add_ideas = MEX_american_support }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = uniform_equipment
+			amount = 3000
+			producer = USA
+		}
+		add_manpower = 5000
+		add_ideas = MEX_american_support
 	}
 }
 
@@ -5614,6 +5580,12 @@ country_event = {
 			add_ideas = USA_freedman_bureau_1
 		}
 		custom_effect_tooltip = USA_reconstruction_add_5
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_5 = yes
+		}
 		add_political_power = -50
 		ai_chance = {
 			factor = 70
@@ -5636,6 +5608,12 @@ country_event = {
 			popularity = -0.02
 		}
 		custom_effect_tooltip = USA_reconstruction_add_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_3 = yes
+		}
 		add_political_power = -25
 		ai_chance = {
 			factor = 30
@@ -5657,6 +5635,12 @@ country_event = {
 			popularity = 0.02
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_4
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_4 = yes
+		}
 		add_political_power = 25
 		ai_chance = {
 			factor = 0
@@ -5689,20 +5673,20 @@ country_event = {
 		}
 		random_owned_state = {
 			limit = {
-				cotton_farm > 0
+				fiber > 6
 			}
-			remove_building = {
-				type = cotton_farm
-				level = 1
+			add_resource = {
+				type = fiber
+				amount = -6
 			}
 		}
 		random_owned_state = {
 			limit = {
-				cotton_farm > 0
+				fiber > 6
 			}
-			remove_building = {
-				type = cotton_farm
-				level = 1
+			add_resource = {
+				type = fiber
+				amount = -6
 			}
 		}
 		if = {
@@ -5731,6 +5715,12 @@ country_event = {
 		}
 		add_political_power = -50
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -5749,11 +5739,11 @@ country_event = {
 		add_political_power = -25
 		random_owned_state = {
 			limit = {
-				cotton_farm > 0
+				fiber > 6
 			}
-			remove_building = {
-				type = cotton_farm
-				level = 1
+			add_resource = {
+				type = fiber
+				amount = -6
 			}
 		}
 		if = {
@@ -5781,6 +5771,12 @@ country_event = {
 			popularity = 0.02
 		}
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -5832,6 +5828,12 @@ country_event = {
 			value = 3
 		}
 		custom_effect_tooltip = USA_reconstruction_add_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_3 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -5861,6 +5863,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 	}
 	option = {
 		name = usa.81.c
@@ -5883,6 +5891,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_2 = yes
+		}
 	}
 	option = {
 		name = usa.81.e
@@ -5909,6 +5923,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_3 = yes
+		}
 	}
 }
 #Occupy the South
@@ -5948,6 +5968,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_add_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_3 = yes
+		}
 	}
 	option = {
 		name = usa.82.b
@@ -5990,6 +6016,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_3 = yes
+		}
 	}
 }
 #Black Wages
@@ -6013,6 +6045,12 @@ country_event = {
 			value = 3
 		}
 		custom_effect_tooltip = USA_reconstruction_add_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_3 = yes
+		}
 		add_timed_idea = {
 			idea = USA_black_wages
 			days = 750
@@ -6064,6 +6102,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_3 = yes
+		}
 	}
 }
 #Olklahoma Issue
@@ -6087,6 +6131,12 @@ country_event = {
 			value = 1
 		}
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6107,6 +6157,12 @@ country_event = {
 			value = 1
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_1 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6141,6 +6197,12 @@ country_event = {
 			value = 2
 		}
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 		add_stability = -0.05
 		add_popularity = {
 			ideology = traditional_conservatism
@@ -6166,6 +6228,12 @@ country_event = {
 			value = 2
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_2 = yes
+		}
 		add_stability = 0.05
 		add_popularity = {
 			ideology = traditional_conservatism
@@ -6238,6 +6306,12 @@ country_event = {
 		}
 		add_political_power = -50
 		custom_effect_tooltip = USA_reconstruction_add_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_3 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6261,6 +6335,12 @@ country_event = {
 			value = 3
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_3 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6410,6 +6490,12 @@ country_event = {
 		}
 		add_political_power = -75
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6430,6 +6516,12 @@ country_event = {
 			value = 4
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_4
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_4 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6502,6 +6594,12 @@ country_event = {
 		add_manpower = -2500
 		add_political_power = -50
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6526,6 +6624,12 @@ country_event = {
 			popularity = 0.03
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_4
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_4 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6604,6 +6708,12 @@ country_event = {
 			value = 1
 		}
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6664,6 +6774,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_1 = yes
+		}
 	}
 	option = {
 		name = usa.90.c
@@ -6706,6 +6822,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_2 = yes
+		}
 	}
 }
 country_event = {
@@ -6765,6 +6887,12 @@ country_event = {
 		}
 		add_political_power = -40
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6797,6 +6925,12 @@ country_event = {
 			value = 2
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_2 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6862,6 +6996,12 @@ country_event = {
 		}
 		add_manpower = -4000
 		custom_effect_tooltip = USA_reconstruction_add_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_3 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6883,6 +7023,12 @@ country_event = {
 		}
 		add_manpower = -2000
 		custom_effect_tooltip = USA_reconstruction_add_1
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_1 = yes
+		}
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -6910,6 +7056,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_3
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_3 = yes
+		}
 	}
 }
 #Third Enforcement Act
@@ -6937,6 +7089,12 @@ country_event = {
 			popularity = -0.02
 		}
 		custom_effect_tooltip = USA_reconstruction_add_5
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_5 = yes
+		}
 	}
 }
 #Southern Plantations don't pay black workers actual money
@@ -6973,6 +7131,12 @@ country_event = {
 			}
 		}
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 		add_political_power = -40
 	}
 	option = {
@@ -6995,6 +7159,12 @@ country_event = {
 			value = 2
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_2 = yes
+		}
 		remove_ideas = USA_black_wages
 		ai_chance = {
 			factor = 0
@@ -11262,7 +11432,7 @@ country_event = {
 			SPR={
 				add_to_variable = {
 					SPR_USA_american_tension=50
-					tooltip = SPR_tension_increase_total_tooltip
+					tooltip = SPR_tension_increase_effect_tooltip
 				}
 			}
 			news_event = {
@@ -11357,234 +11527,7 @@ country_event = {
 				is_historical_focus_on = yes
 			}
 		}
-		USA = {
-			transfer_state = 315
-			transfer_state = 1350
-			if = {
-				limit = {
-					1022 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1022
-			}
-			if = {
-				limit = {
-					686 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 686
-			}
-			if = {
-				limit = {
-					319 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 319
-			}
-			if = {
-				limit = {
-					1318 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1318
-			}
-			if = {
-				limit = {
-					1319 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1319
-			}
-			if = {
-				limit = {
-					638 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 638
-			}
-			if = {
-				limit = {
-					1022 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1022
-			}
-			if = {
-				limit = {
-					627 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 627
-			}
-			if = {
-				limit = {
-					628 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 628
-			}
-			if = {
-				limit = {
-					625 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 625
-			}
-			if = {
-				limit = {
-					624 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 624
-			}
-			if = {
-				limit = {
-					327 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 327
-			}
-			if = {
-				limit = {
-					623 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 623
-			}
-			if = {
-				limit = {
-					626 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 626
-			}
-		}
+		country_event = spain.31
 	}
 }
 #War Declared
@@ -11694,235 +11637,9 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		set_country_flag = SPR_driven_from_americas
+		country_event = spain.31
 		USA = {
 			white_peace = SPR
-			transfer_state = 315
-			transfer_state = 1350
-			if = {
-				limit = {
-					1022 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1022
-			}
-			if = {
-				limit = {
-					686 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 686
-			}
-			if = {
-				limit = {
-					319 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 319
-			}
-			if = {
-				limit = {
-					1318 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1318
-			}
-			if = {
-				limit = {
-					1319 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1319
-			}
-			if = {
-				limit = {
-					638 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 638
-			}
-			if = {
-				limit = {
-					1022 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1022
-			}
-			if = {
-				limit = {
-					627 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 627
-			}
-			if = {
-				limit = {
-					628 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 628
-			}
-			if = {
-				limit = {
-					625 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 625
-			}
-			if = {
-				limit = {
-					624 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 624
-			}
-			if = {
-				limit = {
-					327 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 327
-			}
-			if = {
-				limit = {
-					623 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 623
-			}
-			if = {
-				limit = {
-					626 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 626
-			}
 		}
 	}
 	option = {
@@ -11960,234 +11677,9 @@ country_event = {
 		add_political_power = -100
 		add_stability = -0.1
 		add_war_support = -0.1
-		set_country_flag = SPR_driven_from_americas
+		SPR={country_event = spain.31}
 		USA = {
 			white_peace = SPR
-			transfer_state = 315
-			if = {
-				limit = {
-					1022 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1022
-			}
-			if = {
-				limit = {
-					686 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 686
-			}
-			if = {
-				limit = {
-					319 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 319
-			}
-			if = {
-				limit = {
-					1318 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1318
-			}
-			if = {
-				limit = {
-					1319 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1319
-			}
-			if = {
-				limit = {
-					638 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 638
-			}
-			if = {
-				limit = {
-					1022 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 1022
-			}
-			if = {
-				limit = {
-					627 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 627
-			}
-			if = {
-				limit = {
-					628 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 628
-			}
-			if = {
-				limit = {
-					625 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 625
-			}
-			if = {
-				limit = {
-					624 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 624
-			}
-			if = {
-				limit = {
-					327 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 327
-			}
-			if = {
-				limit = {
-					623 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 623
-			}
-			if = {
-				limit = {
-					626 = {
-						OR = {
-							is_owned_by = SPR
-							owner = {
-								is_puppet_of = SPR
-							}
-							owner = {
-								is_subject_of = SPR
-							}
-						}
-					}
-				}
-				transfer_state = 626
-			}
 		}
 	}
 }
@@ -12386,6 +11878,12 @@ country_event = {
 			value = 4
 		}
 		custom_effect_tooltip = USA_reconstruction_add_4
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_4 = yes
+		}
 	}
 	option = { #Sphere of Inf
 		name = usa.167.b
@@ -12408,6 +11906,12 @@ country_event = {
 			value = 2
 		}
 		custom_effect_tooltip = USA_reconstruction_add_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_plus_2 = yes
+		}
 	}
 	option = { # Refuse (Historical)
 		name = usa.167.c
@@ -12437,6 +11941,12 @@ country_event = {
 			value = -2
 		}
 		custom_effect_tooltip = USA_reconstruction_remove_2
+		every_subject_country = {
+			limit = {
+				has_autonomy_state = autonomy_unintegrated_seceded_state
+			}
+			USAROD_reconstruction_progress_minus_2 = yes
+		}
 	}
 }
 
@@ -13695,7 +13205,7 @@ country_event = { # Creation of the Prohibition Party
 # 	is_triggered_only = yes
 
 # 	immediate = {
-# 		log = "[THIS.GetTag]: firing = usa.200"
+# 		# log = "[THIS.GetTag]: firing = usa.200"
 # 		# log = "manpower: [?manpower]"
 # 		# log = "manpower_k: [?manpower_k]"
 # 		# log = "max_available_manpower: [?max_available_manpower]"
@@ -13845,21 +13355,21 @@ country_event = { # Creation of the Prohibition Party
 # 						}
 # 					}
 # 				}
-# 			log = "lineship_var: [?lineship_var]"
-# 			log = "frigate_var: [?frigate_var]"
-# 			log = "gunboat_var: [?gunboat_var]"
-# 			log = "corvette_var: [?corvette_var]"
+# 			# log = "lineship_var: [?lineship_var]"
+# 			# log = "frigate_var: [?frigate_var]"
+# 			# log = "gunboat_var: [?gunboat_var]"
+# 			# log = "corvette_var: [?corvette_var]"
 # 		}
 # 	}
-# 		log = "lineship_var: [?lineship_var]"
-# 		log = "frigate_var: [?frigate_var]"
-# 		log = "gunboat_var: [?gunboat_var]"
-# 		log = "corvette_var: [?corvette_var]"
+# 		# log = "lineship_var: [?lineship_var]"
+# 		# log = "frigate_var: [?frigate_var]"
+# 		# log = "gunboat_var: [?gunboat_var]"
+# 		# log = "corvette_var: [?corvette_var]"
 # 	}
 
 # 	option = {
 # 		name = usa.200.a
-# 		log = "option:		name = usa.200.a"
+# 		# log = "option:		name = usa.200.a"
 # 	}
 # }
 
@@ -15271,66 +14781,15 @@ state_event = {
 	option = {
 		name = usa_flavor.14.a
 		# log = "option:		name = usa_flavor.14.a"
-		OWNER = {
-			if = {
-				limit = { NOT = { has_tech = industrial_blast_furnace } }
-				set_technology = {
-					industrial_blast_furnace = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = hot_blast_furnaces } }
-				set_technology = {
-					hot_blast_furnaces = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = cast_iron_industrialization } }
-				set_technology = {
-					cast_iron_industrialization = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = industrial_finery_forge } }
-				set_technology = {
-					industrial_finery_forge = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = wrought_iron_industrialization } }
-				set_technology = {
-					wrought_iron_industrialization = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = tech_inorganic_chemistry } }
-				set_technology = {
-					tech_inorganic_chemistry = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = chemical_vapor_deposition } }
-				set_technology = {
-					chemical_vapor_deposition = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = dry_puddling_process } }
-				set_technology = {
-					dry_puddling_process = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = bessemer_process } }
-				set_technology = {
-					bessemer_process = 1
-				}
-			}
-		}
-		add_resource = {
-			type = steel
-			amount = 20
-			state = 395
+		# add_resource = {
+		# 	type = steel
+		# 	amount = 20
+		# 	state = 395
+		# }
+		395 = {
+			set_temp_variable = { industry_token = token:steel_foundry }
+			set_temp_variable = { x_temp = 10 }
+			construct_x_industries = yes
 		}
 		add_resource = {
 			type = iron
@@ -15360,67 +14819,16 @@ state_event = {
 	option = {
 		name = usa_flavor.15.a
 		# log = "option:		name = usa_flavor.15.a"
-		OWNER = {
-			if = {
-				limit = { NOT = { has_tech = industrial_blast_furnace } }
-				set_technology = {
-					industrial_blast_furnace = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = hot_blast_furnaces } }
-				set_technology = {
-					hot_blast_furnaces = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = cast_iron_industrialization } }
-				set_technology = {
-					cast_iron_industrialization = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = industrial_finery_forge } }
-				set_technology = {
-					industrial_finery_forge = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = wrought_iron_industrialization } }
-				set_technology = {
-					wrought_iron_industrialization = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = tech_inorganic_chemistry } }
-				set_technology = {
-					tech_inorganic_chemistry = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = chemical_vapor_deposition } }
-				set_technology = {
-					chemical_vapor_deposition = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = dry_puddling_process } }
-				set_technology = {
-					dry_puddling_process = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = bessemer_process } }
-				set_technology = {
-					bessemer_process = 1
-				}
-			}
+		395 = {
+			set_temp_variable = { industry_token = token:steel_foundry }
+			set_temp_variable = { x_temp = 10 }
+			construct_x_industries = yes
 		}
-		add_resource = {
-			type = steel
-			amount = 20
-			state = 395
-		}
+		# add_resource = {
+		# 	type = steel
+		# 	amount = 20
+		# 	state = 395
+		# }
 		add_resource = {
 			type = iron
 			amount = 10
@@ -15449,68 +14857,17 @@ state_event = {
 	option = {
 		name = usa_flavor.16.a
 		# log = "option:		name = usa_flavor.16.a"
-		OWNER = {
-			if = {
-				limit = { NOT = { has_tech = industrial_blast_furnace } }
-				set_technology = {
-					industrial_blast_furnace = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = hot_blast_furnaces } }
-				set_technology = {
-					hot_blast_furnaces = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = cast_iron_industrialization } }
-				set_technology = {
-					cast_iron_industrialization = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = industrial_finery_forge } }
-				set_technology = {
-					industrial_finery_forge = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = wrought_iron_industrialization } }
-				set_technology = {
-					wrought_iron_industrialization = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = tech_inorganic_chemistry } }
-				set_technology = {
-					tech_inorganic_chemistry = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = chemical_vapor_deposition } }
-				set_technology = {
-					chemical_vapor_deposition = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = dry_puddling_process } }
-				set_technology = {
-					dry_puddling_process = 1
-				}
-			}
-			if = {
-				limit = { NOT = { has_tech = bessemer_process } }
-				set_technology = {
-					bessemer_process = 1
-				}
-			}
-		}
 		395 = { add_manpower = 2500 }
-		add_resource = {
-			type = steel
-			amount = 20
-			state = 395
+		395 = {
+			set_temp_variable = { industry_token = token:steel_foundry }
+			set_temp_variable = { x_temp = 10 }
+			construct_x_industries = yes
 		}
+		# add_resource = {
+		# 	type = steel
+		# 	amount = 20
+		# 	state = 395
+		# }
 		add_resource = {
 			type = iron
 			amount = 10
@@ -17309,7 +16666,7 @@ country_event = {#this will fire after the start of the pig war if the clayton c
 				has_country_flag = clayton_stage_4
 			}
 			declare_war_on = {
-				target = HBC
+				target = BCO
 				type = take_state
 			}
 		}
@@ -17416,11 +16773,11 @@ country_event = {#this will fire after the start of the pig war if the clayton c
 	}
 	# option = { #war to enforce the treaty
 	# 	name = usa_diplomacy.12.b
-	# 	log = "option:		name = usa_diplomacy.12.b"
+	# 	# log = "option:		name = usa_diplomacy.12.b"
 	# }
 	# option = { #penal war includes guatemala
 	# 	name = usa_diplomacy.12.b
-	# 	log = "option:		name = usa_diplomacy.12.b"
+	# 	# log = "option:		name = usa_diplomacy.12.b"
 	# }
 }
 
@@ -17449,6 +16806,364 @@ news_event = {
 
 	option = {
 		name = usa_diplomacy.14.a
+	}
+}
+
+country_event = { # Helping Mexican Liberals (Gilded Age Tree)
+	id = usa_diplomacy.15
+	title = usa_diplomacy.15.t
+	desc = usa_diplomacy.15.desc
+
+	is_triggered_only = yes
+
+	option = { # Send a large amount of arms and some generals
+		name = usa_diplomacy.15.a
+		trigger = {
+			AND = {
+				has_equipment = {
+					infantry_equipment > 4999
+				}
+				OR = {
+					USA_character_george_h_thomas = {
+						OR = {
+							is_corps_commander = yes
+							is_field_marshal = yes
+						}
+					}
+					USA_character_philip_sheridan = {
+						OR = {
+							is_corps_commander = yes
+							is_field_marshal = yes
+						}
+					}
+				}
+			}
+		}
+		set_country_flag = usa_gilded_sent_generals_to_mexican_libs_flag
+		if = {
+			limit = {
+				USA_character_george_h_thomas = {
+					OR = {
+						is_corps_commander = yes
+						is_field_marshal = yes
+					}
+				}
+			}
+			USA_character_george_h_thomas = {
+				set_nationality = MEX
+			}
+		}
+		if = {
+			limit = {
+				USA_character_philip_sheridan = {
+					OR = {
+						is_corps_commander = yes
+						is_field_marshal = yes
+					}
+				}
+			}
+			USA_character_philip_sheridan = {
+				set_nationality = MEX
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -5000
+			producer = USA
+		}
+		effect_tooltip = {
+			MEX = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+					producer = USA
+				}
+			}
+		}
+		MEX = {
+			country_event = usa_diplomacy.16
+		}
+	}
+	option = { # Send a large amount of arms
+		name = usa_diplomacy.15.b
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 4999
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -5000
+			producer = USA
+		}
+		effect_tooltip = {
+			MEX = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+					producer = USA
+				}
+			}
+		}
+		MEX = {
+			country_event = usa_diplomacy.17
+		}
+	}
+	option = { # Send a medium amount of arms
+		name = usa_diplomacy.15.c
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 2499
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2500
+			producer = USA
+		}
+		effect_tooltip = {
+			MEX = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = USA
+				}
+			}
+		}
+		MEX = {
+			country_event = usa_diplomacy.18
+		}
+	}
+	option = { # Send a small amount of arms
+		name = usa_diplomacy.15.d
+		trigger = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+			producer = USA
+		}
+		effect_tooltip = {
+			MEX = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = USA
+				}
+			}
+		}
+		MEX = {
+			country_event = usa_diplomacy.19
+		}
+	}
+}
+
+country_event = { # Recieved small amount of arms (Mexican Liberal perspective)
+	id = usa_diplomacy.16
+	# All of these use the same option name, title, and description
+	title = usa_diplomacy.16.t
+	desc = usa_diplomacy.16.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_diplomacy.16.a
+		army_experience = 15
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = USA
+		}
+	}
+}
+
+country_event = { # Recieved medium amount of arms (Mexican Liberal perspective)
+	id = usa_diplomacy.17
+	# All of these use the same option name, title, and description
+	title = usa_diplomacy.16.t
+	desc = usa_diplomacy.16.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_diplomacy.16.a
+		army_experience = 20
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2500
+			producer = USA
+		}
+	}
+}
+
+country_event = { # Recieved large amount of arms (Mexican Liberal perspective)
+	id = usa_diplomacy.18
+	# All of these use the same option name, title, and description
+	title = usa_diplomacy.16.t
+	desc = usa_diplomacy.16.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_diplomacy.16.a
+		army_experience = 25
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = USA
+		}
+	}
+}
+
+country_event = { # Recieved large amount of arms and generals (Mexican Liberal perspective)
+	id = usa_diplomacy.19
+	title = usa_diplomacy.16.t
+	# This one only uses the same title
+	desc = usa_diplomacy.19.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_diplomacy.19.a
+		army_experience = 25
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 5000
+			producer = USA
+		}
+		effect_tooltip = {
+			if = {
+				limit = {
+					USA_character_george_h_thomas = {
+						OR = {
+							is_corps_commander = yes
+							is_field_marshal = yes
+						}
+					}
+				}
+				USA_character_george_h_thomas = {
+					set_nationality = MEX
+				}
+			}
+			if = {
+				limit = {
+					USA_character_philip_sheridan = {
+						OR = {
+							is_corps_commander = yes
+							is_field_marshal = yes
+						}
+					}
+				}
+				USA_character_philip_sheridan = {
+					set_nationality = MEX
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Coahuila defenses crumble (USA Perspective)
+	id = usa_diplomacy.20
+	title = usa_diplomacy.20.t
+	desc = usa_diplomacy.20.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_diplomacy.20.a
+		add_war_support = 0.025
+		army_experience = 5
+		if = {
+			limit = {
+				MEC = {
+					AND = {
+						owns_state = 480
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 5
+				tooltip = SPR_tension_increase_effect_tooltip
+			}
+		}
+	}
+}
+country_event = { # Coahuila defenses hold firm (USA Perspective)
+	id = usa_diplomacy.21
+	title = usa_diplomacy.21.t
+	desc = usa_diplomacy.21.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = usa_diplomacy.21.a
+		add_war_support = -0.025
+		army_experience = 15
+		if = {
+			limit = {
+				MEC = {
+					AND = {
+						owns_state = 480
+						overlord = {
+							capital_scope  = { is_on_continent = europe }
+						}
+					}
+				}
+			}
+			add_to_variable = {
+				SPR_USA_american_tension = 5
+				tooltip = SPR_tension_increase_effect_tooltip
+			}
+		}
+	}
+}
+
+country_event = { # Coahuila defenses crumble (Non-USA Perspective)
+	id = usa_diplomacy.22
+	title = usa_diplomacy.22.t
+	desc = usa_diplomacy.22.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			overlord = {
+				country_event = usa_diplomacy.22
+			}
+		}
+	}
+
+	option = {
+		name = usa_diplomacy.22.a
+		add_war_support = -0.025
+		army_experience = 15
+	}
+}
+country_event = { # Coahuila defenses hold firm (Non-USA Perspective)
+	id = usa_diplomacy.23
+	title = usa_diplomacy.23.t
+	desc = usa_diplomacy.23.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			overlord = {
+				country_event = usa_diplomacy.23
+			}
+		}
+	}
+
+	option = {
+		name = usa_diplomacy.23.a
+		add_war_support = 0.025
+		army_experience = 5
 	}
 }
 
@@ -18241,7 +17956,7 @@ country_event = { #VEN replies no
 	fire_only_once = yes
 
 	immediate = {
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.12"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.12"
 	}
 
 	option = {
@@ -18274,7 +17989,7 @@ country_event = { #Distribute equipment
 	fire_only_once = no
 
 	immediate = {
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.20"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.20"
 		set_variable = {
 			var = inf_equip_total
 			value = num_equipment@infantry_equipment
@@ -18623,7 +18338,7 @@ country_event = { #hidden event to trigger .20 so the scope isnt lost
 		USA = {
 			country_event = { id = USA_clayton_conspiracy.20 }
 		}
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.21"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.21"
 	}
 }
 
@@ -18637,7 +18352,7 @@ country_event = {#negotiating military access with conspirators
 	fire_only_once = no
 
 	immediate = {
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.22"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.22"
 	}
 
 	option = {
@@ -18665,7 +18380,7 @@ country_event = {#transferring boat(s) to conspirators
 	fire_only_once = no
 
 	immediate = {
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.23"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.23"
 	}
 
 	option = {
@@ -18729,7 +18444,7 @@ country_event = { #hidden event to trigger .23 so scope is not lost
 		USA = {
 			country_event = { id = USA_clayton_conspiracy.23 }
 		}
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.24"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.24"
 	}
 }
 
@@ -18743,7 +18458,7 @@ country_event = { #US hears NIC ask for walker's extradition
 	fire_only_once = yes
 
 	immediate = {
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.25"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.25"
 	}
 
 	option = {
@@ -18762,7 +18477,7 @@ country_event = { #Country hears the US send them eq
 	fire_only_once = no
 
 	immediate = {
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.26"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.26"
 	}
 
 	option = {
@@ -18792,7 +18507,7 @@ country_event = { #unneccessary event to reactivate decision?
 				decision = USA_decision_clayton_send_equipment
 			}
 		}
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.27"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.27"
 	}
 }
 
@@ -18821,7 +18536,7 @@ country_event = { #Distribute money
 	fire_only_once = no
 
 	immediate = {
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.28"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.28"
 	}
 
 	option = { #small
@@ -18945,7 +18660,7 @@ country_event = { #US hears ally request mil support
 	fire_only_once = yes
 
 	immediate = {
-		log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.30"
+		# log = "[THIS.GetTag]: firing = USA_clayton_conspiracy.30"
 	}
 
 	option = {
@@ -19151,7 +18866,7 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 	desc = {#limited victory
 		text = USA_clayton_conspiracy.52.d2
 		trigger = {
-			OR = {
+			AND = {
 				OR = {
 					controls_state = 1154
 					any_allied_country = {
@@ -19255,10 +18970,6 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 						controls_state = 740
 					}
 				}
-			}
-			add_to_variable = {
-				SPR.SPR_USA_american_tension = 10
-				tooltip = SPR_tension_increase_total_tooltip
 			}
 		}
 	}
@@ -19648,6 +19359,10 @@ country_event = {#peace event#states at stake: 1155 HON, 1154 NIC, 311 GUAT, 687
 				remove_ideas = USA_idea_clayton_propaganda_campaign
 				clr_country_flag = clayton_conspiracy_participant
 			}
+		}
+		add_to_variable = {
+			SPR.SPR_USA_american_tension = 10
+			tooltip = SPR_tension_increase_total_tooltip
 		}
 		USA = {
 			generic_effect_give_me_peace = yes

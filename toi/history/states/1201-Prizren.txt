@@ -3,6 +3,11 @@ state={
 	id=1201
 	name="STATE_1201"
 
+	resources = {
+		copper = 1
+		wood = 8
+	}
+
 	history={
 		owner = OTO
 		buildings = {

@@ -467,6 +467,7 @@ ideas = {
 			}
 		}
 		USA_idea_legacy_tariff_law = {
+			picture = usa_legacy_tariff_law
 			allowed = {
 				always = no
 			}
@@ -483,6 +484,7 @@ ideas = {
 			}
 		}
 		USA_idea_legacy_tax_law = {
+			picture = usa_legacy_tax_law
 			allowed = {
 				always = no
 			}
@@ -1374,7 +1376,7 @@ ideas = {
 				yearly_dci_reduction_modifier = 0.5
 				production_factory_efficiency_gain_factor = 0.025
 				production_factory_max_efficiency_factor = 0.025
-				local_resources_factor = 0.025
+				mining_output_factor = 0.025
 			}
 		}
 		USA_freedman_bureau_1 = {
@@ -1390,7 +1392,7 @@ ideas = {
 				yearly_dci_reduction_modifier = 1
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				local_resources_factor = 0.05
+				mining_output_factor = 0.05
 			}
 		}
 		USA_freedman_bureau_2 = {
@@ -1406,7 +1408,7 @@ ideas = {
 				yearly_dci_reduction_modifier = 1.25
 				production_factory_efficiency_gain_factor = 0.075
 				production_factory_max_efficiency_factor = 0.075
-				local_resources_factor = 0.075
+				mining_output_factor = 0.075
 			}
 		}
 		USA_freedman_bureau_3 = {
@@ -1422,7 +1424,7 @@ ideas = {
 				yearly_dci_reduction_modifier = 1.50
 				production_factory_efficiency_gain_factor = 0.10
 				production_factory_max_efficiency_factor = 0.10
-				local_resources_factor = 0.10
+				mining_output_factor = 0.10
 			}
 		}
 		USA_freedman_bureau_4 = {
@@ -1438,7 +1440,7 @@ ideas = {
 				yearly_dci_reduction_modifier = 1.75
 				production_factory_efficiency_gain_factor = 0.125
 				production_factory_max_efficiency_factor = 0.125
-				local_resources_factor = 0.125
+				mining_output_factor = 0.125
 			}
 		}
 		USA_black_wages = {
@@ -1469,7 +1471,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.1
 				production_speed_buildings_factor = -0.1
 				production_factory_max_efficiency_factor = -0.1
-				local_resources_factor = -0.1
+				mining_output_factor = -0.1
 				conscription = -0.009
 			}
 		}
@@ -2651,7 +2653,7 @@ ideas = {
 
 			modifier = {
 				treasury_cost_monthly_per_gdp = 0.004
-				local_resources_factor = -0.1
+				mining_output_factor = -0.1
 				production_speed_buildings_factor = 0.1
 			}
 		}
@@ -2670,7 +2672,7 @@ ideas = {
 
 			modifier = {
 				treasury_cost_monthly_per_gdp = 0.004
-				local_resources_factor = -0.05
+				mining_output_factor = -0.05
 				# # production_speed_steel_mill_factor = 0.1
 			}
 		}
@@ -3365,12 +3367,12 @@ ideas = {
 			}
 
 			research_bonus = {
-				resource_extraction_tech = 0.10
+				cat_extraction_techs = 0.10
 			}
 
 			modifier = {
 				production_oil_factor = 0.1
-				local_resources_factor = 0.05
+				mining_output_factor = 0.05
 			}
 
 			traits = { industrial_concern_1 }
@@ -3398,7 +3400,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				resource_extraction_tech = 0.10
+				cat_extraction_techs = 0.10
 			}
 
 			modifier = {
@@ -3431,7 +3433,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				resource_extraction_tech = 0.10
+				cat_extraction_techs = 0.10
 			}
 
 			modifier = {
@@ -3928,7 +3930,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				doctrine_victorian_innovative_tech = 0.10
+				doctrine_victorian_adapting_tradition = 0.10
 			}
 
 			traits = { military_theorist }

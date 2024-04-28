@@ -48,7 +48,7 @@ technologies = {
 			position = { x = 12 y = @1905 }
 		}
 		dependencies = {
-			armor_tech_early_trucks = 1
+			tech_military_truck_prototypes = 1
 		}
 		path = {
 			leads_to_tech = armor_tech_trench_tanks
@@ -137,14 +137,14 @@ technologies = {
 				hidden_effect = {
 					if = {
 						limit = {
-							has_tech = motorised_infantry
+							has_tech = tech_motorized_infantry
 						}
 
 						load_oob = "unlock_tanks_mot"
 					}
 					if = {
 						limit = {
-							NOT = { has_tech = motorised_infantry }
+							NOT = { has_tech = tech_motorized_infantry }
 						}
 
 						load_oob = "unlock_tanks"
@@ -298,7 +298,7 @@ technologies = {
 			basic_light_spaa
 		}
 		dependencies = {
-			fuel_direct_injection = 1
+			tech_direct_fuel_injection = 1
 		}
 
 		ai_will_do = {
@@ -1389,7 +1389,7 @@ technologies = {
 			position = { x = 22 y = @1915 }
 		}
 		dependencies = {
-			armor_tech_early_trucks = 1
+			tech_military_truck_prototypes = 1
 		}
 		enable_equipments = {
 			gw_armored_car_equipment
@@ -1541,7 +1541,7 @@ technologies = {
 		}
 
 		dependencies = {
-			fuel_direct_injection = 1
+			tech_direct_fuel_injection = 1
 		}
 
 		ai_will_do = {
@@ -1745,8 +1745,8 @@ technologies = {
 		}
 
 		dependencies = {
-			industrial_chrome_electroplating = 1
-			mechanised_infantry4 = 1
+			tech_industrial_chrome_electroplating = 1
+			tech_mechanized_infantry_4 = 1
 		}
 
 		path = {
@@ -1975,7 +1975,7 @@ technologies = {
 		}
 
 		dependencies = {
-			mechanised_infantry4 = 1
+			tech_mechanized_infantry_4 = 1
 		}
 
 		research_cost = 0.3
@@ -2364,14 +2364,14 @@ technologies = {
 				hidden_effect = {
 					if = {
 						limit = {
-							has_tech = motorised_infantry
+							has_tech = tech_motorized_infantry
 						}
 
 						load_oob = "unlock_tanks_mot"
 					}
 					if = {
 						limit = {
-							NOT = { has_tech = motorised_infantry }
+							NOT = { has_tech = tech_motorized_infantry }
 						}
 
 						load_oob = "unlock_tanks"
@@ -2381,8 +2381,8 @@ technologies = {
 			}
 		}
 		dependencies = {
-			fuel_direct_injection = 1
-			industrial_chrome_electroplating = 1
+			tech_direct_fuel_injection = 1
+			tech_industrial_chrome_electroplating = 1
 		}
 
 		path = {
@@ -2623,7 +2623,7 @@ technologies = {
 		}
 
 		dependencies = {
-			industrial_chrome_electroplating = 1
+			tech_industrial_chrome_electroplating = 1
 		}
 
 		research_cost = 0.25
@@ -2849,7 +2849,7 @@ technologies = {
 		start_year = 1943
 
 		dependencies = {
-			industrial_chrome_electroplating = 1
+			tech_industrial_chrome_electroplating = 1
 		}
 
 		folder = {
@@ -4114,7 +4114,7 @@ technologies = {
 		}
 
 		dependencies = {
-			industrial_chrome_electroplating = 1
+			tech_industrial_chrome_electroplating = 1
 		}
 
 		sub_technologies = {
@@ -4395,7 +4395,7 @@ technologies = {
 		}
 
 		dependencies = {
-			modern_ceramics = 1
+			tech_modern_ceramics = 1
 		}
 
 		research_cost = 0.25
@@ -5220,7 +5220,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		dependencies = {
-			walking_cycles = 1
+			tech_walking_cycles = 1
 		}
 
 		ai_will_do = {

@@ -15,7 +15,42 @@ on_actions = {
 	}
 	on_weekly_UCT = { # Trade tick
 		effect = {
-			# r_weekly_trade = yes
+			r_weekly_trade = yes
+		}
+	}
+
+
+	on_declare_war = { # On Civil War
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = ROOT }
+				}
+				ROOT = {
+					FROM = {
+						eoanbr_institutions_inherit = yes
+						eoanbr_technologies_inherit_hidden = yes
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							#check for US guarantee
+							is_guaranteed_by = USA
+							#capital is in north or south america
+							capital_scope = {
+								OR = {
+									is_on_continent = north_america
+									is_on_continent = south_america
+								}
+							}
+						}
+					}
+					USA = {
+						give_guarantee = FROM
+					}
+				}
+			}
 		}
 	}
 }

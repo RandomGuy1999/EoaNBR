@@ -11,7 +11,7 @@ state = {
 	local_supplies = 0.0
 	resources = {
 		wood = 8
-		iron = 8
+		valuables = 1
 	}
 
 	history = {
@@ -25,14 +25,16 @@ state = {
 			# farm = 2
 		}
 
+		set_variable = { consumer_goods_factory_size = 1 }
+
 		victory_points = { #Colombia
-			6694 7
+			6694 2
 		}
-		# victory_points = { #Fresno
-		# 	4518 5
-		# }
+		victory_points = { #Millerton
+		 	4518 1
+		}
 		victory_points = { #Sacramento
-			14295 15
+			14295 3
 		}
 	}
 }

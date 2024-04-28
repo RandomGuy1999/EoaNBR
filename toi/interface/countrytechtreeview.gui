@@ -2193,6 +2193,20 @@ guiTypes = {
 					format = "UP"
 				}
 				gridboxtype = {
+					name = "tech_field_artillery_equipment_6_tree"
+					position = { x = 200 y = 100 }
+					size = { width = 96 height = 96 }
+					slotsize = { width = 70 height = 70 }
+					format = "UP"
+				}
+				gridboxtype = {
+					name = "tech_field_artillery_equipment_7_tree"
+					position = { x = 200 y = 100 }
+					size = { width = 96 height = 96 }
+					slotsize = { width = 70 height = 70 }
+					format = "UP"
+				}
+				gridboxtype = {
 					name = "tech_railway_gun_equipment_0_tree"
 					position = { x = 200 y = 100 }
 					size = { width = 96 height = 96 }
@@ -7830,7 +7844,7 @@ guiTypes = {
 					name = "agronomy_folder_bg"
 					position = { x = 0 y = 0 }
 					size = {
-						width = 2200 height = 1275
+						width = 1900 height = 1275
 						min = { width = 100%% height = 100%% }
 					}
 					clipping = no
@@ -8393,7 +8407,7 @@ guiTypes = {
 					name = "extraction_folder_bg"
 					position = { x = 0 y = 0 }
 					size = {
-						width = 1400 height = 1275
+						width = 1900 height = 1275
 						min = { width = 100%% height = 100%% }
 					}
 					clipping = no
@@ -8418,34 +8432,34 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 				}
-				gridboxtype = {
-					name = "tribal_forging_tree"
-					position = { x = 1800 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
-				gridboxtype = {
-					name = "regenerative_furnace_tree"
-					position = { x = 1800 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
-				gridboxtype = {
-					name = "refining_tree"
-					position = { x = 1800 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
-				gridboxtype = {
-					name = "inorganic_chemistry_tree"
-					position = { x = 1800 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
+				# gridboxtype = {
+				# 	name = "tribal_forging_tree"
+				# 	position = { x = 1800 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "regenerative_furnace_tree"
+				# 	position = { x = 1800 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "refining_tree"
+				# 	position = { x = 1800 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "inorganic_chemistry_tree"
+				# 	position = { x = 1800 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
 				gridboxtype = {
 					name = "tech_metallurgy_tree"
 					position = { x = 200 y = 100 }
@@ -8991,7 +9005,7 @@ guiTypes = {
 					name = "industry_folder_bg"
 					position = { x = 0 y = 0 }
 					size = {
-						width = 1400 height = 1275
+						width = 1900 height = 1275
 						min = { width = 100%% height = 100%% }
 					}
 					clipping = no
@@ -9016,48 +9030,48 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 				}
-				gridboxtype = {
-					name = "interchange_parts_tree"
-					position = { x = 2200 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
-				gridboxtype = {
-					name = "tribal_artisan_tree"
-					position = { x = 2200 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
-				gridboxtype = {
-					name = "industrial_era_tools_1_tree"
-					position = { x = 2200 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
-				gridboxtype = {
-					name = "tribal_steam_experiments_tree"
-					position = { x = 2200 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
-				gridboxtype = {
-					name = "early_thermodynamics_theories_tree"
-					position = { x = 2200 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
-				gridboxtype = {
-					name = "tarmac_roads_tree"
-					position = { x = 2200 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
+				# gridboxtype = {
+				# 	name = "interchange_parts_tree"
+				# 	position = { x = 2200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "tribal_artisan_tree"
+				# 	position = { x = 2200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "industrial_era_tools_1_tree"
+				# 	position = { x = 2200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "tribal_steam_experiments_tree"
+				# 	position = { x = 2200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "early_thermodynamics_theories_tree"
+				# 	position = { x = 2200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "tarmac_roads_tree"
+				# 	position = { x = 2200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
 
 				gridboxtype = {
 					name = "tech_windmills_tree"
@@ -9623,29 +9637,64 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 				}
-				gridboxtype = {
-					name = "armor_tech_velocipede_tree"
-					position = { x = 200 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
+				# gridboxtype = {
+				# 	name = "armor_tech_velocipede_tree"
+				# 	position = { x = 200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
 				gridboxtype = {
 					name = "tribal_riding_tree"
+					position = { x = 2200 y = 100 }
+					size = { width = 96 height = 96 }
+					slotsize = { width = 70 height = 70 }
+					format = "UP"
+				}
+				# gridboxtype = {
+				# 	name = "tribal_roads_tree"
+				# 	position = { x = 200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				# gridboxtype = {
+				# 	name = "tech_train_equipment_0_tree"
+				# 	position = { x = 200 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
+				gridboxtype = {
+					name = "tech_horse_domestication_tree"
 					position = { x = 200 y = 100 }
 					size = { width = 96 height = 96 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"
 				}
 				gridboxtype = {
-					name = "tribal_roads_tree"
+					name = "tech_gravel_construction_tree"
 					position = { x = 200 y = 100 }
 					size = { width = 96 height = 96 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"
 				}
 				gridboxtype = {
-					name = "tech_train_equipment_0_tree"
+					name = "tech_treadwheel_car_tree"
+					position = { x = 200 y = 100 }
+					size = { width = 96 height = 96 }
+					slotsize = { width = 70 height = 70 }
+					format = "UP"
+				}
+				gridboxtype = {
+					name = "tech_treadwheel_crane_tree"
+					position = { x = 200 y = 100 }
+					size = { width = 96 height = 96 }
+					slotsize = { width = 70 height = 70 }
+					format = "UP"
+				}
+				gridboxtype = {
+					name = "tech_docks_tree"
 					position = { x = 200 y = 100 }
 					size = { width = 96 height = 96 }
 					slotsize = { width = 70 height = 70 }
@@ -9653,7 +9702,7 @@ guiTypes = {
 				}
 				gridboxtype = {
 					name = "tech_barrels_tree"
-					position = { x = 2200 y = 100 }
+					position = { x = 200 y = 100 }
 					size = { width = 96 height = 96 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"
@@ -10798,13 +10847,13 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 				}
-				gridboxtype = {
-					name = "michaelson_morley_experiments_tree"
-					position = { x = 1600 y = 100 }
-					size = { width = 96 height = 96 }
-					slotsize = { width = 70 height = 70 }
-					format = "UP"
-				}
+				# gridboxtype = {
+				# 	name = "michaelson_morley_experiments_tree"
+				# 	position = { x = 1600 y = 100 }
+				# 	size = { width = 96 height = 96 }
+				# 	slotsize = { width = 70 height = 70 }
+				# 	format = "UP"
+				# }
 				# gridboxtype = {
 				# 	name = "tribal_chemistry_tree"
 				# 	position = { x = 200 y = 100 }
@@ -13390,7 +13439,7 @@ guiTypes = {
 				clipping = no
 
 				background = {
-					name = "bg"
+					name = "Background"
 					quadTextureSprite = "GFX_technology_mtg_capital_folder_small_unavailable_item_bg"
 				}
 				iconType = {

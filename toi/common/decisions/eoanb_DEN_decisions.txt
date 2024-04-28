@@ -7,8 +7,8 @@ DEN_decision_category_economy = {
 		#allowed = { tag = DEN }
 
 		available = {
-			has_tech = steam_locomotive_3
-			has_tech = standardized_gauge
+			has_tech = tech_late_steam_locomotive
+			has_tech = tech_gauge_standardization
 			#traffic signals removed
 			OR = {
 				has_idea = inframain_well_maintaned_infrastructure
@@ -160,7 +160,11 @@ DEN_decision_category_economy = {
 		complete_effect = {
 			37 = { add_extra_state_shared_building_slots = 1 }
 			99 = { add_extra_state_shared_building_slots = 1 }
-			add_tech_bonus = { bonus = 0.5 uses = 2 category = transport_tech }
+			add_tech_bonus = {
+				category = cat_road_infrastructure_techs
+				uses = 1
+				bonus = 0.5
+			}
 			swap_ideas = {
 				remove_idea = DEN_idea_infrastructure_projects
 				add_idea = DEN_idea_danske_statsbaner
@@ -222,8 +226,11 @@ DEN_decision_category_economy = {
 		}
 
 		remove_effect = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = transport_tech }
-			#99 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_tech_bonus = {
+				category = cat_railway_infrastructure_techs
+				uses = 1
+				bonus = 0.5
+			}
 			99 = { add_extra_state_shared_building_slots = 1 }
 			build_railway = {
 				level = 1
@@ -292,9 +299,12 @@ DEN_decision_category_economy = {
 		}
 
 		remove_effect = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = transport_tech }
+			add_tech_bonus = {
+				category = cat_railway_infrastructure_techs
+				uses = 1
+				bonus = 0.5
+			}
 			99 = { add_extra_state_shared_building_slots = 1 }
-			#99 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			build_railway = {
 				level = 1
 				path = {
@@ -362,9 +372,12 @@ DEN_decision_category_economy = {
 		}
 
 		remove_effect = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = transport_tech }
+			add_tech_bonus = {
+				category = cat_railway_infrastructure_techs
+				uses = 1
+				bonus = 0.5
+			}
 			37 = { add_extra_state_shared_building_slots = 1 }
-			#37 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			build_railway = {
 				level = 1
 				path = {
@@ -433,9 +446,12 @@ DEN_decision_category_economy = {
 		}
 
 		remove_effect = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = transport_tech }
+			add_tech_bonus = {
+				category = cat_railway_infrastructure_techs
+				uses = 1
+				bonus = 0.5
+			}
 			37 = { add_extra_state_shared_building_slots = 1 }
-			#37 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			build_railway = {
 				level = 1
 				path = {
@@ -495,8 +511,16 @@ DEN_decision_category_economy = {
 		}
 
 		remove_effect = {
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = humanities_tech }
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = biochemistry_tech }
+			add_tech_bonus = {
+				category = cat_equipment_construction_techs
+				uses = 1
+				bonus = 0.25
+			}
+			add_tech_bonus = {
+				category = cat_road_infrastructure_techs
+				uses = 1
+				bonus = 0.25
+			}
 			37 = { add_extra_state_shared_building_slots = 1 }
 			if = {
 				limit = {
@@ -759,8 +783,6 @@ DEN_decision_category_economy = {
 
 		available = {
 			owns_state = 37
-			has_tech = interchange_parts
-			has_tech = machine_tools_1
 			has_tech = electrical_telegraph
 		}
 
@@ -1115,8 +1137,11 @@ DEN_decision_category_imperialism = {
 			hidden_effect = {
 				set_country_flag = { flag = DEN_industry value = 1 days = 60 }
 			}
-			1307 = { add_extra_state_shared_building_slots = 1 }
-			1307 = { add_building_construction = { type = farm level = 1 instant_build = yes } }
+			1307 = {
+				set_temp_variable = { industry_token = token:crop_farm }
+				set_temp_variable = { x_temp = 1 }
+				construct_x_industries = yes
+			}
 		}
 
 		modifier = {
@@ -1781,7 +1806,7 @@ DEN_decision_category_military  = {
 			add_political_power = 50
 			add_stability = 0.05
 			add_war_support = 0.05
-			add_doctrine_cost_reduction = { cost_reduction = 0.25 uses = 1 category = doctrine_victorian_innovative_tech }
+			add_doctrine_cost_reduction = { cost_reduction = 0.25 uses = 1 category = doctrine_victorian_marine_dominance }
 			add_doctrine_cost_reduction = { cost_reduction = 0.25 uses = 1 category = naval_doctrine }
 		}
 
@@ -1833,9 +1858,11 @@ DEN_decision_category_military  = {
 
 		remove_effect = {
 			army_experience = 25
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = cat_artillery_techs }
-			add_tech_bonus = { bonus = 0.5 uses = 1 category = engineers_tech }
-			add_tech_bonus = { ahead_reduction = 1 uses = 1 category = engineers_tech }
+			add_tech_bonus = {
+				category = cat_artillery_techs
+				uses = 1
+				bonus = 0.5
+			}
 		}
 
 		ai_will_do = {
@@ -1921,7 +1948,11 @@ DEN_decision_category_military  = {
 				}
 				add_war_support = 0.04
 				add_political_power = 25
-				add_tech_bonus = { bonus = 0.5 uses = 1 category = mechanical_engineering_tech }
+				add_tech_bonus = {
+					category = cat_construction_techs
+					uses = 1
+					bonus = 0.5
+				}
 			}
 			else = {
 				add_war_support = 0.02
@@ -2068,7 +2099,7 @@ DEN_decision_category_military  = {
 			add_political_power = 100
 			add_stability = 0.1
 			add_war_support = 0.1
-			add_doctrine_cost_reduction = { cost_reduction = 0.25 uses = 1 category = doctrine_victorian_innovative_tech }
+			add_doctrine_cost_reduction = { cost_reduction = 0.25 uses = 1 category = doctrine_victorian_marine_dominance }
 			add_doctrine_cost_reduction = { cost_reduction = 0.25 uses = 1 category = naval_doctrine }
 		}
 	}

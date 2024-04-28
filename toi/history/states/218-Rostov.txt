@@ -22,17 +22,21 @@ state={
 
 		}
 		set_variable = {
-			building_port_size = 2
+			port_size = 2
 
 		}
-		set_variable = {
-			building_services_building_size = 1
+		
+			#Agriculture
+			set_variable = { crop_farm_size = 2 } 
 
-		}
-		set_variable = {
-			building_commercial_farm_size = 2
+		# set_variable = {
+		# 	building_services_building_size = 1
 
-		}
+		# }
+		# set_variable = {
+		# 	building_commercial_farm_size = 2
+
+		# }
 
 	}
 

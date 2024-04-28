@@ -239,17 +239,17 @@ technology_categories = {
 			cat_computing_science_techs
 			cat_internet_science_techs
 			cat_automation_science_techs
-			cat_rationalism_medicine_techs
-			cat_industrialization_medicine_techs
-			cat_mechanization_medicine_techs
-			cat_electrification_medicine_techs
-			cat_mass_transit_medicine_techs
-			cat_telecommunications_medicine_techs
-			cat_mass_production_medicine_techs
-			cat_green_revolution_medicine_techs
-			cat_computing_medicine_techs
-			cat_internet_medicine_techs
-			cat_automation_medicine_techs
+			cat_rationalism_health_techs
+			cat_industrialization_health_techs
+			cat_mechanization_health_techs
+			cat_electrification_health_techs
+			cat_mass_transit_health_techs
+			cat_telecommunications_health_techs
+			cat_mass_production_health_techs
+			cat_green_revolution_health_techs
+			cat_computing_health_techs
+			cat_internet_health_techs
+			cat_automation_health_techs
 		#
 		#Bureaucracy Folder
 			cat_settlement_bureaucracy_techs
@@ -303,10 +303,15 @@ technology_categories = {
 		#
 	#
 	#Group Tech Categories
+		#Specialists
+			cat_specialist_techs
+			cat_motorized_specialist_techs
+
 		#Food & Agriculture
 			cat_food_techs
 			cat_quality_food_techs
 			cat_preservation_food_techs
+
 			cat_agriculture_techs
 			cat_fertilizer_agriculture_techs
 			cat_seed_ecology_agriculture_techs
@@ -314,18 +319,17 @@ technology_categories = {
 			cat_farm_implements_agriculture_techs
 			cat_husbandry_agriculture_techs
 		#
-		#Refinement
-			cat_refinement_techs
-			cat_metallurgy_refinement_techs
-			cat_oil_refinement_techs
-		#
-		#Extraction
+		#Refinement & Extraction
 			cat_extraction_techs
 			cat_oil_extraction_techs
 			cat_explosives_extraction_techs
 			cat_mining_extraction_techs
 			cat_coal_extraction_techs
 			cat_logging_extraction_techs
+			
+			cat_refinement_techs
+			cat_metallurgy_refinement_techs
+			cat_oil_refinement_techs
 		#
 		#Industry & Construction
 			cat_industry_techs
@@ -335,20 +339,34 @@ technology_categories = {
 			cat_factory_industry_techs
 			cat_management_industry_techs
 			cat_consumer_goods_industry_techs
-			cat_tools_industry_techs
-			cat_construction_industry_techs
+
+			cat_construction_techs
+			cat_tools_construction_techs
+			cat_equipment_construction_techs
 		#
 		#Transportation & Infrastructure
 			cat_transportation_techs
+			cat_mounted_transportation_techs
+			cat_two_wheeled_transportation_techs
+			cat_automobile_transportation_techs
+			cat_automobile_accessory_transportation_techs
+			cat_locomotive_transportation_techs
+			cat_locomotive_accessory_transportation_techs
+			cat_ship_transportation_techs
+			cat_air_transportation_techs
 			cat_packaging_transportation_techs
-			cat_infrastructure_techs
 
+			cat_infrastructure_techs
+			cat_road_infrastructure_techs
+			cat_railway_infrastructure_techs
+			cat_port_infrastructure_techs
+			cat_shipyard_infrastructure_techs
+			cat_airport_infrastructure_techs
+			cat_oil_storage_infrastructure_techs
 		#
 		#Electronics
 			cat_electronics_techs
 
-		#
-		#Instruments
 			cat_instruments_techs
 
 		#
@@ -360,11 +378,11 @@ technology_categories = {
 			cat_explosives_science_techs
 			cat_organic_chemistry_science_techs
 		#
-		#Medicine
-			cat_medicine_techs
-			cat_biology_medicine_techs
-			cat_medicine_medicine_techs
-			cat_genetics_medicine_techs
+		#Health
+			cat_health_techs
+			cat_biology_health_techs
+			cat_medicine_health_techs
+			cat_genetics_health_techs
 		#
 		#Socio-Economics
 			cat_socio_economics_techs
@@ -374,11 +392,11 @@ technology_categories = {
 			cat_humanities_techs
 
 		#
-	#Projects
+		#Projects
 			cat_projects_techs
 			cat_colonization_techs
 		#
-
+	#
 
 
 
@@ -419,7 +437,6 @@ technology_categories = {
 
 		cat_calvary_techs
 			cat_camelry_techs
-
 	#
 	#Support & Specialization
 		cat_support_arms_techs
@@ -433,7 +450,6 @@ technology_categories = {
 		signal_company_tech
 		maintenance_company_tech
 		tech_category_naval_infantry
-
 	#
 	#Vehicles
 		cat_calvary_techs
@@ -458,6 +474,8 @@ technology_categories = {
 		asw_tech
 		naval_minesweeping
 		naval_minelaying
+		naval_mtg_module_rml
+		naval_mtg_module_rbl
 		naval_mtg_screen_ship_tech
 		naval_mtg_capital_ship_tech
 		naval_mtg_submarine_ship_tech
@@ -535,35 +553,19 @@ technology_categories = {
 		balloons_tech
 	#
 	#Tech
-		cat_chemistry_techs #chemistry_tech
-		cat_explosives_techs #explosives_tech
-		concentrated_industry_category
-		dispersed_industry_category
 		rocketry
 		nuclear
 		electronic
 		synth_resources
 		computing_tech
 		radar_tech
-		excavation_tech
-		industry
 		electronics
-		health_tech
-		engine_tech
 		comms_tech
-		mechanical_engineering_tech
-		process_engineering_tech
-		biochemistry_tech
-		synthetic_chemicals_tech
 		electronics_devices_tech
 		humanities_tech
-		resource_extraction_tech
-		farming_tech
-		transport_tech
 		energy_production_tech
 		nuclear_particle_tech
 		spaceflight_tech
-		genetics_tech
 		economics_tech
 		art_tech
 		policies_tech
@@ -654,7 +656,8 @@ technology_folders = {
 
 		available = {
 			# has_dlc = "No Step Back"
-			is_debug = yes
+			# is_debug = yes
+			always = no
 		}
 	}
 
@@ -676,6 +679,7 @@ technology_folders = {
 		ledger = navy
 
 		available = {
+			always = no
 			NOT = { has_dlc = "Man the Guns" }
 		}
 	}
@@ -683,6 +687,7 @@ technology_folders = {
 		ledger = navy
 
 		available = {
+			always = no
 			has_dlc = "Man the Guns"
 		}
 	}
@@ -700,7 +705,8 @@ technology_folders = {
 
 		available = {
 			# has_dlc = "By Blood Alone"
-			is_debug = yes
+			# is_debug = yes
+			always = no
 		}
 	}
 
@@ -722,9 +728,12 @@ technology_folders = {
 	science_folder = {
 		ledger = civilian
 	}
-	
+
 	bureaucracy_folder = {
 		ledger = civilian
+		available = {
+			always = no
+		}
 	}
 	humanities_folder = {
 		ledger = civilian

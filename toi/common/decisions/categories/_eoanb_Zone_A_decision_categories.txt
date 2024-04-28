@@ -832,7 +832,7 @@ USA_krack_down_on_the_klan = {
 		# has_completed_focus = USA_first_enforcement_act_passes
 	}
 	visible = {
-		has_completed_focus = USA_first_enforcement_act_passes
+		has_global_flag = usa_kkk_formed_flag
 	}
 }
 
@@ -932,7 +932,9 @@ USA_readmission_decisions = {
 
 	allowed = { tag = USA }
 
-	priority = 5
+	priority = 98
+
+	visible_when_empty = yes
 
 	visible = {
 		any_other_country = {

@@ -17,7 +17,7 @@ afr_call_state_levy_units = {
 			limit = {
 				OWNER = { check_variable = { var = PREV.afr_empire_state_loyalty_var@THIS value = 6 compare = greater_than_or_equals } }
 				THIS = {
-					farm > 3
+					food > 3
 				}
 			}
 			set_temp_variable = { Temp_State_farm_level = 4 }
@@ -27,7 +27,7 @@ afr_call_state_levy_units = {
 			limit = {
 				OWNER = { check_variable = { var = PREV.afr_empire_state_loyalty_var@THIS value = 6 compare = greater_than_or_equals } }
 				THIS = {
-					farm > 2
+					food > 2
 				}
 			}
 			set_temp_variable = { Temp_State_farm_level = 3 }
@@ -37,7 +37,7 @@ afr_call_state_levy_units = {
 			limit = {
 				OWNER = { check_variable = { var = PREV.afr_empire_state_loyalty_var@THIS value = 6 compare = greater_than_or_equals } }
 				THIS = {
-					farm > 1
+					food > 1
 				}
 			}
 			set_temp_variable = { Temp_State_farm_level = 2 }
@@ -47,7 +47,7 @@ afr_call_state_levy_units = {
 			limit = {
 				OWNER = { check_variable = { var = PREV.afr_empire_state_loyalty_var@THIS value = 6 compare = greater_than_or_equals } }
 				THIS = {
-					farm > 0
+					food > 0
 				}
 			}
 			set_temp_variable = { Temp_State_farm_level = 1 }
@@ -3075,21 +3075,21 @@ afr_empire_politics_state_manager_local_rumors_initiate_scripted_effect = {
 							any_neighbor_state = {
 								OWNER = {
 									OR = {
-										is_in_array = { array = national_religion_array value = global.orthodox }
-										is_in_array = { array = national_religion_array value = global.catholic }
-										is_in_array = { array = national_religion_array value = global.protestant }
-										is_in_array = { array = national_religion_array value = global.mormon }
-										is_in_array = { array = national_religion_array value = global.coptic }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_orthodox }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_catholic }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_protestant }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_mormon }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_copt }
 									}
 								}
 							}
 							OWNER = {
 								OR = {
-									is_in_array = { array = national_religion_array value = global.orthodox }
-									is_in_array = { array = national_religion_array value = global.catholic }
-									is_in_array = { array = national_religion_array value = global.protestant }
-									is_in_array = { array = national_religion_array value = global.mormon }
-									is_in_array = { array = national_religion_array value = global.coptic }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_orthodox }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_catholic }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_protestant }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_mormon }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_copt }
 								}
 							}
 						}
@@ -3117,15 +3117,15 @@ afr_empire_politics_state_manager_local_rumors_initiate_scripted_effect = {
 							any_neighbor_state = {
 								OWNER = {
 									OR = {
-										is_in_array = { array = national_religion_array value = global.animist }
-										is_in_array = { array = national_religion_array value = global.shamanism }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_animist }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_shamanism }
 									}
 								}
 							}
 							OWNER = {
 								OR = {
-									is_in_array = { array = national_religion_array value = global.animist }
-									is_in_array = { array = national_religion_array value = global.shamanism }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_animist }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_shamanism }
 								}
 							}
 						}
@@ -3205,17 +3205,17 @@ afr_empire_politics_state_manager_local_rumors_initiate_scripted_effect = {
 							any_neighbor_state = {
 								OWNER = {
 									OR = {
-										is_in_array = { array = national_religion_array value = global.sunni }
-										is_in_array = { array = national_religion_array value = global.shiite }
-										is_in_array = { array = national_religion_array value = global.ibadi }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_sunni }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_shiite }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_ibadi }
 									}
 								}
 							}
 							OWNER = {
 								OR = {
-									is_in_array = { array = national_religion_array value = global.sunni }
-									is_in_array = { array = national_religion_array value = global.shiite }
-									is_in_array = { array = national_religion_array value = global.ibadi }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_sunni }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_shiite }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_ibadi }
 								}
 							}
 						}
@@ -3243,17 +3243,17 @@ afr_empire_politics_state_manager_local_rumors_initiate_scripted_effect = {
 							any_neighbor_state = {
 								OWNER = {
 									OR = {
-										is_in_array = { array = national_religion_array value = global.sunni }
-										is_in_array = { array = national_religion_array value = global.shiite }
-										is_in_array = { array = national_religion_array value = global.ibadi }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_sunni }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_shiite }
+										is_in_array = { array = pops_primary_religion_array value = token:religion_ibadi }
 									}
 								}
 							}
 							OWNER = {
 								OR = {
-									is_in_array = { array = national_religion_array value = global.sunni }
-									is_in_array = { array = national_religion_array value = global.shiite }
-									is_in_array = { array = national_religion_array value = global.ibadi }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_sunni }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_shiite }
+									is_in_array = { array = pops_primary_religion_array value = token:religion_ibadi }
 								}
 							}
 						}

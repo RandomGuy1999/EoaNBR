@@ -358,7 +358,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				local_resources_factor = 0.1
+				mining_output_factor = 0.1
 			}
 		}
 		SPR_idea_mining_revolution_2 = {
@@ -375,7 +375,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				local_resources_factor = 0.15
+				mining_output_factor = 0.15
 				# production_speed_coal_mine_factor = 0.25
 			}
 		}
@@ -393,7 +393,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				local_resources_factor = 0.1
+				mining_output_factor = 0.1
 				# # production_speed_steel_mill_factor = 0.15
 			}
 		}
@@ -411,7 +411,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				local_resources_factor = 0.15
+				mining_output_factor = 0.15
 				# production_speed_coal_mine_factor = 0.25
 				# # production_speed_steel_mill_factor = 0.15
 			}
@@ -670,7 +670,7 @@ ideas = {
             removal_cost = 10
 
             research_bonus = {
-                transport_tech = 0.05
+                cat_transportation_techs = 0.05
             }
 			
 			modifier = {
@@ -697,7 +697,7 @@ ideas = {
             removal_cost = 10
 
             research_bonus = {
-                resource_extraction_tech = 0.10
+                cat_extraction_techs = 0.10
             }
 			
 			modifier = {
@@ -725,7 +725,7 @@ ideas = {
             removal_cost = 10
 
 			research_bonus = {
-				process_engineering_tech = 0.05
+				cat_refinement_techs = 0.05
 			}
 			
 			modifier = {

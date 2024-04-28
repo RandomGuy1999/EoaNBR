@@ -100,7 +100,7 @@ technologies = {
 			#
 			#Effect
 				on_research_complete = {
-					set_temp_variable = { institution_progress_temp = 2 }
+					set_temp_variable = { institution_progress_temp = 5 }
 					eoanbr_institutions_rationalism_change = yes
 				}
 			#
@@ -136,6 +136,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 3 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				research_speed_factor = 0.03
@@ -542,7 +546,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1700
-				research_cost = 0.07
+				research_cost = 0.18
 
 				allow = {
 					has_idea = institution_rationalism
@@ -558,6 +562,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 8 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -593,6 +601,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 4 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -683,6 +695,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -1231,6 +1247,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = chemical_plant_unlock_tt
 			#
 		}
 		tech_inorganic_chemistry = {
@@ -1261,6 +1278,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				navy_capital_ship_defence_factor = 0.05
@@ -1298,6 +1319,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_leblanc_process_unlock_tt
 			#
 		}
 		tech_chemical_structure_model = {
@@ -1354,8 +1376,13 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_ammonia_soda_process_unlock_tt
 			#
 		}
 		tech_periodic_table_of_elements = {
@@ -1365,7 +1392,7 @@ technologies = {
 					position = { x = @inorganic_chemistry y = @1870 }
 				}
 				path = {
-					leads_to_tech = tech_rare_earths_discovery
+					leads_to_tech = tech_physical_chemistry
 				}
 			#
 			#Meta
@@ -1383,38 +1410,6 @@ technologies = {
 				}
 			#
 			#Effect
-			#
-			#Modifier
-			#
-		}
-		tech_rare_earths_discovery = {
-			#Tree
-				folder = {
-					name = science_folder
-					position = { x = @inorganic_chemistry y = @1880 }
-				}
-				# path = {
-				# 	leads_to_tech = tech_bayer_process
-				# }
-			#
-			#Meta
-				start_year = 1880
-				research_cost = 0.07
-
-				categories = {
-					cat_mechanization_science_techs
-
-					cat_science_techs
-					cat_inorganic_chemistry_science_techs
-				}
-				ai_will_do = {
-					base = 10
-				}
-			#
-			#Effect
-				on_research_complete = {
-					custom_effect_tooltip = REE_UNLOCKED
-				}
 			#
 			#Modifier
 			#
@@ -1509,6 +1504,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_brine_electrolysis_unlock_tt
 			#
 		}
 		tech_noble_gases = {
@@ -1521,7 +1517,7 @@ technologies = {
 					leads_to_tech = tech_radioactivity
 				}
 				dependencies = {
-					tech_chemical_vapor_deposition = yes
+					tech_chemical_vapor_deposition = 1
 				}
 			#
 			#Meta
@@ -1605,6 +1601,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_haber_bosch_process_unlock_tt
 			#
 		}
 		tech_atomic_isotopes = {
@@ -1727,6 +1724,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_petrochemicals_unlock_tt
 			#
 		}
 		tech_x_ray_crystallography = {
@@ -1910,6 +1908,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -1939,8 +1941,15 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
+				category_front_line = {
+					soft_attack = 0.05
+				}
 			#
 		}
 		tech_tnt = {
@@ -1973,6 +1982,9 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				category_front_line = {
+					soft_attack = 0.05
+				}
 			#
 		}
 		tech_petn = {
@@ -2002,6 +2014,9 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				category_front_line = {
+					soft_attack = 0.05
+				}
 			#
 		}
 		tech_rdx = {
@@ -2063,6 +2078,9 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				category_front_line = {
+					soft_attack = 0.05
+				}
 			#
 		}
 		tech_semtex = {
@@ -2093,6 +2111,9 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				category_front_line = {
+					soft_attack = 0.05
+				}
 			#
 		}
 	#
@@ -2154,6 +2175,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -2186,8 +2211,13 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
+				custom_modifier_tooltip = rubber_plantation_unlock_tt
 			#
 		}
 		tech_vulcanization = {
@@ -2218,6 +2248,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -2339,6 +2373,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = synthetic_fiber_plant_unlock_tt
 			#
 		}
 		tech_rayon = {
@@ -2403,6 +2438,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = plastics_plant_unlock_tt
 			#
 		}
 		tech_spinnerets = {
@@ -2911,6 +2947,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = synthetic_rubber_refinery_unlock_tt
 			#
 		}
 		tech_bergius_process = {
@@ -2940,6 +2977,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = synthetic_oil_refinery_unlock_tt
 			#
 		}
 		tech_styrene_butadiene = {
@@ -3234,6 +3272,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = tech_composites_unlock_tt
 			#
 		}
 		tech_fiber_reinforcement_plastic = {
@@ -3610,10 +3649,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_rationalism_medicine_techs
+					cat_rationalism_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3624,8 +3663,10 @@ technologies = {
 					add_tech_bonus = {
 						bonus = 0.2
 						uses = 2
-						category = cat_medicine_techs
+						category = cat_health_techs
 					}
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_rationalism_change = yes
 				}
 			#
 			#Modifier
@@ -3650,10 +3691,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_industrialization_medicine_techs
+					cat_industrialization_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3679,10 +3720,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_industrialization_medicine_techs
+					cat_industrialization_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3710,16 +3751,20 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_industrialization_medicine_techs
+					cat_industrialization_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				attrition = -0.015
@@ -3745,10 +3790,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_industrialization_medicine_techs
+					cat_industrialization_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3778,10 +3823,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mechanization_medicine_techs
+					cat_mechanization_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3807,10 +3852,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mechanization_medicine_techs
+					cat_mechanization_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3838,10 +3883,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mechanization_medicine_techs
+					cat_mechanization_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3868,10 +3913,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_electrification_medicine_techs
+					cat_electrification_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3898,10 +3943,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_electrification_medicine_techs
+					cat_electrification_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3927,10 +3972,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_electrification_medicine_techs
+					cat_electrification_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3956,10 +4001,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_transit_medicine_techs
+					cat_mass_transit_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -3987,10 +4032,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_telecommunications_medicine_techs
+					cat_telecommunications_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4018,10 +4063,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_production_medicine_techs
+					cat_mass_production_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4049,10 +4094,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_production_medicine_techs
+					cat_mass_production_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4078,10 +4123,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_production_medicine_techs
+					cat_mass_production_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4107,10 +4152,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_green_revolution_medicine_techs
+					cat_green_revolution_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4139,10 +4184,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_green_revolution_medicine_techs
+					cat_green_revolution_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4168,10 +4213,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_green_revolution_medicine_techs
+					cat_green_revolution_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4197,10 +4242,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_computing_medicine_techs
+					cat_computing_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4226,10 +4271,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_computing_medicine_techs
+					cat_computing_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4258,10 +4303,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_internet_medicine_techs
+					cat_internet_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4287,10 +4332,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_internet_medicine_techs
+					cat_internet_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4316,10 +4361,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_internet_medicine_techs
+					cat_internet_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4345,10 +4390,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_internet_medicine_techs
+					cat_internet_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4374,10 +4419,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_automation_medicine_techs
+					cat_automation_health_techs
 
-					cat_medicine_techs
-					cat_biology_medicine_techs
+					cat_health_techs
+					cat_biology_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4405,10 +4450,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_industrialization_medicine_techs
+					cat_industrialization_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4434,10 +4479,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mechanization_medicine_techs
+					cat_mechanization_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4463,10 +4508,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mechanization_medicine_techs
+					cat_mechanization_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4492,10 +4537,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_electrification_medicine_techs
+					cat_electrification_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4524,10 +4569,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_electrification_medicine_techs
+					cat_electrification_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4553,10 +4598,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_transit_medicine_techs
+					cat_mass_transit_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4582,10 +4627,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_transit_medicine_techs
+					cat_mass_transit_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4614,10 +4659,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_telecommunications_medicine_techs
+					cat_telecommunications_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4643,10 +4688,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_telecommunications_medicine_techs
+					cat_telecommunications_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4675,10 +4720,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_production_medicine_techs
+					cat_mass_production_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4704,10 +4749,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_production_medicine_techs
+					cat_mass_production_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4733,10 +4778,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_green_revolution_medicine_techs
+					cat_green_revolution_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4762,10 +4807,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_green_revolution_medicine_techs
+					cat_green_revolution_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4791,10 +4836,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_green_revolution_medicine_techs
+					cat_green_revolution_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4820,10 +4865,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_computing_medicine_techs
+					cat_computing_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4849,10 +4894,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_computing_medicine_techs
+					cat_computing_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4878,10 +4923,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_computing_medicine_techs
+					cat_computing_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4907,10 +4952,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_computing_medicine_techs
+					cat_computing_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4936,10 +4981,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_internet_medicine_techs
+					cat_internet_health_techs
 
-					cat_medicine_techs
-					cat_medicine_medicine_techs
+					cat_health_techs
+					cat_medicine_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4967,10 +5012,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_industrialization_medicine_techs
+					cat_industrialization_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -4999,10 +5044,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_electrification_medicine_techs
+					cat_electrification_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5028,10 +5073,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_electrification_medicine_techs
+					cat_electrification_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5060,10 +5105,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_transit_medicine_techs
+					cat_mass_transit_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5089,10 +5134,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_transit_medicine_techs
+					cat_mass_transit_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5118,10 +5163,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_telecommunications_medicine_techs
+					cat_telecommunications_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5147,10 +5192,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_telecommunications_medicine_techs
+					cat_telecommunications_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5176,10 +5221,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_production_medicine_techs
+					cat_mass_production_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5205,10 +5250,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_mass_production_medicine_techs
+					cat_mass_production_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5234,10 +5279,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_computing_medicine_techs
+					cat_computing_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5263,10 +5308,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_computing_medicine_techs
+					cat_computing_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5292,10 +5337,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_internet_medicine_techs
+					cat_internet_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5324,10 +5369,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_internet_medicine_techs
+					cat_internet_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5353,10 +5398,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_internet_medicine_techs
+					cat_internet_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10
@@ -5385,10 +5430,10 @@ technologies = {
 				research_cost = 0.07
 
 				categories = {
-					cat_automation_medicine_techs
+					cat_automation_health_techs
 
-					cat_medicine_techs
-					cat_genetics_medicine_techs
+					cat_health_techs
+					cat_genetics_health_techs
 				}
 				ai_will_do = {
 					base = 10

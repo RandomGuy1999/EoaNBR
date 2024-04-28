@@ -243,11 +243,9 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state ={
 				limit = { is_core_of = ROOT }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = farm
-					level = 1
-					instant_build = yes
+				add_resource = {
+					type = food
+					amount = 2
 				}
 			}
 			if = {
@@ -439,8 +437,8 @@ focus_tree = {
 				add_tech_bonus = { bonus = 0.75 uses = 1 technology = tech_intensive_agriculture }
 			}
 			if = {
-				limit = { NOT = { has_tech = tribal_artisan } }
-				add_tech_bonus = { bonus = 0.75 uses = 1 technology = tribal_artisan }
+				limit = { NOT = { has_tech = tech_guilds } }
+				add_tech_bonus = { bonus = 0.75 uses = 1 technology = tech_guilds }
 			}
 		}
 		relative_position_id = afr_inward_regional_power_adressing_empire_sprawl
@@ -575,7 +573,7 @@ focus_tree = {
 		icon = GFX_Focus_Resource_Textile
 		cost = 75
 		available = {
-			has_tech = tribal_artisan
+			has_tech = tech_guilds
 			custom_trigger_tooltip = {
 				tooltip = Ocenaia_has_infrastructure_to_support_new_buildings
 				Oceania_one_extra_building_slots_supported_trigger = yes
@@ -599,12 +597,9 @@ focus_tree = {
 				hidden_effect = {
 					add_to_variable = { Oceania_extra_state_shared_building_slots = 1 }
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = fabric_weavery
-					level = 1
-					instant_build = yes
-				}
+				# # add_extra_state_shared_building_slots = 1
+				set_temp_variable = { industry_token = token:textile_mill }
+				construct_x_industries = yes
 			}
 		}
 		relative_position_id = afr_inward_regional_power_adressing_empire_sprawl
@@ -654,11 +649,9 @@ focus_tree = {
 				hidden_effect = {
 					add_to_variable = { Oceania_extra_state_shared_building_slots = 1 }
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = farm
-					level = 1
-					instant_build = yes
+				add_resource = {
+					type = food
+					amount = 2
 				}
 				add_manpower = 1000
 			}
@@ -671,12 +664,9 @@ focus_tree = {
 				hidden_effect = {
 					add_to_variable = { Oceania_extra_state_shared_building_slots = 1 }
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = cotton_farm
-					level = 1
-					instant_build = yes
-				}
+				# add_extra_state_shared_building_slots = 1
+				set_temp_variable = { industry_token = token:cotton_plantation }
+				construct_x_industries = yes
 			}
 			if = {
 				limit = { NOT = { has_tech = tech_four_field_crop_rotation } }
@@ -699,7 +689,7 @@ focus_tree = {
 		icon = GFX_Focus_Resource_Cotton
 		cost = 75
 		available = {
-			has_tech = manufactories
+			has_tech = tech_manufactories
 			if = {
 				limit = { ROOT = { NOT = { num_of_civilian_factories > 0 } } }
 				custom_trigger_tooltip = {
@@ -862,7 +852,7 @@ focus_tree = {
 		y = 1
 		available = {
 			NOT = {
-				has_tech = doctrine_victorian_tradition
+				has_tech = doctrine_victorian_furia_francese
 			}
 		}
 		prerequisite = {
@@ -874,9 +864,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_tech = doctrine_victorian_innovation }
+					NOT = { has_tech = doctrine_victorian_institutionalized_training }
 				}
-				set_technology = { doctrine_victorian_innovation = 1 }
+				set_technology = { doctrine_victorian_institutionalized_training = 1 }
 			}
 		}
 	}
@@ -916,7 +906,7 @@ focus_tree = {
 		y = 1
 		available = {
 			NOT = {
-				has_tech = doctrine_victorian_innovation
+				has_tech = doctrine_victorian_institutionalized_training
 			}
 		}
 		prerequisite = {
@@ -928,9 +918,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_tech = doctrine_victorian_tradition }
+					NOT = { has_tech = doctrine_victorian_furia_francese }
 				}
-				set_technology = { doctrine_victorian_tradition = 1 }
+				set_technology = { doctrine_victorian_furia_francese = 1 }
 			}
 		}
 	}
@@ -1029,7 +1019,7 @@ focus_tree = {
 		y = 1
 		available = {
 			has_tech = tech_double_entry_bookkeeping
-			has_tech = tribal_riding
+			has_tech = tech_horse_domestication
 		}
 		prerequisite = {
 			focus = afr_inward_regional_power_address_tribal_military
@@ -1040,8 +1030,8 @@ focus_tree = {
 				add_tech_bonus = { bonus = 0.75 uses = 1 technology = tech_herbology }
 			}
 			if = {
-				limit = { NOT = { has_tech = tribal_forging } }
-				add_tech_bonus = { bonus = 0.50 uses = 1 technology = tribal_forging }
+				limit = { NOT = { has_tech = tech_metallurgy } }
+				add_tech_bonus = { bonus = 0.50 uses = 1 technology = tech_metallurgy }
 			}
 			if = {
 				limit = { NOT = { has_tech = tech_camel_equipment_0 } }

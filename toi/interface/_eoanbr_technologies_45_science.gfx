@@ -8,7 +8,7 @@ spriteTypes = {
 			noOfFrames = 2
 		}
 		spriteType = {
-			name = "GFX_techtree_science_folder_icon"
+			name = "GFX_science_folder_icon"
 			texturefile = "gfx/interface/technologies/techtree/techtree_science_folder_icon.dds"
 		}
 		spriteType = {
@@ -104,14 +104,14 @@ spriteTypes = {
 		# 	name = "GFX_tech_aks_primality_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_aks_primality.dds"
 		# }
-		# spriteType = {
-		# 	name = "GFX_tech_scientific_method_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_scientific_method.dds"
-		# }
-		# spriteType = {
-		# 	name = "GFX_tech_physics_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_physics.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_scientific_method_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_scientific_method.dds"
+		}
+		spriteType = {
+			name = "GFX_tech_physics_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_physics.dds"
+		}
 		# spriteType = {
 		# 	name = "GFX_tech_electricity_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_electricity.dds"
@@ -120,10 +120,10 @@ spriteTypes = {
 		# 	name = "GFX_tech_theory_of_light_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_theory_of_light.dds"
 		# }
-		# spriteType = {
-		# 	name = "GFX_tech_classical_thermodynamics_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_classical_thermodynamics.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_classical_thermodynamics_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_classical_thermodynamics.dds"
+		}
 		# spriteType = {
 		# 	name = "GFX_tech_statistical_mechanics_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_statistical_mechanics.dds"
@@ -132,10 +132,10 @@ spriteTypes = {
 		# 	name = "GFX_tech_electromagnetism_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_electromagnetism.dds"
 		# }
-		# spriteType = {
-		# 	name = "GFX_tech_michaelson_morley_experiments_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_michaelson_morley_experiments.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_michaelson_morley_experiments_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_michaelson_morley_experiments.dds"
+		}
 		# spriteType = {
 		# 	name = "GFX_tech_x_rays_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_x_rays.dds"
@@ -192,10 +192,10 @@ spriteTypes = {
 		# 	name = "GFX_tech_quantum_gravity_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_quantum_gravity.dds"
 		# }
-		# spriteType = {
-		# 	name = "GFX_tech_chemistry_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_chemistry.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_chemistry_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_chemistry.dds"
+		}
 		spriteType = {
 			name = "GFX_tech_inorganic_chemistry_medium"
 			textureFile = "gfx/interface/technologies/45_science/tech_inorganic_chemistry.dds"
@@ -284,30 +284,30 @@ spriteTypes = {
 		# 	name = "GFX_tech_nitroglycerin_synthesis_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_nitroglycerin_synthesis.dds"
 		# }
-		# spriteType = {
-		# 	name = "GFX_tech_dynamite_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_dynamite.dds"
-		# }
-		# spriteType = {
-		# 	name = "GFX_tech_tnt_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_tnt.dds"
-		# }
-		# spriteType = {
-		# 	name = "GFX_tech_petn_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_petn.dds"
-		# }
-		# spriteType = {
-		# 	name = "GFX_tech_rdx_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_rdx.dds"
-		# }
-		# spriteType = {
-		# 	name = "GFX_tech_c4_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_c4.dds"
-		# }
-		# spriteType = {
-		# 	name = "GFX_tech_semtex_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_semtex.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_dynamite_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_dynamite.dds"
+		}
+		spriteType = {
+			name = "GFX_tech_tnt_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_tnt.dds"
+		}
+		spriteType = {
+			name = "GFX_tech_petn_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_petn.dds"
+		}
+		spriteType = {
+			name = "GFX_tech_rdx_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_rdx.dds"
+		}
+		spriteType = {
+			name = "GFX_tech_c4_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_c4.dds"
+		}
+		spriteType = {
+			name = "GFX_tech_semtex_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_semtex.dds"
+		}
 		spriteType = {
 			name = "GFX_tech_chemical_vapor_deposition_medium"
 			textureFile = "gfx/interface/technologies/45_science/tech_chemical_vapor_deposition.dds"
@@ -512,13 +512,13 @@ spriteTypes = {
 		# 	name = "GFX_tech_smart_materials_medium"
 		# 	textureFile = "gfx/interface/technologies/45_science/tech_smart_materials.dds"
 		# }
-		# spriteType = {
-		# 	name = "GFX_tech_herbology_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_biology.dds"
-		# }
+		spriteType = {
+			name = "GFX_tech_herbology_medium"
+			textureFile = "gfx/interface/technologies/45_science/tech_herbology.dds"
+		}
 		# spriteType = {
 		# 	name = "GFX_tech_biology_medium"
-		# 	textureFile = "gfx/interface/technologies/45_science/tech_herbology.dds"
+		# 	textureFile = "gfx/interface/technologies/45_science/tech_biology.dds"
 		# }
 		# spriteType = {
 		# 	name = "GFX_tech_cowpox_vaccine_medium"

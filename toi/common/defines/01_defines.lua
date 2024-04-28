@@ -33,7 +33,7 @@ NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.25						-- base amount of fuel gain
 NDefines.NCountry.BASE_FUEL_GAIN = 1.0						-- base amount of fuel gained hourly, independent of excess oil --2
 NDefines.NCountry.BASE_FUEL_CAPACITY = 500						-- base amount of fuel capacity --50k
 
-NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 6 	-- Max number of different strategic resources an equipment can be dependent on. --3
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 9 	-- Max number of different strategic resources an equipment can be dependent on. --3
 NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 18 -- Max number of factories that can be assigned a single production line.
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 12
 NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 6
@@ -48,6 +48,7 @@ NDefines.NProduction.ANNEX_FUEL_RATIO = 0.5	-- How much fuel will be transferred
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000	-- How many deployment lines minimum can be training --100k
 NDefines.NProduction.CAPITULATE_FUEL_RATIO = 0.25 -- How much fuel will be transferred on capitulation --.5
 NDefines.NProduction.PRODUCTION_RESOURCE_LACK_PENALTY = -0.4			-- Penalty decrease while lack of resource per factory --0.05
+NDefines.NProduction.CONVERSION_SPEED_BONUS = 0.5							-- Modifier to the production speed when converting equipment --0
 
 NDefines.NTechnology.BASE_TECH_COST = 2000 -- 100
 NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.2						-- research speed can't go below this value

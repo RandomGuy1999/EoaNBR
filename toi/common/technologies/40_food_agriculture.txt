@@ -88,6 +88,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -117,6 +121,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -135,9 +143,9 @@ technologies = {
 				start_year = 1800
 				research_cost = 0.07
 
-				allow = {
-					has_idea = institution_industrialization
-				}
+				# allow = {
+				# 	has_idea = institution_industrialization
+				# }
 				categories = {
 					cat_industrialization_food_techs
 
@@ -149,6 +157,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -213,6 +225,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -845,15 +861,20 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
-				modifier = {
+				# modifier = {
 					hidden_modifier = {
 						pm_subsistence_farming_output_modifier = 0.05
 						pm_intensive_agriculture_output_modifier = 0.05
 					}
 					custom_modifier_tooltip = pm_subsistence_farming_fish_fertilizer_tt
-				}
+					custom_modifier_tooltip = pm_intensive_agriculture_fish_fertilizer_tt
+				# }
 			#
 		}
 		tech_copper_salt_fungicide = {
@@ -873,9 +894,9 @@ technologies = {
 				start_year = 1800
 				research_cost = 0.07
 
-				allow = {
-					has_idea = institution_industrialization
-				}
+				# allow = {
+				# 	has_idea = institution_industrialization
+				# }
 				categories = {
 					cat_industrialization_agriculture_techs
 
@@ -887,6 +908,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -926,6 +951,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -965,6 +994,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -1556,6 +1589,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -1599,6 +1636,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -1684,6 +1725,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -2257,9 +2302,16 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 4 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_intensive_agriculture_unlock_tt
+				custom_modifier_tooltip = pm_ranching_unlock_tt
+				custom_modifier_tooltip = cotton_plantation_unlock_tt
+				custom_modifier_tooltip = luxuries_plantation_unlock_tt
 				modifier = {
 					hidden_modifier = {
 						pm_subsistence_farming_output_modifier = 0.05
@@ -2296,6 +2348,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -2333,6 +2389,12 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
+			#
+			#Modifier
 				modifier = {
 					hidden_modifier = {
 						pm_intensive_agriculture_output_modifier = 0.2
@@ -2340,8 +2402,6 @@ technologies = {
 					}
 					custom_modifier_tooltip = pm_intensive_agriculture_enclosures_tt
 				}
-			#
-			#Modifier
 			#
 		}
 		tech_commercial_farming = {
@@ -2369,6 +2429,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -2407,6 +2471,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -2577,7 +2645,7 @@ technologies = {
 						pm_tractors_tools_input_modifier = 0.1
 					}
 					custom_modifier_tooltip = pm_traction_engine_farm_mechanization_tt
-					custom_modifier_tooltip = pm_tractors_fertilizers_farm_mechanization_tt
+					custom_modifier_tooltip = pm_tractors_farm_mechanization_tt
 				}
 			#
 		}
@@ -2737,6 +2805,9 @@ technologies = {
 				}
 				path = {
 					leads_to_tech = tech_organic_farming
+				}
+				dependencies = {
+					tech_rural_highways = 1
 				}
 			#
 			#Meta
@@ -3350,6 +3421,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_farm_equipment_unlock_tt
@@ -3383,6 +3458,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3419,6 +3498,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3455,6 +3538,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3496,6 +3583,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3532,6 +3623,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3796,6 +3891,7 @@ technologies = {
 			#Modifier
 			#
 		}
+
 		tech_threshing_machine = {
 			#Tree
 				folder = {
@@ -3824,6 +3920,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3862,6 +3962,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 			#
@@ -3894,6 +3998,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3932,6 +4040,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3973,6 +4085,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_traction_engine_unlock_tt
@@ -4664,6 +4780,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -4737,6 +4857,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_slaughterhouses_unlock_tt
@@ -4803,6 +4927,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -5122,6 +5250,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_factory_farms_unlock_tt
 			#
 		}
 		tech_animal_antibiotics = {
@@ -5334,6 +5463,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_lab_grown_meat_unlock_tt
 			#
 		}
 		tech_animal_cloning_machines = {

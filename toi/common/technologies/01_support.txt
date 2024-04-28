@@ -179,10 +179,6 @@ technologies = {
 					}
 				#
 				#Effects
-					on_research_complete = {
-						set_temp_variable = { institution_progress_temp = 1 }
-						eoanbr_institutions_industrialization_change = yes
-					}
 				#
 				#Modifiers
 				category_industrial_infantry = {
@@ -1010,8 +1006,8 @@ technologies = {
 			}
 
 			dependencies = {
-				dynamite = 1
-				telephone = 1
+				tech_dynamite = 1
+				tech_telephone = 1
 			}
 
 			path = {
@@ -2825,7 +2821,7 @@ technologies = {
 
 			enable_subunits = {
 				recon
-				recon_cav
+				# recon_cav
 			}
 
 			path = {
@@ -6470,7 +6466,7 @@ technologies = {
 			}
 
 			dependencies = {
-				armor_tech_early_trucks = 1
+				tech_military_truck_prototypes = 1
 			}
 
 			categories = {

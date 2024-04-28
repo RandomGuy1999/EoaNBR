@@ -2143,11 +2143,6 @@ technologies = {
 				num_of_naval_factories > 5
 			}
 		}
-
-		on_research_complete = {
-			set_temp_variable = { institution_progress_temp = 2 }
-			eoanbr_institutions_industrialization_change = yes
-		}
 	}
 
 	tech_naval_mtg_1857_corvette_hull = {
@@ -4461,11 +4456,6 @@ technologies = {
 				num_of_naval_factories > 5
 			}
 		}
-
-		on_research_complete = {
-			set_temp_variable = { institution_progress_temp = 2 }
-			eoanbr_institutions_industrialization_change = yes
-		}
 	}
 
 	tech_naval_mtg_1850_frigate = {
@@ -4852,7 +4842,7 @@ technologies = {
 	tech_naval_mtg_ironclad_battleship_advanced = {
 
 		enable_equipments = {
-			ship_hull_pre_dreadnought_0
+			ship_hull_ironclad_5
 		}
 
 		enable_equipment_modules = {
@@ -9781,6 +9771,8 @@ technologies = {
 		xp_research_bonus = 0.5
 		research_cost = 0.125
 		start_year = 1850
+		
+		industrial_capacity_dockyard = 0.15
 		folder = {
 			name = mtg_capital_folder
 			position = { x = 42 y = @1850 }
@@ -9982,7 +9974,7 @@ technologies = {
 
 	tech_naval_mtg_armor_all_steel = {
 
-
+		industrial_capacity_dockyard = 0.05
 
 		path = {
 			leads_to_tech = tech_naval_mtg_armor_compound
@@ -10165,7 +10157,7 @@ technologies = {
 			ship_armor_screen_harvey_0
 		}
 		on_research_complete = {
-			add_ideas = havery_low_strength_idea
+			add_ideas = harvey_low_strength_idea
 		}
 
 		path = {
@@ -10230,7 +10222,7 @@ technologies = {
 			position = { x = 40 y = @1890 }
 		}
 		on_research_complete = {
-			remove_ideas = havery_low_strength_idea
+			remove_ideas = harvey_low_strength_idea
 		}
 
 		categories = {
@@ -10277,7 +10269,7 @@ technologies = {
 		}
 
 		# dependencies = {
-		# 	industrial_chrome_electroplating = 1
+		# 	tech_industrial_chrome_electroplating = 1
 		# }
 
 		path = {
@@ -10981,7 +10973,7 @@ technologies = {
 		}
 
 		dependencies = {
-			tech_field_artillery_equipment_3 = 1
+			tech_field_armstrong_screw = 1
 		}
 
 		categories = {
@@ -11283,7 +11275,7 @@ technologies = {
 		start_year = 1880
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 48 y = @1880 }
+			position = { x = 47 y = @1880 }
 		}
 
 		categories = {
@@ -11388,7 +11380,7 @@ technologies = {
 		start_year = 1900
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 48 y = @1900 }
+			position = { x = 47 y = @1900 }
 		}
 
 		categories = {
@@ -11488,7 +11480,7 @@ technologies = {
 		start_year = 1910
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 48 y = @1910 }
+			position = { x = 47 y = @1910 }
 		}
 
 		categories = {
@@ -11584,7 +11576,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 48 y = @1935 }
+			position = { x = 47 y = @1935 }
 		}
 
 		categories = {
@@ -11689,7 +11681,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 48 y = 79 }
+			position = { x = 47 y = 79 }
 		}
 
 		categories = {
@@ -11794,7 +11786,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 48 y = @1950 }
+			position = { x = 47 y = @1950 }
 		}
 
 		categories = {
@@ -11847,7 +11839,7 @@ technologies = {
 		start_year = 1960
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 48 y = @1960 }
+			position = { x = 47 y = @1960 }
 		}
 
 		categories = {
@@ -11934,7 +11926,7 @@ technologies = {
 		start_year = 1968
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 48 y = @1970 }
+			position = { x = 47 y = @1970 }
 		}
 
 		categories = {
@@ -12567,7 +12559,7 @@ technologies = {
 		start_year = 1880
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 49 y = @1880 }
+			position = { x = 51 y = @1880 }
 		}
 
 		categories = {
@@ -12632,7 +12624,7 @@ technologies = {
 		start_year = 1880
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 51 y = @1880 }
+			position = { x = 53 y = @1880 }
 		}
 
 		categories = {
@@ -12695,7 +12687,7 @@ technologies = {
 		start_year = 1880
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 53 y = @1880 }
+			position = { x = 55 y = @1880 }
 		}
 
 		categories = {
@@ -12752,7 +12744,7 @@ technologies = {
 		start_year = 1880
 		folder = {
 			name = mtg_capital_folder
-			position = { x = 55 y = @1880 }
+			position = { x = 57 y = @1880 }
 		}
 
 		categories = {
@@ -15824,7 +15816,7 @@ technologies = {
 		}
 
 		dependencies = {
-			steam_engine = 1
+			tech_atmospheric_steam_engine = 1
 		}
 
 		xp_research_type = navy
@@ -16675,7 +16667,7 @@ technologies = {
 		}
 
 		dependencies = {
-			impulse_steam_turbine = 1
+			tech_impulse_steam_turbine = 1
 		}
 
 		xp_research_type = navy
@@ -16741,7 +16733,7 @@ technologies = {
 		}
 
 		dependencies = {
-			ljungstrom_turbine = 1
+			tech_ljungstrom_turbine = 1
 		}
 
 		xp_research_type = navy
@@ -16807,7 +16799,7 @@ technologies = {
 		}
 
 		dependencies = {
-			petrol_combustion_engine = 1
+			tech_gasoline_engine = 1
 		}
 
 		xp_research_type = navy
@@ -17069,7 +17061,7 @@ technologies = {
 		}
 
 		dependencies = {
-			diesel_engine = 1
+			tech_diesel_engine = 1
 		}
 
 		path = {
@@ -17325,7 +17317,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		dependencies = {
-			hybrid_engines = 1
+			tech_hybrid_engine = 1
 		}
 
 		categories = {

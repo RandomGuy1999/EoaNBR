@@ -3,15 +3,25 @@ state={
 	id=1430
 	name="STATE_1430"
 
+	resources={
+		wood = 5.000
+		iron = 0
+		coal = 0
+	}
+
 	history={
 		buildings = {
 			infrastructure = 1
 
 		}
-		set_variable = {
-			building_commercial_farm_size = 1
+		
+			#Agriculture
+			set_variable = { crop_farm_size = 3 } 
 
-		}
+		# set_variable = {
+		# 	building_commercial_farm_size = 1
+
+		# }
 		owner = RUS
 		add_core_of = RUS
 

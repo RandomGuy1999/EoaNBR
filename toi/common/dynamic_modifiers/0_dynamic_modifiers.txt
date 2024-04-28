@@ -640,7 +640,7 @@ kkk_presence_low = {
 	attrition = 0.05
 	local_org_regain = -0.05
 	local_resources = -0.05
-	resistance_growth = 0.05
+	resistance_growth = 0.15
 }
 kkk_presence_medium = {
 	enable = { always = yes }
@@ -649,7 +649,7 @@ kkk_presence_medium = {
 	attrition = 0.10
 	local_org_regain = -0.10
 	local_resources = -0.10
-	resistance_growth = 0.10
+	resistance_growth = 0.30
 }
 kkk_presence_high = {
 	enable = { always = yes }
@@ -658,7 +658,7 @@ kkk_presence_high = {
 	attrition = 0.20
 	local_org_regain = -0.20
 	local_resources = -0.20
-	resistance_growth = 0.20
+	resistance_growth = 0.60
 }
 
 usa_fledgeling_subway_system = {
@@ -690,4 +690,21 @@ usa_developed_subway_system = {
 	production_speed_buildings_factor = 0.15
 	army_speed_factor = 0.10
 	resistance_growth = 0.15
+}
+
+#########
+# Spain	#
+#########
+SPR_sold_andalusia_resource_rights = {
+	enable = { always = yes }
+	remove_trigger = {
+		owner = { 
+			OR = {
+				has_war_with = ENG
+				tag = ENG
+			}
+		}
+	}
+	
+	treasury_cost_monthly = 50
 }

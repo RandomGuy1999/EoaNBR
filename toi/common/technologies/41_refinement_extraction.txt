@@ -100,6 +100,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				custom_modifier_tooltip = steel_foundry_unlock_tt
 			#
 		}
 		tech_steelworking = {
@@ -115,7 +116,7 @@ technologies = {
 					leads_to_tech = tech_puddling
 				}
 				dependencies = {
-					tech_guilds = 1
+					tech_manufactories = 1
 				}
 			#
 			#Meta
@@ -133,8 +134,13 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 3 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_blister_steel_process_unlock_tt
 			#
 		}
 		tech_puddling = {
@@ -165,8 +171,23 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
+				modifier = {
+					hidden_modifier = {
+						pm_blister_steel_process_output_modifier = 0.8
+						pm_blister_steel_process_iron_input_modifier = 0.2
+						pm_blister_steel_process_coal_input_modifier = 0.1
+						pm_blister_steel_process_machinery_input_modifier = 0.1
+						pm_blister_steel_process_industrial_capacity_use_modifier = 0.1
+					}
+
+					custom_modifier_tooltip = pm_puddling_blister_steel_tt
+				}
 			#
 		}
 		tech_regenerative_heat_exchanger = {
@@ -194,8 +215,21 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
+				modifier = {
+					hidden_modifier = {
+						pm_blister_steel_process_output_modifier = 0.5
+						pm_blister_steel_process_iron_input_modifier = 0.1
+						pm_blister_steel_process_industrial_capacity_use_modifier = 0.1
+					}
+					custom_modifier_tooltip = pm_regenerative_heat_exchanger_blister_steel_tt
+				}
+				
 			#
 		}
 		tech_hot_blast_furnace = {
@@ -226,8 +260,13 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_hot_blast_process_unlock_tt
 			#
 		}
 		tech_bessemer_process = {
@@ -241,6 +280,7 @@ technologies = {
 				}
 				dependencies = {
 					tech_coke = 1
+					tech_wrought_iron = 1
 				}
 			#
 			#Meta
@@ -258,8 +298,13 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 4 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_bessemer_process_unlock_tt
 			#
 		}
 		tech_open_hearth_furnace = {
@@ -287,8 +332,18 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
+				pm_bessemer_process_output_modifier = 1.5
+				pm_bessemer_process_iron_input_modifier = 0.2
+				pm_bessemer_process_coal_input_modifier = 0.1
+				pm_bessemer_process_machinery_input_modifier = 0.1
+				pm_bessemer_process_tools_input_modifier = 0.05
+				pm_bessemer_process_industrial_capacity_use_modifier = 0.2
 			#
 		}
 		tech_gilchrist_thomas_process = {
@@ -318,6 +373,12 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_bessemer_process_output_modifier = 1.5
+				pm_bessemer_process_iron_input_modifier = 0.2
+				pm_bessemer_process_coal_input_modifier = 0.1
+				pm_bessemer_process_machinery_input_modifier = 0.1
+				pm_bessemer_process_tools_input_modifier = 0.05
+				pm_bessemer_process_industrial_capacity_use_modifier = 0.2
 			#
 		}
 		tech_electric_arc_process = {
@@ -350,6 +411,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_electric_arc_process_unlock_tt
 			#
 		}
 		tech_injection_molding = {
@@ -440,6 +502,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_oxygen_converter_process_unlock_tt
 			#
 		}
 		tech_bottom_blown_converters = {
@@ -527,6 +590,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_energy_optimizing_process_unlock_tt
 			#
 		}
 		tech_bottom_blown_oxygen_converters = {
@@ -585,6 +649,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_hydrogen_steel_process_unlock_tt
 			#
 		}
 	#
@@ -611,8 +676,26 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
+			modifier = {
+				hidden_modifier = {
+					pm_blister_steel_process_output_modifier = 0.5
+					pm_blister_steel_process_iron_input_modifier = 0.1
+					pm_blister_steel_process_machinery_input_modifier = 0.05
+					
+					pm_hot_blast_process_output_modifier = 0.5
+					pm_hot_blast_process_iron_input_modifier = 0.1
+					pm_hot_blast_process_machinery_input_modifier = 0.05
+				}
+
+				custom_modifier_tooltip = pm_cast_iron_blister_steel_tt
+				custom_modifier_tooltip = pm_cast_iron_hot_blast_tt
+			}
 			#
 		}
 		tech_wrought_iron = {
@@ -640,8 +723,26 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
+				modifier = {
+					hidden_modifier = {
+						pm_blister_steel_process_output_modifier = 0.5
+						pm_blister_steel_process_iron_input_modifier = 0.1
+						pm_blister_steel_process_machinery_input_modifier = 0.05
+						
+						pm_hot_blast_process_output_modifier = 0.5
+						pm_hot_blast_process_iron_input_modifier = 0.1
+						pm_hot_blast_process_machinery_input_modifier = 0.05
+					}
+					custom_modifier_tooltip = pm_wrought_iron_blister_steel_tt
+					custom_modifier_tooltip = pm_wrought_iron_hot_blast_tt
+				}
+				
 			#
 		}
 		tech_basic_chrome_electroplating = {
@@ -652,6 +753,9 @@ technologies = {
 				}
 				path = {
 					leads_to_tech = tech_self_hardening_tungsten_steel
+				}
+				dependencies = {
+					tech_wrought_iron = 1
 				}
 			#
 			#Meta
@@ -671,9 +775,16 @@ technologies = {
 			#Effect
 				on_research_complete = {
 					custom_effect_tooltip = CHROMIUM_UNLOCKED
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
 				}
 			#
 			#Modifier
+				pm_bessemer_process_output_modifier = 0.25
+				pm_bessemer_process_chromium_input_modifier = 0.05
+				
+				pm_electric_arc_process_output_modifier = 0.25
+				pm_electric_arc_process_chromium_input_modifier = 0.05
 			#
 		}
 		tech_self_hardening_tungsten_steel = {
@@ -706,9 +817,16 @@ technologies = {
 			#Effect
 				on_research_complete = {
 					custom_effect_tooltip = TUNGSTEN_UNLOCKED
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
 				}
 			#
 			#Modifier
+				pm_bessemer_process_output_modifier = 0.25
+				pm_bessemer_process_tungsten_input_modifier = 0.05
+
+				pm_electric_arc_process_output_modifier = 0.25
+				pm_electric_arc_process_tungsten_input_modifier = 0.05
 			#
 		}
 		tech_manganese_steel = {
@@ -741,6 +859,11 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_bessemer_process_output_modifier = 0.25
+				pm_bessemer_process_chromium_input_modifier = 0.05
+				
+				pm_electric_arc_process_output_modifier = 0.25
+				pm_electric_arc_process_chromium_input_modifier = 0.05
 			#
 		}
 		tech_bayer_process = {
@@ -802,6 +925,11 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_bessemer_process_output_modifier = 0.25
+				pm_bessemer_process_tungsten_input_modifier = 0.05
+
+				pm_electric_arc_process_output_modifier = 0.25
+				pm_electric_arc_process_tungsten_input_modifier = 0.05
 			#
 		}
 		tech_electric_steel = {
@@ -986,9 +1114,14 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				fuel_gain_factor_from_states = 0.05
+				custom_modifier_tooltip = pm_crude_oil_distillation_unlock_tt
 			#
 		}
 		tech_petroleum_refining = {
@@ -1022,6 +1155,11 @@ technologies = {
 			#
 			#Modifier
 				fuel_gain_factor_from_states = 0.025
+				pm_crude_oil_distillation_output_modifier = 0.7
+				pm_crude_oil_distillation_iron_input_modifier = 0.1
+				pm_crude_oil_distillation_tools_input_modifier = 0.1
+				pm_crude_oil_distillation_chemicals_input_modifier = 0.1
+				pm_crude_oil_distillation_industrial_capacity_use_modifier = 0.1
 			#
 		}
 		tech_kerosene = {
@@ -1049,6 +1187,12 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
+				pm_crude_oil_distillation_output_modifier = 0.5
+				pm_crude_oil_distillation_chemicals_input_modifier = 0.1
 			#
 		}
 		tech_atmospheric_distillation = {
@@ -1079,9 +1223,24 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
+				modifier = {
+					hidden_modifier = {
+						pm_crude_oil_distillation_output_modifier = 1.5
+						pm_crude_oil_distillation_iron_input_modifier = 0.1
+						pm_crude_oil_distillation_tools_input_modifier = 0.1
+						pm_crude_oil_distillation_chemicals_input_modifier = 0.2
+						pm_crude_oil_distillation_industrial_capacity_use_modifier = 0.2
+					}
+					custom_modifier_tooltip = pm_steam_powered_oil_derrick_crude_oil_distillation_tt
+				}
 				production_oil_factor = 0.1
+				
 			#
 		}
 		tech_asphalt = {
@@ -1112,6 +1271,8 @@ technologies = {
 			#
 			#Modifier
 				fuel_gain_factor_from_states = 0.1
+				pm_crude_oil_distillation_output_modifier = 0.5
+				pm_crude_oil_distillation_chemicals_input_modifier = 0.1
 			#
 		}
 		tech_continuous_distillation = {
@@ -1142,6 +1303,11 @@ technologies = {
 			#
 			#Modifier
 				fuel_gain_factor_from_states = 0.1
+				pm_crude_oil_distillation_output_modifier = 1.5
+				pm_crude_oil_distillation_iron_input_modifier = 0.1
+				pm_crude_oil_distillation_tools_input_modifier = 0.1
+				pm_crude_oil_distillation_chemicals_input_modifier = 0.2
+				pm_crude_oil_distillation_industrial_capacity_use_modifier = 0.2
 			#
 		}
 		tech_pressure_cracking = {
@@ -1172,6 +1338,7 @@ technologies = {
 				fuel_gain_factor = 0.05
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_cracking_unlock_tt
 			#
 		}
 		tech_partial_condensation = {
@@ -1330,7 +1497,7 @@ technologies = {
 					position = { x = @oil_refining y = @1935 }
 				}
 				path = {
-					leads_to_tech = tech_synthetic_rubber
+					leads_to_tech = tech_fluid_catalytic_cracking
 				}
 			#
 			#Meta
@@ -1351,35 +1518,7 @@ technologies = {
 			#
 			#Modifier
 				fuel_gain_factor = 0.15
-			#
-		}
-		tech_synthetic_rubber = {
-			#Tree
-				folder = {
-					name = extraction_folder
-					position = { x = @oil_refining y = @1940 }
-				}
-				path = {
-					leads_to_tech = tech_fluid_catalytic_cracking
-				}
-			#
-			#Meta
-				start_year = 1940
-				research_cost = 0.07
-
-				categories = {
-					cat_mass_production_refinement_techs
-
-					cat_refinement_techs
-					cat_oil_refinement_techs
-				}
-				ai_will_do = {
-					base = 10
-				}
-			#
-			#Effect
-			#
-			#Modifier
+				custom_modifier_tooltip = pm_catalytic_cracking_unlock_tt
 			#
 		}
 		tech_fluid_catalytic_cracking = {
@@ -1707,10 +1846,12 @@ technologies = {
 			#
 			#Effect
 				on_research_complete = {
-					custom_effect_tooltip = OIL_UNLOCKED
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_rationalism_change = yes
 				}
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_oil_drilling_unlock_tt
 			#
 		}
 		tech_four_legged_derrick = {
@@ -1743,6 +1884,15 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				modifier = {
+					hidden_modifier = {
+						pm_oil_drilling_wood_input_modifier = 0.1
+						pm_oil_drilling_machinery_input_modifier = 0.05
+						pm_oil_drilling_laborers_required_modifier = -0.05
+					}
+					custom_modifier_tooltip = pm_four_legged_derrick_oil_drilling_tt
+				}
+				
 			#
 		}
 		tech_steam_powered_oil_derrick = {
@@ -1773,8 +1923,13 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
+				custom_modifier_tooltip = pm_steam_powered_oil_derrick_unlock_tt
 			#
 		}
 		tech_roberts_torpedo = {
@@ -1803,8 +1958,14 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
+				pm_steam_powered_derricks_chemicals_input_modifier = 0.1
+				pm_steam_powered_derricks_workers_required_modifier = -0.01
 			#
 		}
 		tech_cable_tool_drilling_improvements = {
@@ -1835,6 +1996,10 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_steel_input_modifier = 0.1
+				pm_steam_powered_derricks_machinery_input_modifier = 0.1
+				pm_steam_powered_derricks_workers_required_modifier = -0.02
+				pm_steam_powered_derricks_professionals_required_modifier = 0.01
 			#
 		}
 		tech_rotary_drilling = {
@@ -1866,6 +2031,9 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_steel_input_modifier = 0.1
+				pm_steam_powered_derricks_machinery_input_modifier = 0.1
+				pm_steam_powered_derricks_workers_required_modifier = -0.01
 			#
 		}
 		tech_drilling_mud = {
@@ -1899,6 +2067,9 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_steel_input_modifier = -0.1
+				pm_steam_powered_derricks_machinery_input_modifier = -0.1
+				pm_steam_powered_derricks_chemicals_input_modifier = 0.1
 			#
 		}
 		tech_standard_derrick = {
@@ -1932,6 +2103,10 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_steel_input_modifier = 0.1
+				pm_steam_powered_derricks_machinery_input_modifier = 0.1
+				pm_steam_powered_derricks_workers_required_modifier = -0.02
+				pm_steam_powered_derricks_professionals_required_modifier = 0.01
 			#
 		}
 		tech_steel_roller_cone_drill_bit = {
@@ -1965,6 +2140,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_steel_input_modifier = -0.1
 			#
 		}
 		tech_single_speed_drawworks = {
@@ -1995,6 +2171,8 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_machinery_input_modifier = 0.1
+				pm_steam_powered_derricks_workers_required_modifier = -0.01
 			#
 		}
 		tech_two_speed_drawworks = {
@@ -2025,6 +2203,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_machinery_input_modifier = -0.05
 			#
 		}
 		tech_blowout_preventor = {
@@ -2054,6 +2233,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_machinery_input_modifier = -0.05
 			#
 		}
 		tech_four_speed_drawworks = {
@@ -2084,6 +2264,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_machinery_input_modifier = -0.05
 			#
 		}
 		tech_tricone_bit = {
@@ -2094,6 +2275,9 @@ technologies = {
 				}
 				path = {
 					leads_to_tech = tech_directional_drilling_experiments
+				}
+				dependencies = {
+					tech_industrial_chrome_electroplating = 1
 				}
 			#
 			#Meta
@@ -2114,6 +2298,10 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_steel_input_modifier = 0.1
+				pm_steam_powered_derricks_machinery_input_modifier = 0.1
+				pm_steam_powered_derricks_workers_required_modifier = -0.02
+				pm_steam_powered_derricks_professionals_required_modifier = 0.01
 			#
 		}
 		tech_directional_drilling_experiments = {
@@ -2144,6 +2332,8 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_machinery_input_modifier = 0.15
+				pm_steam_powered_derricks_workers_required_modifier = -0.01
 			#
 		}
 		tech_steel_derricks = {
@@ -2174,6 +2364,8 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_steel_input_modifier = 0.2
+				pm_steam_powered_derricks_workers_required_modifier = -0.01
 			#
 		}
 		tech_air_drilling_fluid = {
@@ -2207,6 +2399,8 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				pm_steam_powered_derricks_machinery_input_modifier = 0.1
+				pm_steam_powered_derricks_chemicals_input_modifier = -0.2
 			#
 		}
 		tech_diesel_powered_derricks = {
@@ -2553,6 +2747,9 @@ technologies = {
 				path = {
 					leads_to_tech = tech_offshore_oil_wells
 				}
+				dependencies = {
+					tech_catamaran_gantry_cranes = 1
+				}
 			#
 			#Meta
 				start_year = 1930
@@ -2581,11 +2778,71 @@ technologies = {
 					position = { x = @specialized_oil_drilling y = @1945 }
 				}
 				path = {
-					leads_to_tech = tech_jack_up_rig
+					leads_to_tech = tech_early_fracking
 				}
 			#
 			#Meta
 				start_year = 1945
+				research_cost = 0.07
+
+				categories = {
+					cat_mass_production_extraction_techs
+
+					cat_extraction_techs
+					cat_oil_extraction_techs
+				}
+
+				ai_will_do = {
+					base = 10
+				}
+			#
+			#Effect
+			#
+			#Modifier
+			#
+		}
+		tech_early_fracking = {
+			#Tree
+				folder = {
+					name = extraction_folder
+					position = { x = @specialized_oil_drilling y = @1950 }
+				}
+				path = {
+					leads_to_tech = tech_semi_submersible_platforms
+				}
+			#
+			#Meta
+				start_year = 1950
+				research_cost = 0.07
+
+				categories = {
+					cat_mass_production_extraction_techs
+
+					cat_extraction_techs
+					cat_oil_extraction_techs
+				}
+
+				ai_will_do = {
+					base = 10
+				}
+			#
+			#Effect
+			#
+			#Modifier
+			#
+		}
+		tech_semi_submersible_platforms = {
+			#Tree
+				folder = {
+					name = extraction_folder
+					position = { x = @specialized_oil_drilling y = @1955 }
+				}
+				path = {
+					leads_to_tech = tech_jack_up_rig
+				}
+			#
+			#Meta
+				start_year = 1955
 				research_cost = 0.07
 
 				categories = {
@@ -2787,6 +3044,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 3 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_shaft_mining_unlock_tt
@@ -2803,6 +3064,7 @@ technologies = {
 				}
 				dependencies = {
 					tech_infantry_gunpowder = 1
+					tech_barrels = 1
 				}
 			#
 			#Meta
@@ -2820,6 +3082,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_blasting_unlock_tt
@@ -2853,13 +3119,17 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
 					hidden_modifier = {
-						pm_blasting_output_modifier = 0.5
+						pm_blasting_output_modifier = 1.0
 						pm_blasting_chemicals_input_modifier = 0.3
-						pm_drilling_output_modifier = 0.5
+						pm_drilling_output_modifier = 1.0
 						pm_drilling_chemicals_input_modifier = 0.3
 					}
 					custom_modifier_tooltip = pm_blasting_nitroglycerin_extraction_tt
@@ -2895,15 +3165,19 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
 					hidden_modifier = {
-						pm_blasting_output_modifier = 1
+						pm_blasting_output_modifier = 1.5
 						pm_blasting_chemicals_input_modifier = 0.5
-						pm_drilling_output_modifier = 1
+						pm_drilling_output_modifier = 1.5
 						pm_drilling_chemicals_input_modifier = 0.5
-						pm_excavation_output_modifier = 1
+						pm_excavation_output_modifier = 1.5
 						pm_excavation_chemicals_input_modifier = 0.5
 					}
 					custom_modifier_tooltip = pm_blasting_dynamite_extraction_tt
@@ -2944,11 +3218,11 @@ technologies = {
 			#Modifier
 				modifier = {
 					hidden_modifier = {
-						pm_blasting_output_modifier = 1
+						pm_blasting_output_modifier = 1.5
 						pm_blasting_chemicals_input_modifier = 0.5
-						pm_drilling_output_modifier = 1
+						pm_drilling_output_modifier = 1.5
 						pm_drilling_chemicals_input_modifier = 0.5
-						pm_excavation_output_modifier = 1
+						pm_excavation_output_modifier = 1.5
 						pm_excavation_chemicals_input_modifier = 0.5
 					}
 					custom_modifier_tooltip = pm_blasting_tnt_extraction_tt
@@ -2989,11 +3263,11 @@ technologies = {
 			#Modifier
 				modifier = {
 					hidden_modifier = {
-						pm_blasting_output_modifier = 1
+						pm_blasting_output_modifier = 1.5
 						pm_blasting_chemicals_input_modifier = 0.5
-						pm_drilling_output_modifier = 1
+						pm_drilling_output_modifier = 1.5
 						pm_drilling_chemicals_input_modifier = 0.5
-						pm_excavation_output_modifier = 1
+						pm_excavation_output_modifier = 1.5
 						pm_excavation_chemicals_input_modifier = 0.5
 					}
 					custom_modifier_tooltip = pm_blasting_anfo_extraction_tt
@@ -3031,11 +3305,11 @@ technologies = {
 			#Modifier
 				modifier = {
 					hidden_modifier = {
-						pm_blasting_output_modifier = 1
+						pm_blasting_output_modifier = 1.5
 						pm_blasting_chemicals_input_modifier = 0.5
-						pm_drilling_output_modifier = 1
+						pm_drilling_output_modifier = 1.5
 						pm_drilling_chemicals_input_modifier = 0.5
-						pm_excavation_output_modifier = 1
+						pm_excavation_output_modifier = 1.5
 						pm_excavation_chemicals_input_modifier = 0.5
 					}
 					custom_modifier_tooltip = pm_blasting_liquid_solvent_extraction_tt
@@ -3073,6 +3347,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				custom_modifier_tooltip = prospecting_unlock_tt
 			#
 		}
 		tech_steam_pump = {
@@ -3103,6 +3378,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_steam_pump_unlock_tt
@@ -3137,9 +3416,9 @@ technologies = {
 			#Modifier
 				modifier = {
 					hidden_modifier = {
-						pm_basic_extraction_output_modifier = 0.1
-						pm_shaft_mining_output_modifier = 0.2
-						pm_blasting_output_modifier = 0.3
+						pm_basic_extraction_output_modifier = 0.2
+						pm_shaft_mining_output_modifier = 0.4
+						pm_blasting_output_modifier = 0.6
 					}
 					custom_modifier_tooltip = pm_basic_extraction_mine_organization_tt
 					custom_modifier_tooltip = pm_shaft_mining_mine_organization_tt
@@ -3172,6 +3451,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_drilling_unlock_tt
@@ -3202,6 +3485,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -3824,8 +4111,13 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
+				coal_output_factor = 0.04
 			#
 		}
 		tech_davy_lamp = {
@@ -3855,6 +4147,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				coal_input_factor = -0.01
 			#
 		}
 		tech_hopper_railway_carts = {
@@ -3865,6 +4158,9 @@ technologies = {
 				}
 				path = {
 					leads_to_tech = tech_hydraulic_mining
+				}
+				dependencies = {
+					tech_wrought_iron_railways = 1
 				}
 			#
 			#Meta
@@ -3884,6 +4180,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				coal_throughput_factor = 0.04
 			#
 		}
 		tech_hydraulic_mining = {
@@ -3916,6 +4213,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				valuables_output_factor = 0.04
 			#
 		}
 		tech_coal_strip_mining = {
@@ -3946,8 +4244,13 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
+				coal_throughput_factor = 0.08
 			#
 		}
 		tech_wheel_cutters = {
@@ -3980,6 +4283,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				coal_throughput_factor = 0.04
 			#
 		}
 		tech_coal_cutting_machines = {
@@ -4009,6 +4313,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				coal_throughput_factor = 0.08
 			#
 		}
 		tech_coal_loading_machines = {
@@ -4041,6 +4346,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				coal_throughput_factor = 0.08
 			#
 		}
 		tech_shuttle_carts = {
@@ -4070,6 +4376,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				coal_throughput_factor = 0.04
 			#
 		}
 		tech_longwall_mining_machines = {
@@ -4099,6 +4406,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				coal_throughput_factor = 0.08
 			#
 		}
 		tech_mountaintop_mining = {
@@ -4128,6 +4436,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				coal_output_factor = 0.04
 			#
 		}
 	#
@@ -4157,6 +4466,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 3 }
+					eoanbr_institutions_rationalism_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_saw_mills_unlock_tt
@@ -4190,6 +4503,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_river_power_unlock_tt
@@ -4206,6 +4523,7 @@ technologies = {
 				}
 				dependencies = {
 					tech_windmills = 1
+					tech_cast_iron_construction = 1
 				}
 			#
 			#Meta
@@ -4259,6 +4577,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 2 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -4302,7 +4624,12 @@ technologies = {
 			#Effect
 			#
 			#Modifier
-				pm_saw_mills_machinery_input_modifier = -0.1
+				modifier = {
+					hidden_modifier = {
+						pm_saw_mills_machinery_input_modifier = -0.1
+					}
+					custom_modifier_tooltip = pm_saw_mills_insertable_saw_tooth_tt
+				}
 			#
 		}
 		tech_muley_saw = {
@@ -4330,6 +4657,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_industrialization_change = yes
+				}
 			#
 			#Modifier
 				modifier = {
@@ -4370,6 +4701,10 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+					set_temp_variable = { institution_progress_temp = 1 }
+					eoanbr_institutions_mechanization_change = yes
+				}
 			#
 			#Modifier
 				custom_modifier_tooltip = pm_steam_power_unlock_tt

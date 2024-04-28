@@ -6,7 +6,8 @@ state = {
 
 	resources = {
 		iron = 9
-		wood = 17
+		copper = 2
+		wood = 25
 	}
 
 	provinces = {
@@ -31,7 +32,7 @@ state = {
 			victory_points = { 11091 1 } # Gävle
 			victory_points = { 205 1 } # Sundsvall
 		}
-		set_variable = { building_infrastructure_size = 3 }
+		
 		set_variable = { building_lumber_mill_size = 8 }
 		set_variable = { building_metals_mine_size = 2 }
 	}

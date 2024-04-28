@@ -10,9 +10,7 @@ state = {
 
 	local_supplies = 0.0
 	resources = {
-		wood = 8
-		iron = 2
-		fiber = 16
+		wood = 40
 	}
 
 	history = {
@@ -28,10 +26,17 @@ state = {
 			industrial_complex = 1
 			# cotton_farm = 2
 			7552 = {
-				naval_base = 4
+				naval_base = 5
 				supply_node = 1
 			}
 		}
+		set_variable = { port_size = 8 }
+		set_variable = { railway_size = 1 }
+		
+		set_variable = { entertainment_hub_size = 2 }
+		set_variable = { rice_paddy_size = 3 }
+		set_variable = { cotton_plantation_size = 9 }
+		set_variable = { arable_land = 20 }
 
 		victory_points = { #Breaux Bridge
 			1643 3
