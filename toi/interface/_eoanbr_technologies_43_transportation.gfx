@@ -10,7 +10,7 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_transportation_folder_icon"
 			texturefile = "gfx/interface/technologies/techtree/techtree_transportation_folder_icon.dds"
-		}
+		} 
 		spriteType = {
 			name = "GFX_techtree_transportation_folder_background"
 			texturefile = "gfx/interface/technologies/techtree/techtree_transportation_folder_bg.dds"
@@ -72,7 +72,7 @@ spriteTypes = {
 		}
 		frameAnimatedSpriteType = {
 			name = "GFX_technology_transportation_folder_small_currently_researching_item_bg"
-			texturefile = "gfx/interface/technologies/techtree/techtree_researching_anim_strip.dds"
+			texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip.dds"
 			noOfFrames = 9
 			loadType = "INGAME"
 			transparencecheck = yes
@@ -498,14 +498,14 @@ spriteTypes = {
 			#	}
 		#
 		#Ports
-			#	spriteType = {
-			#		name = "GFX_tech_treadwheel_cranetech_treadwheel_crane_medium"
-			#		textureFile = "gfx/interface/technologies/43_transportation/tech_treadwheel_cranetech_treadwheel_crane.dds"
-			#	}
-			#	spriteType = {
-			#		name = "GFX_tech_argand_lamp_medium"
-			#		textureFile = "gfx/interface/technologies/43_transportation/tech_argand_lamp.dds"
-			#	}
+			spriteType = {
+				name = "GFX_tech_treadwheel_crane_medium"
+				textureFile = "gfx/interface/technologies/43_transportation/tech_treadwheel_crane.dds"
+			}
+			spriteType = {
+				name = "GFX_tech_argand_lamp_medium"
+				textureFile = "gfx/interface/technologies/43_transportation/tech_argand_lamp.dds"
+			}
 			#	spriteType = {
 			#		name = "GFX_tech_cargo_port_medium"
 			#		textureFile = "gfx/interface/technologies/43_transportation/tech_cargo_port.dds"
@@ -686,6 +686,14 @@ spriteTypes = {
 				name = "GFX_tech_oil_storage_4_medium"
 				textureFile = "gfx/interface/technologies/43_transportation/tech_oil_storage_4.dds"
 			}
+			# spriteType = {
+			# 	name = "GFX_tech_oil_storage_5_medium"
+			# 	textureFile = "gfx/interface/technologies/43_transportation/tech_oil_storage_5.dds"
+			# }
+			# spriteType = {
+			# 	name = "GFX_tech_oil_storage_6_medium"
+			# 	textureFile = "gfx/interface/technologies/43_transportation/tech_oil_storage_6.dds"
+			# }
 		#
 	#
 }
@@ -706,22 +714,22 @@ spriteTypes = {
 		name = "GFX_motorcycle_equipment_2_medium"
 		textureFile = "gfx/interface/technologies/43_transportation/motorcycle_equipment_2.dds"
 	}
-	spriteType = {
-		name = "GFX_motorized_equipment_0_medium"
-		textureFile = "gfx/interface/technologies/43_transportation/motorized_equipment_0.dds"
-	}
-	spriteType = {
-		name = "GFX_motorized_equipment_1_medium"
-		textureFile = "gfx/interface/technologies/43_transportation/motorized_equipment_1.dds"
-	}
-	spriteType = {
-		name = "GFX_motorized_equipment_2_medium"
-		textureFile = "gfx/interface/technologies/43_transportation/motorized_equipment_2.dds"
-	}
-	spriteType = {
-		name = "GFX_motorized_equipment_3_medium"
-		textureFile = "gfx/interface/technologies/43_transportation/motorized_equipment_3.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_motorized_equipment_0_medium"
+	# 	textureFile = "gfx/interface/technologies/43_transportation/motorized_equipment_0.dds"
+	# }
+	# spriteType = {
+	# 	name = "GFX_motorized_equipment_1_medium"
+	# 	textureFile = "gfx/interface/technologies/43_transportation/motorized_equipment_1.dds"
+	# }
+	# spriteType = {
+	# 	name = "GFX_motorized_equipment_2_medium"
+	# 	textureFile = "gfx/interface/technologies/43_transportation/motorized_equipment_2.dds"
+	# }
+	# spriteType = {
+	# 	name = "GFX_motorized_equipment_3_medium"
+	# 	textureFile = "gfx/interface/technologies/43_transportation/motorized_equipment_3.dds"
+	# }
 	spriteType = {
 		name = "GFX_train_equipment_0_medium"
 		textureFile = "gfx/interface/technologies/43_transportation/train_equipment_0.dds"
@@ -730,34 +738,34 @@ spriteTypes = {
 		name = "GFX_train_equipment_1_medium"
 		textureFile = "gfx/interface/technologies/43_transportation/train_equipment_1.dds"
 	}
-	spriteType = {
-		name = "GFX_armored_train_equipment_1_medium"
-		textureFile = "gfx/interface/technologies/43_transportation/armored_train_equipment_1.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_armored_train_equipment_1_medium"
+	# 	textureFile = "gfx/interface/technologies/43_transportation/armored_train_equipment_1.dds"
+	# }
 	spriteType = {
 		name = "GFX_train_equipment_2_medium"
 		textureFile = "gfx/interface/technologies/43_transportation/train_equipment_2.dds"
 	}
-	spriteType = {
-		name = "GFX_armored_train_equipment_2_medium"
-		textureFile = "gfx/interface/technologies/43_transportation/armored_train_equipment_2.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_armored_train_equipment_2_medium"
+	# 	textureFile = "gfx/interface/technologies/43_transportation/armored_train_equipment_2.dds"
+	# }
 	spriteType = {
 		name = "GFX_train_equipment_3_medium"
 		textureFile = "gfx/interface/technologies/43_transportation/train_equipment_3.dds"
 	}
-	spriteType = {
-		name = "GFX_armored_train_equipment_3_medium"
-		textureFile = "gfx/interface/technologies/43_transportation/armored_train_equipment_3.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_armored_train_equipment_3_medium"
+	# 	textureFile = "gfx/interface/technologies/43_transportation/armored_train_equipment_3.dds"
+	# }
 	spriteType = {
 		name = "GFX_train_equipment_4_medium"
 		textureFile = "gfx/interface/technologies/43_transportation/train_equipment_4.dds"
 	}
-	spriteType = {
-		name = "GFX_armored_train_equipment_4_medium"
-		textureFile = "gfx/interface/technologies/43_transportation/armored_train_equipment_4.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_armored_train_equipment_4_medium"
+	# 	textureFile = "gfx/interface/technologies/43_transportation/armored_train_equipment_4.dds"
+	# }
 }
 spriteTypes = {
 		# SpriteType = {

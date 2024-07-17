@@ -193,7 +193,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -232,7 +232,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -265,7 +265,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -299,7 +299,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -337,7 +337,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -367,7 +367,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -399,7 +399,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -438,7 +438,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -455,6 +455,7 @@ technologies = {
 		industrial_capacity_dockyard = -0.02
 		mining_output_factor = -0.02
 		production_speed_buildings_factor = -0.02
+		production_factory_efficiency_gain_factor = 0.05
 		on_research_complete = {
 			set_temp_variable = { institution_progress_temp = 10 }
 			eoanbr_institutions_humanitive_change = yes
@@ -474,7 +475,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -487,7 +488,7 @@ technologies = {
 		}
 	}
 	tech_humanities_trade_unions = {
-		production_factory_efficiency_gain_factor  = -0.05
+		production_factory_efficiency_gain_factor  = 0.05
 		drift_defence_factor = -0.05
 		# trade_laws_cost_factor = -0.2
 		on_research_complete = {
@@ -508,7 +509,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -552,7 +553,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -599,7 +600,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -630,7 +631,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -660,7 +661,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -747,7 +748,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -776,7 +777,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -807,7 +808,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -843,7 +844,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -869,7 +870,7 @@ technologies = {
 		}
 	}
 	tech_humanities_hospitals = {
-		monthly_population = 0.04
+		monthly_population = 0.07
 		research_cost = 0.1
 		start_year = 1880
 		folder = {
@@ -887,7 +888,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -928,7 +929,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -973,7 +974,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1023,17 +1024,7 @@ technologies = {
 			custom_effect_tooltip = eoanb_tt_technology_petroleum_society
 		}
 		allow = {
-		 	NOT = {
-				OR={
-					has_idea = agrarian
-					has_idea = industrializing
-				}
-				OR={
-					has_idea = pre_industrial_era
-					has_idea = victorian_era
-					has_idea = machine_era
-				}
-			}
+		 	has_idea = institution_electrification
 		}
 		path = {
 			leads_to_tech = tech_humanities_econometrics
@@ -1053,7 +1044,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1081,7 +1072,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1118,7 +1109,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1147,7 +1138,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1176,7 +1167,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1202,7 +1193,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1231,7 +1222,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1257,7 +1248,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1286,7 +1277,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5
@@ -1309,11 +1300,8 @@ technologies = {
 			custom_effect_tooltip = eoanb_tt_technology_digital_society
 		}
 		allow = {
-			OR={
-				has_idea = digital_era
-				has_idea = post_digital_era
-			}
-        }
+			has_idea = institution_internet
+		}
 		# path = {
 			# leads_to_tech = tech_humanities_keynesian_resurgenceism
 			# research_cost_coeff = 1
@@ -1352,7 +1340,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 			modifier = {
 				factor = 1.5

@@ -1,5 +1,4 @@
 add_namespace = prussiarevolution
-add_namespace = prussia
 
 country_event = {
 	id =  prussiarevolution.1
@@ -58,7 +57,7 @@ country_event = {
 						ruling_party = social_egalitarianism
 						ideology = ROOT
 						size = 0.8
-						capital = 282
+						# capital = WroClaw
 						states = {
 							#
 						}
@@ -81,9 +80,9 @@ country_event = {
 					create_country_leader = {
 						name = "Revolutionary Reichstag"
 						desc = "POLITICS_REVOLUTIONARY_REICHSTAG_DESC"
-						picture = #
+						# picture = G
 						expire = "1.1.1"
-						ideology = social_egalitarianism
+						ideology = market_social
 					}
 					add_vansoc_to_coalition = yes
 					load_focus_tree = prussia_revolution

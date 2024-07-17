@@ -665,6 +665,7 @@ country_event = {
 
 	immediate = {
 		# log = "[THIS.GetTag]: firing  = usa_slavery_debate.100"
+		clr_country_flag = clayton_conspiracy_participant
 	}
 
 		is_triggered_only = yes
@@ -1871,7 +1872,7 @@ country_event = {
 		# log = "[THIS.GetTag]: firing  = usa_slavery_debate_secession.14"
 			news_event = usa_slavery_debate_secession.113
 			CSA = { news_event = { id = usa_slavery_debate_secession.113 days = 1 } }
-			USA = { country_event = { id acw_kanawha.1 days 27 } }
+			USA = { country_event = { id = acw_kanawha.1 days = 27 } }
 		}
 	}
 
@@ -7079,7 +7080,7 @@ country_event = { # 15th Amendment Ratified (Lincoln)
 		name = acw_lincoln.125.a
 		# log = "option:		name = acw_lincoln.125.a"
 		remove_ideas = racial_laws
-		add_ideas = limited_equality
+		add_ideas = segregation
 	}
 }
 
@@ -11525,7 +11526,6 @@ country_event = {
 
 						privileged_education
 						state_religion
-						religion_protestant
 
 						FSA_new_union_0
 						FSA_catholic_discrimination
@@ -13835,38 +13835,48 @@ news_event = {
 			}
 		}
 
-		ENG = {
+		# ENG = {
+		# 	if = {
+		# 		limit ={ has_war_with = USA has_war_together_with = CSA }
+		# 		custom_effect_tooltip = 01_ACW_PEACEDEAL_VAL_tt
+		# 		for_each_scope_loop = {
+		# 			array = subjects
+		# 			white_peace = USA
+		# 		}
+		# 		white_peace = USA
+		# 		hidden_effect = {
+		# 			transfer_state = 426
+		# 			transfer_state = 740
+		# 		}
+		# 	}
+		# }
+		# FRA = {
+		# 	if = {
+		# 		limit ={ has_war_with = USA has_war_together_with = CSA }
+		# 		custom_effect_tooltip = 01_ACW_PEACEDEAL_VAL_tt
+		# 		for_each_scope_loop = {
+		# 			array = subjects
+		# 			white_peace = USA
+		# 		}
+		# 		white_peace = USA
+		# 		hidden_effect = {
+		# 			transfer_state = 730
+		# 		}
+		# 	}
+		# }
+		# every_country = {
+		# 	limit = { has_war_together_with = CSA has_war_with = USA }
+		# 	white_peace = USA
+		# }
+
+		USA = {
+			generic_effect_give_me_peace = yes
 			if = {
-				limit ={ has_war_with = USA has_war_together_with = CSA }
-				custom_effect_tooltip = 01_ACW_PEACEDEAL_VAL_tt
-				for_each_scope_loop = {
-					array = subjects
-					white_peace = USA
+				limit = {
+					country_exists = WVG
 				}
-				white_peace = USA
-				hidden_effect = {
-					transfer_state = 426
-					transfer_state = 740
-				}
+				annex_country = WVG
 			}
-		}
-		FRA = {
-			if = {
-				limit ={ has_war_with = USA has_war_together_with = CSA }
-				custom_effect_tooltip = 01_ACW_PEACEDEAL_VAL_tt
-				for_each_scope_loop = {
-					array = subjects
-					white_peace = USA
-				}
-				white_peace = USA
-				hidden_effect = {
-					transfer_state = 730
-				}
-			}
-		}
-		every_country = {
-			limit = { has_war_together_with = CSA has_war_with = USA }
-			white_peace = USA
 		}
 		swap_ideas = {
 			remove_idea = USA_Spirit_American_Civil_War
@@ -15656,10 +15666,10 @@ country_event = {
 				limit = {
 					USA={ has_completed_focus = USA_sign_wade_davis_bill }
 				}
-				compliance > 50
+				FROM = { compliance > 50 }
 			}
 			else = {
-				compliance > 10
+				FROM = { compliance > 10 }
 			}
 		}
 		add_political_power = -25
@@ -15813,6 +15823,14 @@ country_event = { # Late Night Lynchings
 		add_stability = -0.03
 		add_political_power = 25
 		USARECON_increase_southern_unrest_1 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 		add_manpower = var:lynching_victims
 	}
 }
@@ -15861,6 +15879,14 @@ country_event = { # Black American Kidnapped
 		add_stability = -0.02
 		add_political_power = 25
 		USARECON_increase_southern_unrest_1 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 	}
 }
 country_event = { # Kidnapped Black American Found Alive
@@ -15935,6 +15961,14 @@ country_event = { # Black public official attacked
 			usarecon_num_federal_soldiers_lost = -1 
 		}
 		USARECON_increase_southern_unrest_1 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 		add_political_power = pp_loss
 	}
 	option = { # Provide extra protection for all federal officials in the state
@@ -15961,6 +15995,14 @@ country_event = { # Black public official attacked
 			usarecon_num_federal_soldiers_lost = -1 
 		}
 		USARECON_increase_southern_unrest_5 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.025
+		}
 		add_political_power = pp_loss
 	}
 	option = { # Provide extra protection for all black officials in the South
@@ -15987,6 +16029,14 @@ country_event = { # Black public official attacked
 			usarecon_num_federal_soldiers_lost = -1 
 		}
 		USARECON_increase_southern_unrest_10 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.025
+		}
 		add_political_power = pp_loss
 	}
 	option = { # Provide extra protection for all federal officials in the South
@@ -16012,6 +16062,14 @@ country_event = { # Black public official attacked
 			usarecon_num_federal_soldiers_lost = -1 
 		}
 		USARECON_increase_southern_unrest_15 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.05
+		}
 		add_political_power = pp_loss
 	}
 }
@@ -16039,6 +16097,14 @@ country_event = { # Federal official killed
 		# log = "option:		name = acw_reconstruction.12.b"
 		add_stability = -0.02
 		USARECON_increase_southern_unrest_1 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 		add_political_power = 50
 		add_manpower = -1
 	}
@@ -16093,6 +16159,14 @@ country_event = { # Protestors outside a garrison
 		# log = "option:		name = acw_reconstruction.13.b"
 		add_stability = -0.02
 		USARECON_increase_southern_unrest_1 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 		if = {
 			limit = {
 				has_global_flag = usa_kkk_formed_flag
@@ -16151,6 +16225,14 @@ country_event = { # Southerners Riot
 		# log = "option:		name = acw_reconstruction.14.b"
 		add_stability = -0.02
 		USARECON_increase_southern_unrest_5 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.025
+		}
 		if = {
 			limit = {
 				has_global_flag = usa_kkk_formed_flag
@@ -16277,6 +16359,14 @@ country_event = { # Armed militias fight Federal forces
 		add_stability = -0.03
 		USARECON_federal_troop_count_decrease_100 = yes
 		USARECON_increase_southern_unrest_5 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.025
+		}
 		add_political_power = 35
 		hidden_effect = {
 			set_temp_variable = {
@@ -16324,6 +16414,14 @@ country_event = { # Black Business Robbed!
 		# log = "option:		name = acw_reconstruction.17.c"
 		add_stability = -0.03
 		USARECON_increase_southern_unrest_1 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 		USARECON_decrease_freedmens_wellbeing_5 = yes
 		add_political_power = 35
 	}
@@ -16367,6 +16465,22 @@ country_event = { # Black Business Burned Down!
 		add_stability = -0.01
 		USARECON_federal_troop_count_increase_500 = yes
 		USARECON_increase_southern_unrest_1 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 		hidden_effect = {
 			set_temp_variable = { usarecon_damage_done = USARECON_southern_resistance }
 			clamp_temp_variable = {
@@ -16450,6 +16564,14 @@ country_event = { # Black Business Burned Down!
 		# log = "option:		name = acw_reconstruction.18.d"
 		add_stability = -0.04
 		USARECON_increase_southern_unrest_1 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 		add_political_power = 35
 		hidden_effect = {
 			set_temp_variable = { usarecon_damage_done = USARECON_southern_resistance }
@@ -16600,6 +16722,14 @@ country_event = { # Former rebs become congresspeople
 		# log = "option:		name = acw_reconstruction.20.a"
 		add_stability = -0.01
 		add_political_power = -50
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.10
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.10
+		}
 	}
 }
 country_event = { # Ex-Confederate congresspeople disrupt government processes check
@@ -16652,6 +16782,14 @@ country_event = { # Ex-Confederate Congressmen Disrupt Government Process
 		# log = "option:		name = acw_reconstruction.22.a"
 		add_stability = -0.01
 		add_political_power = -50
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 	}
 }
 country_event = { # Calling Sherman
@@ -16735,6 +16873,14 @@ country_event = { # Decreasing our Garrison
 		}
 		USARECON_federal_troop_count_decrease_100 = yes
 		USARECON_increase_southern_unrest_10 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.01
+		}
 	}
 	option = { # Medium decrease
 		name = acw_reconstruction.25.b
@@ -16751,6 +16897,14 @@ country_event = { # Decreasing our Garrison
 		}
 		USARECON_federal_troop_count_decrease_500 = yes
 		USARECON_increase_southern_unrest_10 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.025
+		}
 	}
 	option = { # Large decrease
 		name = acw_reconstruction.25.c
@@ -16767,6 +16921,14 @@ country_event = { # Decreasing our Garrison
 		}
 		USARECON_federal_troop_count_decrease_1000 = yes
 		USARECON_increase_southern_unrest_10 = yes
+		add_popularity = {
+			ideology = traditional_conservatism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = radical_democracy
+			popularity = 0.05
+		}
 	}
 	option = { # Nevermind
 		name = acw_reconstruction.25.d
@@ -16843,8 +17005,6 @@ country_event = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-						infantry = { x = 0 y = 3 }
-						infantry = { x = 0 y = 4 }
 					}
 					support = {
 						field_artillery_support = { x = 0 y = 0 }
@@ -16861,8 +17021,6 @@ country_event = {
 						heavy_cavalry = { x = 0 y = 0 }
 						heavy_cavalry = { x = 0 y = 1 }
 						heavy_cavalry = { x = 0 y = 2 }
-						heavy_cavalry = { x = 0 y = 3 }
-						heavy_cavalry = { x = 0 y = 4 }
 					}
 					support = {
 						field_artillery_towed_support = { x = 0 y = 0 }
@@ -16964,6 +17122,87 @@ country_event = {
 	option = {
 		name = usa_slavery_debate_secession.120.a
 		# log = "option:		name = usa_slavery_debate_secession.120.a"
+	}
+}
+
+country_event = { # KKK wins
+	id = acw_reconstruction.26
+	title = acw_reconstruction.26.t
+	desc = acw_reconstruction.26.desc
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = usa_first_kkk_flag
+			368 = {
+				transfer_state_to = CSA
+			}
+			363 = {
+				transfer_state_to = CSA
+			}
+			364 = {
+				transfer_state_to = CSA
+			}
+			365 = {
+				transfer_state_to = CSA
+			}
+			367 = {
+				transfer_state_to = CSA
+			}
+			370 = {
+				transfer_state_to = CSA
+			}
+			371 = {
+				transfer_state_to = CSA
+			}
+			366 = {
+				transfer_state_to = CSA
+			}
+			368 = {
+				if = {
+					limit = {
+						AND = {
+							is_owned_by = SEM
+							is_controlled_by = CSA
+						}
+					}
+				}
+				transfer_state_to = CSA
+			}
+		}
+	}
+
+	option = { # How did we lose...?
+		name = acw_reconstruction.26.a
+		random_character = {
+			limit = {
+				is_country_leader = yes
+			}
+			add_country_leader_trait  = eoanb_disgraced_leader
+		}
+	}
+}
+
+country_event = { # KKK loses
+	id = acw_reconstruction.27
+	title = acw_reconstruction.27.t
+	desc = acw_reconstruction.27.desc
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = usa_first_kkk_flag
+		}
+	}
+
+	option = { # And stay down!
+		name = acw_reconstruction.27.a
+		random_character = {
+			limit = {
+				is_country_leader = yes
+			}
+			add_country_leader_trait  = trait_destroyer_of_the_klan
+		}
 	}
 }
 

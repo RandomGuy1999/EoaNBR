@@ -1164,24 +1164,6 @@ gain_random_agency_upgrade = { #Gives a random agency upgrade or grants a free a
 	}
 }
 
-join_allies_effect = {
-	if = {
-		limit = {
-			ENG = {
-				is_faction_leader = yes
-				# has_government = democratic
-				not = { has_war_with = ROOT }
-			}
-		}
-		ENG = { country_event = generic.2 }
-	}
-	else = {
-		get_best_alliance_match_democratic_effect = yes
-		var:best_leader = {
-			country_event = generic.2
-		}
-	}
-}
 
 #Should remove any and all fascist foreign influence, to be updated
 remove_fascist_spirits_effect = {
@@ -4099,73 +4081,51 @@ increase_state_category = {
 			has_state_category = pastoral
 		}
 		set_state_category = sparse_rural
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 1
-		}
-	}
+	} 
 	else_if = {
 		limit = {
 			has_state_category = sparse_rural
 		}
 		set_state_category = rural
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 1
-		}
 	}
 	else_if = {
 		limit = {
 			has_state_category = rural
 		}
 		set_state_category = dense_rural
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 1
-		}
 	}
 	else_if = {
 		limit = {
 			has_state_category = dense_rural
 		}
 		set_state_category = sparse_urban
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 2
-		}
 	}
 	else_if = {
 		limit = {
 			has_state_category = sparse_urban
 		}
 		set_state_category = urban
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 3
-		}
 	}
 	else_if = {
 		limit = {
 			has_state_category = urban
 		}
 		set_state_category = dense_urban
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 4
-		}
 	}
 	else_if = {
 		limit = {
 			has_state_category = dense_urban
 		}
 		set_state_category = metropolis
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 8
-		}
 	}
 	else_if = {
 		limit = {
 			has_state_category = metropolis
 		}
 		set_state_category = megalopolis
-		effect_tooltip = {
-			add_extra_state_shared_building_slots = 10
-		}
 	}
+	else = { add_extra_state_shared_building_slots = 1 }
+	custom_effect_tooltip = increase_state_category_by_one_level_tt
 }
 
 add_potential_special_forces_tree = {

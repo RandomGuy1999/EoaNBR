@@ -52,7 +52,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = eoanb_tt_technology_victorian_land_doctrine
 			hidden_effect = {
-				update_general_traits_scripted_effect = yes
+				update_country_general_traits_scripted_effect = yes
 			}
 		}
 
@@ -110,12 +110,12 @@ technologies = {
 			}
 			modifier = {
 				factor = 0.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 				has_war = no
 			}
 			modifier = {
 				factor = 0.25
-				is_major = no
+				is_great_or_secondary_power = no
 				has_war = no
 			}
 			modifier = {
@@ -124,7 +124,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 
 		}
@@ -140,7 +140,7 @@ technologies = {
 
 		# army_artillery_attack_factor = 0.05
 		field_artillery = {
-			manpower = 600
+			manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -149,7 +149,7 @@ technologies = {
 			}
 		}
 		field_artillery_towed = {
-			manpower = 600
+			manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -159,7 +159,7 @@ technologies = {
 			}
 		}
 		field_artillery_support = {
-			manpower = 150
+			manpower = 100
 			combat_width = 0.5
 			need = {
 				uniform_equipment = 15
@@ -168,7 +168,7 @@ technologies = {
 			}
 		}
 		field_artillery_towed_support = {
-			manpower = 150
+			manpower = 100
 			combat_width = 0.5
 			need = {
 				uniform_equipment = 15
@@ -178,7 +178,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery = {
-			manpower = 600
+			manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -187,7 +187,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery_towed = {
-			manpower = 600
+			manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -197,7 +197,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery_support = {
-			manpower = 150
+			manpower = 100
 			combat_width = 0.5
 			need = {
 				uniform_equipment = 15
@@ -206,13 +206,88 @@ technologies = {
 			}
 		}
 		howitzer_artillery_towed_support = {
-			manpower = 150
+			manpower = 100
 			combat_width = 0.5
 			need = {
 				uniform_equipment = 15
 				infantry_equipment = 4
 				howitzer_artillery_equipment = 6
 				horse_artillery_equipment = 6
+			}
+		}
+
+		hidden_effect = {
+			field_artillery = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			field_artillery_towed = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			field_artillery_support = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			field_artillery_towed_support = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			howitzer_artillery = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			howitzer_artillery_towed = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			howitzer_artillery_support = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			howitzer_artillery_towed_support = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
 			}
 		}
 
@@ -262,8 +337,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -278,7 +353,7 @@ technologies = {
 
 		# supply_consumption_factor = -0.02
 		field_artillery = {
-			manpower = 600
+			manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -287,7 +362,7 @@ technologies = {
 			}
 		}
 		field_artillery_towed = {
-			manpower = 600
+			manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -297,7 +372,7 @@ technologies = {
 			}
 		}
 		howitzer_artillery = {
-			manpower = 600
+			manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
@@ -306,13 +381,52 @@ technologies = {
 			}
 		}
 		howitzer_artillery_towed = {
-			manpower = 600
+			manpower = 400
 			combat_width = 1
 			need = {
 				uniform_equipment = 60
 				infantry_equipment = 10
 				howitzer_artillery_equipment = 24
 				horse_artillery_equipment = 24
+			}
+		}
+
+		hidden_effect = {
+			field_artillery = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			field_artillery_towed = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			howitzer_artillery = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
+			}
+			howitzer_artillery_towed = {
+				defence = 0.5
+				breakthrough = 0.5
+				soft_attack = 1
+				hard_attack = 1
+				supply_consumption_factor = 1
+				max_strength = 0.75
+				weight = 1
 			}
 		}
 
@@ -344,8 +458,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 			# modifier = {
@@ -387,8 +501,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 			# modifier = {
@@ -434,8 +548,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 			# modifier = {
@@ -456,7 +570,8 @@ technologies = {
 		# supply_consumption_factor = -0.02
 
 		line_infantry = {
-			manpower = 150
+			manpower = 100
+			weight = 0.1
 			need = {
 				uniform_equipment = 15
 				infantry_equipment = 4
@@ -501,8 +616,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			modifier = {
 				add = 100
@@ -546,8 +661,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 			# modifier = {
@@ -595,8 +710,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 			# modifier = {
@@ -663,8 +778,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -683,7 +798,7 @@ technologies = {
 
 		on_research_complete = {
 			hidden_effect = {
-				update_general_traits_scripted_effect = yes
+				update_country_general_traits_scripted_effect = yes
 			}
 		}
 
@@ -709,8 +824,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -747,8 +862,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -785,8 +900,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -824,8 +939,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -872,8 +987,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -913,8 +1028,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -955,8 +1070,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -995,8 +1110,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1035,8 +1150,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1050,11 +1165,9 @@ technologies = {
 	doctrine_victorian_flank_seeking = {#
 
 		# army_artillery_attack_factor = 0.05
-		modifier = {
-			hidden_modifier = {
-				category_victorian_infantry = {
-					combat_width = 1
-				}
+		hidden_modifier = {
+			category_victorian_infantry = {
+				combat_width = 1
 			}
 			custom_modifier_tooltip = doctrine_victorian_flank_seeking_tt
 		}
@@ -1080,8 +1193,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1129,8 +1242,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1177,8 +1290,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1217,8 +1330,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1269,8 +1382,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1318,8 +1431,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1359,8 +1472,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1402,8 +1515,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1444,8 +1557,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1489,8 +1602,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1538,8 +1651,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1585,8 +1698,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1631,8 +1744,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1681,8 +1794,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1730,8 +1843,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1770,8 +1883,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1810,8 +1923,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1853,8 +1966,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1909,8 +2022,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1942,8 +2055,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -1975,8 +2088,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2018,8 +2131,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2061,8 +2174,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2110,8 +2223,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2149,8 +2262,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2187,8 +2300,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2233,8 +2346,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2339,8 +2452,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2392,8 +2505,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2430,8 +2543,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2472,8 +2585,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2519,8 +2632,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2571,6 +2684,41 @@ technologies = {
 			}
 		}
 
+		hidden_effect = {
+			light_cavalry = {
+				defence = 0.075
+				soft_attack = 0.2
+				hard_attack = 0.2
+				supply_consumption_factor = 0.2
+				max_strength = 0.2
+				weight = 0.2
+			}
+			dragoon = {
+				defence = 0.075
+				soft_attack = 0.2
+				hard_attack = 0.2
+				supply_consumption_factor = 0.2
+				max_strength = 0.2
+				weight = 0.2
+			}
+			heavy_cavalry = {
+				defence = 0.075
+				soft_attack = 0.2
+				hard_attack = 0.2
+				supply_consumption_factor = 0.2
+				max_strength = 0.2
+				weight = 0.2
+			}
+			uhlans = {
+				defence = 0.075
+				soft_attack = 0.2
+				hard_attack = 0.2
+				supply_consumption_factor = 0.2
+				max_strength = 0.2
+				weight = 0.2
+			}
+		}
+
 		on_research_complete = {
 			custom_effect_tooltip = doctrine_victorian_cavalry_tt1
 			custom_effect_tooltip = doctrine_victorian_cavalry_tt2
@@ -2609,8 +2757,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2661,8 +2809,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2700,8 +2848,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2757,8 +2905,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2780,10 +2928,13 @@ technologies = {
 		}
 		on_research_complete = {
 			custom_effect_tooltip = doctrine_victorian_cavalry_tt7
-			set_technology = {
-				doctrine_victorian_cavalry_hidden_completion = 1
-				popup = no
+			hidden_effect = {
+				set_technology = {
+					doctrine_victorian_cavalry_hidden_completion = 1
+					popup = no
+				}
 			}
+			
 		}
 		xp_research_type = army
 		xp_unlock_cost = 100
@@ -2804,8 +2955,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2822,6 +2973,9 @@ technologies = {
 		# army_artillery_attack_factor = 0.05
 		category_victorian_cavalry = {
 			max_organisation = 3.0
+			max_strength = 0.1
+			# soft_attack = 1.0
+
 		}
 		xp_research_type = army
 		xp_unlock_cost = 100
@@ -2845,8 +2999,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2868,9 +3022,11 @@ technologies = {
 			soft_attack = 0.15
 		}
 		on_research_complete = {
-			set_technology = {
-				doctrine_victorian_cavalry_hidden_completion = 1
-				popup = no
+			hidden_effect = {
+				set_technology = {
+					doctrine_victorian_cavalry_hidden_completion = 1
+					popup = no
+				}
 			}
 		}
 		xp_research_type = army
@@ -2892,8 +3048,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2940,8 +3096,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -2982,8 +3138,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -3002,9 +3158,11 @@ technologies = {
 			maximum_speed = 0.15
 		}
 		on_research_complete = {
-			set_technology = {
-				doctrine_victorian_cavalry_hidden_completion = 1
-				popup = no
+			hidden_effect = {
+				set_technology = {
+					doctrine_victorian_cavalry_hidden_completion = 1
+					popup = no
+				}
 			}
 		}
 		xp_research_type = army
@@ -3026,8 +3184,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -3073,8 +3231,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -3093,9 +3251,11 @@ technologies = {
 			recon = 0.2
 		}
 		on_research_complete = {
-			set_technology = {
-				doctrine_victorian_cavalry_hidden_completion = 1
-				popup = no
+			hidden_effect = {
+				set_technology = {
+					doctrine_victorian_cavalry_hidden_completion = 1
+					popup = no
+				}
 			}
 		}
 		xp_research_type = army
@@ -3117,8 +3277,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -3169,8 +3329,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 		modifier = {
@@ -3244,8 +3404,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3315,8 +3475,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3358,8 +3518,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 		modifier = {
@@ -3399,8 +3559,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3470,8 +3630,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3541,8 +3701,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3578,8 +3738,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3649,8 +3809,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3686,8 +3846,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3730,8 +3890,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 		modifier = {
@@ -3771,8 +3931,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3813,8 +3973,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3850,8 +4010,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3888,8 +4048,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3926,8 +4086,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -3969,8 +4129,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4006,8 +4166,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4043,8 +4203,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4080,8 +4240,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4129,8 +4289,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4168,8 +4328,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 		modifier = {
@@ -4209,8 +4369,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4248,8 +4408,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 		modifier = {
@@ -4289,8 +4449,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4327,8 +4487,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4364,8 +4524,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4401,8 +4561,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4439,8 +4599,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4488,8 +4648,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 		modifier = {
@@ -4529,8 +4689,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4566,8 +4726,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4603,8 +4763,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4642,8 +4802,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4685,8 +4845,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4724,8 +4884,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 		modifier = {
@@ -4765,8 +4925,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4804,8 +4964,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 		modifier = {
@@ -4846,8 +5006,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4883,8 +5043,8 @@ technologies = {
 	# 			afr_is_tribal = yes
 	# 			date < 1875.1.1
 	# 		} 
-	# 		modifier = { factor = 0.5 is_major = yes has_war = no } 
-	# 		modifier = { factor = 0.25 is_major = no has_war = no } 
+	# 		modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+	# 		modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 	# 		modifier = { factor = 1.5 has_war = yes }
 	# 		factor = 1
 	# 	}
@@ -4962,7 +5122,7 @@ technologies = {
 
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 
 		}
@@ -5002,8 +5162,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5039,8 +5199,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5080,8 +5240,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5117,8 +5277,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5154,8 +5314,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5191,8 +5351,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5228,8 +5388,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5265,8 +5425,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5309,8 +5469,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5346,8 +5506,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5387,8 +5547,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5424,8 +5584,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5461,8 +5621,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5498,8 +5658,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5535,8 +5695,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5572,8 +5732,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5620,8 +5780,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5657,8 +5817,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5694,8 +5854,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5730,8 +5890,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5766,8 +5926,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5802,8 +5962,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5838,8 +5998,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5882,8 +6042,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5919,8 +6079,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5956,8 +6116,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -5997,8 +6157,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -6034,8 +6194,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -6071,8 +6231,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -6105,8 +6265,8 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 		}
@@ -6153,14 +6313,14 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 
 		}
@@ -6990,14 +7150,14 @@ technologies = {
 				afr_is_tribal = yes
 				date < 1875.1.1
 			} 
-			modifier = { factor = 0.5 is_major = yes has_war = no } 
-			modifier = { factor = 0.25 is_major = no has_war = no } 
+			modifier = { factor = 0.5 is_great_or_secondary_power = yes has_war = no } 
+			modifier = { factor = 0.25 is_great_or_secondary_power = no has_war = no } 
 			modifier = { factor = 1.5 has_war = yes }
 			factor = 1
 
 			modifier = {
 				factor = 1.5
-				is_major = yes
+				is_great_or_secondary_power = yes
 			}
 
 		}

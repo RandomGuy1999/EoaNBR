@@ -63,7 +63,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_6dy_mantaining_order
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Assembly_Law
 		relative_position_id = SPR_6dy_revolution_triumph
 		x = -1
 		y = 1
@@ -81,7 +81,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_6dy_disarmed_liberty_volunteers
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Eliminate_Resistance
 		relative_position_id = SPR_6dy_revolution_triumph
 		x = 1
 		y = 1
@@ -99,7 +99,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_6dy_manifesto_boards
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Freedom_Press_3
 		relative_position_id = SPR_6dy_disarmed_liberty_volunteers
 		x = -1
 		y = 1
@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_6dy_capitation_tax
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Commercial_Act
 		relative_position_id = SPR_6dy_manifesto_boards
 		x = 0
 		y = 1
@@ -136,7 +136,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_6dy_calling_a_election
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Vote_generic
 		relative_position_id = SPR_6dy_capitation_tax
 		x = 0
 		y = 1
@@ -154,7 +154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_6dy_election_of_1869
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Vote_Election
 		relative_position_id = SPR_6dy_calling_a_election
 		x = 0
 		y = 1
@@ -190,12 +190,12 @@ focus_tree = {
 		ai_will_do = { base = 100 }
 
 		completion_reward = {
-
+			add_political_power = 100
 		}
 	}
 	focus = {
 		id = SPR_6dy_search_for_a_king
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Question_Constitution
 		relative_position_id = SPR_6dy_serrano_regency
 		x = 1
 		y = 1
@@ -203,17 +203,17 @@ focus_tree = {
 
 		available = {
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 200 }
 
 		prerequisite = { focus = SPR_6dy_serrano_regency }
 
 		completion_reward = {
-			
+			country_event = spain.46
 		}
 	}
 	focus = {
 		id = SPR_6dy_establish_civil_marriage
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Freedom_Marriage
 		relative_position_id = SPR_6dy_serrano_regency
 		x = -1
 		y = 1
@@ -221,17 +221,17 @@ focus_tree = {
 
 		available = {
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 
 		prerequisite = { focus = SPR_6dy_serrano_regency }
 
 		completion_reward = {
-			
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = SPR_6dy_reform_penal_code
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Government_Reform_2_blue
 		relative_position_id = SPR_6dy_establish_civil_marriage
 		x = 0
 		y = 1
@@ -239,17 +239,17 @@ focus_tree = {
 
 		available = {
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 
 		prerequisite = { focus = SPR_6dy_establish_civil_marriage }
 
 		completion_reward = {
-			
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = SPR_6dy_organic_judicial_law
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Government_Reform_agenda
 		relative_position_id = SPR_6dy_reform_penal_code
 		x = 0
 		y = 1
@@ -257,12 +257,12 @@ focus_tree = {
 
 		available = {
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 
 		prerequisite = { focus = SPR_6dy_reform_penal_code }
 
 		completion_reward = {
-			
+			add_stability = 0.05
 		}
 	}
 ###################################
@@ -326,7 +326,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_6dy_sign_federal_pact
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Law_protections
 		relative_position_id = SPR_6dy_castillian_federal_pact
 		x = 1
 		y = 1
@@ -474,6 +474,29 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = SPR_6dy_rule_of_carlos
+		icon = GFX_focus_generic_self_management
+		relative_position_id = SPR_6dy_crowning_the_king
+		x = 0
+		y = 1
+		cost = 30
+
+		available = {
+		}
+		prerequisite = { focus = SPR_6dy_crowning_the_king }
+		allow_branch = {
+			OR={
+				has_country_flag = SPR_6dy_carlist_71
+				has_country_flag = SPR_6dy_carlist_69
+			}
+		}
+		ai_will_do = { base = 100 }
+
+		completion_reward = {
+
+		}
+	}
 ###################################
 #
 #	third section
@@ -481,7 +504,7 @@ focus_tree = {
 ###################################
 focus = {
 	id = SPR_6dy_crowning_the_king
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Monarchy
 	relative_position_id = SPR_6dy_election_of_1869
 	x = 0
 	y = 0
@@ -492,13 +515,16 @@ focus = {
 			limit={
 				has_country_flag = SPR_6dy_carlist_69
 			}
-			has_completed_focus = SPR_6dy_organic_judicial_law
-		}
-		else={
 			has_completed_focus = SPR_6dy_rolling_back_reforms
 		}
-		NOT={
-			has_country_leader = SPR_francisco_serrano
+		else={
+			has_completed_focus = SPR_6dy_organic_judicial_law
+		}
+		OR={
+			NOT={
+				has_idea = SPR_francisco_serrano_regent
+			}
+			has_country_flag = SPR_ready_to_crown
 		}
 	}
 	allow_branch={
@@ -513,13 +539,76 @@ focus = {
 	#prerequisite = { focus = SPR_6dy_calling_a_election }
 
 	completion_reward = {
-		
+		if={
+			limit={
+				has_country_flag = SPR_amadeo_accepted
+			}
+			add_ideas = SPR_Amadeo_I
+		}
+		else_if={
+			limit={
+				has_country_flag = SPR_antonio_accepted
+			}
+			add_ideas = SPR_Antonio_I
+		}
+		else_if={
+			limit={
+				has_country_flag = SPR_baldomero_accepted
+			}
+			add_ideas = SPR_Baldomero_I
+		}
+		else_if={
+			limit={
+				OR={
+					has_country_flag = SPR_leopold_accepted
+					has_country_flag = SPR_leopold_accepted_FRA_contests
+				}
+			}
+			add_ideas = SPR_Leopold_I
+		}
+		else_if={
+			limit={
+				has_country_flag = SPR_tommaso_accepted
+			}
+			add_ideas = SPR_Tommaso_I
+		}
+		else_if={
+			limit={
+				has_country_flag = SPR_ferdinand_accepted
+			}
+			add_ideas = SPR_Ferdinand_VIII
+			set_country_flag = SPR_portugese_monarch
+		}
+		else_if={
+			limit={
+				has_country_flag = SPR_luis_accepted
+			}
+			add_ideas = SPR_Luis_II
+			set_country_flag = SPR_portugese_monarch
+		}
+		else_if={
+			limit={
+				has_country_flag = SPR_6dy_carlist_69
+			}
+			
+		}
+		else={
+			custom_effect_tooltip = SPR_find_a_king_first_tt
+		}
+		hidden_effect = {
+			if={
+				limit={
+					NOT={has_country_flag = SPR_antonio_accepted}
+				}
+				country_event = {id = spain.57 days = 2}
+			}
+		}
 	}
 }
 
 focus = {
 	id = SPR_6dy_federal_constitution
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Law_Vote_1
 	relative_position_id = SPR_6dy_election_of_1869
 	x = 0
 	y = 0
@@ -541,7 +630,7 @@ focus = {
 
 focus = {
 	id = SPR_6dy_71_election
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Vote_Election
 	relative_position_id = SPR_6dy_election_of_1869
 	x = 0
 	y = 1
@@ -564,7 +653,7 @@ focus = {
 	}
 
 	completion_reward = {
-		
+		country_event = spain.56
 	}
 }
 ###################################
@@ -574,7 +663,7 @@ focus = {
 ###################################
 focus = {
 	id = SPR_6dy_conciliation_government
-	icon = GFX_Focus_Government_Reform_Administration
+	icon = GFX_Focus_Government_Reform
 	x = 1
 	y = 0
 	cost = 30
@@ -589,7 +678,7 @@ focus = {
 
 
 	completion_reward = {
-		
+		remove_ideas = SPR_provisional_government
 	}
 }
 focus = {
@@ -617,12 +706,12 @@ focus = {
 	id = SPR_6dy_suppressing_carlist
 	icon = GFX_Focus_Government_Reform_Administration
 	relative_position_id = SPR_6dy_dealing_with_crises
-	x = 0
+	x = 1
 	y = 1
 	cost = 30
 
 	available = {
-		
+		has_country_flag = SPR_third_carlist_war
 	}
 	ai_will_do = { base = 100 }
 
@@ -635,12 +724,48 @@ focus = {
 	}
 }
 focus = {
+	id = SPR_6dy_suppressing_federalists
+	icon = GFX_Focus_Government_Reform_Administration
+	relative_position_id = SPR_6dy_dealing_with_crises
+	x = -1
+	y = 1
+	cost = 30
+
+	available = {
+		has_country_flag = SPR_federalist_uprising
+	}
+	ai_will_do = { base = 100 }
+
+	prerequisite = { 
+		focus = SPR_6dy_dealing_with_crises 
+	}
+
+	completion_reward = {
+		
+	}
+}
+#stress Subtree
+focus = {
 	id = SPR_6dy_problems_of_a_foreign_king
 	icon = GFX_Focus_Government_Reform_Administration
 	relative_position_id = SPR_6dy_conciliation_government
-	x = 3
+	x = 4
 	y = 1
 	cost = 30
+
+	allow_branch={
+		NOT={
+			has_idea = SPR_Antonio_I
+			has_idea = SPR_Baldomero_I
+		}
+		NOT={
+			has_country_leader = {
+				character = SPR_Alfonso_XII
+				ruling_only = yes
+			}
+		}
+		has_country_flag = SPR_6dy_conciliation
+	}
 
 	available = {
 		
@@ -673,7 +798,7 @@ focus = {
 	}
 
 	completion_reward = {
-		
+		add_stability = 0.05
 	}
 }
 focus = {
@@ -694,15 +819,19 @@ focus = {
 	}
 
 	completion_reward = {
-		
+		subtract_from_variable = {
+			var = SPR_stress_level
+			value = 3
+			tooltip = SPR_stress_level_decrease
+		}
 	}
 }
-
+#Portugese monarch subtree
 focus = {
 	id = SPR_6dy_iberian_path_to_a_union
 	icon = GFX_Focus_Government_Reform_Administration
 	relative_position_id = SPR_6dy_conciliation_government
-	x = -4
+	x = -5
 	y = 1
 	cost = 30
 
@@ -711,7 +840,11 @@ focus = {
 	}
 	ai_will_do = { base = 100 }
 	allow_branch = {
-		has_country_flag = SPR_portugese_monarch
+		has_country_flag = SPR_6dy_conciliation
+		OR={
+			has_idea = SPR_Ferdinand_VIII
+			has_idea = SPR_Luis_II
+		}
 	}
 
 	prerequisite = { 
@@ -848,6 +981,113 @@ focus = {
 	}
 	prerequisite = { 
 		focus = SPR_6dy_reaching_out_to_iberian_portugese
+	}
+
+	completion_reward = {
+		
+	}
+}
+#Italian Monarch subtree
+focus = {
+	id = SPR_6dy_scion_of_savoy
+	icon = GFX_Focus_Government_Reform_Administration
+	relative_position_id = SPR_6dy_conciliation_government
+	x = -5
+	y = 1
+	cost = 30
+
+	available = {
+		
+	}
+	ai_will_do = { base = 100 }
+	allow_branch = {
+		has_country_flag = SPR_6dy_conciliation
+		OR={
+			has_idea = SPR_Amadeo_I
+			has_idea = SPR_Tommaso_I
+		}
+	}
+
+	prerequisite = { 
+		focus = SPR_6dy_conciliation_government 
+	}
+
+	completion_reward = {
+		
+	}
+}
+#Leopold Subtree
+focus = {
+	id = SPR_6dy_a_german_king
+	icon = GFX_Focus_Government_Reform_Administration
+	relative_position_id = SPR_6dy_conciliation_government
+	x = -5
+	y = 1
+	cost = 30
+
+	available = {
+		
+	}
+	ai_will_do = { base = 100 }
+	allow_branch = {
+		has_country_flag = SPR_6dy_conciliation
+		has_idea = SPR_Leopold_I
+	}
+
+	prerequisite = { 
+		focus = SPR_6dy_conciliation_government 
+	}
+
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = SPR_6dy_german_military_aid
+	icon = GFX_Focus_Government_Reform_Administration
+	relative_position_id = SPR_6dy_a_german_king
+	x = -2
+	y = 1
+	cost = 30
+	mutually_exclusive = {
+		focus = SPR_6dy_joining_the_zollverein
+	}
+
+	available = {
+		PRS={
+			has_war_with = FRA
+		}
+	}
+	ai_will_do = { base = 100 }
+
+	prerequisite = { 
+		focus = SPR_6dy_a_german_king 
+	}
+
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = SPR_6dy_joining_the_zollverein
+	icon = GFX_Focus_Government_Reform_Administration
+	relative_position_id = SPR_6dy_a_german_king
+	x = 2
+	y = 1
+	cost = 30
+	mutually_exclusive = {
+		focus = SPR_6dy_military_aid
+	}
+
+	available = {
+		PRS={
+			NOT={has_war_with = FRA}
+		}
+	}
+	ai_will_do = { base = 100 }
+
+	prerequisite = { 
+		focus = SPR_6dy_a_german_king 
 	}
 
 	completion_reward = {
@@ -1165,24 +1405,24 @@ focus = {
 
 
 	completion_reward = {
-		
+		add_ideas = eight_hour_work_day
 	}
 }
 ###################################
 #
-#
+#	economic
 #
 ###################################
 	focus = {
 		id = SPR_6dy_dealing_with_financial_strife
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_economic_crisis
 		x = 8
 		y = 0
 		cost = 30
 
 		available = {
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 
 		completion_reward = {
 			
@@ -1198,17 +1438,17 @@ focus = {
 
 		available = {
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 
 		prerequisite = { focus = SPR_6dy_dealing_with_financial_strife }
 
 		completion_reward = {
-			
+			add_ideas = SPR_peseta
 		}
 	}
 	focus = {
 		id = SPR_6dy_rework_tariff_law
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Law_revision
 		relative_position_id = SPR_6dy_dealing_with_financial_strife
 		x = 1
 		y = 1
@@ -1216,17 +1456,17 @@ focus = {
 
 		available = {
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 
 		prerequisite = { focus = SPR_6dy_dealing_with_financial_strife }
 
 		completion_reward = {
-			
+			add_ideas = export_focus
 		}
 	}
 	focus = {
 		id = SPR_6dy_officiallise_metric_system
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Economy_Reforms
 		relative_position_id = SPR_6dy_introduce_the_peseta
 		x = 1
 		y = 1
@@ -1234,18 +1474,41 @@ focus = {
 
 		available = {
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 
 		prerequisite = { focus = SPR_6dy_introduce_the_peseta }
+		prerequisite = { focus = SPR_6dy_rework_tariff_law }
+
+		completion_reward = {
+			activate_mission = SPR_metric_adaption
+		}
+	}
+	focus = {
+		id = SPR_6dy_ending_salt_monopoly
+		icon = GFX_Focus_Government_Reform_Administration
+		relative_position_id = SPR_6dy_dealing_with_financial_strife
+		x = 3
+		y = 1
+		cost = 30
+
+		available = {
+		}
+		ai_will_do = { base = 20 }
+
+		prerequisite = { focus = SPR_6dy_dealing_with_financial_strife }
 
 		completion_reward = {
 			
 		}
 	}
-
+###################################
+#
+#	Colonial
+#
+###################################
 	focus = {
 		id = SPR_6dy_colonial_management
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_colonial_power_SPA
 		x = 20
 		y = 0
 		cost = 7
@@ -1255,7 +1518,7 @@ focus = {
 		ai_will_do = { base = 100 }
 
 		completion_reward = {
-			
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -1267,19 +1530,25 @@ focus = {
 		cost = 30
 
 		available = {
-			CUB={exists = yes}
+			has_power_balance = {
+				id = SPR_CUB_ten_years_war
+			}
 		}
 		ai_will_do = { base = 100 }
 
 		prerequisite = { focus = SPR_6dy_colonial_management }
 
 		completion_reward = {
-			
+			add_power_balance_value = {
+				id = SPR_CUB_ten_years_war
+				value = -0.03
+				tooltip_side = SPR_dominion
+			}
 		}
 	}
 	focus = {
 		id = SPR_6dy_calling_the_fifiths
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Goal_manpower_duplication
 		relative_position_id = SPR_6dy_cuban_issue
 		x = -1
 		y = 1
@@ -1287,29 +1556,55 @@ focus = {
 
 		available = {
 		}
+
+		bypass = {
+			NOT={
+				has_power_balance = {
+					id = SPR_CUB_ten_years_war
+				}
+			}
+		}
 		ai_will_do = { base = 100 }
 
 		prerequisite = { focus = SPR_6dy_cuban_issue }
 
 		completion_reward = {
-			
+			add_power_balance_value = {
+				id = SPR_CUB_ten_years_war
+				value = -0.075
+				tooltip_side = SPR_dominion
+			}
+			add_manpower = 20000
+			add_stability = -0.05
 		}
 	}
 	focus = {
 		id = SPR_6dy_tatics_of_the_count_of_valmaceda
-		icon = GFX_Focus_Government_Reform_Administration
+		icon = GFX_Focus_Partisans_Elimination
 		relative_position_id = SPR_6dy_cuban_issue
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		cost = 30
 
 		available = {
+		}
+		bypass = {
+			NOT={
+				has_power_balance = {
+					id = SPR_CUB_ten_years_war
+				}
+			}
 		}
 		ai_will_do = { base = 100 }
 
 		prerequisite = { focus = SPR_6dy_cuban_issue }
 
 		completion_reward = {
+			add_power_balance_value = {
+				id = SPR_CUB_ten_years_war
+				value = -0.15
+				tooltip_side = SPR_dominion
+			}
 			315={
 				DCI_increase_by_3 = yes
 			}
@@ -1318,22 +1613,97 @@ focus = {
 			}
 		}
 	}
+	
 	focus = {
 		id = SPR_6dy_deploying_voluntary_corps
 		icon = GFX_Focus_Government_Reform_Administration
 		relative_position_id = SPR_6dy_cuban_issue
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		cost = 30
 
 		available = {
+		}
+		bypass = {
+			NOT={
+				has_power_balance = {
+					id = SPR_CUB_ten_years_war
+				}
+			}
 		}
 		ai_will_do = { base = 100 }
 
 		prerequisite = { focus = SPR_6dy_cuban_issue }
 
 		completion_reward = {
-			
+			add_power_balance_value = {
+				id = SPR_CUB_ten_years_war
+				value = -0.05
+				tooltip_side = SPR_dominion
+			}
+			if={
+				limit={
+					DOM={
+						is_subject_of = ROOT
+						controls_state = 1350
+					}
+				}
+				DOM={
+					division_template = {
+						name = "Cuban Volunteer Corps"
+						regiments = {
+							light_infantry = { x = 0 y = 0 }
+							light_infantry = { x = 0 y = 1 }
+						}
+						is_locked = yes
+					}
+				}
+				1350={
+					create_unit = {
+						allow_spawning_on_enemy_provs = yes
+						division = "name = \"Club des Alemanes\" division_template = \"Cuban Volunteer Corps\" start_experience_factor = 0.5"
+						owner = DOM
+						prioritize_location = 10498
+					}
+					create_unit = {
+						allow_spawning_on_enemy_provs = yes
+						division = "name = \"1st Havana Volunteers\" division_template = \"Cuban Volunteer Corps\" start_experience_factor = 0.5"
+						owner = DOM
+						prioritize_location = 10498
+					}
+					create_unit = {
+						allow_spawning_on_enemy_provs = yes
+						division = "name = \"2nd Havana Volunteers\" division_template = \"Cuban Volunteer Corps\" start_experience_factor = 0.5"
+						owner = DOM
+						prioritize_location = 7622
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_6dy_trocha_de_Jucaro_a_Moron
+		icon = GFX_Focus_rudimentary_defences
+		relative_position_id = SPR_6dy_deploying_voluntary_corps
+		x = 0
+		y = 1
+		cost = 30
+
+		available = {
+		}
+		bypass = {
+			NOT={
+				has_power_balance = {
+					id = SPR_CUB_ten_years_war
+				}
+			}
+		}
+		ai_will_do = { base = 100 }
+
+		prerequisite = { focus = SPR_6dy_deploying_voluntary_corps }
+
+		completion_reward = {
+			unlock_decision_tooltip = SPR_trocha_de_jucaro_a_moron_decision
 		}
 	}
 	focus = {
@@ -1356,17 +1726,19 @@ focus = {
 				is_core_of = PRT
 			}
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 50 }
 
 		prerequisite = { focus = SPR_6dy_colonial_management }
 
 		completion_reward = {
-			
+			686={
+				remove_core_of = PRT
+			}
 		}
 	}
 	focus = {
 		id = SPR_6dy_abolishing_slavery_prt
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_Slavery_freedom
 		relative_position_id = SPR_6dy_aftermath_lares
 		x = 0
 		y = 2
@@ -1400,7 +1772,7 @@ focus = {
 		available = {
 			
 		}
-		ai_will_do = { base = 100 }
+		ai_will_do = { base = 20 }
 
 		prerequisite = { focus = SPR_6dy_colonial_management }
 
@@ -1435,7 +1807,7 @@ focus = {
 
 	focus = {
 		id = SPR_6dy_treaty_with_peru
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_Diplomatic_Ally_PRU
 		relative_position_id = SPR_6dy_colonial_management
 		x = 3
 		y = 1
@@ -1454,12 +1826,12 @@ focus = {
 		prerequisite = { focus = SPR_6dy_colonial_management }
 
 		completion_reward = {
-			
+			PRU={country_event = {id = spain.45}}
 		}
 	}
 	focus = {
 		id = SPR_6dy_peace_with_south_america
-		icon = GFX_focus_generic_self_management
+		icon = GFX_Focus_Continent_South_America
 		relative_position_id = SPR_6dy_treaty_with_peru
 		x = 0
 		y = 1

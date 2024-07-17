@@ -122,7 +122,7 @@ ideas = {
 				treasury_cost_monthly_per_gdp = 0.025
 				production_speed_buildings_factor = -0.25
 				line_change_production_efficiency_factor = -0.25
-				# # production_speed_steel_mill_factor = -0.25
+				# production_speed_steel_mill_factor = -0.25
 				# production_speed_machine_parts_factory_factor = -0.25
 			}
 			research_bonus = {
@@ -142,7 +142,7 @@ ideas = {
 				treasury_cost_monthly_per_gdp = 0.02
 				production_speed_buildings_factor = -0.2
 				line_change_production_efficiency_factor = -0.25
-				# # production_speed_steel_mill_factor = -0.25
+				# production_speed_steel_mill_factor = -0.25
 				# production_speed_machine_parts_factory_factor = -0.25
 			}
 			research_bonus = {
@@ -292,7 +292,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.05
 				trade_opinion_factor = 0.05
-				min_export = 0.03
+				# min_export = 0.03
 				treasury_gain_monthly_per_gdp = 0.001
 			}
 			targeted_modifier = {

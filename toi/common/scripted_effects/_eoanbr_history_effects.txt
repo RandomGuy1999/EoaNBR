@@ -542,6 +542,11 @@
 			#
 			}
 		}
+		else = {
+			set_technology = {
+				tech_naval_corvette = 1
+			}
+		}
 		add_ideas = institution_rationalism
 		set_variable = { progress@token:institution_rationalism = 100 }
 		set_variable = { progress@token:institution_industrialization = 40 }
@@ -711,6 +716,15 @@
 			#
 			}
 		}
+		else = {
+			set_technology = {
+				tech_naval_corvette = 1
+				tech_naval_early_gunboat = 1
+				tech_naval_early_frigate = 1
+				tech_naval_lineship = 1
+				tech_naval_capital_ship_naval_transportation = 1
+			}
+		}
 		add_ideas = institution_rationalism
 		set_variable = { progress@token:institution_rationalism = 100 }
 		set_variable = { progress@token:institution_industrialization = 65 }
@@ -719,7 +733,7 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 10 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
 	}
 	set_tech_victorian_early_industrializing = { #1830
 		set_technology = {
@@ -875,6 +889,8 @@
 				tech_artificial_rivers = 1
 				tech_ship_yard = 1
 				tech_maritime_regulatory_standards = 1
+				tech_river_steamboat = 1
+				tech_passenger_steamboat = 1
 				tech_barrels = 1
 				tech_cardboard_boxes = 1
 			#
@@ -889,7 +905,7 @@
 				tech_theory_of_light = 1
 				tech_chemistry = 1
 				tech_inorganic_chemistry = 1
-				tech_woehler_synthesis = 1
+				tech_wohler_synthesis = 1
 				tech_organic_chemistry = 1
 				tech_rubber_mastication = 1
 				tech_herbology = 1
@@ -908,6 +924,8 @@
 			# Doctrines
 				tribal_tatics = 1
 				land_doctrine_victorian = 1
+				doctrine_victorian_artillery = 1
+				doctrine_victorian_cavalry = 1
 			#
 		}
 		if = {
@@ -938,6 +956,15 @@
 			#
 			}
 		}
+		else = {
+			set_technology = {
+				tech_naval_corvette = 1
+				tech_naval_early_gunboat = 1
+				tech_naval_early_frigate = 1
+				tech_naval_lineship = 1
+				tech_naval_capital_ship_naval_transportation = 1
+			}
+		}
 		add_ideas = institution_rationalism
 		set_variable = { progress@token:institution_rationalism = 100 }
 		set_variable = { progress@token:institution_industrialization = 85 }
@@ -946,7 +973,7 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 15 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
 	}
 	set_tech_victorian_middle_industrializing = { #1850
 		set_technology = {
@@ -1133,6 +1160,9 @@
 				tech_port_authority = 1
 				tech_ship_yard = 1
 				tech_maritime_regulatory_standards = 1
+				tech_river_steamboat = 1
+				tech_passenger_steamboat = 1
+				tech_wave_line_theory = 1
 				tech_barrels = 1
 				tech_cardboard_boxes = 1
 				tech_paper_bag_machines = 1
@@ -1149,7 +1179,7 @@
 				tech_classical_thermodynamics = 1
 				tech_chemistry = 1
 				tech_inorganic_chemistry = 1
-				tech_woehler_synthesis = 1
+				tech_wohler_synthesis = 1
 				tech_nitroglycerin_synthesis = 1
 				tech_organic_chemistry = 1
 				tech_rubber_mastication = 1
@@ -1216,6 +1246,18 @@
 			}
 			add_ideas = hollow_cast_guns_idea
 		}
+		else = {
+			set_technology = {
+				tech_naval_corvette = 1
+				tech_naval_corvette_1 = 1
+				tech_naval_early_gunboat = 1
+				tech_naval_1850_gunboat = 1
+				tech_naval_early_frigate = 1
+				tech_naval_1850_frigate = 1
+				tech_naval_lineship = 1
+				tech_naval_capital_ship_naval_transportation = 1
+			}
+		}
 		add_ideas = institution_rationalism
 		set_variable = { progress@token:institution_rationalism = 100 }
 		add_ideas = institution_industrialization
@@ -1225,7 +1267,7 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 25 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
 	}
 	set_tech_victorian_late_industrializing = { #1860
 		set_technology = {
@@ -1413,6 +1455,7 @@
 				tech_port_authority = 1
 				tech_ship_yard = 1
 				tech_maritime_regulatory_standards = 1
+				tech_river_steamboat = 1
 				tech_barrels = 1
 				tech_cardboard_boxes = 1
 				tech_paper_bag_machines = 1
@@ -1429,7 +1472,7 @@
 				tech_classical_thermodynamics = 1
 				tech_chemistry = 1
 				tech_inorganic_chemistry = 1
-				tech_woehler_synthesis = 1
+				tech_wohler_synthesis = 1
 				tech_nitroglycerin_synthesis = 1
 				tech_organic_chemistry = 1
 				tech_rubber_mastication = 1
@@ -1496,6 +1539,20 @@
 			}
 			add_ideas = hollow_cast_guns_idea
 		}
+		else = {
+			set_technology = {
+				tech_naval_corvette = 1
+				tech_naval_corvette_1 = 1
+				tech_naval_early_gunboat = 1
+				tech_naval_1850_gunboat = 1
+				tech_naval_early_frigate = 1
+				tech_naval_1850_frigate = 1
+				tech_naval_lineship = 1
+				tech_naval_1857_lineship = 1
+				tech_naval_capital_ship_naval_transportation = 1
+				tech_naval_merchant_ship_requisitioning = 1
+			}
+		}
 		add_ideas = institution_rationalism
 		set_variable = { progress@token:institution_rationalism = 100 }
 		add_ideas = institution_industrialization
@@ -1505,7 +1562,7 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 25 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
 	}
 	set_tech_early_mechanization = { #1870
 		set_technology = {
@@ -1699,7 +1756,7 @@
 				tech_classical_thermodynamics = 1
 				tech_chemistry = 1
 				tech_inorganic_chemistry = 1
-				tech_woehler_synthesis = 1
+				tech_wohler_synthesis = 1
 				tech_nitroglycerin_synthesis = 1
 				tech_organic_chemistry = 1
 				tech_rubber_mastication = 1
@@ -1773,6 +1830,6 @@
 		add_ideas = institution_centralization
 		set_variable = { progress@token:institution_centralization = 100 }
 		set_variable = { progress@token:institution_nationalism = 25 }
-		update_general_traits_scripted_effect = yes
+		update_country_general_traits_scripted_effect = yes
 	}
 #

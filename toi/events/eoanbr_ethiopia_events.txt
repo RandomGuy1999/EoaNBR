@@ -1345,8 +1345,8 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = Yes.129.a
-		# log = "option:		name = Yes.129.a"
+		name = yes.129.a
+		# log = "option:		name = yes.129.a"
 		ai_chance = { factor = 50 }
 		ETH = { country_event = { days = 1 id = ethiopia_egypt_relations.8 } }
 		hidden_effect = {
@@ -4092,9 +4092,7 @@ country_event = {
 		# log = "option:		name = ETH_north_oromo.2.a"
 		random_owned_controlled_state = {
 			limit = {
-				has_resource_amount = {
-					wood > 5
-				}
+				wood > 5
 			}
 			add_resource = {
 				type = wood

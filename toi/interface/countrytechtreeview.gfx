@@ -94,50 +94,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
-
-	spriteType = {
-		name = "GFX_land_doctrine_folder_tab"
-		textureFile = "gfx//interface//techtree//techtree_landdoctrine_tab.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_landdoctrine_tab_large"
-		textureFile = "gfx/interface/techtree/techtree_landdoctrine_tab_large.dds"
-		noOfFrames = 2
-	}
-
-		spriteType = {
-		name = "GFX_airdoctrine_tab_large"
-		textureFile = "gfx/interface/techtree/techtree_airdoctrine_tab_large.dds"
-		noOfFrames = 2
-	}
-
-		spriteType = {
-		name = "GFX_navaldoctrine_tab_large"
-		textureFile = "gfx/interface/techtree/techtree_navaldoctrine_tab_large.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_naval_doctrine_folder_tab"
-		textureFile = "gfx//interface//techtree//techtree_navaldoctrine_tab.dds"
-		noOfFrames = 2
-	}
-
-
-	spriteType = {
-		name = "GFX_air_doctrine_folder_tab"
-		textureFile = "gfx//interface//techtree//techtree_airdoctrine_tab.dds"
-		noOfFrames = 2
-	}
-
-	spriteType = {
-		name = "GFX_techtree_tabs"
-		textureFile = "gfx//interface//techtree//techtree_tabs.dds"
-		noOfFrames = 2
-	}
-
 	spriteType = {
 		name = "GFX_2d_3d_switch"
 		textureFile = "gfx/interface/divisiondesigner/2d_3d.png"
@@ -260,6 +216,22 @@ spriteTypes = {
 		size = { x = 192 y = 192 }
 		textureFile = "gfx//interface//tiles//tiled_bg.dds"
 		borderSize = { x = 64 y = 64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tiled_border_horizontal"
+		size = { x = 40 y = 9 }
+		textureFile = "gfx//interface//tiles//tiled_border_horizontal.dds"
+		borderSize = { x = 4 y = 0 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tiled_border_vertical"
+		size = { x = 9 y = 40 }
+		textureFile = "gfx//interface//tiles//tiled_border_vertical.dds"
+		borderSize = { x = 0 y = 4 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
@@ -627,7 +599,7 @@ spriteTypes = {
 		play_on_show = yes
 		pause_on_loop = 0.0
 	}
-	
+
 
 		##### industry tech #####
 
@@ -756,8 +728,8 @@ spriteTypes = {
 		name = "GFX_technology_mtg_ship_folder_researched_item_bg"
 		textureFile = "gfx/interface/technologies/techtree/tech_naval_researched_item_bg.dds"
 	}
-	
-	
+
+
 	spriteType = {
 		name = "GFX_technology_mtg_capital_folder_small_unavailable_item_bg"
 		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
@@ -785,7 +757,7 @@ spriteTypes = {
 		play_on_show = yes
 		pause_on_loop = 0.0
 	}
-	
+
 	spriteType = {
 		name = "GFX_technology_mtg_capital_folder_currently_researching_item_bg"
 		textureFile = "gfx/interface/technologies/techtree/tech_naval_currently_researching_item.dds"
@@ -805,7 +777,7 @@ spriteTypes = {
 		name = "GFX_technology_mtg_capital_folder_researched_item_bg"
 		textureFile = "gfx/interface/technologies/techtree/tech_naval_researched_item_bg.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_technology_mtg_screen_folder_small_unavailable_item_bg"
 		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
@@ -822,7 +794,7 @@ spriteTypes = {
 		name = "GFX_technology_mtg_screen_folder_small_researched_item_bg"
 		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_technology_mtg_screen_folder_currently_researching_item_bg"
 		textureFile = "gfx/interface/technologies/techtree/tech_naval_currently_researching_item.dds"

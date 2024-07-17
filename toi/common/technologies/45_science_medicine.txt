@@ -95,7 +95,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -132,7 +132,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -166,7 +166,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -196,7 +196,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -226,7 +226,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -247,7 +247,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1875
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -256,7 +256,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -277,7 +277,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1890
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_science_techs
@@ -286,7 +286,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -307,7 +307,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1895
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_science_techs
@@ -316,7 +316,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -337,7 +337,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1910
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -346,7 +346,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -367,7 +367,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -376,7 +376,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -397,7 +397,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1935
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -406,7 +406,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -427,7 +427,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1940
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_production_science_techs
@@ -436,7 +436,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -457,7 +457,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1960
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -466,7 +466,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -487,7 +487,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1985
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -496,7 +496,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -517,7 +517,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2005
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -526,7 +526,7 @@ technologies = {
 					cat_mathematics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -558,7 +558,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -597,7 +597,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -630,7 +630,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -659,7 +659,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -691,7 +691,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -715,7 +715,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1870
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -724,7 +724,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -747,7 +747,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1875
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -756,7 +756,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -776,7 +776,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1885
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -785,7 +785,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -805,7 +805,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1895
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_science_techs
@@ -814,7 +814,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -834,7 +834,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1900
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_science_techs
@@ -843,7 +843,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -866,7 +866,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1905
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -875,7 +875,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -898,7 +898,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1910
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -907,7 +907,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -927,7 +927,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1915
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -936,7 +936,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -959,7 +959,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1925
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -968,7 +968,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -988,7 +988,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -997,7 +997,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1017,7 +1017,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1940
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -1026,7 +1026,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1046,7 +1046,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1950
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -1055,7 +1055,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1078,7 +1078,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1960
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -1087,7 +1087,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1105,7 +1105,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1975
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -1114,7 +1114,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1137,7 +1137,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1995
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -1146,7 +1146,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1166,7 +1166,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2010
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_science_techs
@@ -1175,7 +1175,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1195,7 +1195,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2050
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_automation_science_techs
@@ -1204,7 +1204,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1241,7 +1241,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1257,7 +1257,7 @@ technologies = {
 					position = { x = @inorganic_chemistry y = @1800 }
 				}
 				path = {
-					leads_to_tech = tech_woehler_synthesis
+					leads_to_tech = tech_wohler_synthesis
 				}
 				path = {
 					leads_to_tech = tech_chemical_vapor_deposition
@@ -1274,7 +1274,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1289,7 +1289,7 @@ technologies = {
 				army_defence_factor = 0.02
 			#
 		}
-		tech_woehler_synthesis = {
+		tech_wohler_synthesis = {
 			#Tree
 				folder = {
 					name = science_folder
@@ -1313,7 +1313,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1343,7 +1343,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1372,7 +1372,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1397,7 +1397,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1870
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -1406,7 +1406,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1426,7 +1426,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1875
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -1435,7 +1435,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1457,7 +1457,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1880
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -1466,7 +1466,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1489,7 +1489,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1890
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_science_techs
@@ -1498,7 +1498,7 @@ technologies = {
 					cat_physics_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1522,7 +1522,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1895
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_science_techs
@@ -1531,7 +1531,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1554,7 +1554,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1900
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_science_techs
@@ -1563,7 +1563,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1586,7 +1586,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1905
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -1595,7 +1595,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1619,7 +1619,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1910
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -1628,7 +1628,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1648,7 +1648,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1915
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -1657,7 +1657,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1680,7 +1680,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1920
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -1689,7 +1689,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1709,7 +1709,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1925
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -1718,7 +1718,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1739,7 +1739,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -1748,7 +1748,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1771,7 +1771,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1945
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -1780,7 +1780,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1803,7 +1803,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1970
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -1812,7 +1812,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1832,7 +1832,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1975
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -1841,7 +1841,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1864,7 +1864,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1990
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -1873,7 +1873,7 @@ technologies = {
 					cat_inorganic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1904,7 +1904,7 @@ technologies = {
 					cat_explosives_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1937,7 +1937,7 @@ technologies = {
 					cat_explosives_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1967,7 +1967,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1895
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_science_techs
@@ -1976,7 +1976,7 @@ technologies = {
 					cat_explosives_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -1999,7 +1999,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1905
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -2008,7 +2008,7 @@ technologies = {
 					cat_explosives_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2031,7 +2031,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -2040,7 +2040,7 @@ technologies = {
 					cat_explosives_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2063,7 +2063,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1955
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -2072,7 +2072,7 @@ technologies = {
 					cat_explosives_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2095,7 +2095,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1965
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -2105,7 +2105,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2140,7 +2140,7 @@ technologies = {
 				}
 
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2171,7 +2171,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2193,7 +2193,7 @@ technologies = {
 					leads_to_tech = tech_vulcanization
 				}
 				dependencies = {
-					tech_woehler_synthesis = 1
+					tech_wohler_synthesis = 1
 				}
 			#
 			#Meta
@@ -2207,7 +2207,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2244,7 +2244,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2280,7 +2280,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2309,7 +2309,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2329,7 +2329,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1870
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -2338,7 +2338,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2358,7 +2358,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1885
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_science_techs
@@ -2367,7 +2367,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2394,7 +2394,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1905
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -2403,7 +2403,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2423,7 +2423,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1910
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -2432,7 +2432,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2453,7 +2453,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1915
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -2462,7 +2462,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2488,7 +2488,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1920
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -2497,7 +2497,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2509,7 +2509,7 @@ technologies = {
 			#Tree
 				folder = {
 					name = science_folder
-					position = { x = @organic_chemistry y = @1920 }
+					position = { x = @organic_chemistry y = @1925 }
 				}
 				path = {
 					leads_to_tech = tech_polyethylene_synthesis
@@ -2517,7 +2517,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1925
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -2526,7 +2526,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2546,7 +2546,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -2555,7 +2555,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2575,7 +2575,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1935
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -2585,7 +2585,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2605,7 +2605,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1940
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_production_science_techs
@@ -2614,7 +2614,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2634,7 +2634,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1945
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -2643,7 +2643,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2663,7 +2663,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1950
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -2672,7 +2672,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2695,7 +2695,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1955
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -2704,7 +2704,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2724,7 +2724,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1960
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -2733,7 +2733,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2753,7 +2753,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1970
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -2762,7 +2762,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2782,7 +2782,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1980
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -2791,7 +2791,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2811,7 +2811,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1990
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -2820,7 +2820,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2843,7 +2843,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2010
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_science_techs
@@ -2852,7 +2852,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2872,7 +2872,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2030
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_science_techs
@@ -2881,7 +2881,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2901,7 +2901,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1910
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -2910,7 +2910,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2932,7 +2932,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1910
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -2941,7 +2941,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2962,7 +2962,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1915
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_science_techs
@@ -2971,7 +2971,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -2992,7 +2992,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1925
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -3001,7 +3001,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3021,7 +3021,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -3030,7 +3030,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3050,7 +3050,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1935
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -3059,7 +3059,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3079,7 +3079,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1940
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_production_science_techs
@@ -3088,7 +3088,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3108,7 +3108,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1950
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -3117,7 +3117,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3137,7 +3137,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1970
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -3146,7 +3146,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3168,7 +3168,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2015
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_science_techs
@@ -3177,7 +3177,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3197,7 +3197,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2020
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_science_techs
@@ -3206,7 +3206,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3226,7 +3226,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2030
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_science_techs
@@ -3235,7 +3235,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3257,7 +3257,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -3266,7 +3266,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3287,7 +3287,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1935
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_science_techs
@@ -3296,7 +3296,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3316,7 +3316,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1940
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_production_science_techs
@@ -3325,7 +3325,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3345,7 +3345,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1950
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -3354,7 +3354,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3374,7 +3374,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1955
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_science_techs
@@ -3383,7 +3383,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3403,7 +3403,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1960
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -3412,7 +3412,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3435,7 +3435,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1965
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_science_techs
@@ -3444,7 +3444,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3470,7 +3470,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1985
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -3479,7 +3479,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3502,7 +3502,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1990
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -3511,7 +3511,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3531,7 +3531,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1995
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -3540,7 +3540,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3560,7 +3560,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2000
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_science_techs
@@ -3569,7 +3569,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3589,7 +3589,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2020
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_science_techs
@@ -3598,7 +3598,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3618,7 +3618,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2040
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_automation_science_techs
@@ -3627,7 +3627,7 @@ technologies = {
 					cat_organic_chemistry_science_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3655,7 +3655,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3697,7 +3697,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3714,6 +3714,9 @@ technologies = {
 				path = {
 					leads_to_tech = tech_hygiene
 				}
+				dependencies = {
+					tech_selective_breeding = 1
+				}
 			#
 			#Meta
 				start_year = 1820
@@ -3726,7 +3729,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3757,7 +3760,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3796,7 +3799,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3820,7 +3823,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1870
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_health_techs
@@ -3829,7 +3832,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3849,7 +3852,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1880
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_health_techs
@@ -3858,7 +3861,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3880,7 +3883,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1885
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_health_techs
@@ -3889,7 +3892,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3910,7 +3913,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1890
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_health_techs
@@ -3919,7 +3922,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3940,7 +3943,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1890
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_health_techs
@@ -3949,7 +3952,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3969,7 +3972,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1900
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_health_techs
@@ -3978,7 +3981,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -3998,7 +4001,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1905
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mass_transit_health_techs
@@ -4007,7 +4010,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4029,7 +4032,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1925
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_health_techs
@@ -4038,7 +4041,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4060,7 +4063,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1945
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_health_techs
@@ -4069,7 +4072,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4091,7 +4094,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1950
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_health_techs
@@ -4100,7 +4103,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4120,7 +4123,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1955
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_health_techs
@@ -4129,7 +4132,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4149,7 +4152,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1960
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_health_techs
@@ -4158,7 +4161,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4181,7 +4184,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1965
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_health_techs
@@ -4190,7 +4193,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4210,7 +4213,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1980
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_health_techs
@@ -4219,7 +4222,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4239,7 +4242,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1990
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_health_techs
@@ -4248,7 +4251,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4268,7 +4271,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2005
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_health_techs
@@ -4277,7 +4280,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4300,7 +4303,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2015
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_health_techs
@@ -4309,7 +4312,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4329,7 +4332,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2025
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_health_techs
@@ -4338,7 +4341,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4358,7 +4361,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2030
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_health_techs
@@ -4367,7 +4370,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4387,7 +4390,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2035
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_health_techs
@@ -4396,7 +4399,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4416,7 +4419,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2045
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_automation_health_techs
@@ -4425,7 +4428,7 @@ technologies = {
 					cat_biology_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4456,7 +4459,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4476,7 +4479,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1880
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_health_techs
@@ -4485,7 +4488,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4505,7 +4508,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1885
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mechanization_health_techs
@@ -4514,7 +4517,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4534,7 +4537,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1890
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_health_techs
@@ -4543,7 +4546,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4566,7 +4569,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1900
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_health_techs
@@ -4575,7 +4578,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4595,7 +4598,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1905
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mass_transit_health_techs
@@ -4604,7 +4607,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4624,7 +4627,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1910
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_health_techs
@@ -4633,7 +4636,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4656,7 +4659,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1920
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_health_techs
@@ -4665,7 +4668,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4685,7 +4688,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_health_techs
@@ -4694,7 +4697,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4717,7 +4720,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1945
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_health_techs
@@ -4726,7 +4729,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4746,7 +4749,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1950
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_health_techs
@@ -4755,7 +4758,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4775,7 +4778,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1960
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_health_techs
@@ -4784,7 +4787,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4804,7 +4807,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1970
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_health_techs
@@ -4813,7 +4816,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4833,7 +4836,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1975
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_green_revolution_health_techs
@@ -4842,7 +4845,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4862,7 +4865,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1980
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_computing_health_techs
@@ -4871,7 +4874,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4891,7 +4894,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1985
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_health_techs
@@ -4900,7 +4903,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4920,7 +4923,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1985
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_health_techs
@@ -4929,7 +4932,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4949,7 +4952,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2000
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_health_techs
@@ -4958,7 +4961,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -4978,7 +4981,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2000
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_health_techs
@@ -4987,7 +4990,7 @@ technologies = {
 					cat_medicine_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5018,7 +5021,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5041,7 +5044,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1890
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_health_techs
@@ -5050,7 +5053,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5070,7 +5073,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1900
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_electrification_health_techs
@@ -5079,7 +5082,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5102,7 +5105,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1905
-				research_cost = 0.07
+				research_cost = 0.10
 
 				categories = {
 					cat_mass_transit_health_techs
@@ -5111,7 +5114,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5131,7 +5134,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1910
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_transit_health_techs
@@ -5140,7 +5143,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5160,7 +5163,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1920
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_health_techs
@@ -5169,7 +5172,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5189,7 +5192,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1930
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_telecommunications_health_techs
@@ -5198,7 +5201,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5218,7 +5221,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1940
-				research_cost = 0.07
+				research_cost = 0.15
 
 				categories = {
 					cat_mass_production_health_techs
@@ -5227,7 +5230,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5247,7 +5250,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1950
-				research_cost = 0.07
+				research_cost = 0.20
 
 				categories = {
 					cat_mass_production_health_techs
@@ -5256,7 +5259,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5276,7 +5279,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1985
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_health_techs
@@ -5285,7 +5288,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5305,7 +5308,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 1995
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_computing_health_techs
@@ -5314,7 +5317,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5334,7 +5337,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2010
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_health_techs
@@ -5343,7 +5346,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5366,7 +5369,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2025
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_health_techs
@@ -5375,7 +5378,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5395,7 +5398,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2035
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_internet_health_techs
@@ -5404,7 +5407,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
@@ -5427,7 +5430,7 @@ technologies = {
 			#
 			#Meta
 				start_year = 2045
-				research_cost = 0.07
+				research_cost = 0.25
 
 				categories = {
 					cat_automation_health_techs
@@ -5436,7 +5439,7 @@ technologies = {
 					cat_genetics_health_techs
 				}
 				ai_will_do = {
-					base = 10
+					base = 0.5
 				}
 			#
 			#Effect
