@@ -1099,6 +1099,10 @@ KDE_bi_yearly_event_fire_1870 = {
 	JAP = {
 		country_event = { id = JAP_imperial.22 days = 716 } # 1871.12.18
 	}
+	SOT = {
+		country_event = { id = boer_states.129 days = 360 random_days = 90 } # 1871.XX.XX
+	}
+	
 }
 
 KDE_bi_yearly_event_fire_1872 = {
@@ -1143,6 +1147,9 @@ KDE_bi_yearly_event_fire_1872 = {
 		country_event = { id = japan_flavor.4 days = 608 } # 1873.9.1
 		country_event = { id = JAP_imperial.30 days = 352 } # 1872.12.18
 		country_event = { id = JAP_imperial.31 days = 716 } # 1873.12.18
+	}
+	CUB = {
+		country_event = { id = cuban_events.1 days = 497 } # 1873.5.11
 	}
 }
 
@@ -1202,6 +1209,9 @@ KDE_bi_yearly_event_fire_1874 = {
 	}
 	JAP = {
 		country_event = { id = JAP_imperial.27 days = 125 } # 1874.05.6
+	}
+	CUB = {
+		country_event = { id = cuban_events.2 days = 58 } # 1874.2.27
 	}
 }
 
