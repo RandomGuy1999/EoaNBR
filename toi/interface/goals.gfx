@@ -6486,6 +6486,18 @@ spriteTypes = {
 		name = "GFX_focus_SPR_develop_the_prison"
 		texturefile = "gfx/interface/goals/spain/focus_spr_the_guinea_penal_colony_development.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_SPR_problems_in_philippines"
+		texturefile = "gfx/interface/goals/spain/focus_SPR_problems_in_philippines.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_spr_treaty_of_el_pardo_claims"
+		texturefile = "gfx/interface/goals/spain/focus_spr_treaty_of_el_pardo_claims.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SPR_crush_cantonals"
+		texturefile = "gfx/interface/goals/spain/focus_SPR_crush_cantonals.png"
+	}
 	# AUSTRIA #
 	SpriteType = {
 		name = "GFX_goal_AUS_franz_kaiser"
@@ -9196,6 +9208,94 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_usa_address_logistical_deficiencies"
 		texturefile = "gfx/interface/goals/usa/focus_usa_address_logistical_deficiencies.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_call_for_volunteers"
+		texturefile = "gfx/interface/goals/usa/focus_usa_call_for_volunteers.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_to_hell_with_spain"
+		texturefile = "gfx/interface/goals/usa/focus_usa_to_hell_with_spain.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_apache"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_apache.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_blackfoot"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_blackfoot.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_cheyenne_arapaho"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_cheyenne_arapaho.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_comanche"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_comanche.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_crow"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_crow.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_navajo"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_navajo.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_nez_perce"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_nez_perce.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_shoshone"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_shoshone.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_sioux"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_sioux.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_recognize_seminole"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_recognize_seminole.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_apache"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_apache.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_blackfoot"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_blackfoot.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_cheyenne_arapaho"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_cheyenne_arapaho.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_comanche"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_comanche.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_crow"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_crow.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_navajo"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_navajo.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_nez_perce"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_nez_perce.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_shoshone"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_shoshone.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_trade_sioux"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_trade_sioux.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_diplomacy_close_residential_schools"
+		texturefile = "gfx/interface/goals/usa/focus_usa_diplomacy_close_residential_schools.png"
 	}
 	SpriteType = {
 		name = "GFX_focus_VIN_tuc_duc"

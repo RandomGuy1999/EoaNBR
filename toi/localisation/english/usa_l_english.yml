@@ -1410,6 +1410,7 @@
  USA_spanish_american_war_1: "Spanish-American War"
  USA_spanish_american_war_2: "Spanish-American War"
  USA_spanish_american_war_3: "Spanish-American War"
+ FN_trade_with_USA: "Trade with the Yankees"
 
  USA_tycoon_target_0: "Invalid Company"
  USA_tycoon_target_1: "Standard Oil"
@@ -2249,6 +2250,7 @@ clayton_conspiracy_US_total_victory: "§GA short victorious war!§!"
 
 ### POSTBELLUM TOOLTIPS
 CHY_chivington_dismissed_tt: "§YColonel Chivington will be reassigned§!"
+completed_USA_FN_appeasing1: "Has completed focus $USA_FN_appeasing1$"
 
 ### BALANCE OF POWER
 ## Private vs Public Interests
@@ -2270,5 +2272,7 @@ usa_reaffirmed_monroe_doctrine: "Reaffirmed Monroe Doctrine"
 
 ## DYNAMIC MODIFIERS
 USA_navy_modifier: "The United States Navy"
+USA_FN_trade_modifier: "Trade with the First Nations"
 # DYNAMIC MODIFIERS TOOLTIPS
 usa_modify_united_states_navy_ns_intro: "Modify §Y$USA_navy_modifier$§! by"
+usa_modify_fn_trade_ns_intro: "Modify §Y$USA_FN_trade_modifier$§! by"

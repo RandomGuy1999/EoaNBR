@@ -4302,6 +4302,7 @@ news_event = {
 		set_temp_variable = { acw_draft_count_change = 18 }
 		ACW_Draft_Count_Get = yes
 		add_ideas = USA_Spirit_American_Civil_War_Army_Incompetency1
+		add_ideas = USA_Spirit_American_Civil_War_Strategic_Focus
 	}
 	option = {
 		name = acw_generic.2.b
@@ -13987,10 +13988,10 @@ news_event = {
 				clr_global_flag = ACW_American_Civil_War
 				set_global_flag = ACW_American_Civil_War_Happened
 				PRS = {
-							clr_country_flag = PRS_USA_sell_guns_flag
-							clr_country_flag = PRS_CSA_sell_guns_flag
-							clr_country_flag = PRS_USA_sell_guns_rejected_flag
-							clr_country_flag = PRS_CSA_sell_guns_rejected_flag
+					clr_country_flag = PRS_USA_sell_guns_flag
+					clr_country_flag = PRS_CSA_sell_guns_flag
+					clr_country_flag = PRS_USA_sell_guns_rejected_flag
+					clr_country_flag = PRS_CSA_sell_guns_rejected_flag
 				}
 			}
 			set_global_flag = ACW_CSA_Independence
@@ -14211,6 +14212,7 @@ news_event = {
 		# log = "option:		name = acw_peace_deal.2.b"
 		trigger = { tag = CSA }
 		hidden_effect = {
+			set_country_flag = CSAIndependence_Won
 			if = {
 				limit = { has_global_flag = ACW_American_Civil_War_Happened }
 				USA = {
@@ -15641,6 +15643,7 @@ country_event = {
 		}
 		add_political_power = -15
 		FROM = { USAROD_reconstruction_progress_plus_5 = yes }
+		USARECON_increase_freedmens_wellbeing_1 = yes
 	}
 	option = {
 		name = acw_reconstruction.2.c
