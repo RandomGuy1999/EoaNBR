@@ -143,7 +143,6 @@ add_namespace = mexico_civil_war
 				MEX = { country_event = { id = mexico_politics.7 } }
 			}
 		}
-
 	}
 
 	country_event = {
@@ -258,6 +257,471 @@ add_namespace = mexico_civil_war
 				}
 				start_resistance = MEX
 				add_resistance = 35
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.20
+		title = mexico_politics.20.t
+		desc = mexico_politics.20.d
+		# picture = placeholder
+
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.20.a
+			
+			every_country = {
+				limit = {
+					set_temp_variable = {
+						religion_temp = token:religion_catholic
+					}
+					is_primary_religion = yes
+				}
+				custom_effect_tooltip = effects_every_catholic_nation_tt
+				add_opinion_modifier = {
+					target = MEX
+					modifier = MEX_opinion_papal_legation
+				}
+				# set_cosmetic_tag = MEX_cosmetic_tacubaya
+				# drop_cosmetic_tag = yes
+			}
+		}
+	}
+
+	country_event = { #congressional elections of 1857
+		id = mexico_politics.21
+		title = mexico_politics.21.t
+		desc = mexico_politics.21.d
+		# picture = placeholder
+
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.21.a
+			complete_national_focus = MEX_focus_1857_congressional_elections
+		}
+	}
+
+	country_event = { #dealing with viadurri
+		id = mexico_politics.22
+		title = mexico_politics.22.t
+		desc = mexico_politics.22.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {#negotiate
+			name = mexico_politics.22.a
+			custom_effect_tooltip = MEX_negotiate_with_viadurri_tt
+			swap_ideas = {
+				remove_idea = MEX_idea_provisional_funding_efforts
+				add_idea = MEX_idea_MEX_idea_dealt_with_viadurri
+			}
+		}
+
+		option = {#confront
+			name = mexico_politics.22.b
+			set_country_flag = MEX_flag_viadurri_confronted
+			custom_effect_tooltip = MEX_confront_viadurri_tt
+			swap_ideas = {
+				remove_idea = MEX_idea_provisional_funding_efforts
+				add_idea = MEX_idea_MEX_idea_dealt_with_viadurri
+			}
+		}
+	}
+
+	country_event = { #congress denies emergency powers
+		id = mexico_politics.23
+		title = mexico_politics.23.t
+		desc = mexico_politics.23.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.23.a
+			every_core_state = {
+				decrease_resistance_la_reforma = yes
+			}
+		}
+	}
+
+	country_event = { #6 events to make states swing left/right, 4 more as flavor
+		id = mexico_politics.30
+		title = mexico_politics.30.t
+		desc = mexico_politics.30.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.30.a
+			474 = {
+				increase_resistance_la_reforma = yes
+			}
+			475 = {
+				increase_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_1
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.31
+		title = mexico_politics.31.t
+		desc = mexico_politics.31.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.31.a
+			479 = {
+				decrease_resistance_la_reforma = yes
+			}
+			480 = {
+				increase_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_2
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.32
+		title = mexico_politics.32.t
+		desc = mexico_politics.32.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.32.a
+			481 = {
+				decrease_resistance_la_reforma = yes
+			}
+			1125 = {
+				increase_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_3
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.33
+		title = mexico_politics.33.t
+		desc = mexico_politics.33.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.33.a
+			1112 = {
+				decrease_resistance_la_reforma = yes
+			}
+			478 = {
+				decrease_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_4
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.34
+		title = mexico_politics.34.t
+		desc = mexico_politics.34.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.34.a
+			485 = {
+				decrease_resistance_la_reforma = yes
+			}
+			1114 = {
+				increase_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_5
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.35
+		title = mexico_politics.35.t
+		desc = mexico_politics.35.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.35.a
+			277 = {
+				increase_resistance_la_reforma = yes
+			}
+			1124 = {
+				decrease_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_6
+			}
+		}
+	}
+
+	country_event = {
+		id = mexico_politics.36
+		title = mexico_politics.36.t
+		desc = mexico_politics.36.d
+		# picture = placeholder
+		
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = mexico_politics.36.a
+			1123 = {
+				increase_resistance_la_reforma = yes
+			}
+			482 = {
+				decrease_resistance_la_reforma = yes
+			}
+			483 = {
+				decrease_resistance_la_reforma = yes
+			}
+			hidden_effect = {
+				random_list = {
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+					1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+					0 = {
+						modifier = {
+							add = 1
+							AND = {
+								has_country_flag = MEX_flag_state_1
+								has_country_flag = MEX_flag_state_2
+								has_country_flag = MEX_flag_state_3
+								has_country_flag = MEX_flag_state_4
+								has_country_flag = MEX_flag_state_5
+								has_country_flag = MEX_flag_state_6
+								has_country_flag = MEX_flag_state_7
+							}
+						}
+						clr_country_flag = MEX_flag_state_1
+						clr_country_flag = MEX_flag_state_2
+						clr_country_flag = MEX_flag_state_3
+						clr_country_flag = MEX_flag_state_4
+						clr_country_flag = MEX_flag_state_5
+						clr_country_flag = MEX_flag_state_6
+						clr_country_flag = MEX_flag_state_7
+					}
+				}
+				set_country_flag = MEX_flag_state_7
 			}
 		}
 	}
@@ -1278,9 +1742,9 @@ country_event = { #Debt system initial announcement
 					priority = 1
 					regiments = {
 						early_marine = { x = 0 y = 0 }
-						early_marine = { x = 0 y = 1 }
-						early_marine = { x = 1 y = 0 }
-						early_marine = { x = 1 y = 1 }
+						# early_marine = { x = 0 y = 1 }
+						# early_marine = { x = 1 y = 0 }
+						# early_marine = { x = 1 y = 1 }
 					}
 					is_locked = yes
 				}
@@ -1411,9 +1875,9 @@ country_event = { #Debt system initial announcement
 					priority = 1
 					regiments = {
 						early_marine = { x = 0 y = 0 }
-						early_marine = { x = 0 y = 1 }
-						early_marine = { x = 1 y = 0 }
-						early_marine = { x = 1 y = 1 }
+						# early_marine = { x = 0 y = 1 }
+						# early_marine = { x = 1 y = 0 }
+						# early_marine = { x = 1 y = 1 }
 					}
 					is_locked = yes
 				}

@@ -1084,6 +1084,19 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = state_religion
 			add_ideas = secular_state
+			every_country = {
+				limit = {
+					set_temp_variable = {
+						religion_temp = token:religion_catholic
+					}
+					is_primary_religion = yes
+				}
+				custom_effect_tooltip = effects_every_catholic_nation_tt
+				add_opinion_modifier = {
+					target = MEX
+					modifier = MEX_opinion_starting_catholic_opinion
+				}
+			}
 		}
 		bypass = { always = yes }
 	}
@@ -1107,8 +1120,9 @@ focus_tree = {
 
 			set_country_flag = EOANBSYS_national_crisis_mexican_reform_war_flag
 			EOANBSYS_national_crisis_setup = yes
+			set_variable = { EOANBSYS_national_crisis_progress_var = 0 }
 
-			every_owned_state = {
+			every_core_state = {
 				force_enable_resistance = MEX
 				add_dynamic_modifier = {
 					modifier = dynmod_MEX_la_reforma_resistance
@@ -1119,7 +1133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MEX_focus_iglesias_law
-		# icon = GFX_Focus_mexican_intervention
+		icon = GFX_focus_mex_iglesias_law
 		relative_position_id = MEX_focus_shadow_of_ayutla
 		x = -1
 		y = 4
@@ -1134,7 +1148,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = MEX_prereform_hist_2_tt
 			hidden_effect = {
-				every_owned_state = {
+				every_core_state = {
 					start_resistance = yes
 					set_compliance = 10
 					random_list = {
@@ -1206,6 +1220,21 @@ focus_tree = {
 							add_resistance = 3
 						}
 					}
+					add_dynamic_modifier = {
+						modifier = dynmod_MEX_resistance_modifier_3
+					}
+				}
+				hidden_effect = {
+					1114 = {
+						increase_resistance_la_reforma = yes
+						increase_resistance_la_reforma = yes
+					}
+					477 = {
+						decrease_resistance_la_reforma = yes
+					}
+					476 = {
+						decrease_resistance_la_reforma = yes
+					}
 				}
 			}
 		}
@@ -1267,12 +1296,13 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = no_constitution
 			add_ideas = limited_constitution
+			EOANBSYS_national_crisis_progress_add_five = yes
 		}
 		bypass = { always = yes }
 	}
 	focus = {
 		id = MEX_focus_constitutional_oath
-		# icon = GFX_Focus_mexican_intervention
+		icon = GFX_focus_mex_constitutional_oath
 		relative_position_id = MEX_focus_shadow_of_ayutla
 		x = 1
 		y = 4
@@ -1285,7 +1315,20 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-
+			EOANBSYS_national_crisis_progress_add_five = yes
+			country_event = {
+				id = mexico_politics.30
+				days = 10
+			}
+			random_list = {
+				1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_1 } country_event = { id = mexico_politics.30 days = 15 random_days = 10 } }
+				1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_2 } country_event = { id = mexico_politics.31 days = 15 random_days = 10 } }
+				1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_3 } country_event = { id = mexico_politics.32 days = 15 random_days = 10 } }
+				1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_4 } country_event = { id = mexico_politics.33 days = 15 random_days = 10 } }
+				1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_5 } country_event = { id = mexico_politics.34 days = 15 random_days = 10 } }
+				1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_6 } country_event = { id = mexico_politics.35 days = 15 random_days = 10 } }
+				1 = { modifier = { add = -1 has_country_flag = MEX_flag_state_7 } country_event = { id = mexico_politics.36 days = 15 random_days = 10 } }
+			}
 		}
 		bypass = { always = yes }
 	}
@@ -1308,6 +1351,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			#unlocks decisions to target resistance centers
+			activate_targeted_decision = {
+				target = MEX
+				decision = MEX_decision_comonfort_interim_resistance_quell
+			}
 		}
 		bypass = { always = yes }
 	}
@@ -1327,6 +1374,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			#unlocks decisions to reduce resistance growth
+			activate_targeted_decision = {
+				target = MEX
+				decision = MEX_decision_liberal_media
+			}
 		}
 		bypass = { always = yes }
 	}
@@ -1346,6 +1397,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			#fires event to improve relations with Papal States and every other catholic country
+			country_event = mexico_politics.20
+			EOANBSYS_national_crisis_progress_minus_five = yes
 		}
 		bypass = { always = yes }
 	}
@@ -1367,7 +1420,7 @@ focus_tree = {
 			has_completed_focus = MEX_focus_request_emergency_powers
 		}
 		completion_reward = {
-
+			
 		}
 		bypass = { always = yes }
 	}
@@ -1391,6 +1444,11 @@ focus_tree = {
 				remove_idea = MEX_idea_starting_tariff_limiter
 				add_idea = MEX_idea_provisional_funding_efforts
 			}
+			#activate a decision to sell church property
+			activate_targeted_decision = {
+				target = MEX
+				decision = MEX_decision_sell_clergy_property
+			}
 		}
 		bypass = { always = yes }
 	}
@@ -1412,7 +1470,7 @@ focus_tree = {
 			has_completed_focus = MEX_focus_1857_congressional_elections
 		}
 		completion_reward = {
-
+			country_event = mexico_politics.22
 		}
 		bypass = { always = yes }
 	}
