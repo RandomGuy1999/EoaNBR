@@ -2667,6 +2667,25 @@ country_event = {
 	}
 }
 
+country_event = { #Demand Sardinina-Piedmont demobilizes
+	id = austria.205
+	title = austria.205.t
+	desc = austria.205.d
+	picture = GFX_event_ITA_Turin_Generic
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = austria.205.a
+		PIE = {
+			country_event = {
+				id = sardinia.266
+			}
+		}
+	}
+}
+
 ##### NATIONALIST THREAT EVENTS (austria.301-400) #####
 
 ### Nationalist Agitation Events
@@ -9310,6 +9329,7 @@ country_event = {
 				transfer_state = 981
 				transfer_state = 1153
 				inherit_technology = SAR
+				SAR = { PIE = { inherit_institutions = yes } }
 				retire_country_leader = yes
 				PIE_archduke_karl_ludwig = {
 					add_country_leader_role = {

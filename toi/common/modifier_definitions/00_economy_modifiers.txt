@@ -604,6 +604,12 @@
 			industry_throughput_factor = { color_type = good value_type = percentage precision = 1 category = country }
 			industry_attractiveness_modifier = { color_type = good value_type = number precision = 1 category = country }
 			industry_attractiveness_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			
+			prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			mining_prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			oil_prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			logging_prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			agriculture_prospecting_ability_factor = { color_type = good value_type = percentage precision = 1 category = country }
 		#
 		# Category Modifiers
 			factory_input_factor = { color_type = bad value_type = percentage precision = 1 category = country }
@@ -783,7 +789,7 @@
 			entertainment_hub_output_factor = { color_type = good value_type = percentage precision = 1 category = country }
 			entertainment_hub_throughput_factor = { color_type = good value_type = percentage precision = 1 category = country }
 			entertainment_hub_attractiveness_modifier = { color_type = good value_type = number precision = 1 category = country }
-			entertainment_hub_attractiveness_factor = { color_type = good value_type = percentage precision = 1 category = country }
+			entertainment_hub_attractiveness_factor = { color_type = good value_type = percentage precision = 1 category = country } 
 		#
 		# RGOs
 			food_input_factor = { color_type = bad value_type = percentage precision = 1 category = country }
@@ -3118,22 +3124,26 @@
             # Chemicals
 			pm_lead_chamber_process_output_modifier = { color_type = good value_type = percentage precision = 1 category = country }
 			pm_lead_chamber_process_industrial_capacity_use_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_lead_chamber_process_wood_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_lead_chamber_process_iron_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			
 			pm_leblanc_process_output_modifier = { color_type = good value_type = percentage precision = 1 category = country }
 			pm_leblanc_process_industrial_capacity_use_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_leblanc_process_food_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_leblanc_process_iron_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_leblanc_process_tools_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_leblanc_process_coal_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			
 			pm_ammonia_soda_process_output_modifier = { color_type = good value_type = percentage precision = 1 category = country }
 			pm_ammonia_soda_process_industrial_capacity_use_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
-			pm_ammonia_soda_process_iron_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_ammonia_soda_process_food_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_ammonia_soda_process_tools_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_ammonia_soda_process_machinery_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_ammonia_soda_process_coal_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			
 			pm_brine_electrolysis_output_modifier = { color_type = good value_type = percentage precision = 1 category = country }
 			pm_brine_electrolysis_industrial_capacity_use_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
-			pm_brine_electrolysis_iron_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
+			pm_brine_electrolysis_food_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_brine_electrolysis_tools_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_brine_electrolysis_electricity_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
 			pm_brine_electrolysis_machinery_input_modifier = { color_type = bad value_type = percentage precision = 1 category = country }
@@ -3217,7 +3227,13 @@
 			category = country
 		}
 	#
-	#Resources
+	#Trade
+		shipping_cost_factor = {
+			color_type = bad
+			value_type = percentage
+			precision = 2
+			category = country
+		}
 	#
 #
 
@@ -4456,11 +4472,5 @@
 		#
 	#
 	#
-		shipping_cost_modifier = {
-			color_type = good
-			value_type = number
-			precision = 2
-			category = country
-		}
 	#
 #

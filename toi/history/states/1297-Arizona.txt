@@ -13,11 +13,14 @@ state = {
 	history = {
 		#owner = NMX
 		controller = USA
-		1870.1.1 = {
+		1870.5.11 = {
 			controller = USA
 			add_core_of = USA
 		}
 
+		# victory_points = { #Pheonix: Founded 1867
+		#	853 2
+		# }
 		buildings = {
 			infrastructure = 2
 		}

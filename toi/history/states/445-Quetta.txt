@@ -11,11 +11,14 @@ state={
 				infrastructure = 2
 			}
 			victory_points = {
-				8098 2 
+				5105 2 
+			}
+			victory_points = {
+				8013 1
 			}
 
 		}
-		1885.1.1 = {
+		1885.11.1 = {
 			owner = RAJ
 			add_core_of = RAJ
 

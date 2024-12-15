@@ -1747,6 +1747,7 @@ technologies = {
 				industrial_complex_productivity_modifier = 0.2
 				arms_factory_productivity_modifier = 0.1
 				factory_throughput_factor = 0.04
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_industrial_production = {
@@ -1887,6 +1888,18 @@ technologies = {
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 9
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 9
+				}
+				enable_building = {
+					building = dockyard
+					level = 6
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
@@ -1922,6 +1935,19 @@ technologies = {
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 11
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 11
+				}
+				enable_building = {
+					building = dockyard
+					level = 7
+				}
+			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
 				arms_factory_productivity_modifier = 0.1
@@ -1959,6 +1985,18 @@ technologies = {
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 13
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 13
+				}
+				enable_building = {
+					building = dockyard
+					level = 8
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.2
@@ -2000,6 +2038,18 @@ technologies = {
 				}
 			#
 			#Effect
+				enable_building = {
+					building = arms_factory
+					level = 15
+				}
+				enable_building = {
+					building = industrial_complex
+					level = 15
+				}
+				enable_building = {
+					building = dockyard
+					level = 9
+				}
 			#
 			#Modifier
 				industrial_complex_productivity_modifier = 0.3
@@ -2082,6 +2132,7 @@ technologies = {
 				industrial_complex_productivity_modifier = 0.1
 				factory_output_factor = 0.02
 				production_factory_efficiency_gain_factor = 0.025
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_shift_work = {
@@ -2594,9 +2645,9 @@ technologies = {
 			#Modifier
 				modifier = {
 					hidden_modifier = {
-						pm_iron_tools_output_modifier = 1.5
-						pm_iron_tools_iron_input_modifier = 0.5
-						pm_iron_tools_industrial_capacity_use_modifier = 0.2
+						pm_iron_tools_output_modifier = 1.2
+						pm_iron_tools_iron_input_modifier = 0.3
+						pm_iron_tools_industrial_capacity_use_modifier = 0.1
 					}
 					custom_modifier_tooltip = pm_industrial_tools_iron_tools_tt
 				}
@@ -2641,10 +2692,10 @@ technologies = {
 					production_factory_max_efficiency_factor = 0.025
 					
 					hidden_modifier = {
-						pm_iron_tools_output_modifier = 1.5
+						pm_iron_tools_output_modifier = 1.2
 						pm_iron_tools_wood_input_modifier = -0.1
-						pm_iron_tools_iron_input_modifier = 0.5
-						pm_iron_tools_industrial_capacity_use_modifier = 0.2
+						pm_iron_tools_iron_input_modifier = 0.3
+						pm_iron_tools_industrial_capacity_use_modifier = 0.1
 					}
 					custom_modifier_tooltip = pm_mechanical_tools_iron_tools_tt
 				}
@@ -2832,11 +2883,14 @@ technologies = {
 				}
 			#
 			#Effect
+				on_research_complete = {
+				}
 			#
 			#Modifier
 				# Temporary Modifier
 				infrastructure_throughput_factor = 0.1
 				urban_center_throughput_factor = 0.05
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_steam_shovel = {
@@ -2948,6 +3002,7 @@ technologies = {
 				industry_repair_factor = 0.2
 				# Temporary Modifier
 				urban_center_throughput_factor = 0.1
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_reinforced_concrete = {
@@ -2980,6 +3035,7 @@ technologies = {
 				production_speed_buildings_factor = 0.05
 				industry_repair_factor = 0.2
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.05
 			#
 		}
 		tech_steel_bridge = {
@@ -3015,6 +3071,7 @@ technologies = {
 			#Modifier
 				production_speed_buildings_factor = 0.10
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.025
 				custom_modifier_tooltip = pm_steel_frame_buildings_unlock_tt
 			#
 		}
@@ -3050,6 +3107,7 @@ technologies = {
 				industrial_capacity_dockyard = 0.05
 				industry_repair_factor = 0.05
 				industrial_complex_productivity_modifier = 0.1
+				global_building_slots_factor = 0.025
 			#
 		}
 		tech_steel_girder_construction = {
@@ -3081,6 +3139,7 @@ technologies = {
 			#
 			#Modifier
 				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.025
 				custom_modifier_tooltip = pm_high_rise_buildings_unlock_tt
 			#
 		}
@@ -3288,6 +3347,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_cardboard_boxes = {
@@ -3320,6 +3380,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_paper_bag_machines = {
@@ -3349,6 +3410,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_oil_pipelines = {
@@ -3389,6 +3451,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_branded_packaging = {
@@ -3422,6 +3485,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_corrugated_boxbard = {
@@ -3454,6 +3518,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_standardized_oil_barrel = {
@@ -3487,6 +3552,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_carton = {
@@ -3516,6 +3582,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_pre_cut_cardboard_boxes = {
@@ -3545,6 +3612,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_steel_drum_barrel = {
@@ -3588,6 +3656,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_tructractor = {
@@ -3617,6 +3686,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_welded_pipes = {
@@ -3718,6 +3788,7 @@ technologies = {
 				}
 			#
 			#Modifier
+				shipping_cost_factor = -0.05
 			#
 		}
 		tech_saran_wrap = {
@@ -3747,6 +3818,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_battery_powered_forklifts = {
@@ -3905,6 +3977,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_assisted_pipelines = {
@@ -3967,6 +4040,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_tamper_proof_packaging = {
@@ -3996,6 +4070,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 		tech_biodegradable_packaging = {
@@ -4054,6 +4129,7 @@ technologies = {
 			#Effect
 			#
 			#Modifier
+				shipping_cost_factor = -0.02
 			#
 		}
 	#

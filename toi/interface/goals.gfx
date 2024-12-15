@@ -1119,6 +1119,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/_general/economy/focus_banks2.dds"
 	}
 	SpriteType = {
+		name = "GFX_Focus_national_bank"
+		texturefile = "gfx/interface/goals/_general/economy/focus_national_bank.dds"
+	}
+	SpriteType = {
 		name = "GFX_Focus_basic_working_regulation"
 		texturefile = "gfx/interface/goals/_general/economy/focus_basic_working_regulation.dds"
 	}
@@ -3805,6 +3809,26 @@ spriteTypes = {
 		name = "GFX_focus_mex_constitutional_oath"
 		texturefile = "gfx/interface/goals/mex/mex_constitutional_oath.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_mex_northern_rebellion"
+		texturefile = "gfx/interface/goals/mex/northern_rebellion.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_mex_1857_congressional_elections"
+		texturefile = "gfx/interface/goals/mex/mexican_congressional_elections_1857.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_mex_confirm_comonfort"
+		texturefile = "gfx/interface/goals/mex/confirm_comonfort.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_mex_national_insurrection"
+		texturefile = "gfx/interface/goals/mex/national_insurrection.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_mex_tacubaya_plan"
+		texturefile = "gfx/interface/goals/mex/tacubaya_plan.png"
+	}
 
 	### MXE
 	SpriteType = {
@@ -5410,6 +5434,10 @@ spriteTypes = {
 		name = "GFX_FRA_orsini_letter"
 		texturefile = "gfx/interface/goals/france/FRA_orsini_letter.png"
 	}
+	SpriteType = {
+		name = "GFX_goal_focus_french_empire"
+		texturefile = "gfx/interface/goals/_country_shields/focus_french_empire.dds"
+	}
 	### Luxembourg
 	SpriteType = {
 		name = "GFX_Focus_LUX_luxembourg_crisis"
@@ -6505,6 +6533,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_SPR_crush_cantonals"
 		texturefile = "gfx/interface/goals/spain/focus_SPR_crush_cantonals.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_SPR_acre_claims"
+		texturefile = "gfx/interface/goals/spain/acre_claims.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_SPR_viceroyalty_peru"
+		texturefile = "gfx/interface/goals/spain/spr_viceroyalty_peru.png"
 	}
 	# AUSTRIA #
 	SpriteType = {
@@ -9392,6 +9428,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_generic_attack_turkey"
 		texturefile = "gfx/interface/goals/focus_generic_attack_turkey.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_attack_bolivia"
+		texturefile = "gfx/interface/goals/focus_generic_attack_bolivia.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_generic_befriend_bulgaria"

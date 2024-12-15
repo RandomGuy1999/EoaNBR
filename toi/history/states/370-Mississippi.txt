@@ -22,8 +22,8 @@ state = {
 				naval_base = 2
 			}
 			10410 = {
-				land_fort = 1
-				supply_node = yes
+				bunker = 1
+				supply_node = 1
 			}
 		}
 		set_variable = { arable_land = 50 }
