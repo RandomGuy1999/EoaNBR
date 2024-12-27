@@ -1334,7 +1334,7 @@ equipment_modules = {
 			lg_attack = 0.65
 			hg_attack = 2.75
 			build_cost_ic = 495
-			#armor_value = 2.5
+			armor_value = 12.5
 			surface_visibility = 4
 		}
 
@@ -1352,7 +1352,7 @@ equipment_modules = {
 			build_cost_ic = 0.1
 			#naval_speed = -0.1
 			max_strength = -0.075
-			armor_value = 0.65
+			armor_value = -0.135
 			reliability = -0.05
 		}
 
@@ -1372,9 +1372,9 @@ equipment_modules = {
 		
 		add_stats = {
 			lg_attack = 1.0
-			hg_attack = 3.95
+			hg_attack = 5.4
 			build_cost_ic = 580
-			#armor_value = 2.5
+			armor_value = 12.5
 			surface_visibility = 4
 		}
 
@@ -1384,15 +1384,14 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 8.25 # piercing will be normalized around 9" gun
-			hg_armor_piercing = 8.25
+			lg_armor_piercing = 20.73 # piercing will be normalized around 9" gun
+			hg_armor_piercing = 20.73
 		}
 
 		multiply_stats = {
 			build_cost_ic = 0.1
 			#naval_speed = -0.1
-			max_strength = -0.075
-			armor_value = 0.65
+			armor_value = -0.135
 			reliability = -0.05
 		}
 		
@@ -1418,7 +1417,7 @@ equipment_modules = {
 			lg_attack = 0.40
 			hg_attack = 3.75
 			build_cost_ic = 815
-			armor_value = 3.1
+			armor_value = 13.5
 			surface_visibility = 5.5
 		}
 
@@ -1436,7 +1435,7 @@ equipment_modules = {
 			build_cost_ic = 0.125
 			#naval_speed = -0.125
 			max_strength = -0.0875
-			armor_value = 0.75
+			armor_value = -0.15494
 			reliability = -0.0375
 		}
 
@@ -1454,10 +1453,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 2.0
-			hg_attack = 7.0
+			lg_attack = 0.75
+			hg_attack = 7.25
 			build_cost_ic = 935
 			surface_visibility = 5.5
+			armor_value = 13.5
 		}
 
 		build_cost_resources = {
@@ -1466,15 +1466,15 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 17.0
-			hg_armor_piercing = 17.0
+			lg_armor_piercing = 27.7
+			hg_armor_piercing = 27.7
 		}
 
 		multiply_stats = {
 			build_cost_ic = 0.125
 			#naval_speed = -0.125
 			max_strength = -0.0875
-			armor_value = 0.75
+			armor_value = -0.15494
 			reliability = -0.0375
 		}
 
@@ -5332,6 +5332,11 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 		}
+
+		build_cost_resources = {
+			chemicals = 1
+			wood = 2
+		}
 		
 		can_convert_from = {
 			module = ship_torpedo_1
@@ -5354,6 +5359,11 @@ equipment_modules = {
 		multiply_stats = {
 			reliability = -0.05
 		}
+
+		build_cost_resources = {
+			chemicals = 2
+			wood = 4
+		}
 		
 		can_convert_from = {
 			module = ship_torpedo_1
@@ -5371,6 +5381,10 @@ equipment_modules = {
 		add_stats = {
 			torpedo_attack = 3
 			build_cost_ic = 100
+		}
+
+		build_cost_resources = {
+			chemicals = 1
 		}
 		
 		# can_convert_from = {
@@ -5390,6 +5404,10 @@ equipment_modules = {
 			torpedo_attack = 6
 			build_cost_ic = 175
 		}
+
+		build_cost_resources = {
+			chemicals = 2
+		}
 		
 		can_convert_from = {
 			module = ship_torpedo_3
@@ -5407,6 +5425,10 @@ equipment_modules = {
 		add_stats = {
 			torpedo_attack = 9
 			build_cost_ic = 220
+		}
+
+		build_cost_resources = {
+			chemicals = 3
 		}
 		
 		can_convert_from = {
@@ -7903,7 +7925,7 @@ equipment_modules = {
 			surface_visibility = 1
 		}
 		
-		dismantle_cost_ic = 2000
+		dismantle_cost_ic = 300
 	}
 
 	monitor_armor_1 = { #5 iron #adjust stats
@@ -7919,7 +7941,7 @@ equipment_modules = {
 
 		build_cost_resources = {
 			iron = 3
-			wood = 5
+			wood = 3
 		}
 
 		add_stats = {
@@ -7928,8 +7950,34 @@ equipment_modules = {
 			surface_visibility = 1.5
 		}
 		
-		dismantle_cost_ic = 2000
+		dismantle_cost_ic = 300
 	}
+	monitor_armor_2 = { #7.5"
+	category = iron_monitor_armor
+	parent = monitor_armor_1
+	# gfx = ship_armor_ironclad_7_5
+
+	multiply_stats = {
+		build_cost_ic = 0.25
+		fuel_consumption = 0.175
+		max_strength = 0.05
+		armor_value = -0.06241
+	}
+
+	build_cost_resources = {
+		iron = 2
+		steel = 2
+		wood = 4
+	}
+
+	add_stats = {
+		build_cost_ic = 250
+		armor_value = 13.5
+		surface_visibility = 2
+	}
+	
+	dismantle_cost_ic = 500
+}
 
 ############################################ deprecated vanilla armor section
 	
